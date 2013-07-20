@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<genmodel:GenModel xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore"
+    xmlns:genmodel="http://www.eclipse.org/emf/2002/GenModel" modelDirectory="/org.xtext.example.FlexoLanguage/src-gen" editDirectory="/org.xtext.example.FlexoLanguage.edit/src"
+    editorDirectory="/org.xtext.example.FlexoLanguage.editor/src" modelPluginID="org.xtext.example.FlexoLanguage"
+    forceOverwrite="true" modelName="FML" updateClasspath="false" rootExtendsClass="org.eclipse.emf.ecore.impl.MinimalEObjectImpl$Container"
+    complianceLevel="5.0" copyrightFields="false" editPluginID="org.xtext.example.FlexoLanguage.edit"
+    editorPluginID="org.xtext.example.FlexoLanguage.editor" runtimeVersion="2.9">
+  <genPackages prefix="FML" basePackage="org.xtext.example.mydsl" disposableProviderFactory="true"
+      fileExtensions="FML" ecorePackage="FML.ecore#/">
+    <genEnums typeSafeEnumCompatible="false" ecoreEnum="FML.ecore#//EditionSchemeType">
+      <genEnumLiterals ecoreEnumLiteral="FML.ecore#//EditionSchemeType/creationScheme"/>
+      <genEnumLiterals ecoreEnumLiteral="FML.ecore#//EditionSchemeType/deletionScheme"/>
+      <genEnumLiterals ecoreEnumLiteral="FML.ecore#//EditionSchemeType/actionScheme"/>
+      <genEnumLiterals ecoreEnumLiteral="FML.ecore#//EditionSchemeType/cloningScheme"/>
+    </genEnums>
+    <genEnums typeSafeEnumCompatible="false" ecoreEnum="FML.ecore#//MSTYPE">
+      <genEnumLiterals ecoreEnumLiteral="FML.ecore#//MSTYPE/owl"/>
+      <genEnumLiterals ecoreEnumLiteral="FML.ecore#//MSTYPE/diag"/>
+      <genEnumLiterals ecoreEnumLiteral="FML.ecore#//MSTYPE/emf"/>
+      <genEnumLiterals ecoreEnumLiteral="FML.ecore#//MSTYPE/virtual"/>
+      <genEnumLiterals ecoreEnumLiteral="FML.ecore#//MSTYPE/xsd"/>
+    </genEnums>
+    <genEnums typeSafeEnumCompatible="false" ecoreEnum="FML.ecore#//VMTYPE">
+      <genEnumLiterals ecoreEnumLiteral="FML.ecore#//VMTYPE/DiagSpec"/>
+      <genEnumLiterals ecoreEnumLiteral="FML.ecore#//VMTYPE/VM"/>
+    </genEnums>
+    <genEnums typeSafeEnumCompatible="false" ecoreEnum="FML.ecore#//PRTYPE">
+      <genEnumLiterals ecoreEnumLiteral="FML.ecore#//PRTYPE/Individual"/>
+    </genEnums>
+    <genClasses ecoreClass="FML.ecore#//ViewDef">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute FML.ecore#//ViewDef/name"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute FML.ecore#//ViewDef/uri"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference FML.ecore#//ViewDef/elements"/>
+    </genClasses>
+    <genClasses ecoreClass="FML.ecore#//VirtualModel">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute FML.ecore#//VirtualModel/name"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute FML.ecore#//VirtualModel/type"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute FML.ecore#//VirtualModel/uri"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference FML.ecore#//VirtualModel/ModelSlots"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference FML.ecore#//VirtualModel/EditionPatterns"/>
+    </genClasses>
+    <genClasses ecoreClass="FML.ecore#//ModelSlot">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute FML.ecore#//ModelSlot/name"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute FML.ecore#//ModelSlot/type"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute FML.ecore#//ModelSlot/uri"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute FML.ecore#//ModelSlot/required"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute FML.ecore#//ModelSlot/readOnly"/>
+    </genClasses>
+    <genClasses ecoreClass="FML.ecore#//EditionPattern">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute FML.ecore#//EditionPattern/name"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference FML.ecore#//EditionPattern/superEditionPattern"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference FML.ecore#//EditionPattern/patternRoles"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference FML.ecore#//EditionPattern/editionSchemes"/>
+    </genClasses>
+    <genClasses ecoreClass="FML.ecore#//PatternRole">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute FML.ecore#//PatternRole/name"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute FML.ecore#//PatternRole/type"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute FML.ecore#//PatternRole/modelElement"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference FML.ecore#//PatternRole/modelSlot"/>
+    </genClasses>
+    <genClasses ecoreClass="FML.ecore#//EditionScheme">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute FML.ecore#//EditionScheme/editionSchemeType"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute FML.ecore#//EditionScheme/name"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference FML.ecore#//EditionScheme/parameter"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference FML.ecore#//EditionScheme/editionAction"/>
+    </genClasses>
+    <genClasses ecoreClass="FML.ecore#//Parameter">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute FML.ecore#//Parameter/widget"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference FML.ecore#//Parameter/editionPattern"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute FML.ecore#//Parameter/name"/>
+    </genClasses>
+    <genClasses ecoreClass="FML.ecore#//EditionAction"/>
+    <genClasses ecoreClass="FML.ecore#//BuiltInAction">
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference FML.ecore#//BuiltInAction/patternRole"/>
+    </genClasses>
+    <genClasses ecoreClass="FML.ecore#//DeclarePatternRole">
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference FML.ecore#//DeclarePatternRole/parameter"/>
+    </genClasses>
+    <genClasses ecoreClass="FML.ecore#//DeleteAction"/>
+  </genPackages>
+</genmodel:GenModel>
