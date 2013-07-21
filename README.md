@@ -20,45 +20,38 @@ xtext grammar and tooling for FML(Flexo Modeling Language)
 
 =======================================================================================================================
 
-     \\ vous pouvez maintenant écrire en langage FML :
+vous pouvez maintenant écrire en langage FML :
 
-ViewDefinition CityMapping uri="http://www.thalesgroup.com/openflexo/emf/CityMapping" {
-
-  VirtualModel CityMapping type=VirtualModel uri="http://www.thalesgroup.com/openflexo/emf/CityMapping/CityMapping" {
-
-     ModelSlot model1 type=EMFModelSlot conformTo="http://www.thalesgroup.com/openflexo/emf/model/city1" required=true readOnly=false;  
-     ModelSlot model2 type=EMFModelSlot conformTo="http://www.thalesgroup.com/openflexo/emf/model/city2" required=true readOnly=false;
-
-     EditionPattern City {  
-  
-       PatternRole cityInModel1 as Individual conformTo "City" from model1 ;  
-       PatternRole cityInModel2 as Individual conformTo "City" from model2 ;  
-  
-       CreationScheme creation(Individual:City cityInModel1, Individual:City cityInModel2) {    
-            cityInModel1 = parameters.cityInModel1;    
-            cityInModel2 = parameters.cityInModel2;    
-       }    
-  
-    
-       ActionScheme generateModel2FromModel1() {    
-            cityInModel2 = ( AddEMFObjectIndividual conformTo City from model2 {      
-           //name = cityInModel1.name;      
-            })       
-       }    
-  
-       ActionScheme generateModel1FromModel2() {    
-             AddEMFObjectIndividual conformTo City from model1 {      
-             //name = cityInModel2.name;      
-             }    
-       }  
-  
-       DeletionScheme deletion() {    
-            delete cityInModel1;    
-            delete cityInModel2;   
-       }    
-  
-    }    
-  }
-
-}
+     ViewDefinition CityMapping uri="http://www.thalesgroup.com/openflexo/emf/CityMapping" { 
+         VirtualModel CityMapping type=VirtualModel uri="http://www.thalesgroup.com/openflexo/emf/CityMapping/CityMapping" {
+            ModelSlot model1 type=EMFModelSlot conformTo="http://www.thalesgroup.com/openflexo/emf/model/city1" required=true readOnly=false;  
+            ModelSlot model2 type=EMFModelSlot conformTo="http://www.thalesgroup.com/openflexo/emf/model/city2" required=true readOnly=false;
+            EditionPattern City {  
+                PatternRole cityInModel1 as Individual conformTo "City" from model1 ;  
+                PatternRole cityInModel2 as Individual conformTo "City" from model2 ;  
+                
+                CreationScheme creation(Individual:City cityInModel1, Individual:City cityInModel2) {    
+                     cityInModel1 = parameters.cityInModel1;  
+                     cityInModel2 = parameters.cityInModel2;    
+                }    
+                
+                ActionScheme generateModel2FromModel1() {    
+                     cityInModel2 = ( AddEMFObjectIndividual conformTo City from model2 {      
+                     //name = cityInModel1.name;      
+                     })       
+                }    
+                
+                ActionScheme generateModel1FromModel2() {    
+                     AddEMFObjectIndividual conformTo City from model1 {      
+                     //name = cityInModel2.name;      
+                     }    
+                }  
+                
+                DeletionScheme deletion() {    
+                     delete cityInModel1;    
+                     delete cityInModel2;   
+                }    
+           }    
+        }
+     }
   
