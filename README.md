@@ -18,9 +18,9 @@ xtext grammar and tooling for FML(Flexo Modeling Language)
 
 6- cliquez droit sur ce fichier --> open with --> others --> FML Editor
 
-vous pouvez maintenant écrire en langage FML :
-
 =======================================================================================================================
+
+     \\ vous pouvez maintenant écrire en langage FML :
 
 ViewDefinition CityMapping uri="http://www.thalesgroup.com/openflexo/emf/CityMapping" {
 
