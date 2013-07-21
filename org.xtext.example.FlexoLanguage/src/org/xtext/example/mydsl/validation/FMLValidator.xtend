@@ -18,6 +18,7 @@ class FMLValidator extends AbstractFMLValidator {
 
     public static val INVALID_NAME = 'invalidName'
 	
+	/* 
     @Check
     def checkGreetingStartsWithCapital(EditionPattern editionPattern) {
  		if (!Character::isUpperCase(editionPattern.name.charAt(0))) {
@@ -25,5 +26,5 @@ class FMLValidator extends AbstractFMLValidator {
 					FMLPackage$Literals::EDITION_PATTERN__NAME,
 					INVALID_NAME)
 		}
-	}
+	}*/
 }
