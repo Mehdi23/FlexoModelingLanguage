@@ -122,6 +122,15 @@ public interface FMLFactory extends EFactory
   DeleteAction createDeleteAction();
 
   /**
+   * Returns a new object of class '<em>Add EMF Object Individual</em>'.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @return a new object of class '<em>Add EMF Object Individual</em>'.
+   * @generated
+   */
+  AddEMFObjectIndividual createAddEMFObjectIndividual();
+
+  /**
    * Returns the package supported by this factory.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->

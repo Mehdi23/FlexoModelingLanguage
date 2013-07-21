@@ -57,13 +57,21 @@
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="name" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="EditionAction"/>
-  <eClassifiers xsi:type="ecore:EClass" name="BuiltInAction" eSuperTypes="#//EditionAction">
+  <eClassifiers xsi:type="ecore:EClass" name="BuiltInAction" eSuperTypes="#//EditionAction"/>
+  <eClassifiers xsi:type="ecore:EClass" name="DeclarePatternRole" eSuperTypes="#//BuiltInAction">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="patternRole" unique="false"
+        upperBound="-1" eType="#//PatternRole"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="parameter" eType="#//Parameter"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="add" upperBound="-1" eType="#//AddEMFObjectIndividual"
+        containment="true"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="DeleteAction" eSuperTypes="#//BuiltInAction">
     <eStructuralFeatures xsi:type="ecore:EReference" name="patternRole" eType="#//PatternRole"/>
   </eClassifiers>
-  <eClassifiers xsi:type="ecore:EClass" name="DeclarePatternRole" eSuperTypes="#//BuiltInAction">
-    <eStructuralFeatures xsi:type="ecore:EReference" name="parameter" eType="#//Parameter"/>
+  <eClassifiers xsi:type="ecore:EClass" name="AddEMFObjectIndividual" eSuperTypes="#//BuiltInAction">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="editionPattern" eType="#//EditionPattern"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="modelSlot" eType="#//ModelSlot"/>
   </eClassifiers>
-  <eClassifiers xsi:type="ecore:EClass" name="DeleteAction" eSuperTypes="#//BuiltInAction"/>
   <eClassifiers xsi:type="ecore:EEnum" name="MSTYPE">
     <eLiterals name="owl" literal="OWLModelSlot"/>
     <eLiterals name="diag" value="1" literal="DiagramModelSlot"/>

@@ -22,7 +22,7 @@ import java.util.ArrayList;
 @SuppressWarnings("all")
 public class InternalFMLParser extends AbstractInternalAntlrParser {
     public static final String[] tokenNames = new String[] {
-        "<invalid>", "<EOR>", "<DOWN>", "<UP>", "RULE_ID", "RULE_URISTRING", "RULE_BOOL", "RULE_STRING", "RULE_URI", "RULE_INT", "RULE_ML_COMMENT", "RULE_SL_COMMENT", "RULE_WS", "RULE_ANY_OTHER", "'ViewDefinition'", "'uri'", "'='", "'{'", "'}'", "'VirtualModel'", "'type'", "'ModelSlot'", "'conformTo'", "'required'", "'readOnly'", "';'", "'EditionPattern'", "'extends'", "'PatternRole'", "'as'", "'from'", "'('", "','", "')'", "':'", "'parameters'", "'.'", "'delete'", "'CreationScheme'", "'DeletionScheme'", "'ActionScheme'", "'CloningScheme'", "'OWLModelSlot'", "'DiagramModelSlot'", "'EMFModelSlot'", "'VirtualModelModelSlot'", "'XSDModelSlot'", "'DiagramSpecification'", "'Individual'"
+        "<invalid>", "<EOR>", "<DOWN>", "<UP>", "RULE_ID", "RULE_URISTRING", "RULE_BOOL", "RULE_URI", "RULE_INT", "RULE_STRING", "RULE_ML_COMMENT", "RULE_SL_COMMENT", "RULE_WS", "RULE_ANY_OTHER", "'ViewDefinition'", "'uri'", "'='", "'{'", "'}'", "'VirtualModel'", "'type'", "'ModelSlot'", "'conformTo'", "'required'", "'readOnly'", "';'", "'EditionPattern'", "'extends'", "'PatternRole'", "'as'", "'from'", "'('", "','", "')'", "':'", "'parameters'", "'.'", "'delete'", "'AddEMFObjectIndividual'", "'CreationScheme'", "'DeletionScheme'", "'ActionScheme'", "'CloningScheme'", "'OWLModelSlot'", "'DiagramModelSlot'", "'EMFModelSlot'", "'VirtualModelModelSlot'", "'XSDModelSlot'", "'DiagramSpecification'", "'Individual'"
     };
     public static final int RULE_ID=4;
     public static final int T__29=29;
@@ -44,7 +44,7 @@ public class InternalFMLParser extends AbstractInternalAntlrParser {
     public static final int T__18=18;
     public static final int T__17=17;
     public static final int T__14=14;
-    public static final int RULE_INT=9;
+    public static final int RULE_INT=8;
     public static final int T__42=42;
     public static final int T__43=43;
     public static final int T__40=40;
@@ -54,14 +54,15 @@ public class InternalFMLParser extends AbstractInternalAntlrParser {
     public static final int T__44=44;
     public static final int T__45=45;
     public static final int T__48=48;
+    public static final int T__49=49;
     public static final int RULE_URISTRING=5;
-    public static final int RULE_URI=8;
+    public static final int RULE_URI=7;
     public static final int RULE_SL_COMMENT=11;
     public static final int RULE_ML_COMMENT=10;
     public static final int T__30=30;
     public static final int T__31=31;
+    public static final int RULE_STRING=9;
     public static final int T__32=32;
-    public static final int RULE_STRING=7;
     public static final int T__33=33;
     public static final int T__34=34;
     public static final int T__35=35;
@@ -1482,7 +1483,7 @@ public class InternalFMLParser extends AbstractInternalAntlrParser {
                 int alt21=2;
                 int LA21_0 = input.LA(1);
 
-                if ( ((LA21_0>=38 && LA21_0<=41)) ) {
+                if ( ((LA21_0>=39 && LA21_0<=42)) ) {
                     alt21=1;
                 }
 
@@ -1586,7 +1587,7 @@ public class InternalFMLParser extends AbstractInternalAntlrParser {
 
 
     // $ANTLR start "rulePatternRole"
-    // ../org.xtext.example.FlexoLanguage/src-gen/org/xtext/example/mydsl/parser/antlr/internal/InternalFML.g:566:1: rulePatternRole returns [EObject current=null] : (otherlv_0= 'PatternRole' ( (lv_name_1_0= RULE_ID ) ) otherlv_2= 'as' ( (lv_type_3_0= rulePRTYPE ) ) otherlv_4= 'conformTo' ( (lv_modelElement_5_0= RULE_STRING ) ) otherlv_6= 'from' ( (otherlv_7= RULE_ID ) ) otherlv_8= ';' ) ;
+    // ../org.xtext.example.FlexoLanguage/src-gen/org/xtext/example/mydsl/parser/antlr/internal/InternalFML.g:566:1: rulePatternRole returns [EObject current=null] : (otherlv_0= 'PatternRole' ( (lv_name_1_0= RULE_ID ) ) otherlv_2= 'as' ( (lv_type_3_0= rulePRTYPE ) ) otherlv_4= 'conformTo' ( (lv_modelElement_5_0= RULE_ID ) ) otherlv_6= 'from' ( (otherlv_7= RULE_ID ) ) otherlv_8= ';' ) ;
     public final EObject rulePatternRole() throws RecognitionException {
         EObject current = null;
 
@@ -1604,11 +1605,11 @@ public class InternalFMLParser extends AbstractInternalAntlrParser {
          enterRule(); 
             
         try {
-            // ../org.xtext.example.FlexoLanguage/src-gen/org/xtext/example/mydsl/parser/antlr/internal/InternalFML.g:569:28: ( (otherlv_0= 'PatternRole' ( (lv_name_1_0= RULE_ID ) ) otherlv_2= 'as' ( (lv_type_3_0= rulePRTYPE ) ) otherlv_4= 'conformTo' ( (lv_modelElement_5_0= RULE_STRING ) ) otherlv_6= 'from' ( (otherlv_7= RULE_ID ) ) otherlv_8= ';' ) )
-            // ../org.xtext.example.FlexoLanguage/src-gen/org/xtext/example/mydsl/parser/antlr/internal/InternalFML.g:570:1: (otherlv_0= 'PatternRole' ( (lv_name_1_0= RULE_ID ) ) otherlv_2= 'as' ( (lv_type_3_0= rulePRTYPE ) ) otherlv_4= 'conformTo' ( (lv_modelElement_5_0= RULE_STRING ) ) otherlv_6= 'from' ( (otherlv_7= RULE_ID ) ) otherlv_8= ';' )
+            // ../org.xtext.example.FlexoLanguage/src-gen/org/xtext/example/mydsl/parser/antlr/internal/InternalFML.g:569:28: ( (otherlv_0= 'PatternRole' ( (lv_name_1_0= RULE_ID ) ) otherlv_2= 'as' ( (lv_type_3_0= rulePRTYPE ) ) otherlv_4= 'conformTo' ( (lv_modelElement_5_0= RULE_ID ) ) otherlv_6= 'from' ( (otherlv_7= RULE_ID ) ) otherlv_8= ';' ) )
+            // ../org.xtext.example.FlexoLanguage/src-gen/org/xtext/example/mydsl/parser/antlr/internal/InternalFML.g:570:1: (otherlv_0= 'PatternRole' ( (lv_name_1_0= RULE_ID ) ) otherlv_2= 'as' ( (lv_type_3_0= rulePRTYPE ) ) otherlv_4= 'conformTo' ( (lv_modelElement_5_0= RULE_ID ) ) otherlv_6= 'from' ( (otherlv_7= RULE_ID ) ) otherlv_8= ';' )
             {
-            // ../org.xtext.example.FlexoLanguage/src-gen/org/xtext/example/mydsl/parser/antlr/internal/InternalFML.g:570:1: (otherlv_0= 'PatternRole' ( (lv_name_1_0= RULE_ID ) ) otherlv_2= 'as' ( (lv_type_3_0= rulePRTYPE ) ) otherlv_4= 'conformTo' ( (lv_modelElement_5_0= RULE_STRING ) ) otherlv_6= 'from' ( (otherlv_7= RULE_ID ) ) otherlv_8= ';' )
-            // ../org.xtext.example.FlexoLanguage/src-gen/org/xtext/example/mydsl/parser/antlr/internal/InternalFML.g:570:3: otherlv_0= 'PatternRole' ( (lv_name_1_0= RULE_ID ) ) otherlv_2= 'as' ( (lv_type_3_0= rulePRTYPE ) ) otherlv_4= 'conformTo' ( (lv_modelElement_5_0= RULE_STRING ) ) otherlv_6= 'from' ( (otherlv_7= RULE_ID ) ) otherlv_8= ';'
+            // ../org.xtext.example.FlexoLanguage/src-gen/org/xtext/example/mydsl/parser/antlr/internal/InternalFML.g:570:1: (otherlv_0= 'PatternRole' ( (lv_name_1_0= RULE_ID ) ) otherlv_2= 'as' ( (lv_type_3_0= rulePRTYPE ) ) otherlv_4= 'conformTo' ( (lv_modelElement_5_0= RULE_ID ) ) otherlv_6= 'from' ( (otherlv_7= RULE_ID ) ) otherlv_8= ';' )
+            // ../org.xtext.example.FlexoLanguage/src-gen/org/xtext/example/mydsl/parser/antlr/internal/InternalFML.g:570:3: otherlv_0= 'PatternRole' ( (lv_name_1_0= RULE_ID ) ) otherlv_2= 'as' ( (lv_type_3_0= rulePRTYPE ) ) otherlv_4= 'conformTo' ( (lv_modelElement_5_0= RULE_ID ) ) otherlv_6= 'from' ( (otherlv_7= RULE_ID ) ) otherlv_8= ';'
             {
             otherlv_0=(Token)match(input,28,FOLLOW_28_in_rulePatternRole1136); 
 
@@ -1679,15 +1680,15 @@ public class InternalFMLParser extends AbstractInternalAntlrParser {
 
                 	newLeafNode(otherlv_4, grammarAccess.getPatternRoleAccess().getConformToKeyword_4());
                 
-            // ../org.xtext.example.FlexoLanguage/src-gen/org/xtext/example/mydsl/parser/antlr/internal/InternalFML.g:618:1: ( (lv_modelElement_5_0= RULE_STRING ) )
-            // ../org.xtext.example.FlexoLanguage/src-gen/org/xtext/example/mydsl/parser/antlr/internal/InternalFML.g:619:1: (lv_modelElement_5_0= RULE_STRING )
+            // ../org.xtext.example.FlexoLanguage/src-gen/org/xtext/example/mydsl/parser/antlr/internal/InternalFML.g:618:1: ( (lv_modelElement_5_0= RULE_ID ) )
+            // ../org.xtext.example.FlexoLanguage/src-gen/org/xtext/example/mydsl/parser/antlr/internal/InternalFML.g:619:1: (lv_modelElement_5_0= RULE_ID )
             {
-            // ../org.xtext.example.FlexoLanguage/src-gen/org/xtext/example/mydsl/parser/antlr/internal/InternalFML.g:619:1: (lv_modelElement_5_0= RULE_STRING )
-            // ../org.xtext.example.FlexoLanguage/src-gen/org/xtext/example/mydsl/parser/antlr/internal/InternalFML.g:620:3: lv_modelElement_5_0= RULE_STRING
+            // ../org.xtext.example.FlexoLanguage/src-gen/org/xtext/example/mydsl/parser/antlr/internal/InternalFML.g:619:1: (lv_modelElement_5_0= RULE_ID )
+            // ../org.xtext.example.FlexoLanguage/src-gen/org/xtext/example/mydsl/parser/antlr/internal/InternalFML.g:620:3: lv_modelElement_5_0= RULE_ID
             {
-            lv_modelElement_5_0=(Token)match(input,RULE_STRING,FOLLOW_RULE_STRING_in_rulePatternRole1220); 
+            lv_modelElement_5_0=(Token)match(input,RULE_ID,FOLLOW_RULE_ID_in_rulePatternRole1220); 
 
-            			newLeafNode(lv_modelElement_5_0, grammarAccess.getPatternRoleAccess().getModelElementSTRINGTerminalRuleCall_5_0()); 
+            			newLeafNode(lv_modelElement_5_0, grammarAccess.getPatternRoleAccess().getModelElementIDTerminalRuleCall_5_0()); 
             		
 
             	        if (current==null) {
@@ -1697,7 +1698,7 @@ public class InternalFMLParser extends AbstractInternalAntlrParser {
                    			current, 
                    			"modelElement",
                     		lv_modelElement_5_0, 
-                    		"STRING");
+                    		"ID");
             	    
 
             }
@@ -1884,7 +1885,7 @@ public class InternalFMLParser extends AbstractInternalAntlrParser {
             int alt25=2;
             int LA25_0 = input.LA(1);
 
-            if ( (LA25_0==48) ) {
+            if ( (LA25_0==49) ) {
                 alt25=1;
             }
             switch (alt25) {
@@ -1898,7 +1899,7 @@ public class InternalFMLParser extends AbstractInternalAntlrParser {
                         int alt22=2;
                         int LA22_0 = input.LA(1);
 
-                        if ( (LA22_0==48) ) {
+                        if ( (LA22_0==49) ) {
                             alt22=1;
                         }
 
@@ -2053,7 +2054,7 @@ public class InternalFMLParser extends AbstractInternalAntlrParser {
                 int alt26=2;
                 int LA26_0 = input.LA(1);
 
-                if ( (LA26_0==RULE_ID||LA26_0==37) ) {
+                if ( (LA26_0==RULE_ID||(LA26_0>=37 && LA26_0<=38)) ) {
                     alt26=1;
                 }
 
@@ -2394,7 +2395,7 @@ public class InternalFMLParser extends AbstractInternalAntlrParser {
 
 
     // $ANTLR start "ruleBuiltInAction"
-    // ../org.xtext.example.FlexoLanguage/src-gen/org/xtext/example/mydsl/parser/antlr/internal/InternalFML.g:909:1: ruleBuiltInAction returns [EObject current=null] : (this_DeclarePatternRole_0= ruleDeclarePatternRole | this_DeleteAction_1= ruleDeleteAction ) ;
+    // ../org.xtext.example.FlexoLanguage/src-gen/org/xtext/example/mydsl/parser/antlr/internal/InternalFML.g:909:1: ruleBuiltInAction returns [EObject current=null] : (this_DeclarePatternRole_0= ruleDeclarePatternRole | this_DeleteAction_1= ruleDeleteAction | this_AddEMFObjectIndividual_2= ruleAddEMFObjectIndividual ) ;
     public final EObject ruleBuiltInAction() throws RecognitionException {
         EObject current = null;
 
@@ -2402,29 +2403,40 @@ public class InternalFMLParser extends AbstractInternalAntlrParser {
 
         EObject this_DeleteAction_1 = null;
 
+        EObject this_AddEMFObjectIndividual_2 = null;
+
 
          enterRule(); 
             
         try {
-            // ../org.xtext.example.FlexoLanguage/src-gen/org/xtext/example/mydsl/parser/antlr/internal/InternalFML.g:912:28: ( (this_DeclarePatternRole_0= ruleDeclarePatternRole | this_DeleteAction_1= ruleDeleteAction ) )
-            // ../org.xtext.example.FlexoLanguage/src-gen/org/xtext/example/mydsl/parser/antlr/internal/InternalFML.g:913:1: (this_DeclarePatternRole_0= ruleDeclarePatternRole | this_DeleteAction_1= ruleDeleteAction )
+            // ../org.xtext.example.FlexoLanguage/src-gen/org/xtext/example/mydsl/parser/antlr/internal/InternalFML.g:912:28: ( (this_DeclarePatternRole_0= ruleDeclarePatternRole | this_DeleteAction_1= ruleDeleteAction | this_AddEMFObjectIndividual_2= ruleAddEMFObjectIndividual ) )
+            // ../org.xtext.example.FlexoLanguage/src-gen/org/xtext/example/mydsl/parser/antlr/internal/InternalFML.g:913:1: (this_DeclarePatternRole_0= ruleDeclarePatternRole | this_DeleteAction_1= ruleDeleteAction | this_AddEMFObjectIndividual_2= ruleAddEMFObjectIndividual )
             {
-            // ../org.xtext.example.FlexoLanguage/src-gen/org/xtext/example/mydsl/parser/antlr/internal/InternalFML.g:913:1: (this_DeclarePatternRole_0= ruleDeclarePatternRole | this_DeleteAction_1= ruleDeleteAction )
-            int alt27=2;
-            int LA27_0 = input.LA(1);
-
-            if ( (LA27_0==RULE_ID) ) {
+            // ../org.xtext.example.FlexoLanguage/src-gen/org/xtext/example/mydsl/parser/antlr/internal/InternalFML.g:913:1: (this_DeclarePatternRole_0= ruleDeclarePatternRole | this_DeleteAction_1= ruleDeleteAction | this_AddEMFObjectIndividual_2= ruleAddEMFObjectIndividual )
+            int alt27=3;
+            switch ( input.LA(1) ) {
+            case RULE_ID:
+                {
                 alt27=1;
-            }
-            else if ( (LA27_0==37) ) {
+                }
+                break;
+            case 37:
+                {
                 alt27=2;
-            }
-            else {
+                }
+                break;
+            case 38:
+                {
+                alt27=3;
+                }
+                break;
+            default:
                 NoViableAltException nvae =
                     new NoViableAltException("", 27, 0, input);
 
                 throw nvae;
             }
+
             switch (alt27) {
                 case 1 :
                     // ../org.xtext.example.FlexoLanguage/src-gen/org/xtext/example/mydsl/parser/antlr/internal/InternalFML.g:914:5: this_DeclarePatternRole_0= ruleDeclarePatternRole
@@ -2462,6 +2474,24 @@ public class InternalFMLParser extends AbstractInternalAntlrParser {
 
                     }
                     break;
+                case 3 :
+                    // ../org.xtext.example.FlexoLanguage/src-gen/org/xtext/example/mydsl/parser/antlr/internal/InternalFML.g:934:5: this_AddEMFObjectIndividual_2= ruleAddEMFObjectIndividual
+                    {
+                     
+                            newCompositeNode(grammarAccess.getBuiltInActionAccess().getAddEMFObjectIndividualParserRuleCall_2()); 
+                        
+                    pushFollow(FOLLOW_ruleAddEMFObjectIndividual_in_ruleBuiltInAction1900);
+                    this_AddEMFObjectIndividual_2=ruleAddEMFObjectIndividual();
+
+                    state._fsp--;
+
+                     
+                            current = this_AddEMFObjectIndividual_2; 
+                            afterParserOrEnumRuleCall();
+                        
+
+                    }
+                    break;
 
             }
 
@@ -2483,7 +2513,7 @@ public class InternalFMLParser extends AbstractInternalAntlrParser {
 
 
     // $ANTLR start "entryRuleDeclarePatternRole"
-    // ../org.xtext.example.FlexoLanguage/src-gen/org/xtext/example/mydsl/parser/antlr/internal/InternalFML.g:940:1: entryRuleDeclarePatternRole returns [EObject current=null] : iv_ruleDeclarePatternRole= ruleDeclarePatternRole EOF ;
+    // ../org.xtext.example.FlexoLanguage/src-gen/org/xtext/example/mydsl/parser/antlr/internal/InternalFML.g:950:1: entryRuleDeclarePatternRole returns [EObject current=null] : iv_ruleDeclarePatternRole= ruleDeclarePatternRole EOF ;
     public final EObject entryRuleDeclarePatternRole() throws RecognitionException {
         EObject current = null;
 
@@ -2491,17 +2521,17 @@ public class InternalFMLParser extends AbstractInternalAntlrParser {
 
 
         try {
-            // ../org.xtext.example.FlexoLanguage/src-gen/org/xtext/example/mydsl/parser/antlr/internal/InternalFML.g:941:2: (iv_ruleDeclarePatternRole= ruleDeclarePatternRole EOF )
-            // ../org.xtext.example.FlexoLanguage/src-gen/org/xtext/example/mydsl/parser/antlr/internal/InternalFML.g:942:2: iv_ruleDeclarePatternRole= ruleDeclarePatternRole EOF
+            // ../org.xtext.example.FlexoLanguage/src-gen/org/xtext/example/mydsl/parser/antlr/internal/InternalFML.g:951:2: (iv_ruleDeclarePatternRole= ruleDeclarePatternRole EOF )
+            // ../org.xtext.example.FlexoLanguage/src-gen/org/xtext/example/mydsl/parser/antlr/internal/InternalFML.g:952:2: iv_ruleDeclarePatternRole= ruleDeclarePatternRole EOF
             {
              newCompositeNode(grammarAccess.getDeclarePatternRoleRule()); 
-            pushFollow(FOLLOW_ruleDeclarePatternRole_in_entryRuleDeclarePatternRole1908);
+            pushFollow(FOLLOW_ruleDeclarePatternRole_in_entryRuleDeclarePatternRole1935);
             iv_ruleDeclarePatternRole=ruleDeclarePatternRole();
 
             state._fsp--;
 
              current =iv_ruleDeclarePatternRole; 
-            match(input,EOF,FOLLOW_EOF_in_entryRuleDeclarePatternRole1918); 
+            match(input,EOF,FOLLOW_EOF_in_entryRuleDeclarePatternRole1945); 
 
             }
 
@@ -2519,7 +2549,7 @@ public class InternalFMLParser extends AbstractInternalAntlrParser {
 
 
     // $ANTLR start "ruleDeclarePatternRole"
-    // ../org.xtext.example.FlexoLanguage/src-gen/org/xtext/example/mydsl/parser/antlr/internal/InternalFML.g:949:1: ruleDeclarePatternRole returns [EObject current=null] : ( ( (otherlv_0= RULE_ID ) ) otherlv_1= '=' otherlv_2= 'parameters' otherlv_3= '.' ( (otherlv_4= RULE_ID ) ) otherlv_5= ';' ) ;
+    // ../org.xtext.example.FlexoLanguage/src-gen/org/xtext/example/mydsl/parser/antlr/internal/InternalFML.g:959:1: ruleDeclarePatternRole returns [EObject current=null] : ( ( ( (otherlv_0= RULE_ID ) )+ otherlv_1= '=' )+ ( (otherlv_2= 'parameters' otherlv_3= '.' ( (otherlv_4= RULE_ID ) ) otherlv_5= ';' ) | ( (otherlv_6= '(' )+ ( (lv_add_7_0= ruleAddEMFObjectIndividual ) )+ otherlv_8= ')' ) ) ) ;
     public final EObject ruleDeclarePatternRole() throws RecognitionException {
         EObject current = null;
 
@@ -2529,74 +2559,265 @@ public class InternalFMLParser extends AbstractInternalAntlrParser {
         Token otherlv_3=null;
         Token otherlv_4=null;
         Token otherlv_5=null;
+        Token otherlv_6=null;
+        Token otherlv_8=null;
+        EObject lv_add_7_0 = null;
+
 
          enterRule(); 
             
         try {
-            // ../org.xtext.example.FlexoLanguage/src-gen/org/xtext/example/mydsl/parser/antlr/internal/InternalFML.g:952:28: ( ( ( (otherlv_0= RULE_ID ) ) otherlv_1= '=' otherlv_2= 'parameters' otherlv_3= '.' ( (otherlv_4= RULE_ID ) ) otherlv_5= ';' ) )
-            // ../org.xtext.example.FlexoLanguage/src-gen/org/xtext/example/mydsl/parser/antlr/internal/InternalFML.g:953:1: ( ( (otherlv_0= RULE_ID ) ) otherlv_1= '=' otherlv_2= 'parameters' otherlv_3= '.' ( (otherlv_4= RULE_ID ) ) otherlv_5= ';' )
+            // ../org.xtext.example.FlexoLanguage/src-gen/org/xtext/example/mydsl/parser/antlr/internal/InternalFML.g:962:28: ( ( ( ( (otherlv_0= RULE_ID ) )+ otherlv_1= '=' )+ ( (otherlv_2= 'parameters' otherlv_3= '.' ( (otherlv_4= RULE_ID ) ) otherlv_5= ';' ) | ( (otherlv_6= '(' )+ ( (lv_add_7_0= ruleAddEMFObjectIndividual ) )+ otherlv_8= ')' ) ) ) )
+            // ../org.xtext.example.FlexoLanguage/src-gen/org/xtext/example/mydsl/parser/antlr/internal/InternalFML.g:963:1: ( ( ( (otherlv_0= RULE_ID ) )+ otherlv_1= '=' )+ ( (otherlv_2= 'parameters' otherlv_3= '.' ( (otherlv_4= RULE_ID ) ) otherlv_5= ';' ) | ( (otherlv_6= '(' )+ ( (lv_add_7_0= ruleAddEMFObjectIndividual ) )+ otherlv_8= ')' ) ) )
             {
-            // ../org.xtext.example.FlexoLanguage/src-gen/org/xtext/example/mydsl/parser/antlr/internal/InternalFML.g:953:1: ( ( (otherlv_0= RULE_ID ) ) otherlv_1= '=' otherlv_2= 'parameters' otherlv_3= '.' ( (otherlv_4= RULE_ID ) ) otherlv_5= ';' )
-            // ../org.xtext.example.FlexoLanguage/src-gen/org/xtext/example/mydsl/parser/antlr/internal/InternalFML.g:953:2: ( (otherlv_0= RULE_ID ) ) otherlv_1= '=' otherlv_2= 'parameters' otherlv_3= '.' ( (otherlv_4= RULE_ID ) ) otherlv_5= ';'
+            // ../org.xtext.example.FlexoLanguage/src-gen/org/xtext/example/mydsl/parser/antlr/internal/InternalFML.g:963:1: ( ( ( (otherlv_0= RULE_ID ) )+ otherlv_1= '=' )+ ( (otherlv_2= 'parameters' otherlv_3= '.' ( (otherlv_4= RULE_ID ) ) otherlv_5= ';' ) | ( (otherlv_6= '(' )+ ( (lv_add_7_0= ruleAddEMFObjectIndividual ) )+ otherlv_8= ')' ) ) )
+            // ../org.xtext.example.FlexoLanguage/src-gen/org/xtext/example/mydsl/parser/antlr/internal/InternalFML.g:963:2: ( ( (otherlv_0= RULE_ID ) )+ otherlv_1= '=' )+ ( (otherlv_2= 'parameters' otherlv_3= '.' ( (otherlv_4= RULE_ID ) ) otherlv_5= ';' ) | ( (otherlv_6= '(' )+ ( (lv_add_7_0= ruleAddEMFObjectIndividual ) )+ otherlv_8= ')' ) )
             {
-            // ../org.xtext.example.FlexoLanguage/src-gen/org/xtext/example/mydsl/parser/antlr/internal/InternalFML.g:953:2: ( (otherlv_0= RULE_ID ) )
-            // ../org.xtext.example.FlexoLanguage/src-gen/org/xtext/example/mydsl/parser/antlr/internal/InternalFML.g:954:1: (otherlv_0= RULE_ID )
-            {
-            // ../org.xtext.example.FlexoLanguage/src-gen/org/xtext/example/mydsl/parser/antlr/internal/InternalFML.g:954:1: (otherlv_0= RULE_ID )
-            // ../org.xtext.example.FlexoLanguage/src-gen/org/xtext/example/mydsl/parser/antlr/internal/InternalFML.g:955:3: otherlv_0= RULE_ID
-            {
+            // ../org.xtext.example.FlexoLanguage/src-gen/org/xtext/example/mydsl/parser/antlr/internal/InternalFML.g:963:2: ( ( (otherlv_0= RULE_ID ) )+ otherlv_1= '=' )+
+            int cnt29=0;
+            loop29:
+            do {
+                int alt29=2;
+                int LA29_0 = input.LA(1);
 
-            			if (current==null) {
-            	            current = createModelElement(grammarAccess.getDeclarePatternRoleRule());
+                if ( (LA29_0==RULE_ID) ) {
+                    alt29=1;
+                }
+
+
+                switch (alt29) {
+            	case 1 :
+            	    // ../org.xtext.example.FlexoLanguage/src-gen/org/xtext/example/mydsl/parser/antlr/internal/InternalFML.g:963:3: ( (otherlv_0= RULE_ID ) )+ otherlv_1= '='
+            	    {
+            	    // ../org.xtext.example.FlexoLanguage/src-gen/org/xtext/example/mydsl/parser/antlr/internal/InternalFML.g:963:3: ( (otherlv_0= RULE_ID ) )+
+            	    int cnt28=0;
+            	    loop28:
+            	    do {
+            	        int alt28=2;
+            	        int LA28_0 = input.LA(1);
+
+            	        if ( (LA28_0==RULE_ID) ) {
+            	            alt28=1;
             	        }
-                    
-            otherlv_0=(Token)match(input,RULE_ID,FOLLOW_RULE_ID_in_ruleDeclarePatternRole1963); 
-
-            		newLeafNode(otherlv_0, grammarAccess.getDeclarePatternRoleAccess().getPatternRolePatternRoleCrossReference_0_0()); 
-            	
-
-            }
 
 
-            }
+            	        switch (alt28) {
+            	    	case 1 :
+            	    	    // ../org.xtext.example.FlexoLanguage/src-gen/org/xtext/example/mydsl/parser/antlr/internal/InternalFML.g:964:1: (otherlv_0= RULE_ID )
+            	    	    {
+            	    	    // ../org.xtext.example.FlexoLanguage/src-gen/org/xtext/example/mydsl/parser/antlr/internal/InternalFML.g:964:1: (otherlv_0= RULE_ID )
+            	    	    // ../org.xtext.example.FlexoLanguage/src-gen/org/xtext/example/mydsl/parser/antlr/internal/InternalFML.g:965:3: otherlv_0= RULE_ID
+            	    	    {
 
-            otherlv_1=(Token)match(input,16,FOLLOW_16_in_ruleDeclarePatternRole1975); 
+            	    	    			if (current==null) {
+            	    	    	            current = createModelElement(grammarAccess.getDeclarePatternRoleRule());
+            	    	    	        }
+            	    	            
+            	    	    otherlv_0=(Token)match(input,RULE_ID,FOLLOW_RULE_ID_in_ruleDeclarePatternRole1991); 
 
-                	newLeafNode(otherlv_1, grammarAccess.getDeclarePatternRoleAccess().getEqualsSignKeyword_1());
-                
-            otherlv_2=(Token)match(input,35,FOLLOW_35_in_ruleDeclarePatternRole1987); 
+            	    	    		newLeafNode(otherlv_0, grammarAccess.getDeclarePatternRoleAccess().getPatternRolePatternRoleCrossReference_0_0_0()); 
+            	    	    	
 
-                	newLeafNode(otherlv_2, grammarAccess.getDeclarePatternRoleAccess().getParametersKeyword_2());
-                
-            otherlv_3=(Token)match(input,36,FOLLOW_36_in_ruleDeclarePatternRole1999); 
+            	    	    }
 
-                	newLeafNode(otherlv_3, grammarAccess.getDeclarePatternRoleAccess().getFullStopKeyword_3());
-                
-            // ../org.xtext.example.FlexoLanguage/src-gen/org/xtext/example/mydsl/parser/antlr/internal/InternalFML.g:978:1: ( (otherlv_4= RULE_ID ) )
-            // ../org.xtext.example.FlexoLanguage/src-gen/org/xtext/example/mydsl/parser/antlr/internal/InternalFML.g:979:1: (otherlv_4= RULE_ID )
-            {
-            // ../org.xtext.example.FlexoLanguage/src-gen/org/xtext/example/mydsl/parser/antlr/internal/InternalFML.g:979:1: (otherlv_4= RULE_ID )
-            // ../org.xtext.example.FlexoLanguage/src-gen/org/xtext/example/mydsl/parser/antlr/internal/InternalFML.g:980:3: otherlv_4= RULE_ID
-            {
 
-            			if (current==null) {
-            	            current = createModelElement(grammarAccess.getDeclarePatternRoleRule());
+            	    	    }
+            	    	    break;
+
+            	    	default :
+            	    	    if ( cnt28 >= 1 ) break loop28;
+            	                EarlyExitException eee =
+            	                    new EarlyExitException(28, input);
+            	                throw eee;
             	        }
-                    
-            otherlv_4=(Token)match(input,RULE_ID,FOLLOW_RULE_ID_in_ruleDeclarePatternRole2019); 
+            	        cnt28++;
+            	    } while (true);
 
-            		newLeafNode(otherlv_4, grammarAccess.getDeclarePatternRoleAccess().getParameterParameterCrossReference_4_0()); 
-            	
+            	    otherlv_1=(Token)match(input,16,FOLLOW_16_in_ruleDeclarePatternRole2004); 
+
+            	        	newLeafNode(otherlv_1, grammarAccess.getDeclarePatternRoleAccess().getEqualsSignKeyword_0_1());
+            	        
+
+            	    }
+            	    break;
+
+            	default :
+            	    if ( cnt29 >= 1 ) break loop29;
+                        EarlyExitException eee =
+                            new EarlyExitException(29, input);
+                        throw eee;
+                }
+                cnt29++;
+            } while (true);
+
+            // ../org.xtext.example.FlexoLanguage/src-gen/org/xtext/example/mydsl/parser/antlr/internal/InternalFML.g:980:3: ( (otherlv_2= 'parameters' otherlv_3= '.' ( (otherlv_4= RULE_ID ) ) otherlv_5= ';' ) | ( (otherlv_6= '(' )+ ( (lv_add_7_0= ruleAddEMFObjectIndividual ) )+ otherlv_8= ')' ) )
+            int alt32=2;
+            int LA32_0 = input.LA(1);
+
+            if ( (LA32_0==35) ) {
+                alt32=1;
+            }
+            else if ( (LA32_0==31) ) {
+                alt32=2;
+            }
+            else {
+                NoViableAltException nvae =
+                    new NoViableAltException("", 32, 0, input);
+
+                throw nvae;
+            }
+            switch (alt32) {
+                case 1 :
+                    // ../org.xtext.example.FlexoLanguage/src-gen/org/xtext/example/mydsl/parser/antlr/internal/InternalFML.g:980:4: (otherlv_2= 'parameters' otherlv_3= '.' ( (otherlv_4= RULE_ID ) ) otherlv_5= ';' )
+                    {
+                    // ../org.xtext.example.FlexoLanguage/src-gen/org/xtext/example/mydsl/parser/antlr/internal/InternalFML.g:980:4: (otherlv_2= 'parameters' otherlv_3= '.' ( (otherlv_4= RULE_ID ) ) otherlv_5= ';' )
+                    // ../org.xtext.example.FlexoLanguage/src-gen/org/xtext/example/mydsl/parser/antlr/internal/InternalFML.g:980:6: otherlv_2= 'parameters' otherlv_3= '.' ( (otherlv_4= RULE_ID ) ) otherlv_5= ';'
+                    {
+                    otherlv_2=(Token)match(input,35,FOLLOW_35_in_ruleDeclarePatternRole2020); 
+
+                        	newLeafNode(otherlv_2, grammarAccess.getDeclarePatternRoleAccess().getParametersKeyword_1_0_0());
+                        
+                    otherlv_3=(Token)match(input,36,FOLLOW_36_in_ruleDeclarePatternRole2032); 
+
+                        	newLeafNode(otherlv_3, grammarAccess.getDeclarePatternRoleAccess().getFullStopKeyword_1_0_1());
+                        
+                    // ../org.xtext.example.FlexoLanguage/src-gen/org/xtext/example/mydsl/parser/antlr/internal/InternalFML.g:988:1: ( (otherlv_4= RULE_ID ) )
+                    // ../org.xtext.example.FlexoLanguage/src-gen/org/xtext/example/mydsl/parser/antlr/internal/InternalFML.g:989:1: (otherlv_4= RULE_ID )
+                    {
+                    // ../org.xtext.example.FlexoLanguage/src-gen/org/xtext/example/mydsl/parser/antlr/internal/InternalFML.g:989:1: (otherlv_4= RULE_ID )
+                    // ../org.xtext.example.FlexoLanguage/src-gen/org/xtext/example/mydsl/parser/antlr/internal/InternalFML.g:990:3: otherlv_4= RULE_ID
+                    {
+
+                    			if (current==null) {
+                    	            current = createModelElement(grammarAccess.getDeclarePatternRoleRule());
+                    	        }
+                            
+                    otherlv_4=(Token)match(input,RULE_ID,FOLLOW_RULE_ID_in_ruleDeclarePatternRole2052); 
+
+                    		newLeafNode(otherlv_4, grammarAccess.getDeclarePatternRoleAccess().getParameterParameterCrossReference_1_0_2_0()); 
+                    	
+
+                    }
+
+
+                    }
+
+                    otherlv_5=(Token)match(input,25,FOLLOW_25_in_ruleDeclarePatternRole2064); 
+
+                        	newLeafNode(otherlv_5, grammarAccess.getDeclarePatternRoleAccess().getSemicolonKeyword_1_0_3());
+                        
+
+                    }
+
+
+                    }
+                    break;
+                case 2 :
+                    // ../org.xtext.example.FlexoLanguage/src-gen/org/xtext/example/mydsl/parser/antlr/internal/InternalFML.g:1006:6: ( (otherlv_6= '(' )+ ( (lv_add_7_0= ruleAddEMFObjectIndividual ) )+ otherlv_8= ')' )
+                    {
+                    // ../org.xtext.example.FlexoLanguage/src-gen/org/xtext/example/mydsl/parser/antlr/internal/InternalFML.g:1006:6: ( (otherlv_6= '(' )+ ( (lv_add_7_0= ruleAddEMFObjectIndividual ) )+ otherlv_8= ')' )
+                    // ../org.xtext.example.FlexoLanguage/src-gen/org/xtext/example/mydsl/parser/antlr/internal/InternalFML.g:1006:7: (otherlv_6= '(' )+ ( (lv_add_7_0= ruleAddEMFObjectIndividual ) )+ otherlv_8= ')'
+                    {
+                    // ../org.xtext.example.FlexoLanguage/src-gen/org/xtext/example/mydsl/parser/antlr/internal/InternalFML.g:1006:7: (otherlv_6= '(' )+
+                    int cnt30=0;
+                    loop30:
+                    do {
+                        int alt30=2;
+                        int LA30_0 = input.LA(1);
+
+                        if ( (LA30_0==31) ) {
+                            alt30=1;
+                        }
+
+
+                        switch (alt30) {
+                    	case 1 :
+                    	    // ../org.xtext.example.FlexoLanguage/src-gen/org/xtext/example/mydsl/parser/antlr/internal/InternalFML.g:1006:9: otherlv_6= '('
+                    	    {
+                    	    otherlv_6=(Token)match(input,31,FOLLOW_31_in_ruleDeclarePatternRole2085); 
+
+                    	        	newLeafNode(otherlv_6, grammarAccess.getDeclarePatternRoleAccess().getLeftParenthesisKeyword_1_1_0());
+                    	        
+
+                    	    }
+                    	    break;
+
+                    	default :
+                    	    if ( cnt30 >= 1 ) break loop30;
+                                EarlyExitException eee =
+                                    new EarlyExitException(30, input);
+                                throw eee;
+                        }
+                        cnt30++;
+                    } while (true);
+
+                    // ../org.xtext.example.FlexoLanguage/src-gen/org/xtext/example/mydsl/parser/antlr/internal/InternalFML.g:1010:3: ( (lv_add_7_0= ruleAddEMFObjectIndividual ) )+
+                    int cnt31=0;
+                    loop31:
+                    do {
+                        int alt31=2;
+                        int LA31_0 = input.LA(1);
+
+                        if ( (LA31_0==38) ) {
+                            alt31=1;
+                        }
+
+
+                        switch (alt31) {
+                    	case 1 :
+                    	    // ../org.xtext.example.FlexoLanguage/src-gen/org/xtext/example/mydsl/parser/antlr/internal/InternalFML.g:1011:1: (lv_add_7_0= ruleAddEMFObjectIndividual )
+                    	    {
+                    	    // ../org.xtext.example.FlexoLanguage/src-gen/org/xtext/example/mydsl/parser/antlr/internal/InternalFML.g:1011:1: (lv_add_7_0= ruleAddEMFObjectIndividual )
+                    	    // ../org.xtext.example.FlexoLanguage/src-gen/org/xtext/example/mydsl/parser/antlr/internal/InternalFML.g:1012:3: lv_add_7_0= ruleAddEMFObjectIndividual
+                    	    {
+                    	     
+                    	    	        newCompositeNode(grammarAccess.getDeclarePatternRoleAccess().getAddAddEMFObjectIndividualParserRuleCall_1_1_1_0()); 
+                    	    	    
+                    	    pushFollow(FOLLOW_ruleAddEMFObjectIndividual_in_ruleDeclarePatternRole2108);
+                    	    lv_add_7_0=ruleAddEMFObjectIndividual();
+
+                    	    state._fsp--;
+
+
+                    	    	        if (current==null) {
+                    	    	            current = createModelElementForParent(grammarAccess.getDeclarePatternRoleRule());
+                    	    	        }
+                    	           		add(
+                    	           			current, 
+                    	           			"add",
+                    	            		lv_add_7_0, 
+                    	            		"AddEMFObjectIndividual");
+                    	    	        afterParserOrEnumRuleCall();
+                    	    	    
+
+                    	    }
+
+
+                    	    }
+                    	    break;
+
+                    	default :
+                    	    if ( cnt31 >= 1 ) break loop31;
+                                EarlyExitException eee =
+                                    new EarlyExitException(31, input);
+                                throw eee;
+                        }
+                        cnt31++;
+                    } while (true);
+
+                    otherlv_8=(Token)match(input,33,FOLLOW_33_in_ruleDeclarePatternRole2121); 
+
+                        	newLeafNode(otherlv_8, grammarAccess.getDeclarePatternRoleAccess().getRightParenthesisKeyword_1_1_2());
+                        
+
+                    }
+
+
+                    }
+                    break;
 
             }
 
-
-            }
-
-            otherlv_5=(Token)match(input,25,FOLLOW_25_in_ruleDeclarePatternRole2031); 
-
-                	newLeafNode(otherlv_5, grammarAccess.getDeclarePatternRoleAccess().getSemicolonKeyword_5());
-                
 
             }
 
@@ -2618,7 +2839,7 @@ public class InternalFMLParser extends AbstractInternalAntlrParser {
 
 
     // $ANTLR start "entryRuleDeleteAction"
-    // ../org.xtext.example.FlexoLanguage/src-gen/org/xtext/example/mydsl/parser/antlr/internal/InternalFML.g:1003:1: entryRuleDeleteAction returns [EObject current=null] : iv_ruleDeleteAction= ruleDeleteAction EOF ;
+    // ../org.xtext.example.FlexoLanguage/src-gen/org/xtext/example/mydsl/parser/antlr/internal/InternalFML.g:1040:1: entryRuleDeleteAction returns [EObject current=null] : iv_ruleDeleteAction= ruleDeleteAction EOF ;
     public final EObject entryRuleDeleteAction() throws RecognitionException {
         EObject current = null;
 
@@ -2626,17 +2847,17 @@ public class InternalFMLParser extends AbstractInternalAntlrParser {
 
 
         try {
-            // ../org.xtext.example.FlexoLanguage/src-gen/org/xtext/example/mydsl/parser/antlr/internal/InternalFML.g:1004:2: (iv_ruleDeleteAction= ruleDeleteAction EOF )
-            // ../org.xtext.example.FlexoLanguage/src-gen/org/xtext/example/mydsl/parser/antlr/internal/InternalFML.g:1005:2: iv_ruleDeleteAction= ruleDeleteAction EOF
+            // ../org.xtext.example.FlexoLanguage/src-gen/org/xtext/example/mydsl/parser/antlr/internal/InternalFML.g:1041:2: (iv_ruleDeleteAction= ruleDeleteAction EOF )
+            // ../org.xtext.example.FlexoLanguage/src-gen/org/xtext/example/mydsl/parser/antlr/internal/InternalFML.g:1042:2: iv_ruleDeleteAction= ruleDeleteAction EOF
             {
              newCompositeNode(grammarAccess.getDeleteActionRule()); 
-            pushFollow(FOLLOW_ruleDeleteAction_in_entryRuleDeleteAction2067);
+            pushFollow(FOLLOW_ruleDeleteAction_in_entryRuleDeleteAction2159);
             iv_ruleDeleteAction=ruleDeleteAction();
 
             state._fsp--;
 
              current =iv_ruleDeleteAction; 
-            match(input,EOF,FOLLOW_EOF_in_entryRuleDeleteAction2077); 
+            match(input,EOF,FOLLOW_EOF_in_entryRuleDeleteAction2169); 
 
             }
 
@@ -2654,7 +2875,7 @@ public class InternalFMLParser extends AbstractInternalAntlrParser {
 
 
     // $ANTLR start "ruleDeleteAction"
-    // ../org.xtext.example.FlexoLanguage/src-gen/org/xtext/example/mydsl/parser/antlr/internal/InternalFML.g:1012:1: ruleDeleteAction returns [EObject current=null] : (otherlv_0= 'delete' ( (otherlv_1= RULE_ID ) ) otherlv_2= ';' ) ;
+    // ../org.xtext.example.FlexoLanguage/src-gen/org/xtext/example/mydsl/parser/antlr/internal/InternalFML.g:1049:1: ruleDeleteAction returns [EObject current=null] : (otherlv_0= 'delete' ( (otherlv_1= RULE_ID ) ) otherlv_2= ';' ) ;
     public final EObject ruleDeleteAction() throws RecognitionException {
         EObject current = null;
 
@@ -2665,28 +2886,28 @@ public class InternalFMLParser extends AbstractInternalAntlrParser {
          enterRule(); 
             
         try {
-            // ../org.xtext.example.FlexoLanguage/src-gen/org/xtext/example/mydsl/parser/antlr/internal/InternalFML.g:1015:28: ( (otherlv_0= 'delete' ( (otherlv_1= RULE_ID ) ) otherlv_2= ';' ) )
-            // ../org.xtext.example.FlexoLanguage/src-gen/org/xtext/example/mydsl/parser/antlr/internal/InternalFML.g:1016:1: (otherlv_0= 'delete' ( (otherlv_1= RULE_ID ) ) otherlv_2= ';' )
+            // ../org.xtext.example.FlexoLanguage/src-gen/org/xtext/example/mydsl/parser/antlr/internal/InternalFML.g:1052:28: ( (otherlv_0= 'delete' ( (otherlv_1= RULE_ID ) ) otherlv_2= ';' ) )
+            // ../org.xtext.example.FlexoLanguage/src-gen/org/xtext/example/mydsl/parser/antlr/internal/InternalFML.g:1053:1: (otherlv_0= 'delete' ( (otherlv_1= RULE_ID ) ) otherlv_2= ';' )
             {
-            // ../org.xtext.example.FlexoLanguage/src-gen/org/xtext/example/mydsl/parser/antlr/internal/InternalFML.g:1016:1: (otherlv_0= 'delete' ( (otherlv_1= RULE_ID ) ) otherlv_2= ';' )
-            // ../org.xtext.example.FlexoLanguage/src-gen/org/xtext/example/mydsl/parser/antlr/internal/InternalFML.g:1016:3: otherlv_0= 'delete' ( (otherlv_1= RULE_ID ) ) otherlv_2= ';'
+            // ../org.xtext.example.FlexoLanguage/src-gen/org/xtext/example/mydsl/parser/antlr/internal/InternalFML.g:1053:1: (otherlv_0= 'delete' ( (otherlv_1= RULE_ID ) ) otherlv_2= ';' )
+            // ../org.xtext.example.FlexoLanguage/src-gen/org/xtext/example/mydsl/parser/antlr/internal/InternalFML.g:1053:3: otherlv_0= 'delete' ( (otherlv_1= RULE_ID ) ) otherlv_2= ';'
             {
-            otherlv_0=(Token)match(input,37,FOLLOW_37_in_ruleDeleteAction2114); 
+            otherlv_0=(Token)match(input,37,FOLLOW_37_in_ruleDeleteAction2206); 
 
                 	newLeafNode(otherlv_0, grammarAccess.getDeleteActionAccess().getDeleteKeyword_0());
                 
-            // ../org.xtext.example.FlexoLanguage/src-gen/org/xtext/example/mydsl/parser/antlr/internal/InternalFML.g:1020:1: ( (otherlv_1= RULE_ID ) )
-            // ../org.xtext.example.FlexoLanguage/src-gen/org/xtext/example/mydsl/parser/antlr/internal/InternalFML.g:1021:1: (otherlv_1= RULE_ID )
+            // ../org.xtext.example.FlexoLanguage/src-gen/org/xtext/example/mydsl/parser/antlr/internal/InternalFML.g:1057:1: ( (otherlv_1= RULE_ID ) )
+            // ../org.xtext.example.FlexoLanguage/src-gen/org/xtext/example/mydsl/parser/antlr/internal/InternalFML.g:1058:1: (otherlv_1= RULE_ID )
             {
-            // ../org.xtext.example.FlexoLanguage/src-gen/org/xtext/example/mydsl/parser/antlr/internal/InternalFML.g:1021:1: (otherlv_1= RULE_ID )
-            // ../org.xtext.example.FlexoLanguage/src-gen/org/xtext/example/mydsl/parser/antlr/internal/InternalFML.g:1022:3: otherlv_1= RULE_ID
+            // ../org.xtext.example.FlexoLanguage/src-gen/org/xtext/example/mydsl/parser/antlr/internal/InternalFML.g:1058:1: (otherlv_1= RULE_ID )
+            // ../org.xtext.example.FlexoLanguage/src-gen/org/xtext/example/mydsl/parser/antlr/internal/InternalFML.g:1059:3: otherlv_1= RULE_ID
             {
 
             			if (current==null) {
             	            current = createModelElement(grammarAccess.getDeleteActionRule());
             	        }
                     
-            otherlv_1=(Token)match(input,RULE_ID,FOLLOW_RULE_ID_in_ruleDeleteAction2134); 
+            otherlv_1=(Token)match(input,RULE_ID,FOLLOW_RULE_ID_in_ruleDeleteAction2226); 
 
             		newLeafNode(otherlv_1, grammarAccess.getDeleteActionAccess().getPatternRolePatternRoleCrossReference_1_0()); 
             	
@@ -2696,7 +2917,7 @@ public class InternalFMLParser extends AbstractInternalAntlrParser {
 
             }
 
-            otherlv_2=(Token)match(input,25,FOLLOW_25_in_ruleDeleteAction2146); 
+            otherlv_2=(Token)match(input,25,FOLLOW_25_in_ruleDeleteAction2238); 
 
                 	newLeafNode(otherlv_2, grammarAccess.getDeleteActionAccess().getSemicolonKeyword_2());
                 
@@ -2720,8 +2941,148 @@ public class InternalFMLParser extends AbstractInternalAntlrParser {
     // $ANTLR end "ruleDeleteAction"
 
 
+    // $ANTLR start "entryRuleAddEMFObjectIndividual"
+    // ../org.xtext.example.FlexoLanguage/src-gen/org/xtext/example/mydsl/parser/antlr/internal/InternalFML.g:1082:1: entryRuleAddEMFObjectIndividual returns [EObject current=null] : iv_ruleAddEMFObjectIndividual= ruleAddEMFObjectIndividual EOF ;
+    public final EObject entryRuleAddEMFObjectIndividual() throws RecognitionException {
+        EObject current = null;
+
+        EObject iv_ruleAddEMFObjectIndividual = null;
+
+
+        try {
+            // ../org.xtext.example.FlexoLanguage/src-gen/org/xtext/example/mydsl/parser/antlr/internal/InternalFML.g:1083:2: (iv_ruleAddEMFObjectIndividual= ruleAddEMFObjectIndividual EOF )
+            // ../org.xtext.example.FlexoLanguage/src-gen/org/xtext/example/mydsl/parser/antlr/internal/InternalFML.g:1084:2: iv_ruleAddEMFObjectIndividual= ruleAddEMFObjectIndividual EOF
+            {
+             newCompositeNode(grammarAccess.getAddEMFObjectIndividualRule()); 
+            pushFollow(FOLLOW_ruleAddEMFObjectIndividual_in_entryRuleAddEMFObjectIndividual2274);
+            iv_ruleAddEMFObjectIndividual=ruleAddEMFObjectIndividual();
+
+            state._fsp--;
+
+             current =iv_ruleAddEMFObjectIndividual; 
+            match(input,EOF,FOLLOW_EOF_in_entryRuleAddEMFObjectIndividual2284); 
+
+            }
+
+        }
+         
+            catch (RecognitionException re) { 
+                recover(input,re); 
+                appendSkippedTokens();
+            } 
+        finally {
+        }
+        return current;
+    }
+    // $ANTLR end "entryRuleAddEMFObjectIndividual"
+
+
+    // $ANTLR start "ruleAddEMFObjectIndividual"
+    // ../org.xtext.example.FlexoLanguage/src-gen/org/xtext/example/mydsl/parser/antlr/internal/InternalFML.g:1091:1: ruleAddEMFObjectIndividual returns [EObject current=null] : (otherlv_0= 'AddEMFObjectIndividual' otherlv_1= 'conformTo' ( (otherlv_2= RULE_ID ) ) otherlv_3= 'from' ( (otherlv_4= RULE_ID ) ) otherlv_5= '{' otherlv_6= '}' ) ;
+    public final EObject ruleAddEMFObjectIndividual() throws RecognitionException {
+        EObject current = null;
+
+        Token otherlv_0=null;
+        Token otherlv_1=null;
+        Token otherlv_2=null;
+        Token otherlv_3=null;
+        Token otherlv_4=null;
+        Token otherlv_5=null;
+        Token otherlv_6=null;
+
+         enterRule(); 
+            
+        try {
+            // ../org.xtext.example.FlexoLanguage/src-gen/org/xtext/example/mydsl/parser/antlr/internal/InternalFML.g:1094:28: ( (otherlv_0= 'AddEMFObjectIndividual' otherlv_1= 'conformTo' ( (otherlv_2= RULE_ID ) ) otherlv_3= 'from' ( (otherlv_4= RULE_ID ) ) otherlv_5= '{' otherlv_6= '}' ) )
+            // ../org.xtext.example.FlexoLanguage/src-gen/org/xtext/example/mydsl/parser/antlr/internal/InternalFML.g:1095:1: (otherlv_0= 'AddEMFObjectIndividual' otherlv_1= 'conformTo' ( (otherlv_2= RULE_ID ) ) otherlv_3= 'from' ( (otherlv_4= RULE_ID ) ) otherlv_5= '{' otherlv_6= '}' )
+            {
+            // ../org.xtext.example.FlexoLanguage/src-gen/org/xtext/example/mydsl/parser/antlr/internal/InternalFML.g:1095:1: (otherlv_0= 'AddEMFObjectIndividual' otherlv_1= 'conformTo' ( (otherlv_2= RULE_ID ) ) otherlv_3= 'from' ( (otherlv_4= RULE_ID ) ) otherlv_5= '{' otherlv_6= '}' )
+            // ../org.xtext.example.FlexoLanguage/src-gen/org/xtext/example/mydsl/parser/antlr/internal/InternalFML.g:1095:3: otherlv_0= 'AddEMFObjectIndividual' otherlv_1= 'conformTo' ( (otherlv_2= RULE_ID ) ) otherlv_3= 'from' ( (otherlv_4= RULE_ID ) ) otherlv_5= '{' otherlv_6= '}'
+            {
+            otherlv_0=(Token)match(input,38,FOLLOW_38_in_ruleAddEMFObjectIndividual2321); 
+
+                	newLeafNode(otherlv_0, grammarAccess.getAddEMFObjectIndividualAccess().getAddEMFObjectIndividualKeyword_0());
+                
+            otherlv_1=(Token)match(input,22,FOLLOW_22_in_ruleAddEMFObjectIndividual2333); 
+
+                	newLeafNode(otherlv_1, grammarAccess.getAddEMFObjectIndividualAccess().getConformToKeyword_1());
+                
+            // ../org.xtext.example.FlexoLanguage/src-gen/org/xtext/example/mydsl/parser/antlr/internal/InternalFML.g:1103:1: ( (otherlv_2= RULE_ID ) )
+            // ../org.xtext.example.FlexoLanguage/src-gen/org/xtext/example/mydsl/parser/antlr/internal/InternalFML.g:1104:1: (otherlv_2= RULE_ID )
+            {
+            // ../org.xtext.example.FlexoLanguage/src-gen/org/xtext/example/mydsl/parser/antlr/internal/InternalFML.g:1104:1: (otherlv_2= RULE_ID )
+            // ../org.xtext.example.FlexoLanguage/src-gen/org/xtext/example/mydsl/parser/antlr/internal/InternalFML.g:1105:3: otherlv_2= RULE_ID
+            {
+
+            			if (current==null) {
+            	            current = createModelElement(grammarAccess.getAddEMFObjectIndividualRule());
+            	        }
+                    
+            otherlv_2=(Token)match(input,RULE_ID,FOLLOW_RULE_ID_in_ruleAddEMFObjectIndividual2353); 
+
+            		newLeafNode(otherlv_2, grammarAccess.getAddEMFObjectIndividualAccess().getEditionPatternEditionPatternCrossReference_2_0()); 
+            	
+
+            }
+
+
+            }
+
+            otherlv_3=(Token)match(input,30,FOLLOW_30_in_ruleAddEMFObjectIndividual2365); 
+
+                	newLeafNode(otherlv_3, grammarAccess.getAddEMFObjectIndividualAccess().getFromKeyword_3());
+                
+            // ../org.xtext.example.FlexoLanguage/src-gen/org/xtext/example/mydsl/parser/antlr/internal/InternalFML.g:1120:1: ( (otherlv_4= RULE_ID ) )
+            // ../org.xtext.example.FlexoLanguage/src-gen/org/xtext/example/mydsl/parser/antlr/internal/InternalFML.g:1121:1: (otherlv_4= RULE_ID )
+            {
+            // ../org.xtext.example.FlexoLanguage/src-gen/org/xtext/example/mydsl/parser/antlr/internal/InternalFML.g:1121:1: (otherlv_4= RULE_ID )
+            // ../org.xtext.example.FlexoLanguage/src-gen/org/xtext/example/mydsl/parser/antlr/internal/InternalFML.g:1122:3: otherlv_4= RULE_ID
+            {
+
+            			if (current==null) {
+            	            current = createModelElement(grammarAccess.getAddEMFObjectIndividualRule());
+            	        }
+                    
+            otherlv_4=(Token)match(input,RULE_ID,FOLLOW_RULE_ID_in_ruleAddEMFObjectIndividual2385); 
+
+            		newLeafNode(otherlv_4, grammarAccess.getAddEMFObjectIndividualAccess().getModelSlotModelSlotCrossReference_4_0()); 
+            	
+
+            }
+
+
+            }
+
+            otherlv_5=(Token)match(input,17,FOLLOW_17_in_ruleAddEMFObjectIndividual2397); 
+
+                	newLeafNode(otherlv_5, grammarAccess.getAddEMFObjectIndividualAccess().getLeftCurlyBracketKeyword_5());
+                
+            otherlv_6=(Token)match(input,18,FOLLOW_18_in_ruleAddEMFObjectIndividual2409); 
+
+                	newLeafNode(otherlv_6, grammarAccess.getAddEMFObjectIndividualAccess().getRightCurlyBracketKeyword_6());
+                
+
+            }
+
+
+            }
+
+             leaveRule(); 
+        }
+         
+            catch (RecognitionException re) { 
+                recover(input,re); 
+                appendSkippedTokens();
+            } 
+        finally {
+        }
+        return current;
+    }
+    // $ANTLR end "ruleAddEMFObjectIndividual"
+
+
     // $ANTLR start "ruleEditionSchemeType"
-    // ../org.xtext.example.FlexoLanguage/src-gen/org/xtext/example/mydsl/parser/antlr/internal/InternalFML.g:1045:1: ruleEditionSchemeType returns [Enumerator current=null] : ( (enumLiteral_0= 'CreationScheme' ) | (enumLiteral_1= 'DeletionScheme' ) | (enumLiteral_2= 'ActionScheme' ) | (enumLiteral_3= 'CloningScheme' ) ) ;
+    // ../org.xtext.example.FlexoLanguage/src-gen/org/xtext/example/mydsl/parser/antlr/internal/InternalFML.g:1149:1: ruleEditionSchemeType returns [Enumerator current=null] : ( (enumLiteral_0= 'CreationScheme' ) | (enumLiteral_1= 'DeletionScheme' ) | (enumLiteral_2= 'ActionScheme' ) | (enumLiteral_3= 'CloningScheme' ) ) ;
     public final Enumerator ruleEditionSchemeType() throws RecognitionException {
         Enumerator current = null;
 
@@ -2732,47 +3093,47 @@ public class InternalFMLParser extends AbstractInternalAntlrParser {
 
          enterRule(); 
         try {
-            // ../org.xtext.example.FlexoLanguage/src-gen/org/xtext/example/mydsl/parser/antlr/internal/InternalFML.g:1047:28: ( ( (enumLiteral_0= 'CreationScheme' ) | (enumLiteral_1= 'DeletionScheme' ) | (enumLiteral_2= 'ActionScheme' ) | (enumLiteral_3= 'CloningScheme' ) ) )
-            // ../org.xtext.example.FlexoLanguage/src-gen/org/xtext/example/mydsl/parser/antlr/internal/InternalFML.g:1048:1: ( (enumLiteral_0= 'CreationScheme' ) | (enumLiteral_1= 'DeletionScheme' ) | (enumLiteral_2= 'ActionScheme' ) | (enumLiteral_3= 'CloningScheme' ) )
+            // ../org.xtext.example.FlexoLanguage/src-gen/org/xtext/example/mydsl/parser/antlr/internal/InternalFML.g:1151:28: ( ( (enumLiteral_0= 'CreationScheme' ) | (enumLiteral_1= 'DeletionScheme' ) | (enumLiteral_2= 'ActionScheme' ) | (enumLiteral_3= 'CloningScheme' ) ) )
+            // ../org.xtext.example.FlexoLanguage/src-gen/org/xtext/example/mydsl/parser/antlr/internal/InternalFML.g:1152:1: ( (enumLiteral_0= 'CreationScheme' ) | (enumLiteral_1= 'DeletionScheme' ) | (enumLiteral_2= 'ActionScheme' ) | (enumLiteral_3= 'CloningScheme' ) )
             {
-            // ../org.xtext.example.FlexoLanguage/src-gen/org/xtext/example/mydsl/parser/antlr/internal/InternalFML.g:1048:1: ( (enumLiteral_0= 'CreationScheme' ) | (enumLiteral_1= 'DeletionScheme' ) | (enumLiteral_2= 'ActionScheme' ) | (enumLiteral_3= 'CloningScheme' ) )
-            int alt28=4;
+            // ../org.xtext.example.FlexoLanguage/src-gen/org/xtext/example/mydsl/parser/antlr/internal/InternalFML.g:1152:1: ( (enumLiteral_0= 'CreationScheme' ) | (enumLiteral_1= 'DeletionScheme' ) | (enumLiteral_2= 'ActionScheme' ) | (enumLiteral_3= 'CloningScheme' ) )
+            int alt33=4;
             switch ( input.LA(1) ) {
-            case 38:
-                {
-                alt28=1;
-                }
-                break;
             case 39:
                 {
-                alt28=2;
+                alt33=1;
                 }
                 break;
             case 40:
                 {
-                alt28=3;
+                alt33=2;
                 }
                 break;
             case 41:
                 {
-                alt28=4;
+                alt33=3;
+                }
+                break;
+            case 42:
+                {
+                alt33=4;
                 }
                 break;
             default:
                 NoViableAltException nvae =
-                    new NoViableAltException("", 28, 0, input);
+                    new NoViableAltException("", 33, 0, input);
 
                 throw nvae;
             }
 
-            switch (alt28) {
+            switch (alt33) {
                 case 1 :
-                    // ../org.xtext.example.FlexoLanguage/src-gen/org/xtext/example/mydsl/parser/antlr/internal/InternalFML.g:1048:2: (enumLiteral_0= 'CreationScheme' )
+                    // ../org.xtext.example.FlexoLanguage/src-gen/org/xtext/example/mydsl/parser/antlr/internal/InternalFML.g:1152:2: (enumLiteral_0= 'CreationScheme' )
                     {
-                    // ../org.xtext.example.FlexoLanguage/src-gen/org/xtext/example/mydsl/parser/antlr/internal/InternalFML.g:1048:2: (enumLiteral_0= 'CreationScheme' )
-                    // ../org.xtext.example.FlexoLanguage/src-gen/org/xtext/example/mydsl/parser/antlr/internal/InternalFML.g:1048:4: enumLiteral_0= 'CreationScheme'
+                    // ../org.xtext.example.FlexoLanguage/src-gen/org/xtext/example/mydsl/parser/antlr/internal/InternalFML.g:1152:2: (enumLiteral_0= 'CreationScheme' )
+                    // ../org.xtext.example.FlexoLanguage/src-gen/org/xtext/example/mydsl/parser/antlr/internal/InternalFML.g:1152:4: enumLiteral_0= 'CreationScheme'
                     {
-                    enumLiteral_0=(Token)match(input,38,FOLLOW_38_in_ruleEditionSchemeType2196); 
+                    enumLiteral_0=(Token)match(input,39,FOLLOW_39_in_ruleEditionSchemeType2459); 
 
                             current = grammarAccess.getEditionSchemeTypeAccess().getCreationSchemeEnumLiteralDeclaration_0().getEnumLiteral().getInstance();
                             newLeafNode(enumLiteral_0, grammarAccess.getEditionSchemeTypeAccess().getCreationSchemeEnumLiteralDeclaration_0()); 
@@ -2784,12 +3145,12 @@ public class InternalFMLParser extends AbstractInternalAntlrParser {
                     }
                     break;
                 case 2 :
-                    // ../org.xtext.example.FlexoLanguage/src-gen/org/xtext/example/mydsl/parser/antlr/internal/InternalFML.g:1054:6: (enumLiteral_1= 'DeletionScheme' )
+                    // ../org.xtext.example.FlexoLanguage/src-gen/org/xtext/example/mydsl/parser/antlr/internal/InternalFML.g:1158:6: (enumLiteral_1= 'DeletionScheme' )
                     {
-                    // ../org.xtext.example.FlexoLanguage/src-gen/org/xtext/example/mydsl/parser/antlr/internal/InternalFML.g:1054:6: (enumLiteral_1= 'DeletionScheme' )
-                    // ../org.xtext.example.FlexoLanguage/src-gen/org/xtext/example/mydsl/parser/antlr/internal/InternalFML.g:1054:8: enumLiteral_1= 'DeletionScheme'
+                    // ../org.xtext.example.FlexoLanguage/src-gen/org/xtext/example/mydsl/parser/antlr/internal/InternalFML.g:1158:6: (enumLiteral_1= 'DeletionScheme' )
+                    // ../org.xtext.example.FlexoLanguage/src-gen/org/xtext/example/mydsl/parser/antlr/internal/InternalFML.g:1158:8: enumLiteral_1= 'DeletionScheme'
                     {
-                    enumLiteral_1=(Token)match(input,39,FOLLOW_39_in_ruleEditionSchemeType2213); 
+                    enumLiteral_1=(Token)match(input,40,FOLLOW_40_in_ruleEditionSchemeType2476); 
 
                             current = grammarAccess.getEditionSchemeTypeAccess().getDeletionSchemeEnumLiteralDeclaration_1().getEnumLiteral().getInstance();
                             newLeafNode(enumLiteral_1, grammarAccess.getEditionSchemeTypeAccess().getDeletionSchemeEnumLiteralDeclaration_1()); 
@@ -2801,12 +3162,12 @@ public class InternalFMLParser extends AbstractInternalAntlrParser {
                     }
                     break;
                 case 3 :
-                    // ../org.xtext.example.FlexoLanguage/src-gen/org/xtext/example/mydsl/parser/antlr/internal/InternalFML.g:1060:6: (enumLiteral_2= 'ActionScheme' )
+                    // ../org.xtext.example.FlexoLanguage/src-gen/org/xtext/example/mydsl/parser/antlr/internal/InternalFML.g:1164:6: (enumLiteral_2= 'ActionScheme' )
                     {
-                    // ../org.xtext.example.FlexoLanguage/src-gen/org/xtext/example/mydsl/parser/antlr/internal/InternalFML.g:1060:6: (enumLiteral_2= 'ActionScheme' )
-                    // ../org.xtext.example.FlexoLanguage/src-gen/org/xtext/example/mydsl/parser/antlr/internal/InternalFML.g:1060:8: enumLiteral_2= 'ActionScheme'
+                    // ../org.xtext.example.FlexoLanguage/src-gen/org/xtext/example/mydsl/parser/antlr/internal/InternalFML.g:1164:6: (enumLiteral_2= 'ActionScheme' )
+                    // ../org.xtext.example.FlexoLanguage/src-gen/org/xtext/example/mydsl/parser/antlr/internal/InternalFML.g:1164:8: enumLiteral_2= 'ActionScheme'
                     {
-                    enumLiteral_2=(Token)match(input,40,FOLLOW_40_in_ruleEditionSchemeType2230); 
+                    enumLiteral_2=(Token)match(input,41,FOLLOW_41_in_ruleEditionSchemeType2493); 
 
                             current = grammarAccess.getEditionSchemeTypeAccess().getActionSchemeEnumLiteralDeclaration_2().getEnumLiteral().getInstance();
                             newLeafNode(enumLiteral_2, grammarAccess.getEditionSchemeTypeAccess().getActionSchemeEnumLiteralDeclaration_2()); 
@@ -2818,12 +3179,12 @@ public class InternalFMLParser extends AbstractInternalAntlrParser {
                     }
                     break;
                 case 4 :
-                    // ../org.xtext.example.FlexoLanguage/src-gen/org/xtext/example/mydsl/parser/antlr/internal/InternalFML.g:1066:6: (enumLiteral_3= 'CloningScheme' )
+                    // ../org.xtext.example.FlexoLanguage/src-gen/org/xtext/example/mydsl/parser/antlr/internal/InternalFML.g:1170:6: (enumLiteral_3= 'CloningScheme' )
                     {
-                    // ../org.xtext.example.FlexoLanguage/src-gen/org/xtext/example/mydsl/parser/antlr/internal/InternalFML.g:1066:6: (enumLiteral_3= 'CloningScheme' )
-                    // ../org.xtext.example.FlexoLanguage/src-gen/org/xtext/example/mydsl/parser/antlr/internal/InternalFML.g:1066:8: enumLiteral_3= 'CloningScheme'
+                    // ../org.xtext.example.FlexoLanguage/src-gen/org/xtext/example/mydsl/parser/antlr/internal/InternalFML.g:1170:6: (enumLiteral_3= 'CloningScheme' )
+                    // ../org.xtext.example.FlexoLanguage/src-gen/org/xtext/example/mydsl/parser/antlr/internal/InternalFML.g:1170:8: enumLiteral_3= 'CloningScheme'
                     {
-                    enumLiteral_3=(Token)match(input,41,FOLLOW_41_in_ruleEditionSchemeType2247); 
+                    enumLiteral_3=(Token)match(input,42,FOLLOW_42_in_ruleEditionSchemeType2510); 
 
                             current = grammarAccess.getEditionSchemeTypeAccess().getCloningSchemeEnumLiteralDeclaration_3().getEnumLiteral().getInstance();
                             newLeafNode(enumLiteral_3, grammarAccess.getEditionSchemeTypeAccess().getCloningSchemeEnumLiteralDeclaration_3()); 
@@ -2855,7 +3216,7 @@ public class InternalFMLParser extends AbstractInternalAntlrParser {
 
 
     // $ANTLR start "ruleMSTYPE"
-    // ../org.xtext.example.FlexoLanguage/src-gen/org/xtext/example/mydsl/parser/antlr/internal/InternalFML.g:1076:1: ruleMSTYPE returns [Enumerator current=null] : ( (enumLiteral_0= 'OWLModelSlot' ) | (enumLiteral_1= 'DiagramModelSlot' ) | (enumLiteral_2= 'EMFModelSlot' ) | (enumLiteral_3= 'VirtualModelModelSlot' ) | (enumLiteral_4= 'XSDModelSlot' ) ) ;
+    // ../org.xtext.example.FlexoLanguage/src-gen/org/xtext/example/mydsl/parser/antlr/internal/InternalFML.g:1180:1: ruleMSTYPE returns [Enumerator current=null] : ( (enumLiteral_0= 'OWLModelSlot' ) | (enumLiteral_1= 'DiagramModelSlot' ) | (enumLiteral_2= 'EMFModelSlot' ) | (enumLiteral_3= 'VirtualModelModelSlot' ) | (enumLiteral_4= 'XSDModelSlot' ) ) ;
     public final Enumerator ruleMSTYPE() throws RecognitionException {
         Enumerator current = null;
 
@@ -2867,52 +3228,52 @@ public class InternalFMLParser extends AbstractInternalAntlrParser {
 
          enterRule(); 
         try {
-            // ../org.xtext.example.FlexoLanguage/src-gen/org/xtext/example/mydsl/parser/antlr/internal/InternalFML.g:1078:28: ( ( (enumLiteral_0= 'OWLModelSlot' ) | (enumLiteral_1= 'DiagramModelSlot' ) | (enumLiteral_2= 'EMFModelSlot' ) | (enumLiteral_3= 'VirtualModelModelSlot' ) | (enumLiteral_4= 'XSDModelSlot' ) ) )
-            // ../org.xtext.example.FlexoLanguage/src-gen/org/xtext/example/mydsl/parser/antlr/internal/InternalFML.g:1079:1: ( (enumLiteral_0= 'OWLModelSlot' ) | (enumLiteral_1= 'DiagramModelSlot' ) | (enumLiteral_2= 'EMFModelSlot' ) | (enumLiteral_3= 'VirtualModelModelSlot' ) | (enumLiteral_4= 'XSDModelSlot' ) )
+            // ../org.xtext.example.FlexoLanguage/src-gen/org/xtext/example/mydsl/parser/antlr/internal/InternalFML.g:1182:28: ( ( (enumLiteral_0= 'OWLModelSlot' ) | (enumLiteral_1= 'DiagramModelSlot' ) | (enumLiteral_2= 'EMFModelSlot' ) | (enumLiteral_3= 'VirtualModelModelSlot' ) | (enumLiteral_4= 'XSDModelSlot' ) ) )
+            // ../org.xtext.example.FlexoLanguage/src-gen/org/xtext/example/mydsl/parser/antlr/internal/InternalFML.g:1183:1: ( (enumLiteral_0= 'OWLModelSlot' ) | (enumLiteral_1= 'DiagramModelSlot' ) | (enumLiteral_2= 'EMFModelSlot' ) | (enumLiteral_3= 'VirtualModelModelSlot' ) | (enumLiteral_4= 'XSDModelSlot' ) )
             {
-            // ../org.xtext.example.FlexoLanguage/src-gen/org/xtext/example/mydsl/parser/antlr/internal/InternalFML.g:1079:1: ( (enumLiteral_0= 'OWLModelSlot' ) | (enumLiteral_1= 'DiagramModelSlot' ) | (enumLiteral_2= 'EMFModelSlot' ) | (enumLiteral_3= 'VirtualModelModelSlot' ) | (enumLiteral_4= 'XSDModelSlot' ) )
-            int alt29=5;
+            // ../org.xtext.example.FlexoLanguage/src-gen/org/xtext/example/mydsl/parser/antlr/internal/InternalFML.g:1183:1: ( (enumLiteral_0= 'OWLModelSlot' ) | (enumLiteral_1= 'DiagramModelSlot' ) | (enumLiteral_2= 'EMFModelSlot' ) | (enumLiteral_3= 'VirtualModelModelSlot' ) | (enumLiteral_4= 'XSDModelSlot' ) )
+            int alt34=5;
             switch ( input.LA(1) ) {
-            case 42:
-                {
-                alt29=1;
-                }
-                break;
             case 43:
                 {
-                alt29=2;
+                alt34=1;
                 }
                 break;
             case 44:
                 {
-                alt29=3;
+                alt34=2;
                 }
                 break;
             case 45:
                 {
-                alt29=4;
+                alt34=3;
                 }
                 break;
             case 46:
                 {
-                alt29=5;
+                alt34=4;
+                }
+                break;
+            case 47:
+                {
+                alt34=5;
                 }
                 break;
             default:
                 NoViableAltException nvae =
-                    new NoViableAltException("", 29, 0, input);
+                    new NoViableAltException("", 34, 0, input);
 
                 throw nvae;
             }
 
-            switch (alt29) {
+            switch (alt34) {
                 case 1 :
-                    // ../org.xtext.example.FlexoLanguage/src-gen/org/xtext/example/mydsl/parser/antlr/internal/InternalFML.g:1079:2: (enumLiteral_0= 'OWLModelSlot' )
+                    // ../org.xtext.example.FlexoLanguage/src-gen/org/xtext/example/mydsl/parser/antlr/internal/InternalFML.g:1183:2: (enumLiteral_0= 'OWLModelSlot' )
                     {
-                    // ../org.xtext.example.FlexoLanguage/src-gen/org/xtext/example/mydsl/parser/antlr/internal/InternalFML.g:1079:2: (enumLiteral_0= 'OWLModelSlot' )
-                    // ../org.xtext.example.FlexoLanguage/src-gen/org/xtext/example/mydsl/parser/antlr/internal/InternalFML.g:1079:4: enumLiteral_0= 'OWLModelSlot'
+                    // ../org.xtext.example.FlexoLanguage/src-gen/org/xtext/example/mydsl/parser/antlr/internal/InternalFML.g:1183:2: (enumLiteral_0= 'OWLModelSlot' )
+                    // ../org.xtext.example.FlexoLanguage/src-gen/org/xtext/example/mydsl/parser/antlr/internal/InternalFML.g:1183:4: enumLiteral_0= 'OWLModelSlot'
                     {
-                    enumLiteral_0=(Token)match(input,42,FOLLOW_42_in_ruleMSTYPE2292); 
+                    enumLiteral_0=(Token)match(input,43,FOLLOW_43_in_ruleMSTYPE2555); 
 
                             current = grammarAccess.getMSTYPEAccess().getOwlEnumLiteralDeclaration_0().getEnumLiteral().getInstance();
                             newLeafNode(enumLiteral_0, grammarAccess.getMSTYPEAccess().getOwlEnumLiteralDeclaration_0()); 
@@ -2924,12 +3285,12 @@ public class InternalFMLParser extends AbstractInternalAntlrParser {
                     }
                     break;
                 case 2 :
-                    // ../org.xtext.example.FlexoLanguage/src-gen/org/xtext/example/mydsl/parser/antlr/internal/InternalFML.g:1085:6: (enumLiteral_1= 'DiagramModelSlot' )
+                    // ../org.xtext.example.FlexoLanguage/src-gen/org/xtext/example/mydsl/parser/antlr/internal/InternalFML.g:1189:6: (enumLiteral_1= 'DiagramModelSlot' )
                     {
-                    // ../org.xtext.example.FlexoLanguage/src-gen/org/xtext/example/mydsl/parser/antlr/internal/InternalFML.g:1085:6: (enumLiteral_1= 'DiagramModelSlot' )
-                    // ../org.xtext.example.FlexoLanguage/src-gen/org/xtext/example/mydsl/parser/antlr/internal/InternalFML.g:1085:8: enumLiteral_1= 'DiagramModelSlot'
+                    // ../org.xtext.example.FlexoLanguage/src-gen/org/xtext/example/mydsl/parser/antlr/internal/InternalFML.g:1189:6: (enumLiteral_1= 'DiagramModelSlot' )
+                    // ../org.xtext.example.FlexoLanguage/src-gen/org/xtext/example/mydsl/parser/antlr/internal/InternalFML.g:1189:8: enumLiteral_1= 'DiagramModelSlot'
                     {
-                    enumLiteral_1=(Token)match(input,43,FOLLOW_43_in_ruleMSTYPE2309); 
+                    enumLiteral_1=(Token)match(input,44,FOLLOW_44_in_ruleMSTYPE2572); 
 
                             current = grammarAccess.getMSTYPEAccess().getDiagEnumLiteralDeclaration_1().getEnumLiteral().getInstance();
                             newLeafNode(enumLiteral_1, grammarAccess.getMSTYPEAccess().getDiagEnumLiteralDeclaration_1()); 
@@ -2941,12 +3302,12 @@ public class InternalFMLParser extends AbstractInternalAntlrParser {
                     }
                     break;
                 case 3 :
-                    // ../org.xtext.example.FlexoLanguage/src-gen/org/xtext/example/mydsl/parser/antlr/internal/InternalFML.g:1091:6: (enumLiteral_2= 'EMFModelSlot' )
+                    // ../org.xtext.example.FlexoLanguage/src-gen/org/xtext/example/mydsl/parser/antlr/internal/InternalFML.g:1195:6: (enumLiteral_2= 'EMFModelSlot' )
                     {
-                    // ../org.xtext.example.FlexoLanguage/src-gen/org/xtext/example/mydsl/parser/antlr/internal/InternalFML.g:1091:6: (enumLiteral_2= 'EMFModelSlot' )
-                    // ../org.xtext.example.FlexoLanguage/src-gen/org/xtext/example/mydsl/parser/antlr/internal/InternalFML.g:1091:8: enumLiteral_2= 'EMFModelSlot'
+                    // ../org.xtext.example.FlexoLanguage/src-gen/org/xtext/example/mydsl/parser/antlr/internal/InternalFML.g:1195:6: (enumLiteral_2= 'EMFModelSlot' )
+                    // ../org.xtext.example.FlexoLanguage/src-gen/org/xtext/example/mydsl/parser/antlr/internal/InternalFML.g:1195:8: enumLiteral_2= 'EMFModelSlot'
                     {
-                    enumLiteral_2=(Token)match(input,44,FOLLOW_44_in_ruleMSTYPE2326); 
+                    enumLiteral_2=(Token)match(input,45,FOLLOW_45_in_ruleMSTYPE2589); 
 
                             current = grammarAccess.getMSTYPEAccess().getEmfEnumLiteralDeclaration_2().getEnumLiteral().getInstance();
                             newLeafNode(enumLiteral_2, grammarAccess.getMSTYPEAccess().getEmfEnumLiteralDeclaration_2()); 
@@ -2958,12 +3319,12 @@ public class InternalFMLParser extends AbstractInternalAntlrParser {
                     }
                     break;
                 case 4 :
-                    // ../org.xtext.example.FlexoLanguage/src-gen/org/xtext/example/mydsl/parser/antlr/internal/InternalFML.g:1097:6: (enumLiteral_3= 'VirtualModelModelSlot' )
+                    // ../org.xtext.example.FlexoLanguage/src-gen/org/xtext/example/mydsl/parser/antlr/internal/InternalFML.g:1201:6: (enumLiteral_3= 'VirtualModelModelSlot' )
                     {
-                    // ../org.xtext.example.FlexoLanguage/src-gen/org/xtext/example/mydsl/parser/antlr/internal/InternalFML.g:1097:6: (enumLiteral_3= 'VirtualModelModelSlot' )
-                    // ../org.xtext.example.FlexoLanguage/src-gen/org/xtext/example/mydsl/parser/antlr/internal/InternalFML.g:1097:8: enumLiteral_3= 'VirtualModelModelSlot'
+                    // ../org.xtext.example.FlexoLanguage/src-gen/org/xtext/example/mydsl/parser/antlr/internal/InternalFML.g:1201:6: (enumLiteral_3= 'VirtualModelModelSlot' )
+                    // ../org.xtext.example.FlexoLanguage/src-gen/org/xtext/example/mydsl/parser/antlr/internal/InternalFML.g:1201:8: enumLiteral_3= 'VirtualModelModelSlot'
                     {
-                    enumLiteral_3=(Token)match(input,45,FOLLOW_45_in_ruleMSTYPE2343); 
+                    enumLiteral_3=(Token)match(input,46,FOLLOW_46_in_ruleMSTYPE2606); 
 
                             current = grammarAccess.getMSTYPEAccess().getVirtualEnumLiteralDeclaration_3().getEnumLiteral().getInstance();
                             newLeafNode(enumLiteral_3, grammarAccess.getMSTYPEAccess().getVirtualEnumLiteralDeclaration_3()); 
@@ -2975,12 +3336,12 @@ public class InternalFMLParser extends AbstractInternalAntlrParser {
                     }
                     break;
                 case 5 :
-                    // ../org.xtext.example.FlexoLanguage/src-gen/org/xtext/example/mydsl/parser/antlr/internal/InternalFML.g:1103:6: (enumLiteral_4= 'XSDModelSlot' )
+                    // ../org.xtext.example.FlexoLanguage/src-gen/org/xtext/example/mydsl/parser/antlr/internal/InternalFML.g:1207:6: (enumLiteral_4= 'XSDModelSlot' )
                     {
-                    // ../org.xtext.example.FlexoLanguage/src-gen/org/xtext/example/mydsl/parser/antlr/internal/InternalFML.g:1103:6: (enumLiteral_4= 'XSDModelSlot' )
-                    // ../org.xtext.example.FlexoLanguage/src-gen/org/xtext/example/mydsl/parser/antlr/internal/InternalFML.g:1103:8: enumLiteral_4= 'XSDModelSlot'
+                    // ../org.xtext.example.FlexoLanguage/src-gen/org/xtext/example/mydsl/parser/antlr/internal/InternalFML.g:1207:6: (enumLiteral_4= 'XSDModelSlot' )
+                    // ../org.xtext.example.FlexoLanguage/src-gen/org/xtext/example/mydsl/parser/antlr/internal/InternalFML.g:1207:8: enumLiteral_4= 'XSDModelSlot'
                     {
-                    enumLiteral_4=(Token)match(input,46,FOLLOW_46_in_ruleMSTYPE2360); 
+                    enumLiteral_4=(Token)match(input,47,FOLLOW_47_in_ruleMSTYPE2623); 
 
                             current = grammarAccess.getMSTYPEAccess().getXsdEnumLiteralDeclaration_4().getEnumLiteral().getInstance();
                             newLeafNode(enumLiteral_4, grammarAccess.getMSTYPEAccess().getXsdEnumLiteralDeclaration_4()); 
@@ -3012,7 +3373,7 @@ public class InternalFMLParser extends AbstractInternalAntlrParser {
 
 
     // $ANTLR start "ruleVMTYPE"
-    // ../org.xtext.example.FlexoLanguage/src-gen/org/xtext/example/mydsl/parser/antlr/internal/InternalFML.g:1113:1: ruleVMTYPE returns [Enumerator current=null] : ( (enumLiteral_0= 'DiagramSpecification' ) | (enumLiteral_1= 'VirtualModel' ) ) ;
+    // ../org.xtext.example.FlexoLanguage/src-gen/org/xtext/example/mydsl/parser/antlr/internal/InternalFML.g:1217:1: ruleVMTYPE returns [Enumerator current=null] : ( (enumLiteral_0= 'DiagramSpecification' ) | (enumLiteral_1= 'VirtualModel' ) ) ;
     public final Enumerator ruleVMTYPE() throws RecognitionException {
         Enumerator current = null;
 
@@ -3021,33 +3382,33 @@ public class InternalFMLParser extends AbstractInternalAntlrParser {
 
          enterRule(); 
         try {
-            // ../org.xtext.example.FlexoLanguage/src-gen/org/xtext/example/mydsl/parser/antlr/internal/InternalFML.g:1115:28: ( ( (enumLiteral_0= 'DiagramSpecification' ) | (enumLiteral_1= 'VirtualModel' ) ) )
-            // ../org.xtext.example.FlexoLanguage/src-gen/org/xtext/example/mydsl/parser/antlr/internal/InternalFML.g:1116:1: ( (enumLiteral_0= 'DiagramSpecification' ) | (enumLiteral_1= 'VirtualModel' ) )
+            // ../org.xtext.example.FlexoLanguage/src-gen/org/xtext/example/mydsl/parser/antlr/internal/InternalFML.g:1219:28: ( ( (enumLiteral_0= 'DiagramSpecification' ) | (enumLiteral_1= 'VirtualModel' ) ) )
+            // ../org.xtext.example.FlexoLanguage/src-gen/org/xtext/example/mydsl/parser/antlr/internal/InternalFML.g:1220:1: ( (enumLiteral_0= 'DiagramSpecification' ) | (enumLiteral_1= 'VirtualModel' ) )
             {
-            // ../org.xtext.example.FlexoLanguage/src-gen/org/xtext/example/mydsl/parser/antlr/internal/InternalFML.g:1116:1: ( (enumLiteral_0= 'DiagramSpecification' ) | (enumLiteral_1= 'VirtualModel' ) )
-            int alt30=2;
-            int LA30_0 = input.LA(1);
+            // ../org.xtext.example.FlexoLanguage/src-gen/org/xtext/example/mydsl/parser/antlr/internal/InternalFML.g:1220:1: ( (enumLiteral_0= 'DiagramSpecification' ) | (enumLiteral_1= 'VirtualModel' ) )
+            int alt35=2;
+            int LA35_0 = input.LA(1);
 
-            if ( (LA30_0==47) ) {
-                alt30=1;
+            if ( (LA35_0==48) ) {
+                alt35=1;
             }
-            else if ( (LA30_0==19) ) {
-                alt30=2;
+            else if ( (LA35_0==19) ) {
+                alt35=2;
             }
             else {
                 NoViableAltException nvae =
-                    new NoViableAltException("", 30, 0, input);
+                    new NoViableAltException("", 35, 0, input);
 
                 throw nvae;
             }
-            switch (alt30) {
+            switch (alt35) {
                 case 1 :
-                    // ../org.xtext.example.FlexoLanguage/src-gen/org/xtext/example/mydsl/parser/antlr/internal/InternalFML.g:1116:2: (enumLiteral_0= 'DiagramSpecification' )
+                    // ../org.xtext.example.FlexoLanguage/src-gen/org/xtext/example/mydsl/parser/antlr/internal/InternalFML.g:1220:2: (enumLiteral_0= 'DiagramSpecification' )
                     {
-                    // ../org.xtext.example.FlexoLanguage/src-gen/org/xtext/example/mydsl/parser/antlr/internal/InternalFML.g:1116:2: (enumLiteral_0= 'DiagramSpecification' )
-                    // ../org.xtext.example.FlexoLanguage/src-gen/org/xtext/example/mydsl/parser/antlr/internal/InternalFML.g:1116:4: enumLiteral_0= 'DiagramSpecification'
+                    // ../org.xtext.example.FlexoLanguage/src-gen/org/xtext/example/mydsl/parser/antlr/internal/InternalFML.g:1220:2: (enumLiteral_0= 'DiagramSpecification' )
+                    // ../org.xtext.example.FlexoLanguage/src-gen/org/xtext/example/mydsl/parser/antlr/internal/InternalFML.g:1220:4: enumLiteral_0= 'DiagramSpecification'
                     {
-                    enumLiteral_0=(Token)match(input,47,FOLLOW_47_in_ruleVMTYPE2405); 
+                    enumLiteral_0=(Token)match(input,48,FOLLOW_48_in_ruleVMTYPE2668); 
 
                             current = grammarAccess.getVMTYPEAccess().getDiagSpecEnumLiteralDeclaration_0().getEnumLiteral().getInstance();
                             newLeafNode(enumLiteral_0, grammarAccess.getVMTYPEAccess().getDiagSpecEnumLiteralDeclaration_0()); 
@@ -3059,12 +3420,12 @@ public class InternalFMLParser extends AbstractInternalAntlrParser {
                     }
                     break;
                 case 2 :
-                    // ../org.xtext.example.FlexoLanguage/src-gen/org/xtext/example/mydsl/parser/antlr/internal/InternalFML.g:1122:6: (enumLiteral_1= 'VirtualModel' )
+                    // ../org.xtext.example.FlexoLanguage/src-gen/org/xtext/example/mydsl/parser/antlr/internal/InternalFML.g:1226:6: (enumLiteral_1= 'VirtualModel' )
                     {
-                    // ../org.xtext.example.FlexoLanguage/src-gen/org/xtext/example/mydsl/parser/antlr/internal/InternalFML.g:1122:6: (enumLiteral_1= 'VirtualModel' )
-                    // ../org.xtext.example.FlexoLanguage/src-gen/org/xtext/example/mydsl/parser/antlr/internal/InternalFML.g:1122:8: enumLiteral_1= 'VirtualModel'
+                    // ../org.xtext.example.FlexoLanguage/src-gen/org/xtext/example/mydsl/parser/antlr/internal/InternalFML.g:1226:6: (enumLiteral_1= 'VirtualModel' )
+                    // ../org.xtext.example.FlexoLanguage/src-gen/org/xtext/example/mydsl/parser/antlr/internal/InternalFML.g:1226:8: enumLiteral_1= 'VirtualModel'
                     {
-                    enumLiteral_1=(Token)match(input,19,FOLLOW_19_in_ruleVMTYPE2422); 
+                    enumLiteral_1=(Token)match(input,19,FOLLOW_19_in_ruleVMTYPE2685); 
 
                             current = grammarAccess.getVMTYPEAccess().getVMEnumLiteralDeclaration_1().getEnumLiteral().getInstance();
                             newLeafNode(enumLiteral_1, grammarAccess.getVMTYPEAccess().getVMEnumLiteralDeclaration_1()); 
@@ -3096,7 +3457,7 @@ public class InternalFMLParser extends AbstractInternalAntlrParser {
 
 
     // $ANTLR start "rulePRTYPE"
-    // ../org.xtext.example.FlexoLanguage/src-gen/org/xtext/example/mydsl/parser/antlr/internal/InternalFML.g:1132:1: rulePRTYPE returns [Enumerator current=null] : (enumLiteral_0= 'Individual' ) ;
+    // ../org.xtext.example.FlexoLanguage/src-gen/org/xtext/example/mydsl/parser/antlr/internal/InternalFML.g:1236:1: rulePRTYPE returns [Enumerator current=null] : (enumLiteral_0= 'Individual' ) ;
     public final Enumerator rulePRTYPE() throws RecognitionException {
         Enumerator current = null;
 
@@ -3104,13 +3465,13 @@ public class InternalFMLParser extends AbstractInternalAntlrParser {
 
          enterRule(); 
         try {
-            // ../org.xtext.example.FlexoLanguage/src-gen/org/xtext/example/mydsl/parser/antlr/internal/InternalFML.g:1134:28: ( (enumLiteral_0= 'Individual' ) )
-            // ../org.xtext.example.FlexoLanguage/src-gen/org/xtext/example/mydsl/parser/antlr/internal/InternalFML.g:1135:1: (enumLiteral_0= 'Individual' )
+            // ../org.xtext.example.FlexoLanguage/src-gen/org/xtext/example/mydsl/parser/antlr/internal/InternalFML.g:1238:28: ( (enumLiteral_0= 'Individual' ) )
+            // ../org.xtext.example.FlexoLanguage/src-gen/org/xtext/example/mydsl/parser/antlr/internal/InternalFML.g:1239:1: (enumLiteral_0= 'Individual' )
             {
-            // ../org.xtext.example.FlexoLanguage/src-gen/org/xtext/example/mydsl/parser/antlr/internal/InternalFML.g:1135:1: (enumLiteral_0= 'Individual' )
-            // ../org.xtext.example.FlexoLanguage/src-gen/org/xtext/example/mydsl/parser/antlr/internal/InternalFML.g:1135:3: enumLiteral_0= 'Individual'
+            // ../org.xtext.example.FlexoLanguage/src-gen/org/xtext/example/mydsl/parser/antlr/internal/InternalFML.g:1239:1: (enumLiteral_0= 'Individual' )
+            // ../org.xtext.example.FlexoLanguage/src-gen/org/xtext/example/mydsl/parser/antlr/internal/InternalFML.g:1239:3: enumLiteral_0= 'Individual'
             {
-            enumLiteral_0=(Token)match(input,48,FOLLOW_48_in_rulePRTYPE2466); 
+            enumLiteral_0=(Token)match(input,49,FOLLOW_49_in_rulePRTYPE2729); 
 
                     current = grammarAccess.getPRTYPEAccess().getIndividualEnumLiteralDeclaration().getEnumLiteral().getInstance();
                     newLeafNode(enumLiteral_0, grammarAccess.getPRTYPEAccess().getIndividualEnumLiteralDeclaration()); 
@@ -3154,7 +3515,7 @@ public class InternalFMLParser extends AbstractInternalAntlrParser {
     public static final BitSet FOLLOW_19_in_ruleVirtualModel325 = new BitSet(new long[]{0x0000000000000010L});
     public static final BitSet FOLLOW_RULE_ID_in_ruleVirtualModel342 = new BitSet(new long[]{0x0000000000108000L});
     public static final BitSet FOLLOW_20_in_ruleVirtualModel361 = new BitSet(new long[]{0x0000000000110000L});
-    public static final BitSet FOLLOW_16_in_ruleVirtualModel376 = new BitSet(new long[]{0x0000800000090000L});
+    public static final BitSet FOLLOW_16_in_ruleVirtualModel376 = new BitSet(new long[]{0x0001000000090000L});
     public static final BitSet FOLLOW_ruleVMTYPE_in_ruleVirtualModel399 = new BitSet(new long[]{0x0000000000008000L});
     public static final BitSet FOLLOW_15_in_ruleVirtualModel414 = new BitSet(new long[]{0x0000000000018000L});
     public static final BitSet FOLLOW_16_in_ruleVirtualModel429 = new BitSet(new long[]{0x0000000000010020L});
@@ -3168,7 +3529,7 @@ public class InternalFMLParser extends AbstractInternalAntlrParser {
     public static final BitSet FOLLOW_21_in_ruleModelSlot604 = new BitSet(new long[]{0x0000000000000010L});
     public static final BitSet FOLLOW_RULE_ID_in_ruleModelSlot621 = new BitSet(new long[]{0x0000000000100000L});
     public static final BitSet FOLLOW_20_in_ruleModelSlot639 = new BitSet(new long[]{0x0000000000110000L});
-    public static final BitSet FOLLOW_16_in_ruleModelSlot654 = new BitSet(new long[]{0x00007C0000010000L});
+    public static final BitSet FOLLOW_16_in_ruleModelSlot654 = new BitSet(new long[]{0x0000F80000010000L});
     public static final BitSet FOLLOW_ruleMSTYPE_in_ruleModelSlot677 = new BitSet(new long[]{0x0000000000400000L});
     public static final BitSet FOLLOW_22_in_ruleModelSlot690 = new BitSet(new long[]{0x0000000000410000L});
     public static final BitSet FOLLOW_16_in_ruleModelSlot705 = new BitSet(new long[]{0x0000000000010020L});
@@ -3186,18 +3547,18 @@ public class InternalFMLParser extends AbstractInternalAntlrParser {
     public static final BitSet FOLLOW_RULE_ID_in_ruleEditionPattern945 = new BitSet(new long[]{0x0000000008020000L});
     public static final BitSet FOLLOW_27_in_ruleEditionPattern963 = new BitSet(new long[]{0x0000000000000010L});
     public static final BitSet FOLLOW_RULE_ID_in_ruleEditionPattern983 = new BitSet(new long[]{0x0000000000020000L});
-    public static final BitSet FOLLOW_17_in_ruleEditionPattern997 = new BitSet(new long[]{0x000003C010040000L});
-    public static final BitSet FOLLOW_rulePatternRole_in_ruleEditionPattern1018 = new BitSet(new long[]{0x000003C010040000L});
-    public static final BitSet FOLLOW_ruleEditionScheme_in_ruleEditionPattern1040 = new BitSet(new long[]{0x000003C000040000L});
+    public static final BitSet FOLLOW_17_in_ruleEditionPattern997 = new BitSet(new long[]{0x0000078010040000L});
+    public static final BitSet FOLLOW_rulePatternRole_in_ruleEditionPattern1018 = new BitSet(new long[]{0x0000078010040000L});
+    public static final BitSet FOLLOW_ruleEditionScheme_in_ruleEditionPattern1040 = new BitSet(new long[]{0x0000078000040000L});
     public static final BitSet FOLLOW_18_in_ruleEditionPattern1053 = new BitSet(new long[]{0x0000000000000002L});
     public static final BitSet FOLLOW_rulePatternRole_in_entryRulePatternRole1089 = new BitSet(new long[]{0x0000000000000000L});
     public static final BitSet FOLLOW_EOF_in_entryRulePatternRole1099 = new BitSet(new long[]{0x0000000000000002L});
     public static final BitSet FOLLOW_28_in_rulePatternRole1136 = new BitSet(new long[]{0x0000000000000010L});
     public static final BitSet FOLLOW_RULE_ID_in_rulePatternRole1153 = new BitSet(new long[]{0x0000000020000000L});
-    public static final BitSet FOLLOW_29_in_rulePatternRole1170 = new BitSet(new long[]{0x0001000000000000L});
+    public static final BitSet FOLLOW_29_in_rulePatternRole1170 = new BitSet(new long[]{0x0002000000000000L});
     public static final BitSet FOLLOW_rulePRTYPE_in_rulePatternRole1191 = new BitSet(new long[]{0x0000000000400000L});
-    public static final BitSet FOLLOW_22_in_rulePatternRole1203 = new BitSet(new long[]{0x0000000000000080L});
-    public static final BitSet FOLLOW_RULE_STRING_in_rulePatternRole1220 = new BitSet(new long[]{0x0000000040000000L});
+    public static final BitSet FOLLOW_22_in_rulePatternRole1203 = new BitSet(new long[]{0x0000000000000010L});
+    public static final BitSet FOLLOW_RULE_ID_in_rulePatternRole1220 = new BitSet(new long[]{0x0000000040000000L});
     public static final BitSet FOLLOW_30_in_rulePatternRole1237 = new BitSet(new long[]{0x0000000000000010L});
     public static final BitSet FOLLOW_RULE_ID_in_rulePatternRole1257 = new BitSet(new long[]{0x0000000002000000L});
     public static final BitSet FOLLOW_25_in_rulePatternRole1269 = new BitSet(new long[]{0x0000000000000002L});
@@ -3205,13 +3566,13 @@ public class InternalFMLParser extends AbstractInternalAntlrParser {
     public static final BitSet FOLLOW_EOF_in_entryRuleEditionScheme1315 = new BitSet(new long[]{0x0000000000000002L});
     public static final BitSet FOLLOW_ruleEditionSchemeType_in_ruleEditionScheme1361 = new BitSet(new long[]{0x0000000000000010L});
     public static final BitSet FOLLOW_RULE_ID_in_ruleEditionScheme1378 = new BitSet(new long[]{0x0000000080000000L});
-    public static final BitSet FOLLOW_31_in_ruleEditionScheme1395 = new BitSet(new long[]{0x0001000200000000L});
-    public static final BitSet FOLLOW_ruleParameter_in_ruleEditionScheme1417 = new BitSet(new long[]{0x0001000300000000L});
-    public static final BitSet FOLLOW_32_in_ruleEditionScheme1432 = new BitSet(new long[]{0x0001000100000000L});
+    public static final BitSet FOLLOW_31_in_ruleEditionScheme1395 = new BitSet(new long[]{0x0002000200000000L});
+    public static final BitSet FOLLOW_ruleParameter_in_ruleEditionScheme1417 = new BitSet(new long[]{0x0002000300000000L});
+    public static final BitSet FOLLOW_32_in_ruleEditionScheme1432 = new BitSet(new long[]{0x0002000100000000L});
     public static final BitSet FOLLOW_ruleParameter_in_ruleEditionScheme1455 = new BitSet(new long[]{0x0000000300000000L});
     public static final BitSet FOLLOW_33_in_ruleEditionScheme1471 = new BitSet(new long[]{0x0000000000020000L});
-    public static final BitSet FOLLOW_17_in_ruleEditionScheme1483 = new BitSet(new long[]{0x0000002000040010L});
-    public static final BitSet FOLLOW_ruleEditionAction_in_ruleEditionScheme1504 = new BitSet(new long[]{0x0000002000040010L});
+    public static final BitSet FOLLOW_17_in_ruleEditionScheme1483 = new BitSet(new long[]{0x0000006000040010L});
+    public static final BitSet FOLLOW_ruleEditionAction_in_ruleEditionScheme1504 = new BitSet(new long[]{0x0000006000040010L});
     public static final BitSet FOLLOW_18_in_ruleEditionScheme1517 = new BitSet(new long[]{0x0000000000000002L});
     public static final BitSet FOLLOW_ruleParameter_in_entryRuleParameter1553 = new BitSet(new long[]{0x0000000000000000L});
     public static final BitSet FOLLOW_EOF_in_entryRuleParameter1563 = new BitSet(new long[]{0x0000000000000002L});
@@ -3226,30 +3587,43 @@ public class InternalFMLParser extends AbstractInternalAntlrParser {
     public static final BitSet FOLLOW_EOF_in_entryRuleBuiltInAction1799 = new BitSet(new long[]{0x0000000000000002L});
     public static final BitSet FOLLOW_ruleDeclarePatternRole_in_ruleBuiltInAction1846 = new BitSet(new long[]{0x0000000000000002L});
     public static final BitSet FOLLOW_ruleDeleteAction_in_ruleBuiltInAction1873 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_ruleDeclarePatternRole_in_entryRuleDeclarePatternRole1908 = new BitSet(new long[]{0x0000000000000000L});
-    public static final BitSet FOLLOW_EOF_in_entryRuleDeclarePatternRole1918 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_RULE_ID_in_ruleDeclarePatternRole1963 = new BitSet(new long[]{0x0000000000010000L});
-    public static final BitSet FOLLOW_16_in_ruleDeclarePatternRole1975 = new BitSet(new long[]{0x0000000800000000L});
-    public static final BitSet FOLLOW_35_in_ruleDeclarePatternRole1987 = new BitSet(new long[]{0x0000001000000000L});
-    public static final BitSet FOLLOW_36_in_ruleDeclarePatternRole1999 = new BitSet(new long[]{0x0000000000000010L});
-    public static final BitSet FOLLOW_RULE_ID_in_ruleDeclarePatternRole2019 = new BitSet(new long[]{0x0000000002000000L});
-    public static final BitSet FOLLOW_25_in_ruleDeclarePatternRole2031 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_ruleDeleteAction_in_entryRuleDeleteAction2067 = new BitSet(new long[]{0x0000000000000000L});
-    public static final BitSet FOLLOW_EOF_in_entryRuleDeleteAction2077 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_37_in_ruleDeleteAction2114 = new BitSet(new long[]{0x0000000000000010L});
-    public static final BitSet FOLLOW_RULE_ID_in_ruleDeleteAction2134 = new BitSet(new long[]{0x0000000002000000L});
-    public static final BitSet FOLLOW_25_in_ruleDeleteAction2146 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_38_in_ruleEditionSchemeType2196 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_39_in_ruleEditionSchemeType2213 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_40_in_ruleEditionSchemeType2230 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_41_in_ruleEditionSchemeType2247 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_42_in_ruleMSTYPE2292 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_43_in_ruleMSTYPE2309 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_44_in_ruleMSTYPE2326 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_45_in_ruleMSTYPE2343 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_46_in_ruleMSTYPE2360 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_47_in_ruleVMTYPE2405 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_19_in_ruleVMTYPE2422 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_48_in_rulePRTYPE2466 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_ruleAddEMFObjectIndividual_in_ruleBuiltInAction1900 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_ruleDeclarePatternRole_in_entryRuleDeclarePatternRole1935 = new BitSet(new long[]{0x0000000000000000L});
+    public static final BitSet FOLLOW_EOF_in_entryRuleDeclarePatternRole1945 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_RULE_ID_in_ruleDeclarePatternRole1991 = new BitSet(new long[]{0x0000000000010010L});
+    public static final BitSet FOLLOW_16_in_ruleDeclarePatternRole2004 = new BitSet(new long[]{0x0000000880000010L});
+    public static final BitSet FOLLOW_35_in_ruleDeclarePatternRole2020 = new BitSet(new long[]{0x0000001000000000L});
+    public static final BitSet FOLLOW_36_in_ruleDeclarePatternRole2032 = new BitSet(new long[]{0x0000000000000010L});
+    public static final BitSet FOLLOW_RULE_ID_in_ruleDeclarePatternRole2052 = new BitSet(new long[]{0x0000000002000000L});
+    public static final BitSet FOLLOW_25_in_ruleDeclarePatternRole2064 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_31_in_ruleDeclarePatternRole2085 = new BitSet(new long[]{0x0000006080000010L});
+    public static final BitSet FOLLOW_ruleAddEMFObjectIndividual_in_ruleDeclarePatternRole2108 = new BitSet(new long[]{0x0000006200000010L});
+    public static final BitSet FOLLOW_33_in_ruleDeclarePatternRole2121 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_ruleDeleteAction_in_entryRuleDeleteAction2159 = new BitSet(new long[]{0x0000000000000000L});
+    public static final BitSet FOLLOW_EOF_in_entryRuleDeleteAction2169 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_37_in_ruleDeleteAction2206 = new BitSet(new long[]{0x0000000000000010L});
+    public static final BitSet FOLLOW_RULE_ID_in_ruleDeleteAction2226 = new BitSet(new long[]{0x0000000002000000L});
+    public static final BitSet FOLLOW_25_in_ruleDeleteAction2238 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_ruleAddEMFObjectIndividual_in_entryRuleAddEMFObjectIndividual2274 = new BitSet(new long[]{0x0000000000000000L});
+    public static final BitSet FOLLOW_EOF_in_entryRuleAddEMFObjectIndividual2284 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_38_in_ruleAddEMFObjectIndividual2321 = new BitSet(new long[]{0x0000000000400000L});
+    public static final BitSet FOLLOW_22_in_ruleAddEMFObjectIndividual2333 = new BitSet(new long[]{0x0000000000000010L});
+    public static final BitSet FOLLOW_RULE_ID_in_ruleAddEMFObjectIndividual2353 = new BitSet(new long[]{0x0000000040000000L});
+    public static final BitSet FOLLOW_30_in_ruleAddEMFObjectIndividual2365 = new BitSet(new long[]{0x0000000000000010L});
+    public static final BitSet FOLLOW_RULE_ID_in_ruleAddEMFObjectIndividual2385 = new BitSet(new long[]{0x0000000000020000L});
+    public static final BitSet FOLLOW_17_in_ruleAddEMFObjectIndividual2397 = new BitSet(new long[]{0x0000000000040000L});
+    public static final BitSet FOLLOW_18_in_ruleAddEMFObjectIndividual2409 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_39_in_ruleEditionSchemeType2459 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_40_in_ruleEditionSchemeType2476 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_41_in_ruleEditionSchemeType2493 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_42_in_ruleEditionSchemeType2510 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_43_in_ruleMSTYPE2555 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_44_in_ruleMSTYPE2572 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_45_in_ruleMSTYPE2589 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_46_in_ruleMSTYPE2606 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_47_in_ruleMSTYPE2623 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_48_in_ruleVMTYPE2668 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_19_in_ruleVMTYPE2685 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_49_in_rulePRTYPE2729 = new BitSet(new long[]{0x0000000000000002L});
 
 }

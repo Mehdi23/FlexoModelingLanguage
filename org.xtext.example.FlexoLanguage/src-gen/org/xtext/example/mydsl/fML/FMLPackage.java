@@ -472,22 +472,13 @@ public interface FMLPackage extends EPackage
   int BUILT_IN_ACTION = 8;
 
   /**
-   * The feature id for the '<em><b>Pattern Role</b></em>' reference.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   * @ordered
-   */
-  int BUILT_IN_ACTION__PATTERN_ROLE = EDITION_ACTION_FEATURE_COUNT + 0;
-
-  /**
    * The number of structural features of the '<em>Built In Action</em>' class.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * @generated
    * @ordered
    */
-  int BUILT_IN_ACTION_FEATURE_COUNT = EDITION_ACTION_FEATURE_COUNT + 1;
+  int BUILT_IN_ACTION_FEATURE_COUNT = EDITION_ACTION_FEATURE_COUNT + 0;
 
   /**
    * The meta object id for the '{@link org.xtext.example.mydsl.fML.impl.DeclarePatternRoleImpl <em>Declare Pattern Role</em>}' class.
@@ -500,13 +491,13 @@ public interface FMLPackage extends EPackage
   int DECLARE_PATTERN_ROLE = 9;
 
   /**
-   * The feature id for the '<em><b>Pattern Role</b></em>' reference.
+   * The feature id for the '<em><b>Pattern Role</b></em>' reference list.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * @generated
    * @ordered
    */
-  int DECLARE_PATTERN_ROLE__PATTERN_ROLE = BUILT_IN_ACTION__PATTERN_ROLE;
+  int DECLARE_PATTERN_ROLE__PATTERN_ROLE = BUILT_IN_ACTION_FEATURE_COUNT + 0;
 
   /**
    * The feature id for the '<em><b>Parameter</b></em>' reference.
@@ -515,7 +506,16 @@ public interface FMLPackage extends EPackage
    * @generated
    * @ordered
    */
-  int DECLARE_PATTERN_ROLE__PARAMETER = BUILT_IN_ACTION_FEATURE_COUNT + 0;
+  int DECLARE_PATTERN_ROLE__PARAMETER = BUILT_IN_ACTION_FEATURE_COUNT + 1;
+
+  /**
+   * The feature id for the '<em><b>Add</b></em>' containment reference list.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   * @ordered
+   */
+  int DECLARE_PATTERN_ROLE__ADD = BUILT_IN_ACTION_FEATURE_COUNT + 2;
 
   /**
    * The number of structural features of the '<em>Declare Pattern Role</em>' class.
@@ -524,7 +524,7 @@ public interface FMLPackage extends EPackage
    * @generated
    * @ordered
    */
-  int DECLARE_PATTERN_ROLE_FEATURE_COUNT = BUILT_IN_ACTION_FEATURE_COUNT + 1;
+  int DECLARE_PATTERN_ROLE_FEATURE_COUNT = BUILT_IN_ACTION_FEATURE_COUNT + 3;
 
   /**
    * The meta object id for the '{@link org.xtext.example.mydsl.fML.impl.DeleteActionImpl <em>Delete Action</em>}' class.
@@ -543,7 +543,7 @@ public interface FMLPackage extends EPackage
    * @generated
    * @ordered
    */
-  int DELETE_ACTION__PATTERN_ROLE = BUILT_IN_ACTION__PATTERN_ROLE;
+  int DELETE_ACTION__PATTERN_ROLE = BUILT_IN_ACTION_FEATURE_COUNT + 0;
 
   /**
    * The number of structural features of the '<em>Delete Action</em>' class.
@@ -552,7 +552,44 @@ public interface FMLPackage extends EPackage
    * @generated
    * @ordered
    */
-  int DELETE_ACTION_FEATURE_COUNT = BUILT_IN_ACTION_FEATURE_COUNT + 0;
+  int DELETE_ACTION_FEATURE_COUNT = BUILT_IN_ACTION_FEATURE_COUNT + 1;
+
+  /**
+   * The meta object id for the '{@link org.xtext.example.mydsl.fML.impl.AddEMFObjectIndividualImpl <em>Add EMF Object Individual</em>}' class.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @see org.xtext.example.mydsl.fML.impl.AddEMFObjectIndividualImpl
+   * @see org.xtext.example.mydsl.fML.impl.FMLPackageImpl#getAddEMFObjectIndividual()
+   * @generated
+   */
+  int ADD_EMF_OBJECT_INDIVIDUAL = 11;
+
+  /**
+   * The feature id for the '<em><b>Edition Pattern</b></em>' reference.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   * @ordered
+   */
+  int ADD_EMF_OBJECT_INDIVIDUAL__EDITION_PATTERN = BUILT_IN_ACTION_FEATURE_COUNT + 0;
+
+  /**
+   * The feature id for the '<em><b>Model Slot</b></em>' reference.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   * @ordered
+   */
+  int ADD_EMF_OBJECT_INDIVIDUAL__MODEL_SLOT = BUILT_IN_ACTION_FEATURE_COUNT + 1;
+
+  /**
+   * The number of structural features of the '<em>Add EMF Object Individual</em>' class.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   * @ordered
+   */
+  int ADD_EMF_OBJECT_INDIVIDUAL_FEATURE_COUNT = BUILT_IN_ACTION_FEATURE_COUNT + 2;
 
   /**
    * The meta object id for the '{@link org.xtext.example.mydsl.fML.EditionSchemeType <em>Edition Scheme Type</em>}' enum.
@@ -562,7 +599,7 @@ public interface FMLPackage extends EPackage
    * @see org.xtext.example.mydsl.fML.impl.FMLPackageImpl#getEditionSchemeType()
    * @generated
    */
-  int EDITION_SCHEME_TYPE = 11;
+  int EDITION_SCHEME_TYPE = 12;
 
   /**
    * The meta object id for the '{@link org.xtext.example.mydsl.fML.MSTYPE <em>MSTYPE</em>}' enum.
@@ -572,7 +609,7 @@ public interface FMLPackage extends EPackage
    * @see org.xtext.example.mydsl.fML.impl.FMLPackageImpl#getMSTYPE()
    * @generated
    */
-  int MSTYPE = 12;
+  int MSTYPE = 13;
 
   /**
    * The meta object id for the '{@link org.xtext.example.mydsl.fML.VMTYPE <em>VMTYPE</em>}' enum.
@@ -582,7 +619,7 @@ public interface FMLPackage extends EPackage
    * @see org.xtext.example.mydsl.fML.impl.FMLPackageImpl#getVMTYPE()
    * @generated
    */
-  int VMTYPE = 13;
+  int VMTYPE = 14;
 
   /**
    * The meta object id for the '{@link org.xtext.example.mydsl.fML.PRTYPE <em>PRTYPE</em>}' enum.
@@ -592,7 +629,7 @@ public interface FMLPackage extends EPackage
    * @see org.xtext.example.mydsl.fML.impl.FMLPackageImpl#getPRTYPE()
    * @generated
    */
-  int PRTYPE = 14;
+  int PRTYPE = 15;
 
 
   /**
@@ -994,17 +1031,6 @@ public interface FMLPackage extends EPackage
   EClass getBuiltInAction();
 
   /**
-   * Returns the meta object for the reference '{@link org.xtext.example.mydsl.fML.BuiltInAction#getPatternRole <em>Pattern Role</em>}'.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @return the meta object for the reference '<em>Pattern Role</em>'.
-   * @see org.xtext.example.mydsl.fML.BuiltInAction#getPatternRole()
-   * @see #getBuiltInAction()
-   * @generated
-   */
-  EReference getBuiltInAction_PatternRole();
-
-  /**
    * Returns the meta object for class '{@link org.xtext.example.mydsl.fML.DeclarePatternRole <em>Declare Pattern Role</em>}'.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
@@ -1013,6 +1039,17 @@ public interface FMLPackage extends EPackage
    * @generated
    */
   EClass getDeclarePatternRole();
+
+  /**
+   * Returns the meta object for the reference list '{@link org.xtext.example.mydsl.fML.DeclarePatternRole#getPatternRole <em>Pattern Role</em>}'.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @return the meta object for the reference list '<em>Pattern Role</em>'.
+   * @see org.xtext.example.mydsl.fML.DeclarePatternRole#getPatternRole()
+   * @see #getDeclarePatternRole()
+   * @generated
+   */
+  EReference getDeclarePatternRole_PatternRole();
 
   /**
    * Returns the meta object for the reference '{@link org.xtext.example.mydsl.fML.DeclarePatternRole#getParameter <em>Parameter</em>}'.
@@ -1026,6 +1063,17 @@ public interface FMLPackage extends EPackage
   EReference getDeclarePatternRole_Parameter();
 
   /**
+   * Returns the meta object for the containment reference list '{@link org.xtext.example.mydsl.fML.DeclarePatternRole#getAdd <em>Add</em>}'.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @return the meta object for the containment reference list '<em>Add</em>'.
+   * @see org.xtext.example.mydsl.fML.DeclarePatternRole#getAdd()
+   * @see #getDeclarePatternRole()
+   * @generated
+   */
+  EReference getDeclarePatternRole_Add();
+
+  /**
    * Returns the meta object for class '{@link org.xtext.example.mydsl.fML.DeleteAction <em>Delete Action</em>}'.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
@@ -1034,6 +1082,49 @@ public interface FMLPackage extends EPackage
    * @generated
    */
   EClass getDeleteAction();
+
+  /**
+   * Returns the meta object for the reference '{@link org.xtext.example.mydsl.fML.DeleteAction#getPatternRole <em>Pattern Role</em>}'.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @return the meta object for the reference '<em>Pattern Role</em>'.
+   * @see org.xtext.example.mydsl.fML.DeleteAction#getPatternRole()
+   * @see #getDeleteAction()
+   * @generated
+   */
+  EReference getDeleteAction_PatternRole();
+
+  /**
+   * Returns the meta object for class '{@link org.xtext.example.mydsl.fML.AddEMFObjectIndividual <em>Add EMF Object Individual</em>}'.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @return the meta object for class '<em>Add EMF Object Individual</em>'.
+   * @see org.xtext.example.mydsl.fML.AddEMFObjectIndividual
+   * @generated
+   */
+  EClass getAddEMFObjectIndividual();
+
+  /**
+   * Returns the meta object for the reference '{@link org.xtext.example.mydsl.fML.AddEMFObjectIndividual#getEditionPattern <em>Edition Pattern</em>}'.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @return the meta object for the reference '<em>Edition Pattern</em>'.
+   * @see org.xtext.example.mydsl.fML.AddEMFObjectIndividual#getEditionPattern()
+   * @see #getAddEMFObjectIndividual()
+   * @generated
+   */
+  EReference getAddEMFObjectIndividual_EditionPattern();
+
+  /**
+   * Returns the meta object for the reference '{@link org.xtext.example.mydsl.fML.AddEMFObjectIndividual#getModelSlot <em>Model Slot</em>}'.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @return the meta object for the reference '<em>Model Slot</em>'.
+   * @see org.xtext.example.mydsl.fML.AddEMFObjectIndividual#getModelSlot()
+   * @see #getAddEMFObjectIndividual()
+   * @generated
+   */
+  EReference getAddEMFObjectIndividual_ModelSlot();
 
   /**
    * Returns the meta object for enum '{@link org.xtext.example.mydsl.fML.EditionSchemeType <em>Edition Scheme Type</em>}'.
@@ -1413,14 +1504,6 @@ public interface FMLPackage extends EPackage
     EClass BUILT_IN_ACTION = eINSTANCE.getBuiltInAction();
 
     /**
-     * The meta object literal for the '<em><b>Pattern Role</b></em>' reference feature.
-     * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
-     * @generated
-     */
-    EReference BUILT_IN_ACTION__PATTERN_ROLE = eINSTANCE.getBuiltInAction_PatternRole();
-
-    /**
      * The meta object literal for the '{@link org.xtext.example.mydsl.fML.impl.DeclarePatternRoleImpl <em>Declare Pattern Role</em>}' class.
      * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
@@ -1431,12 +1514,28 @@ public interface FMLPackage extends EPackage
     EClass DECLARE_PATTERN_ROLE = eINSTANCE.getDeclarePatternRole();
 
     /**
+     * The meta object literal for the '<em><b>Pattern Role</b></em>' reference list feature.
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     */
+    EReference DECLARE_PATTERN_ROLE__PATTERN_ROLE = eINSTANCE.getDeclarePatternRole_PatternRole();
+
+    /**
      * The meta object literal for the '<em><b>Parameter</b></em>' reference feature.
      * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
      * @generated
      */
     EReference DECLARE_PATTERN_ROLE__PARAMETER = eINSTANCE.getDeclarePatternRole_Parameter();
+
+    /**
+     * The meta object literal for the '<em><b>Add</b></em>' containment reference list feature.
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     */
+    EReference DECLARE_PATTERN_ROLE__ADD = eINSTANCE.getDeclarePatternRole_Add();
 
     /**
      * The meta object literal for the '{@link org.xtext.example.mydsl.fML.impl.DeleteActionImpl <em>Delete Action</em>}' class.
@@ -1447,6 +1546,40 @@ public interface FMLPackage extends EPackage
      * @generated
      */
     EClass DELETE_ACTION = eINSTANCE.getDeleteAction();
+
+    /**
+     * The meta object literal for the '<em><b>Pattern Role</b></em>' reference feature.
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     */
+    EReference DELETE_ACTION__PATTERN_ROLE = eINSTANCE.getDeleteAction_PatternRole();
+
+    /**
+     * The meta object literal for the '{@link org.xtext.example.mydsl.fML.impl.AddEMFObjectIndividualImpl <em>Add EMF Object Individual</em>}' class.
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @see org.xtext.example.mydsl.fML.impl.AddEMFObjectIndividualImpl
+     * @see org.xtext.example.mydsl.fML.impl.FMLPackageImpl#getAddEMFObjectIndividual()
+     * @generated
+     */
+    EClass ADD_EMF_OBJECT_INDIVIDUAL = eINSTANCE.getAddEMFObjectIndividual();
+
+    /**
+     * The meta object literal for the '<em><b>Edition Pattern</b></em>' reference feature.
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     */
+    EReference ADD_EMF_OBJECT_INDIVIDUAL__EDITION_PATTERN = eINSTANCE.getAddEMFObjectIndividual_EditionPattern();
+
+    /**
+     * The meta object literal for the '<em><b>Model Slot</b></em>' reference feature.
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     */
+    EReference ADD_EMF_OBJECT_INDIVIDUAL__MODEL_SLOT = eINSTANCE.getAddEMFObjectIndividual_ModelSlot();
 
     /**
      * The meta object literal for the '{@link org.xtext.example.mydsl.fML.EditionSchemeType <em>Edition Scheme Type</em>}' enum.

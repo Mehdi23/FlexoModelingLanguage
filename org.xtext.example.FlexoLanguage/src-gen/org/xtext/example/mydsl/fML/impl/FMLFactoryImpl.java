@@ -76,6 +76,7 @@ public class FMLFactoryImpl extends EFactoryImpl implements FMLFactory
       case FMLPackage.BUILT_IN_ACTION: return createBuiltInAction();
       case FMLPackage.DECLARE_PATTERN_ROLE: return createDeclarePatternRole();
       case FMLPackage.DELETE_ACTION: return createDeleteAction();
+      case FMLPackage.ADD_EMF_OBJECT_INDIVIDUAL: return createAddEMFObjectIndividual();
       default:
         throw new IllegalArgumentException("The class '" + eClass.getName() + "' is not a valid classifier");
     }
@@ -246,6 +247,17 @@ public class FMLFactoryImpl extends EFactoryImpl implements FMLFactory
   {
     DeleteActionImpl deleteAction = new DeleteActionImpl();
     return deleteAction;
+  }
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  public AddEMFObjectIndividual createAddEMFObjectIndividual()
+  {
+    AddEMFObjectIndividualImpl addEMFObjectIndividual = new AddEMFObjectIndividualImpl();
+    return addEMFObjectIndividual;
   }
 
   /**

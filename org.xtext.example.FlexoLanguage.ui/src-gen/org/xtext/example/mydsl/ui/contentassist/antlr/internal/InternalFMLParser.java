@@ -22,7 +22,7 @@ import java.util.ArrayList;
 @SuppressWarnings("all")
 public class InternalFMLParser extends AbstractInternalContentAssistParser {
     public static final String[] tokenNames = new String[] {
-        "<invalid>", "<EOR>", "<DOWN>", "<UP>", "RULE_ID", "RULE_URISTRING", "RULE_BOOL", "RULE_STRING", "RULE_URI", "RULE_INT", "RULE_ML_COMMENT", "RULE_SL_COMMENT", "RULE_WS", "RULE_ANY_OTHER", "'Individual'", "'CreationScheme'", "'DeletionScheme'", "'ActionScheme'", "'CloningScheme'", "'OWLModelSlot'", "'DiagramModelSlot'", "'EMFModelSlot'", "'VirtualModelModelSlot'", "'XSDModelSlot'", "'DiagramSpecification'", "'VirtualModel'", "'ViewDefinition'", "'uri'", "'='", "'{'", "'}'", "'type'", "'ModelSlot'", "'conformTo'", "'required'", "'readOnly'", "';'", "'EditionPattern'", "'extends'", "'PatternRole'", "'as'", "'from'", "'('", "')'", "','", "':'", "'parameters'", "'.'", "'delete'"
+        "<invalid>", "<EOR>", "<DOWN>", "<UP>", "RULE_ID", "RULE_URISTRING", "RULE_BOOL", "RULE_URI", "RULE_INT", "RULE_STRING", "RULE_ML_COMMENT", "RULE_SL_COMMENT", "RULE_WS", "RULE_ANY_OTHER", "'Individual'", "'CreationScheme'", "'DeletionScheme'", "'ActionScheme'", "'CloningScheme'", "'OWLModelSlot'", "'DiagramModelSlot'", "'EMFModelSlot'", "'VirtualModelModelSlot'", "'XSDModelSlot'", "'DiagramSpecification'", "'VirtualModel'", "'ViewDefinition'", "'uri'", "'='", "'{'", "'}'", "'type'", "'ModelSlot'", "'conformTo'", "'required'", "'readOnly'", "';'", "'EditionPattern'", "'extends'", "'PatternRole'", "'as'", "'from'", "'('", "')'", "','", "':'", "'parameters'", "'.'", "'delete'", "'AddEMFObjectIndividual'"
     };
     public static final int RULE_ID=4;
     public static final int T__29=29;
@@ -44,7 +44,7 @@ public class InternalFMLParser extends AbstractInternalContentAssistParser {
     public static final int T__18=18;
     public static final int T__17=17;
     public static final int T__14=14;
-    public static final int RULE_INT=9;
+    public static final int RULE_INT=8;
     public static final int T__42=42;
     public static final int T__43=43;
     public static final int T__40=40;
@@ -54,14 +54,15 @@ public class InternalFMLParser extends AbstractInternalContentAssistParser {
     public static final int T__44=44;
     public static final int T__45=45;
     public static final int T__48=48;
+    public static final int T__49=49;
     public static final int RULE_URISTRING=5;
-    public static final int RULE_URI=8;
+    public static final int RULE_URI=7;
     public static final int RULE_SL_COMMENT=11;
     public static final int RULE_ML_COMMENT=10;
     public static final int T__30=30;
     public static final int T__31=31;
+    public static final int RULE_STRING=9;
     public static final int T__32=32;
-    public static final int RULE_STRING=7;
     public static final int T__33=33;
     public static final int T__34=34;
     public static final int T__35=35;
@@ -949,24 +950,101 @@ public class InternalFMLParser extends AbstractInternalContentAssistParser {
     // $ANTLR end "ruleDeleteAction"
 
 
+    // $ANTLR start "entryRuleAddEMFObjectIndividual"
+    // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:368:1: entryRuleAddEMFObjectIndividual : ruleAddEMFObjectIndividual EOF ;
+    public final void entryRuleAddEMFObjectIndividual() throws RecognitionException {
+        try {
+            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:369:1: ( ruleAddEMFObjectIndividual EOF )
+            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:370:1: ruleAddEMFObjectIndividual EOF
+            {
+             before(grammarAccess.getAddEMFObjectIndividualRule()); 
+            pushFollow(FOLLOW_ruleAddEMFObjectIndividual_in_entryRuleAddEMFObjectIndividual720);
+            ruleAddEMFObjectIndividual();
+
+            state._fsp--;
+
+             after(grammarAccess.getAddEMFObjectIndividualRule()); 
+            match(input,EOF,FOLLOW_EOF_in_entryRuleAddEMFObjectIndividual727); 
+
+            }
+
+        }
+        catch (RecognitionException re) {
+            reportError(re);
+            recover(input,re);
+        }
+        finally {
+        }
+        return ;
+    }
+    // $ANTLR end "entryRuleAddEMFObjectIndividual"
+
+
+    // $ANTLR start "ruleAddEMFObjectIndividual"
+    // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:377:1: ruleAddEMFObjectIndividual : ( ( rule__AddEMFObjectIndividual__Group__0 ) ) ;
+    public final void ruleAddEMFObjectIndividual() throws RecognitionException {
+
+        		int stackSize = keepStackSize();
+            
+        try {
+            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:381:2: ( ( ( rule__AddEMFObjectIndividual__Group__0 ) ) )
+            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:382:1: ( ( rule__AddEMFObjectIndividual__Group__0 ) )
+            {
+            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:382:1: ( ( rule__AddEMFObjectIndividual__Group__0 ) )
+            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:383:1: ( rule__AddEMFObjectIndividual__Group__0 )
+            {
+             before(grammarAccess.getAddEMFObjectIndividualAccess().getGroup()); 
+            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:384:1: ( rule__AddEMFObjectIndividual__Group__0 )
+            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:384:2: rule__AddEMFObjectIndividual__Group__0
+            {
+            pushFollow(FOLLOW_rule__AddEMFObjectIndividual__Group__0_in_ruleAddEMFObjectIndividual753);
+            rule__AddEMFObjectIndividual__Group__0();
+
+            state._fsp--;
+
+
+            }
+
+             after(grammarAccess.getAddEMFObjectIndividualAccess().getGroup()); 
+
+            }
+
+
+            }
+
+        }
+        catch (RecognitionException re) {
+            reportError(re);
+            recover(input,re);
+        }
+        finally {
+
+            	restoreStackSize(stackSize);
+
+        }
+        return ;
+    }
+    // $ANTLR end "ruleAddEMFObjectIndividual"
+
+
     // $ANTLR start "ruleEditionSchemeType"
-    // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:369:1: ruleEditionSchemeType : ( ( rule__EditionSchemeType__Alternatives ) ) ;
+    // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:397:1: ruleEditionSchemeType : ( ( rule__EditionSchemeType__Alternatives ) ) ;
     public final void ruleEditionSchemeType() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:373:1: ( ( ( rule__EditionSchemeType__Alternatives ) ) )
-            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:374:1: ( ( rule__EditionSchemeType__Alternatives ) )
+            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:401:1: ( ( ( rule__EditionSchemeType__Alternatives ) ) )
+            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:402:1: ( ( rule__EditionSchemeType__Alternatives ) )
             {
-            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:374:1: ( ( rule__EditionSchemeType__Alternatives ) )
-            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:375:1: ( rule__EditionSchemeType__Alternatives )
+            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:402:1: ( ( rule__EditionSchemeType__Alternatives ) )
+            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:403:1: ( rule__EditionSchemeType__Alternatives )
             {
              before(grammarAccess.getEditionSchemeTypeAccess().getAlternatives()); 
-            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:376:1: ( rule__EditionSchemeType__Alternatives )
-            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:376:2: rule__EditionSchemeType__Alternatives
+            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:404:1: ( rule__EditionSchemeType__Alternatives )
+            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:404:2: rule__EditionSchemeType__Alternatives
             {
-            pushFollow(FOLLOW_rule__EditionSchemeType__Alternatives_in_ruleEditionSchemeType730);
+            pushFollow(FOLLOW_rule__EditionSchemeType__Alternatives_in_ruleEditionSchemeType790);
             rule__EditionSchemeType__Alternatives();
 
             state._fsp--;
@@ -997,23 +1075,23 @@ public class InternalFMLParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "ruleMSTYPE"
-    // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:388:1: ruleMSTYPE : ( ( rule__MSTYPE__Alternatives ) ) ;
+    // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:416:1: ruleMSTYPE : ( ( rule__MSTYPE__Alternatives ) ) ;
     public final void ruleMSTYPE() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:392:1: ( ( ( rule__MSTYPE__Alternatives ) ) )
-            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:393:1: ( ( rule__MSTYPE__Alternatives ) )
+            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:420:1: ( ( ( rule__MSTYPE__Alternatives ) ) )
+            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:421:1: ( ( rule__MSTYPE__Alternatives ) )
             {
-            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:393:1: ( ( rule__MSTYPE__Alternatives ) )
-            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:394:1: ( rule__MSTYPE__Alternatives )
+            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:421:1: ( ( rule__MSTYPE__Alternatives ) )
+            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:422:1: ( rule__MSTYPE__Alternatives )
             {
              before(grammarAccess.getMSTYPEAccess().getAlternatives()); 
-            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:395:1: ( rule__MSTYPE__Alternatives )
-            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:395:2: rule__MSTYPE__Alternatives
+            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:423:1: ( rule__MSTYPE__Alternatives )
+            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:423:2: rule__MSTYPE__Alternatives
             {
-            pushFollow(FOLLOW_rule__MSTYPE__Alternatives_in_ruleMSTYPE766);
+            pushFollow(FOLLOW_rule__MSTYPE__Alternatives_in_ruleMSTYPE826);
             rule__MSTYPE__Alternatives();
 
             state._fsp--;
@@ -1044,23 +1122,23 @@ public class InternalFMLParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "ruleVMTYPE"
-    // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:407:1: ruleVMTYPE : ( ( rule__VMTYPE__Alternatives ) ) ;
+    // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:435:1: ruleVMTYPE : ( ( rule__VMTYPE__Alternatives ) ) ;
     public final void ruleVMTYPE() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:411:1: ( ( ( rule__VMTYPE__Alternatives ) ) )
-            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:412:1: ( ( rule__VMTYPE__Alternatives ) )
+            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:439:1: ( ( ( rule__VMTYPE__Alternatives ) ) )
+            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:440:1: ( ( rule__VMTYPE__Alternatives ) )
             {
-            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:412:1: ( ( rule__VMTYPE__Alternatives ) )
-            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:413:1: ( rule__VMTYPE__Alternatives )
+            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:440:1: ( ( rule__VMTYPE__Alternatives ) )
+            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:441:1: ( rule__VMTYPE__Alternatives )
             {
              before(grammarAccess.getVMTYPEAccess().getAlternatives()); 
-            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:414:1: ( rule__VMTYPE__Alternatives )
-            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:414:2: rule__VMTYPE__Alternatives
+            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:442:1: ( rule__VMTYPE__Alternatives )
+            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:442:2: rule__VMTYPE__Alternatives
             {
-            pushFollow(FOLLOW_rule__VMTYPE__Alternatives_in_ruleVMTYPE802);
+            pushFollow(FOLLOW_rule__VMTYPE__Alternatives_in_ruleVMTYPE862);
             rule__VMTYPE__Alternatives();
 
             state._fsp--;
@@ -1091,23 +1169,23 @@ public class InternalFMLParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rulePRTYPE"
-    // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:426:1: rulePRTYPE : ( ( 'Individual' ) ) ;
+    // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:454:1: rulePRTYPE : ( ( 'Individual' ) ) ;
     public final void rulePRTYPE() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:430:1: ( ( ( 'Individual' ) ) )
-            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:431:1: ( ( 'Individual' ) )
+            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:458:1: ( ( ( 'Individual' ) ) )
+            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:459:1: ( ( 'Individual' ) )
             {
-            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:431:1: ( ( 'Individual' ) )
-            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:432:1: ( 'Individual' )
+            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:459:1: ( ( 'Individual' ) )
+            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:460:1: ( 'Individual' )
             {
              before(grammarAccess.getPRTYPEAccess().getIndividualEnumLiteralDeclaration()); 
-            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:433:1: ( 'Individual' )
-            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:433:3: 'Individual'
+            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:461:1: ( 'Individual' )
+            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:461:3: 'Individual'
             {
-            match(input,14,FOLLOW_14_in_rulePRTYPE839); 
+            match(input,14,FOLLOW_14_in_rulePRTYPE899); 
 
             }
 
@@ -1134,37 +1212,46 @@ public class InternalFMLParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__BuiltInAction__Alternatives"
-    // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:445:1: rule__BuiltInAction__Alternatives : ( ( ruleDeclarePatternRole ) | ( ruleDeleteAction ) );
+    // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:473:1: rule__BuiltInAction__Alternatives : ( ( ruleDeclarePatternRole ) | ( ruleDeleteAction ) | ( ruleAddEMFObjectIndividual ) );
     public final void rule__BuiltInAction__Alternatives() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:449:1: ( ( ruleDeclarePatternRole ) | ( ruleDeleteAction ) )
-            int alt1=2;
-            int LA1_0 = input.LA(1);
-
-            if ( (LA1_0==RULE_ID) ) {
+            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:477:1: ( ( ruleDeclarePatternRole ) | ( ruleDeleteAction ) | ( ruleAddEMFObjectIndividual ) )
+            int alt1=3;
+            switch ( input.LA(1) ) {
+            case RULE_ID:
+                {
                 alt1=1;
-            }
-            else if ( (LA1_0==48) ) {
+                }
+                break;
+            case 48:
+                {
                 alt1=2;
-            }
-            else {
+                }
+                break;
+            case 49:
+                {
+                alt1=3;
+                }
+                break;
+            default:
                 NoViableAltException nvae =
                     new NoViableAltException("", 1, 0, input);
 
                 throw nvae;
             }
+
             switch (alt1) {
                 case 1 :
-                    // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:450:1: ( ruleDeclarePatternRole )
+                    // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:478:1: ( ruleDeclarePatternRole )
                     {
-                    // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:450:1: ( ruleDeclarePatternRole )
-                    // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:451:1: ruleDeclarePatternRole
+                    // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:478:1: ( ruleDeclarePatternRole )
+                    // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:479:1: ruleDeclarePatternRole
                     {
                      before(grammarAccess.getBuiltInActionAccess().getDeclarePatternRoleParserRuleCall_0()); 
-                    pushFollow(FOLLOW_ruleDeclarePatternRole_in_rule__BuiltInAction__Alternatives876);
+                    pushFollow(FOLLOW_ruleDeclarePatternRole_in_rule__BuiltInAction__Alternatives936);
                     ruleDeclarePatternRole();
 
                     state._fsp--;
@@ -1177,18 +1264,37 @@ public class InternalFMLParser extends AbstractInternalContentAssistParser {
                     }
                     break;
                 case 2 :
-                    // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:456:6: ( ruleDeleteAction )
+                    // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:484:6: ( ruleDeleteAction )
                     {
-                    // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:456:6: ( ruleDeleteAction )
-                    // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:457:1: ruleDeleteAction
+                    // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:484:6: ( ruleDeleteAction )
+                    // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:485:1: ruleDeleteAction
                     {
                      before(grammarAccess.getBuiltInActionAccess().getDeleteActionParserRuleCall_1()); 
-                    pushFollow(FOLLOW_ruleDeleteAction_in_rule__BuiltInAction__Alternatives893);
+                    pushFollow(FOLLOW_ruleDeleteAction_in_rule__BuiltInAction__Alternatives953);
                     ruleDeleteAction();
 
                     state._fsp--;
 
                      after(grammarAccess.getBuiltInActionAccess().getDeleteActionParserRuleCall_1()); 
+
+                    }
+
+
+                    }
+                    break;
+                case 3 :
+                    // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:490:6: ( ruleAddEMFObjectIndividual )
+                    {
+                    // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:490:6: ( ruleAddEMFObjectIndividual )
+                    // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:491:1: ruleAddEMFObjectIndividual
+                    {
+                     before(grammarAccess.getBuiltInActionAccess().getAddEMFObjectIndividualParserRuleCall_2()); 
+                    pushFollow(FOLLOW_ruleAddEMFObjectIndividual_in_rule__BuiltInAction__Alternatives970);
+                    ruleAddEMFObjectIndividual();
+
+                    state._fsp--;
+
+                     after(grammarAccess.getBuiltInActionAccess().getAddEMFObjectIndividualParserRuleCall_2()); 
 
                     }
 
@@ -1212,55 +1318,146 @@ public class InternalFMLParser extends AbstractInternalContentAssistParser {
     // $ANTLR end "rule__BuiltInAction__Alternatives"
 
 
-    // $ANTLR start "rule__EditionSchemeType__Alternatives"
-    // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:467:1: rule__EditionSchemeType__Alternatives : ( ( ( 'CreationScheme' ) ) | ( ( 'DeletionScheme' ) ) | ( ( 'ActionScheme' ) ) | ( ( 'CloningScheme' ) ) );
-    public final void rule__EditionSchemeType__Alternatives() throws RecognitionException {
+    // $ANTLR start "rule__DeclarePatternRole__Alternatives_1"
+    // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:501:1: rule__DeclarePatternRole__Alternatives_1 : ( ( ( rule__DeclarePatternRole__Group_1_0__0 ) ) | ( ( rule__DeclarePatternRole__Group_1_1__0 ) ) );
+    public final void rule__DeclarePatternRole__Alternatives_1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:471:1: ( ( ( 'CreationScheme' ) ) | ( ( 'DeletionScheme' ) ) | ( ( 'ActionScheme' ) ) | ( ( 'CloningScheme' ) ) )
-            int alt2=4;
-            switch ( input.LA(1) ) {
-            case 15:
-                {
+            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:505:1: ( ( ( rule__DeclarePatternRole__Group_1_0__0 ) ) | ( ( rule__DeclarePatternRole__Group_1_1__0 ) ) )
+            int alt2=2;
+            int LA2_0 = input.LA(1);
+
+            if ( (LA2_0==46) ) {
                 alt2=1;
-                }
-                break;
-            case 16:
-                {
+            }
+            else if ( (LA2_0==42) ) {
                 alt2=2;
-                }
-                break;
-            case 17:
-                {
-                alt2=3;
-                }
-                break;
-            case 18:
-                {
-                alt2=4;
-                }
-                break;
-            default:
+            }
+            else {
                 NoViableAltException nvae =
                     new NoViableAltException("", 2, 0, input);
 
                 throw nvae;
             }
-
             switch (alt2) {
                 case 1 :
-                    // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:472:1: ( ( 'CreationScheme' ) )
+                    // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:506:1: ( ( rule__DeclarePatternRole__Group_1_0__0 ) )
                     {
-                    // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:472:1: ( ( 'CreationScheme' ) )
-                    // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:473:1: ( 'CreationScheme' )
+                    // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:506:1: ( ( rule__DeclarePatternRole__Group_1_0__0 ) )
+                    // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:507:1: ( rule__DeclarePatternRole__Group_1_0__0 )
+                    {
+                     before(grammarAccess.getDeclarePatternRoleAccess().getGroup_1_0()); 
+                    // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:508:1: ( rule__DeclarePatternRole__Group_1_0__0 )
+                    // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:508:2: rule__DeclarePatternRole__Group_1_0__0
+                    {
+                    pushFollow(FOLLOW_rule__DeclarePatternRole__Group_1_0__0_in_rule__DeclarePatternRole__Alternatives_11002);
+                    rule__DeclarePatternRole__Group_1_0__0();
+
+                    state._fsp--;
+
+
+                    }
+
+                     after(grammarAccess.getDeclarePatternRoleAccess().getGroup_1_0()); 
+
+                    }
+
+
+                    }
+                    break;
+                case 2 :
+                    // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:512:6: ( ( rule__DeclarePatternRole__Group_1_1__0 ) )
+                    {
+                    // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:512:6: ( ( rule__DeclarePatternRole__Group_1_1__0 ) )
+                    // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:513:1: ( rule__DeclarePatternRole__Group_1_1__0 )
+                    {
+                     before(grammarAccess.getDeclarePatternRoleAccess().getGroup_1_1()); 
+                    // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:514:1: ( rule__DeclarePatternRole__Group_1_1__0 )
+                    // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:514:2: rule__DeclarePatternRole__Group_1_1__0
+                    {
+                    pushFollow(FOLLOW_rule__DeclarePatternRole__Group_1_1__0_in_rule__DeclarePatternRole__Alternatives_11020);
+                    rule__DeclarePatternRole__Group_1_1__0();
+
+                    state._fsp--;
+
+
+                    }
+
+                     after(grammarAccess.getDeclarePatternRoleAccess().getGroup_1_1()); 
+
+                    }
+
+
+                    }
+                    break;
+
+            }
+        }
+        catch (RecognitionException re) {
+            reportError(re);
+            recover(input,re);
+        }
+        finally {
+
+            	restoreStackSize(stackSize);
+
+        }
+        return ;
+    }
+    // $ANTLR end "rule__DeclarePatternRole__Alternatives_1"
+
+
+    // $ANTLR start "rule__EditionSchemeType__Alternatives"
+    // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:523:1: rule__EditionSchemeType__Alternatives : ( ( ( 'CreationScheme' ) ) | ( ( 'DeletionScheme' ) ) | ( ( 'ActionScheme' ) ) | ( ( 'CloningScheme' ) ) );
+    public final void rule__EditionSchemeType__Alternatives() throws RecognitionException {
+
+        		int stackSize = keepStackSize();
+            
+        try {
+            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:527:1: ( ( ( 'CreationScheme' ) ) | ( ( 'DeletionScheme' ) ) | ( ( 'ActionScheme' ) ) | ( ( 'CloningScheme' ) ) )
+            int alt3=4;
+            switch ( input.LA(1) ) {
+            case 15:
+                {
+                alt3=1;
+                }
+                break;
+            case 16:
+                {
+                alt3=2;
+                }
+                break;
+            case 17:
+                {
+                alt3=3;
+                }
+                break;
+            case 18:
+                {
+                alt3=4;
+                }
+                break;
+            default:
+                NoViableAltException nvae =
+                    new NoViableAltException("", 3, 0, input);
+
+                throw nvae;
+            }
+
+            switch (alt3) {
+                case 1 :
+                    // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:528:1: ( ( 'CreationScheme' ) )
+                    {
+                    // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:528:1: ( ( 'CreationScheme' ) )
+                    // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:529:1: ( 'CreationScheme' )
                     {
                      before(grammarAccess.getEditionSchemeTypeAccess().getCreationSchemeEnumLiteralDeclaration_0()); 
-                    // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:474:1: ( 'CreationScheme' )
-                    // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:474:3: 'CreationScheme'
+                    // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:530:1: ( 'CreationScheme' )
+                    // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:530:3: 'CreationScheme'
                     {
-                    match(input,15,FOLLOW_15_in_rule__EditionSchemeType__Alternatives926); 
+                    match(input,15,FOLLOW_15_in_rule__EditionSchemeType__Alternatives1054); 
 
                     }
 
@@ -1272,16 +1469,16 @@ public class InternalFMLParser extends AbstractInternalContentAssistParser {
                     }
                     break;
                 case 2 :
-                    // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:479:6: ( ( 'DeletionScheme' ) )
+                    // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:535:6: ( ( 'DeletionScheme' ) )
                     {
-                    // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:479:6: ( ( 'DeletionScheme' ) )
-                    // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:480:1: ( 'DeletionScheme' )
+                    // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:535:6: ( ( 'DeletionScheme' ) )
+                    // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:536:1: ( 'DeletionScheme' )
                     {
                      before(grammarAccess.getEditionSchemeTypeAccess().getDeletionSchemeEnumLiteralDeclaration_1()); 
-                    // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:481:1: ( 'DeletionScheme' )
-                    // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:481:3: 'DeletionScheme'
+                    // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:537:1: ( 'DeletionScheme' )
+                    // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:537:3: 'DeletionScheme'
                     {
-                    match(input,16,FOLLOW_16_in_rule__EditionSchemeType__Alternatives947); 
+                    match(input,16,FOLLOW_16_in_rule__EditionSchemeType__Alternatives1075); 
 
                     }
 
@@ -1293,16 +1490,16 @@ public class InternalFMLParser extends AbstractInternalContentAssistParser {
                     }
                     break;
                 case 3 :
-                    // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:486:6: ( ( 'ActionScheme' ) )
+                    // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:542:6: ( ( 'ActionScheme' ) )
                     {
-                    // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:486:6: ( ( 'ActionScheme' ) )
-                    // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:487:1: ( 'ActionScheme' )
+                    // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:542:6: ( ( 'ActionScheme' ) )
+                    // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:543:1: ( 'ActionScheme' )
                     {
                      before(grammarAccess.getEditionSchemeTypeAccess().getActionSchemeEnumLiteralDeclaration_2()); 
-                    // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:488:1: ( 'ActionScheme' )
-                    // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:488:3: 'ActionScheme'
+                    // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:544:1: ( 'ActionScheme' )
+                    // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:544:3: 'ActionScheme'
                     {
-                    match(input,17,FOLLOW_17_in_rule__EditionSchemeType__Alternatives968); 
+                    match(input,17,FOLLOW_17_in_rule__EditionSchemeType__Alternatives1096); 
 
                     }
 
@@ -1314,16 +1511,16 @@ public class InternalFMLParser extends AbstractInternalContentAssistParser {
                     }
                     break;
                 case 4 :
-                    // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:493:6: ( ( 'CloningScheme' ) )
+                    // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:549:6: ( ( 'CloningScheme' ) )
                     {
-                    // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:493:6: ( ( 'CloningScheme' ) )
-                    // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:494:1: ( 'CloningScheme' )
+                    // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:549:6: ( ( 'CloningScheme' ) )
+                    // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:550:1: ( 'CloningScheme' )
                     {
                      before(grammarAccess.getEditionSchemeTypeAccess().getCloningSchemeEnumLiteralDeclaration_3()); 
-                    // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:495:1: ( 'CloningScheme' )
-                    // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:495:3: 'CloningScheme'
+                    // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:551:1: ( 'CloningScheme' )
+                    // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:551:3: 'CloningScheme'
                     {
-                    match(input,18,FOLLOW_18_in_rule__EditionSchemeType__Alternatives989); 
+                    match(input,18,FOLLOW_18_in_rule__EditionSchemeType__Alternatives1117); 
 
                     }
 
@@ -1352,59 +1549,59 @@ public class InternalFMLParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__MSTYPE__Alternatives"
-    // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:505:1: rule__MSTYPE__Alternatives : ( ( ( 'OWLModelSlot' ) ) | ( ( 'DiagramModelSlot' ) ) | ( ( 'EMFModelSlot' ) ) | ( ( 'VirtualModelModelSlot' ) ) | ( ( 'XSDModelSlot' ) ) );
+    // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:561:1: rule__MSTYPE__Alternatives : ( ( ( 'OWLModelSlot' ) ) | ( ( 'DiagramModelSlot' ) ) | ( ( 'EMFModelSlot' ) ) | ( ( 'VirtualModelModelSlot' ) ) | ( ( 'XSDModelSlot' ) ) );
     public final void rule__MSTYPE__Alternatives() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:509:1: ( ( ( 'OWLModelSlot' ) ) | ( ( 'DiagramModelSlot' ) ) | ( ( 'EMFModelSlot' ) ) | ( ( 'VirtualModelModelSlot' ) ) | ( ( 'XSDModelSlot' ) ) )
-            int alt3=5;
+            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:565:1: ( ( ( 'OWLModelSlot' ) ) | ( ( 'DiagramModelSlot' ) ) | ( ( 'EMFModelSlot' ) ) | ( ( 'VirtualModelModelSlot' ) ) | ( ( 'XSDModelSlot' ) ) )
+            int alt4=5;
             switch ( input.LA(1) ) {
             case 19:
                 {
-                alt3=1;
+                alt4=1;
                 }
                 break;
             case 20:
                 {
-                alt3=2;
+                alt4=2;
                 }
                 break;
             case 21:
                 {
-                alt3=3;
+                alt4=3;
                 }
                 break;
             case 22:
                 {
-                alt3=4;
+                alt4=4;
                 }
                 break;
             case 23:
                 {
-                alt3=5;
+                alt4=5;
                 }
                 break;
             default:
                 NoViableAltException nvae =
-                    new NoViableAltException("", 3, 0, input);
+                    new NoViableAltException("", 4, 0, input);
 
                 throw nvae;
             }
 
-            switch (alt3) {
+            switch (alt4) {
                 case 1 :
-                    // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:510:1: ( ( 'OWLModelSlot' ) )
+                    // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:566:1: ( ( 'OWLModelSlot' ) )
                     {
-                    // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:510:1: ( ( 'OWLModelSlot' ) )
-                    // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:511:1: ( 'OWLModelSlot' )
+                    // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:566:1: ( ( 'OWLModelSlot' ) )
+                    // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:567:1: ( 'OWLModelSlot' )
                     {
                      before(grammarAccess.getMSTYPEAccess().getOwlEnumLiteralDeclaration_0()); 
-                    // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:512:1: ( 'OWLModelSlot' )
-                    // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:512:3: 'OWLModelSlot'
+                    // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:568:1: ( 'OWLModelSlot' )
+                    // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:568:3: 'OWLModelSlot'
                     {
-                    match(input,19,FOLLOW_19_in_rule__MSTYPE__Alternatives1025); 
+                    match(input,19,FOLLOW_19_in_rule__MSTYPE__Alternatives1153); 
 
                     }
 
@@ -1416,16 +1613,16 @@ public class InternalFMLParser extends AbstractInternalContentAssistParser {
                     }
                     break;
                 case 2 :
-                    // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:517:6: ( ( 'DiagramModelSlot' ) )
+                    // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:573:6: ( ( 'DiagramModelSlot' ) )
                     {
-                    // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:517:6: ( ( 'DiagramModelSlot' ) )
-                    // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:518:1: ( 'DiagramModelSlot' )
+                    // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:573:6: ( ( 'DiagramModelSlot' ) )
+                    // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:574:1: ( 'DiagramModelSlot' )
                     {
                      before(grammarAccess.getMSTYPEAccess().getDiagEnumLiteralDeclaration_1()); 
-                    // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:519:1: ( 'DiagramModelSlot' )
-                    // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:519:3: 'DiagramModelSlot'
+                    // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:575:1: ( 'DiagramModelSlot' )
+                    // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:575:3: 'DiagramModelSlot'
                     {
-                    match(input,20,FOLLOW_20_in_rule__MSTYPE__Alternatives1046); 
+                    match(input,20,FOLLOW_20_in_rule__MSTYPE__Alternatives1174); 
 
                     }
 
@@ -1437,16 +1634,16 @@ public class InternalFMLParser extends AbstractInternalContentAssistParser {
                     }
                     break;
                 case 3 :
-                    // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:524:6: ( ( 'EMFModelSlot' ) )
+                    // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:580:6: ( ( 'EMFModelSlot' ) )
                     {
-                    // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:524:6: ( ( 'EMFModelSlot' ) )
-                    // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:525:1: ( 'EMFModelSlot' )
+                    // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:580:6: ( ( 'EMFModelSlot' ) )
+                    // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:581:1: ( 'EMFModelSlot' )
                     {
                      before(grammarAccess.getMSTYPEAccess().getEmfEnumLiteralDeclaration_2()); 
-                    // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:526:1: ( 'EMFModelSlot' )
-                    // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:526:3: 'EMFModelSlot'
+                    // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:582:1: ( 'EMFModelSlot' )
+                    // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:582:3: 'EMFModelSlot'
                     {
-                    match(input,21,FOLLOW_21_in_rule__MSTYPE__Alternatives1067); 
+                    match(input,21,FOLLOW_21_in_rule__MSTYPE__Alternatives1195); 
 
                     }
 
@@ -1458,16 +1655,16 @@ public class InternalFMLParser extends AbstractInternalContentAssistParser {
                     }
                     break;
                 case 4 :
-                    // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:531:6: ( ( 'VirtualModelModelSlot' ) )
+                    // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:587:6: ( ( 'VirtualModelModelSlot' ) )
                     {
-                    // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:531:6: ( ( 'VirtualModelModelSlot' ) )
-                    // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:532:1: ( 'VirtualModelModelSlot' )
+                    // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:587:6: ( ( 'VirtualModelModelSlot' ) )
+                    // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:588:1: ( 'VirtualModelModelSlot' )
                     {
                      before(grammarAccess.getMSTYPEAccess().getVirtualEnumLiteralDeclaration_3()); 
-                    // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:533:1: ( 'VirtualModelModelSlot' )
-                    // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:533:3: 'VirtualModelModelSlot'
+                    // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:589:1: ( 'VirtualModelModelSlot' )
+                    // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:589:3: 'VirtualModelModelSlot'
                     {
-                    match(input,22,FOLLOW_22_in_rule__MSTYPE__Alternatives1088); 
+                    match(input,22,FOLLOW_22_in_rule__MSTYPE__Alternatives1216); 
 
                     }
 
@@ -1479,16 +1676,16 @@ public class InternalFMLParser extends AbstractInternalContentAssistParser {
                     }
                     break;
                 case 5 :
-                    // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:538:6: ( ( 'XSDModelSlot' ) )
+                    // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:594:6: ( ( 'XSDModelSlot' ) )
                     {
-                    // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:538:6: ( ( 'XSDModelSlot' ) )
-                    // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:539:1: ( 'XSDModelSlot' )
+                    // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:594:6: ( ( 'XSDModelSlot' ) )
+                    // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:595:1: ( 'XSDModelSlot' )
                     {
                      before(grammarAccess.getMSTYPEAccess().getXsdEnumLiteralDeclaration_4()); 
-                    // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:540:1: ( 'XSDModelSlot' )
-                    // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:540:3: 'XSDModelSlot'
+                    // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:596:1: ( 'XSDModelSlot' )
+                    // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:596:3: 'XSDModelSlot'
                     {
-                    match(input,23,FOLLOW_23_in_rule__MSTYPE__Alternatives1109); 
+                    match(input,23,FOLLOW_23_in_rule__MSTYPE__Alternatives1237); 
 
                     }
 
@@ -1517,40 +1714,40 @@ public class InternalFMLParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__VMTYPE__Alternatives"
-    // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:550:1: rule__VMTYPE__Alternatives : ( ( ( 'DiagramSpecification' ) ) | ( ( 'VirtualModel' ) ) );
+    // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:606:1: rule__VMTYPE__Alternatives : ( ( ( 'DiagramSpecification' ) ) | ( ( 'VirtualModel' ) ) );
     public final void rule__VMTYPE__Alternatives() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:554:1: ( ( ( 'DiagramSpecification' ) ) | ( ( 'VirtualModel' ) ) )
-            int alt4=2;
-            int LA4_0 = input.LA(1);
+            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:610:1: ( ( ( 'DiagramSpecification' ) ) | ( ( 'VirtualModel' ) ) )
+            int alt5=2;
+            int LA5_0 = input.LA(1);
 
-            if ( (LA4_0==24) ) {
-                alt4=1;
+            if ( (LA5_0==24) ) {
+                alt5=1;
             }
-            else if ( (LA4_0==25) ) {
-                alt4=2;
+            else if ( (LA5_0==25) ) {
+                alt5=2;
             }
             else {
                 NoViableAltException nvae =
-                    new NoViableAltException("", 4, 0, input);
+                    new NoViableAltException("", 5, 0, input);
 
                 throw nvae;
             }
-            switch (alt4) {
+            switch (alt5) {
                 case 1 :
-                    // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:555:1: ( ( 'DiagramSpecification' ) )
+                    // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:611:1: ( ( 'DiagramSpecification' ) )
                     {
-                    // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:555:1: ( ( 'DiagramSpecification' ) )
-                    // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:556:1: ( 'DiagramSpecification' )
+                    // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:611:1: ( ( 'DiagramSpecification' ) )
+                    // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:612:1: ( 'DiagramSpecification' )
                     {
                      before(grammarAccess.getVMTYPEAccess().getDiagSpecEnumLiteralDeclaration_0()); 
-                    // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:557:1: ( 'DiagramSpecification' )
-                    // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:557:3: 'DiagramSpecification'
+                    // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:613:1: ( 'DiagramSpecification' )
+                    // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:613:3: 'DiagramSpecification'
                     {
-                    match(input,24,FOLLOW_24_in_rule__VMTYPE__Alternatives1145); 
+                    match(input,24,FOLLOW_24_in_rule__VMTYPE__Alternatives1273); 
 
                     }
 
@@ -1562,16 +1759,16 @@ public class InternalFMLParser extends AbstractInternalContentAssistParser {
                     }
                     break;
                 case 2 :
-                    // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:562:6: ( ( 'VirtualModel' ) )
+                    // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:618:6: ( ( 'VirtualModel' ) )
                     {
-                    // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:562:6: ( ( 'VirtualModel' ) )
-                    // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:563:1: ( 'VirtualModel' )
+                    // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:618:6: ( ( 'VirtualModel' ) )
+                    // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:619:1: ( 'VirtualModel' )
                     {
                      before(grammarAccess.getVMTYPEAccess().getVMEnumLiteralDeclaration_1()); 
-                    // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:564:1: ( 'VirtualModel' )
-                    // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:564:3: 'VirtualModel'
+                    // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:620:1: ( 'VirtualModel' )
+                    // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:620:3: 'VirtualModel'
                     {
-                    match(input,25,FOLLOW_25_in_rule__VMTYPE__Alternatives1166); 
+                    match(input,25,FOLLOW_25_in_rule__VMTYPE__Alternatives1294); 
 
                     }
 
@@ -1600,21 +1797,21 @@ public class InternalFMLParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__ViewDef__Group__0"
-    // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:576:1: rule__ViewDef__Group__0 : rule__ViewDef__Group__0__Impl rule__ViewDef__Group__1 ;
+    // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:632:1: rule__ViewDef__Group__0 : rule__ViewDef__Group__0__Impl rule__ViewDef__Group__1 ;
     public final void rule__ViewDef__Group__0() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:580:1: ( rule__ViewDef__Group__0__Impl rule__ViewDef__Group__1 )
-            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:581:2: rule__ViewDef__Group__0__Impl rule__ViewDef__Group__1
+            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:636:1: ( rule__ViewDef__Group__0__Impl rule__ViewDef__Group__1 )
+            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:637:2: rule__ViewDef__Group__0__Impl rule__ViewDef__Group__1
             {
-            pushFollow(FOLLOW_rule__ViewDef__Group__0__Impl_in_rule__ViewDef__Group__01199);
+            pushFollow(FOLLOW_rule__ViewDef__Group__0__Impl_in_rule__ViewDef__Group__01327);
             rule__ViewDef__Group__0__Impl();
 
             state._fsp--;
 
-            pushFollow(FOLLOW_rule__ViewDef__Group__1_in_rule__ViewDef__Group__01202);
+            pushFollow(FOLLOW_rule__ViewDef__Group__1_in_rule__ViewDef__Group__01330);
             rule__ViewDef__Group__1();
 
             state._fsp--;
@@ -1638,20 +1835,20 @@ public class InternalFMLParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__ViewDef__Group__0__Impl"
-    // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:588:1: rule__ViewDef__Group__0__Impl : ( 'ViewDefinition' ) ;
+    // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:644:1: rule__ViewDef__Group__0__Impl : ( 'ViewDefinition' ) ;
     public final void rule__ViewDef__Group__0__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:592:1: ( ( 'ViewDefinition' ) )
-            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:593:1: ( 'ViewDefinition' )
+            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:648:1: ( ( 'ViewDefinition' ) )
+            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:649:1: ( 'ViewDefinition' )
             {
-            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:593:1: ( 'ViewDefinition' )
-            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:594:1: 'ViewDefinition'
+            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:649:1: ( 'ViewDefinition' )
+            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:650:1: 'ViewDefinition'
             {
              before(grammarAccess.getViewDefAccess().getViewDefinitionKeyword_0()); 
-            match(input,26,FOLLOW_26_in_rule__ViewDef__Group__0__Impl1230); 
+            match(input,26,FOLLOW_26_in_rule__ViewDef__Group__0__Impl1358); 
              after(grammarAccess.getViewDefAccess().getViewDefinitionKeyword_0()); 
 
             }
@@ -1675,21 +1872,21 @@ public class InternalFMLParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__ViewDef__Group__1"
-    // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:607:1: rule__ViewDef__Group__1 : rule__ViewDef__Group__1__Impl rule__ViewDef__Group__2 ;
+    // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:663:1: rule__ViewDef__Group__1 : rule__ViewDef__Group__1__Impl rule__ViewDef__Group__2 ;
     public final void rule__ViewDef__Group__1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:611:1: ( rule__ViewDef__Group__1__Impl rule__ViewDef__Group__2 )
-            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:612:2: rule__ViewDef__Group__1__Impl rule__ViewDef__Group__2
+            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:667:1: ( rule__ViewDef__Group__1__Impl rule__ViewDef__Group__2 )
+            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:668:2: rule__ViewDef__Group__1__Impl rule__ViewDef__Group__2
             {
-            pushFollow(FOLLOW_rule__ViewDef__Group__1__Impl_in_rule__ViewDef__Group__11261);
+            pushFollow(FOLLOW_rule__ViewDef__Group__1__Impl_in_rule__ViewDef__Group__11389);
             rule__ViewDef__Group__1__Impl();
 
             state._fsp--;
 
-            pushFollow(FOLLOW_rule__ViewDef__Group__2_in_rule__ViewDef__Group__11264);
+            pushFollow(FOLLOW_rule__ViewDef__Group__2_in_rule__ViewDef__Group__11392);
             rule__ViewDef__Group__2();
 
             state._fsp--;
@@ -1713,23 +1910,23 @@ public class InternalFMLParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__ViewDef__Group__1__Impl"
-    // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:619:1: rule__ViewDef__Group__1__Impl : ( ( rule__ViewDef__NameAssignment_1 ) ) ;
+    // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:675:1: rule__ViewDef__Group__1__Impl : ( ( rule__ViewDef__NameAssignment_1 ) ) ;
     public final void rule__ViewDef__Group__1__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:623:1: ( ( ( rule__ViewDef__NameAssignment_1 ) ) )
-            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:624:1: ( ( rule__ViewDef__NameAssignment_1 ) )
+            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:679:1: ( ( ( rule__ViewDef__NameAssignment_1 ) ) )
+            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:680:1: ( ( rule__ViewDef__NameAssignment_1 ) )
             {
-            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:624:1: ( ( rule__ViewDef__NameAssignment_1 ) )
-            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:625:1: ( rule__ViewDef__NameAssignment_1 )
+            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:680:1: ( ( rule__ViewDef__NameAssignment_1 ) )
+            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:681:1: ( rule__ViewDef__NameAssignment_1 )
             {
              before(grammarAccess.getViewDefAccess().getNameAssignment_1()); 
-            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:626:1: ( rule__ViewDef__NameAssignment_1 )
-            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:626:2: rule__ViewDef__NameAssignment_1
+            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:682:1: ( rule__ViewDef__NameAssignment_1 )
+            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:682:2: rule__ViewDef__NameAssignment_1
             {
-            pushFollow(FOLLOW_rule__ViewDef__NameAssignment_1_in_rule__ViewDef__Group__1__Impl1291);
+            pushFollow(FOLLOW_rule__ViewDef__NameAssignment_1_in_rule__ViewDef__Group__1__Impl1419);
             rule__ViewDef__NameAssignment_1();
 
             state._fsp--;
@@ -1760,21 +1957,21 @@ public class InternalFMLParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__ViewDef__Group__2"
-    // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:636:1: rule__ViewDef__Group__2 : rule__ViewDef__Group__2__Impl rule__ViewDef__Group__3 ;
+    // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:692:1: rule__ViewDef__Group__2 : rule__ViewDef__Group__2__Impl rule__ViewDef__Group__3 ;
     public final void rule__ViewDef__Group__2() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:640:1: ( rule__ViewDef__Group__2__Impl rule__ViewDef__Group__3 )
-            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:641:2: rule__ViewDef__Group__2__Impl rule__ViewDef__Group__3
+            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:696:1: ( rule__ViewDef__Group__2__Impl rule__ViewDef__Group__3 )
+            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:697:2: rule__ViewDef__Group__2__Impl rule__ViewDef__Group__3
             {
-            pushFollow(FOLLOW_rule__ViewDef__Group__2__Impl_in_rule__ViewDef__Group__21321);
+            pushFollow(FOLLOW_rule__ViewDef__Group__2__Impl_in_rule__ViewDef__Group__21449);
             rule__ViewDef__Group__2__Impl();
 
             state._fsp--;
 
-            pushFollow(FOLLOW_rule__ViewDef__Group__3_in_rule__ViewDef__Group__21324);
+            pushFollow(FOLLOW_rule__ViewDef__Group__3_in_rule__ViewDef__Group__21452);
             rule__ViewDef__Group__3();
 
             state._fsp--;
@@ -1798,26 +1995,26 @@ public class InternalFMLParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__ViewDef__Group__2__Impl"
-    // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:648:1: rule__ViewDef__Group__2__Impl : ( ( ( 'uri' ) ) ( ( 'uri' )* ) ) ;
+    // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:704:1: rule__ViewDef__Group__2__Impl : ( ( ( 'uri' ) ) ( ( 'uri' )* ) ) ;
     public final void rule__ViewDef__Group__2__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:652:1: ( ( ( ( 'uri' ) ) ( ( 'uri' )* ) ) )
-            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:653:1: ( ( ( 'uri' ) ) ( ( 'uri' )* ) )
+            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:708:1: ( ( ( ( 'uri' ) ) ( ( 'uri' )* ) ) )
+            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:709:1: ( ( ( 'uri' ) ) ( ( 'uri' )* ) )
             {
-            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:653:1: ( ( ( 'uri' ) ) ( ( 'uri' )* ) )
-            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:654:1: ( ( 'uri' ) ) ( ( 'uri' )* )
+            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:709:1: ( ( ( 'uri' ) ) ( ( 'uri' )* ) )
+            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:710:1: ( ( 'uri' ) ) ( ( 'uri' )* )
             {
-            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:654:1: ( ( 'uri' ) )
-            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:655:1: ( 'uri' )
+            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:710:1: ( ( 'uri' ) )
+            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:711:1: ( 'uri' )
             {
              before(grammarAccess.getViewDefAccess().getUriKeyword_2()); 
-            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:656:1: ( 'uri' )
-            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:657:2: 'uri'
+            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:712:1: ( 'uri' )
+            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:713:2: 'uri'
             {
-            match(input,27,FOLLOW_27_in_rule__ViewDef__Group__2__Impl1355); 
+            match(input,27,FOLLOW_27_in_rule__ViewDef__Group__2__Impl1483); 
 
             }
 
@@ -1825,32 +2022,32 @@ public class InternalFMLParser extends AbstractInternalContentAssistParser {
 
             }
 
-            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:661:1: ( ( 'uri' )* )
-            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:662:1: ( 'uri' )*
+            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:717:1: ( ( 'uri' )* )
+            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:718:1: ( 'uri' )*
             {
              before(grammarAccess.getViewDefAccess().getUriKeyword_2()); 
-            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:663:1: ( 'uri' )*
-            loop5:
+            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:719:1: ( 'uri' )*
+            loop6:
             do {
-                int alt5=2;
-                int LA5_0 = input.LA(1);
+                int alt6=2;
+                int LA6_0 = input.LA(1);
 
-                if ( (LA5_0==27) ) {
-                    alt5=1;
+                if ( (LA6_0==27) ) {
+                    alt6=1;
                 }
 
 
-                switch (alt5) {
+                switch (alt6) {
             	case 1 :
-            	    // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:664:2: 'uri'
+            	    // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:720:2: 'uri'
             	    {
-            	    match(input,27,FOLLOW_27_in_rule__ViewDef__Group__2__Impl1371); 
+            	    match(input,27,FOLLOW_27_in_rule__ViewDef__Group__2__Impl1499); 
 
             	    }
             	    break;
 
             	default :
-            	    break loop5;
+            	    break loop6;
                 }
             } while (true);
 
@@ -1880,21 +2077,21 @@ public class InternalFMLParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__ViewDef__Group__3"
-    // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:676:1: rule__ViewDef__Group__3 : rule__ViewDef__Group__3__Impl rule__ViewDef__Group__4 ;
+    // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:732:1: rule__ViewDef__Group__3 : rule__ViewDef__Group__3__Impl rule__ViewDef__Group__4 ;
     public final void rule__ViewDef__Group__3() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:680:1: ( rule__ViewDef__Group__3__Impl rule__ViewDef__Group__4 )
-            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:681:2: rule__ViewDef__Group__3__Impl rule__ViewDef__Group__4
+            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:736:1: ( rule__ViewDef__Group__3__Impl rule__ViewDef__Group__4 )
+            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:737:2: rule__ViewDef__Group__3__Impl rule__ViewDef__Group__4
             {
-            pushFollow(FOLLOW_rule__ViewDef__Group__3__Impl_in_rule__ViewDef__Group__31406);
+            pushFollow(FOLLOW_rule__ViewDef__Group__3__Impl_in_rule__ViewDef__Group__31534);
             rule__ViewDef__Group__3__Impl();
 
             state._fsp--;
 
-            pushFollow(FOLLOW_rule__ViewDef__Group__4_in_rule__ViewDef__Group__31409);
+            pushFollow(FOLLOW_rule__ViewDef__Group__4_in_rule__ViewDef__Group__31537);
             rule__ViewDef__Group__4();
 
             state._fsp--;
@@ -1918,26 +2115,26 @@ public class InternalFMLParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__ViewDef__Group__3__Impl"
-    // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:688:1: rule__ViewDef__Group__3__Impl : ( ( ( '=' ) ) ( ( '=' )* ) ) ;
+    // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:744:1: rule__ViewDef__Group__3__Impl : ( ( ( '=' ) ) ( ( '=' )* ) ) ;
     public final void rule__ViewDef__Group__3__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:692:1: ( ( ( ( '=' ) ) ( ( '=' )* ) ) )
-            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:693:1: ( ( ( '=' ) ) ( ( '=' )* ) )
+            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:748:1: ( ( ( ( '=' ) ) ( ( '=' )* ) ) )
+            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:749:1: ( ( ( '=' ) ) ( ( '=' )* ) )
             {
-            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:693:1: ( ( ( '=' ) ) ( ( '=' )* ) )
-            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:694:1: ( ( '=' ) ) ( ( '=' )* )
+            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:749:1: ( ( ( '=' ) ) ( ( '=' )* ) )
+            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:750:1: ( ( '=' ) ) ( ( '=' )* )
             {
-            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:694:1: ( ( '=' ) )
-            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:695:1: ( '=' )
+            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:750:1: ( ( '=' ) )
+            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:751:1: ( '=' )
             {
              before(grammarAccess.getViewDefAccess().getEqualsSignKeyword_3()); 
-            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:696:1: ( '=' )
-            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:697:2: '='
+            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:752:1: ( '=' )
+            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:753:2: '='
             {
-            match(input,28,FOLLOW_28_in_rule__ViewDef__Group__3__Impl1440); 
+            match(input,28,FOLLOW_28_in_rule__ViewDef__Group__3__Impl1568); 
 
             }
 
@@ -1945,32 +2142,32 @@ public class InternalFMLParser extends AbstractInternalContentAssistParser {
 
             }
 
-            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:701:1: ( ( '=' )* )
-            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:702:1: ( '=' )*
+            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:757:1: ( ( '=' )* )
+            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:758:1: ( '=' )*
             {
              before(grammarAccess.getViewDefAccess().getEqualsSignKeyword_3()); 
-            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:703:1: ( '=' )*
-            loop6:
+            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:759:1: ( '=' )*
+            loop7:
             do {
-                int alt6=2;
-                int LA6_0 = input.LA(1);
+                int alt7=2;
+                int LA7_0 = input.LA(1);
 
-                if ( (LA6_0==28) ) {
-                    alt6=1;
+                if ( (LA7_0==28) ) {
+                    alt7=1;
                 }
 
 
-                switch (alt6) {
+                switch (alt7) {
             	case 1 :
-            	    // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:704:2: '='
+            	    // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:760:2: '='
             	    {
-            	    match(input,28,FOLLOW_28_in_rule__ViewDef__Group__3__Impl1456); 
+            	    match(input,28,FOLLOW_28_in_rule__ViewDef__Group__3__Impl1584); 
 
             	    }
             	    break;
 
             	default :
-            	    break loop6;
+            	    break loop7;
                 }
             } while (true);
 
@@ -2000,21 +2197,21 @@ public class InternalFMLParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__ViewDef__Group__4"
-    // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:716:1: rule__ViewDef__Group__4 : rule__ViewDef__Group__4__Impl rule__ViewDef__Group__5 ;
+    // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:772:1: rule__ViewDef__Group__4 : rule__ViewDef__Group__4__Impl rule__ViewDef__Group__5 ;
     public final void rule__ViewDef__Group__4() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:720:1: ( rule__ViewDef__Group__4__Impl rule__ViewDef__Group__5 )
-            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:721:2: rule__ViewDef__Group__4__Impl rule__ViewDef__Group__5
+            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:776:1: ( rule__ViewDef__Group__4__Impl rule__ViewDef__Group__5 )
+            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:777:2: rule__ViewDef__Group__4__Impl rule__ViewDef__Group__5
             {
-            pushFollow(FOLLOW_rule__ViewDef__Group__4__Impl_in_rule__ViewDef__Group__41491);
+            pushFollow(FOLLOW_rule__ViewDef__Group__4__Impl_in_rule__ViewDef__Group__41619);
             rule__ViewDef__Group__4__Impl();
 
             state._fsp--;
 
-            pushFollow(FOLLOW_rule__ViewDef__Group__5_in_rule__ViewDef__Group__41494);
+            pushFollow(FOLLOW_rule__ViewDef__Group__5_in_rule__ViewDef__Group__41622);
             rule__ViewDef__Group__5();
 
             state._fsp--;
@@ -2038,23 +2235,23 @@ public class InternalFMLParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__ViewDef__Group__4__Impl"
-    // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:728:1: rule__ViewDef__Group__4__Impl : ( ( rule__ViewDef__UriAssignment_4 ) ) ;
+    // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:784:1: rule__ViewDef__Group__4__Impl : ( ( rule__ViewDef__UriAssignment_4 ) ) ;
     public final void rule__ViewDef__Group__4__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:732:1: ( ( ( rule__ViewDef__UriAssignment_4 ) ) )
-            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:733:1: ( ( rule__ViewDef__UriAssignment_4 ) )
+            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:788:1: ( ( ( rule__ViewDef__UriAssignment_4 ) ) )
+            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:789:1: ( ( rule__ViewDef__UriAssignment_4 ) )
             {
-            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:733:1: ( ( rule__ViewDef__UriAssignment_4 ) )
-            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:734:1: ( rule__ViewDef__UriAssignment_4 )
+            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:789:1: ( ( rule__ViewDef__UriAssignment_4 ) )
+            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:790:1: ( rule__ViewDef__UriAssignment_4 )
             {
              before(grammarAccess.getViewDefAccess().getUriAssignment_4()); 
-            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:735:1: ( rule__ViewDef__UriAssignment_4 )
-            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:735:2: rule__ViewDef__UriAssignment_4
+            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:791:1: ( rule__ViewDef__UriAssignment_4 )
+            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:791:2: rule__ViewDef__UriAssignment_4
             {
-            pushFollow(FOLLOW_rule__ViewDef__UriAssignment_4_in_rule__ViewDef__Group__4__Impl1521);
+            pushFollow(FOLLOW_rule__ViewDef__UriAssignment_4_in_rule__ViewDef__Group__4__Impl1649);
             rule__ViewDef__UriAssignment_4();
 
             state._fsp--;
@@ -2085,21 +2282,21 @@ public class InternalFMLParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__ViewDef__Group__5"
-    // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:745:1: rule__ViewDef__Group__5 : rule__ViewDef__Group__5__Impl rule__ViewDef__Group__6 ;
+    // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:801:1: rule__ViewDef__Group__5 : rule__ViewDef__Group__5__Impl rule__ViewDef__Group__6 ;
     public final void rule__ViewDef__Group__5() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:749:1: ( rule__ViewDef__Group__5__Impl rule__ViewDef__Group__6 )
-            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:750:2: rule__ViewDef__Group__5__Impl rule__ViewDef__Group__6
+            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:805:1: ( rule__ViewDef__Group__5__Impl rule__ViewDef__Group__6 )
+            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:806:2: rule__ViewDef__Group__5__Impl rule__ViewDef__Group__6
             {
-            pushFollow(FOLLOW_rule__ViewDef__Group__5__Impl_in_rule__ViewDef__Group__51551);
+            pushFollow(FOLLOW_rule__ViewDef__Group__5__Impl_in_rule__ViewDef__Group__51679);
             rule__ViewDef__Group__5__Impl();
 
             state._fsp--;
 
-            pushFollow(FOLLOW_rule__ViewDef__Group__6_in_rule__ViewDef__Group__51554);
+            pushFollow(FOLLOW_rule__ViewDef__Group__6_in_rule__ViewDef__Group__51682);
             rule__ViewDef__Group__6();
 
             state._fsp--;
@@ -2123,20 +2320,20 @@ public class InternalFMLParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__ViewDef__Group__5__Impl"
-    // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:757:1: rule__ViewDef__Group__5__Impl : ( '{' ) ;
+    // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:813:1: rule__ViewDef__Group__5__Impl : ( '{' ) ;
     public final void rule__ViewDef__Group__5__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:761:1: ( ( '{' ) )
-            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:762:1: ( '{' )
+            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:817:1: ( ( '{' ) )
+            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:818:1: ( '{' )
             {
-            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:762:1: ( '{' )
-            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:763:1: '{'
+            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:818:1: ( '{' )
+            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:819:1: '{'
             {
              before(grammarAccess.getViewDefAccess().getLeftCurlyBracketKeyword_5()); 
-            match(input,29,FOLLOW_29_in_rule__ViewDef__Group__5__Impl1582); 
+            match(input,29,FOLLOW_29_in_rule__ViewDef__Group__5__Impl1710); 
              after(grammarAccess.getViewDefAccess().getLeftCurlyBracketKeyword_5()); 
 
             }
@@ -2160,21 +2357,21 @@ public class InternalFMLParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__ViewDef__Group__6"
-    // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:776:1: rule__ViewDef__Group__6 : rule__ViewDef__Group__6__Impl rule__ViewDef__Group__7 ;
+    // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:832:1: rule__ViewDef__Group__6 : rule__ViewDef__Group__6__Impl rule__ViewDef__Group__7 ;
     public final void rule__ViewDef__Group__6() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:780:1: ( rule__ViewDef__Group__6__Impl rule__ViewDef__Group__7 )
-            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:781:2: rule__ViewDef__Group__6__Impl rule__ViewDef__Group__7
+            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:836:1: ( rule__ViewDef__Group__6__Impl rule__ViewDef__Group__7 )
+            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:837:2: rule__ViewDef__Group__6__Impl rule__ViewDef__Group__7
             {
-            pushFollow(FOLLOW_rule__ViewDef__Group__6__Impl_in_rule__ViewDef__Group__61613);
+            pushFollow(FOLLOW_rule__ViewDef__Group__6__Impl_in_rule__ViewDef__Group__61741);
             rule__ViewDef__Group__6__Impl();
 
             state._fsp--;
 
-            pushFollow(FOLLOW_rule__ViewDef__Group__7_in_rule__ViewDef__Group__61616);
+            pushFollow(FOLLOW_rule__ViewDef__Group__7_in_rule__ViewDef__Group__61744);
             rule__ViewDef__Group__7();
 
             state._fsp--;
@@ -2198,35 +2395,35 @@ public class InternalFMLParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__ViewDef__Group__6__Impl"
-    // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:788:1: rule__ViewDef__Group__6__Impl : ( ( rule__ViewDef__ElementsAssignment_6 )* ) ;
+    // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:844:1: rule__ViewDef__Group__6__Impl : ( ( rule__ViewDef__ElementsAssignment_6 )* ) ;
     public final void rule__ViewDef__Group__6__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:792:1: ( ( ( rule__ViewDef__ElementsAssignment_6 )* ) )
-            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:793:1: ( ( rule__ViewDef__ElementsAssignment_6 )* )
+            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:848:1: ( ( ( rule__ViewDef__ElementsAssignment_6 )* ) )
+            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:849:1: ( ( rule__ViewDef__ElementsAssignment_6 )* )
             {
-            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:793:1: ( ( rule__ViewDef__ElementsAssignment_6 )* )
-            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:794:1: ( rule__ViewDef__ElementsAssignment_6 )*
+            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:849:1: ( ( rule__ViewDef__ElementsAssignment_6 )* )
+            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:850:1: ( rule__ViewDef__ElementsAssignment_6 )*
             {
              before(grammarAccess.getViewDefAccess().getElementsAssignment_6()); 
-            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:795:1: ( rule__ViewDef__ElementsAssignment_6 )*
-            loop7:
+            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:851:1: ( rule__ViewDef__ElementsAssignment_6 )*
+            loop8:
             do {
-                int alt7=2;
-                int LA7_0 = input.LA(1);
+                int alt8=2;
+                int LA8_0 = input.LA(1);
 
-                if ( (LA7_0==25) ) {
-                    alt7=1;
+                if ( (LA8_0==25) ) {
+                    alt8=1;
                 }
 
 
-                switch (alt7) {
+                switch (alt8) {
             	case 1 :
-            	    // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:795:2: rule__ViewDef__ElementsAssignment_6
+            	    // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:851:2: rule__ViewDef__ElementsAssignment_6
             	    {
-            	    pushFollow(FOLLOW_rule__ViewDef__ElementsAssignment_6_in_rule__ViewDef__Group__6__Impl1643);
+            	    pushFollow(FOLLOW_rule__ViewDef__ElementsAssignment_6_in_rule__ViewDef__Group__6__Impl1771);
             	    rule__ViewDef__ElementsAssignment_6();
 
             	    state._fsp--;
@@ -2236,7 +2433,7 @@ public class InternalFMLParser extends AbstractInternalContentAssistParser {
             	    break;
 
             	default :
-            	    break loop7;
+            	    break loop8;
                 }
             } while (true);
 
@@ -2263,16 +2460,16 @@ public class InternalFMLParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__ViewDef__Group__7"
-    // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:805:1: rule__ViewDef__Group__7 : rule__ViewDef__Group__7__Impl ;
+    // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:861:1: rule__ViewDef__Group__7 : rule__ViewDef__Group__7__Impl ;
     public final void rule__ViewDef__Group__7() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:809:1: ( rule__ViewDef__Group__7__Impl )
-            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:810:2: rule__ViewDef__Group__7__Impl
+            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:865:1: ( rule__ViewDef__Group__7__Impl )
+            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:866:2: rule__ViewDef__Group__7__Impl
             {
-            pushFollow(FOLLOW_rule__ViewDef__Group__7__Impl_in_rule__ViewDef__Group__71674);
+            pushFollow(FOLLOW_rule__ViewDef__Group__7__Impl_in_rule__ViewDef__Group__71802);
             rule__ViewDef__Group__7__Impl();
 
             state._fsp--;
@@ -2296,20 +2493,20 @@ public class InternalFMLParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__ViewDef__Group__7__Impl"
-    // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:816:1: rule__ViewDef__Group__7__Impl : ( '}' ) ;
+    // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:872:1: rule__ViewDef__Group__7__Impl : ( '}' ) ;
     public final void rule__ViewDef__Group__7__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:820:1: ( ( '}' ) )
-            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:821:1: ( '}' )
+            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:876:1: ( ( '}' ) )
+            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:877:1: ( '}' )
             {
-            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:821:1: ( '}' )
-            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:822:1: '}'
+            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:877:1: ( '}' )
+            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:878:1: '}'
             {
              before(grammarAccess.getViewDefAccess().getRightCurlyBracketKeyword_7()); 
-            match(input,30,FOLLOW_30_in_rule__ViewDef__Group__7__Impl1702); 
+            match(input,30,FOLLOW_30_in_rule__ViewDef__Group__7__Impl1830); 
              after(grammarAccess.getViewDefAccess().getRightCurlyBracketKeyword_7()); 
 
             }
@@ -2333,21 +2530,21 @@ public class InternalFMLParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__VirtualModel__Group__0"
-    // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:851:1: rule__VirtualModel__Group__0 : rule__VirtualModel__Group__0__Impl rule__VirtualModel__Group__1 ;
+    // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:907:1: rule__VirtualModel__Group__0 : rule__VirtualModel__Group__0__Impl rule__VirtualModel__Group__1 ;
     public final void rule__VirtualModel__Group__0() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:855:1: ( rule__VirtualModel__Group__0__Impl rule__VirtualModel__Group__1 )
-            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:856:2: rule__VirtualModel__Group__0__Impl rule__VirtualModel__Group__1
+            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:911:1: ( rule__VirtualModel__Group__0__Impl rule__VirtualModel__Group__1 )
+            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:912:2: rule__VirtualModel__Group__0__Impl rule__VirtualModel__Group__1
             {
-            pushFollow(FOLLOW_rule__VirtualModel__Group__0__Impl_in_rule__VirtualModel__Group__01749);
+            pushFollow(FOLLOW_rule__VirtualModel__Group__0__Impl_in_rule__VirtualModel__Group__01877);
             rule__VirtualModel__Group__0__Impl();
 
             state._fsp--;
 
-            pushFollow(FOLLOW_rule__VirtualModel__Group__1_in_rule__VirtualModel__Group__01752);
+            pushFollow(FOLLOW_rule__VirtualModel__Group__1_in_rule__VirtualModel__Group__01880);
             rule__VirtualModel__Group__1();
 
             state._fsp--;
@@ -2371,20 +2568,20 @@ public class InternalFMLParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__VirtualModel__Group__0__Impl"
-    // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:863:1: rule__VirtualModel__Group__0__Impl : ( 'VirtualModel' ) ;
+    // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:919:1: rule__VirtualModel__Group__0__Impl : ( 'VirtualModel' ) ;
     public final void rule__VirtualModel__Group__0__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:867:1: ( ( 'VirtualModel' ) )
-            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:868:1: ( 'VirtualModel' )
+            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:923:1: ( ( 'VirtualModel' ) )
+            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:924:1: ( 'VirtualModel' )
             {
-            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:868:1: ( 'VirtualModel' )
-            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:869:1: 'VirtualModel'
+            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:924:1: ( 'VirtualModel' )
+            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:925:1: 'VirtualModel'
             {
              before(grammarAccess.getVirtualModelAccess().getVirtualModelKeyword_0()); 
-            match(input,25,FOLLOW_25_in_rule__VirtualModel__Group__0__Impl1780); 
+            match(input,25,FOLLOW_25_in_rule__VirtualModel__Group__0__Impl1908); 
              after(grammarAccess.getVirtualModelAccess().getVirtualModelKeyword_0()); 
 
             }
@@ -2408,21 +2605,21 @@ public class InternalFMLParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__VirtualModel__Group__1"
-    // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:882:1: rule__VirtualModel__Group__1 : rule__VirtualModel__Group__1__Impl rule__VirtualModel__Group__2 ;
+    // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:938:1: rule__VirtualModel__Group__1 : rule__VirtualModel__Group__1__Impl rule__VirtualModel__Group__2 ;
     public final void rule__VirtualModel__Group__1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:886:1: ( rule__VirtualModel__Group__1__Impl rule__VirtualModel__Group__2 )
-            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:887:2: rule__VirtualModel__Group__1__Impl rule__VirtualModel__Group__2
+            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:942:1: ( rule__VirtualModel__Group__1__Impl rule__VirtualModel__Group__2 )
+            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:943:2: rule__VirtualModel__Group__1__Impl rule__VirtualModel__Group__2
             {
-            pushFollow(FOLLOW_rule__VirtualModel__Group__1__Impl_in_rule__VirtualModel__Group__11811);
+            pushFollow(FOLLOW_rule__VirtualModel__Group__1__Impl_in_rule__VirtualModel__Group__11939);
             rule__VirtualModel__Group__1__Impl();
 
             state._fsp--;
 
-            pushFollow(FOLLOW_rule__VirtualModel__Group__2_in_rule__VirtualModel__Group__11814);
+            pushFollow(FOLLOW_rule__VirtualModel__Group__2_in_rule__VirtualModel__Group__11942);
             rule__VirtualModel__Group__2();
 
             state._fsp--;
@@ -2446,23 +2643,23 @@ public class InternalFMLParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__VirtualModel__Group__1__Impl"
-    // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:894:1: rule__VirtualModel__Group__1__Impl : ( ( rule__VirtualModel__NameAssignment_1 ) ) ;
+    // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:950:1: rule__VirtualModel__Group__1__Impl : ( ( rule__VirtualModel__NameAssignment_1 ) ) ;
     public final void rule__VirtualModel__Group__1__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:898:1: ( ( ( rule__VirtualModel__NameAssignment_1 ) ) )
-            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:899:1: ( ( rule__VirtualModel__NameAssignment_1 ) )
+            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:954:1: ( ( ( rule__VirtualModel__NameAssignment_1 ) ) )
+            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:955:1: ( ( rule__VirtualModel__NameAssignment_1 ) )
             {
-            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:899:1: ( ( rule__VirtualModel__NameAssignment_1 ) )
-            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:900:1: ( rule__VirtualModel__NameAssignment_1 )
+            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:955:1: ( ( rule__VirtualModel__NameAssignment_1 ) )
+            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:956:1: ( rule__VirtualModel__NameAssignment_1 )
             {
              before(grammarAccess.getVirtualModelAccess().getNameAssignment_1()); 
-            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:901:1: ( rule__VirtualModel__NameAssignment_1 )
-            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:901:2: rule__VirtualModel__NameAssignment_1
+            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:957:1: ( rule__VirtualModel__NameAssignment_1 )
+            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:957:2: rule__VirtualModel__NameAssignment_1
             {
-            pushFollow(FOLLOW_rule__VirtualModel__NameAssignment_1_in_rule__VirtualModel__Group__1__Impl1841);
+            pushFollow(FOLLOW_rule__VirtualModel__NameAssignment_1_in_rule__VirtualModel__Group__1__Impl1969);
             rule__VirtualModel__NameAssignment_1();
 
             state._fsp--;
@@ -2493,21 +2690,21 @@ public class InternalFMLParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__VirtualModel__Group__2"
-    // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:911:1: rule__VirtualModel__Group__2 : rule__VirtualModel__Group__2__Impl rule__VirtualModel__Group__3 ;
+    // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:967:1: rule__VirtualModel__Group__2 : rule__VirtualModel__Group__2__Impl rule__VirtualModel__Group__3 ;
     public final void rule__VirtualModel__Group__2() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:915:1: ( rule__VirtualModel__Group__2__Impl rule__VirtualModel__Group__3 )
-            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:916:2: rule__VirtualModel__Group__2__Impl rule__VirtualModel__Group__3
+            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:971:1: ( rule__VirtualModel__Group__2__Impl rule__VirtualModel__Group__3 )
+            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:972:2: rule__VirtualModel__Group__2__Impl rule__VirtualModel__Group__3
             {
-            pushFollow(FOLLOW_rule__VirtualModel__Group__2__Impl_in_rule__VirtualModel__Group__21871);
+            pushFollow(FOLLOW_rule__VirtualModel__Group__2__Impl_in_rule__VirtualModel__Group__21999);
             rule__VirtualModel__Group__2__Impl();
 
             state._fsp--;
 
-            pushFollow(FOLLOW_rule__VirtualModel__Group__3_in_rule__VirtualModel__Group__21874);
+            pushFollow(FOLLOW_rule__VirtualModel__Group__3_in_rule__VirtualModel__Group__22002);
             rule__VirtualModel__Group__3();
 
             state._fsp--;
@@ -2531,31 +2728,31 @@ public class InternalFMLParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__VirtualModel__Group__2__Impl"
-    // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:923:1: rule__VirtualModel__Group__2__Impl : ( ( rule__VirtualModel__Group_2__0 )? ) ;
+    // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:979:1: rule__VirtualModel__Group__2__Impl : ( ( rule__VirtualModel__Group_2__0 )? ) ;
     public final void rule__VirtualModel__Group__2__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:927:1: ( ( ( rule__VirtualModel__Group_2__0 )? ) )
-            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:928:1: ( ( rule__VirtualModel__Group_2__0 )? )
+            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:983:1: ( ( ( rule__VirtualModel__Group_2__0 )? ) )
+            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:984:1: ( ( rule__VirtualModel__Group_2__0 )? )
             {
-            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:928:1: ( ( rule__VirtualModel__Group_2__0 )? )
-            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:929:1: ( rule__VirtualModel__Group_2__0 )?
+            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:984:1: ( ( rule__VirtualModel__Group_2__0 )? )
+            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:985:1: ( rule__VirtualModel__Group_2__0 )?
             {
              before(grammarAccess.getVirtualModelAccess().getGroup_2()); 
-            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:930:1: ( rule__VirtualModel__Group_2__0 )?
-            int alt8=2;
-            int LA8_0 = input.LA(1);
+            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:986:1: ( rule__VirtualModel__Group_2__0 )?
+            int alt9=2;
+            int LA9_0 = input.LA(1);
 
-            if ( (LA8_0==31) ) {
-                alt8=1;
+            if ( (LA9_0==31) ) {
+                alt9=1;
             }
-            switch (alt8) {
+            switch (alt9) {
                 case 1 :
-                    // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:930:2: rule__VirtualModel__Group_2__0
+                    // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:986:2: rule__VirtualModel__Group_2__0
                     {
-                    pushFollow(FOLLOW_rule__VirtualModel__Group_2__0_in_rule__VirtualModel__Group__2__Impl1901);
+                    pushFollow(FOLLOW_rule__VirtualModel__Group_2__0_in_rule__VirtualModel__Group__2__Impl2029);
                     rule__VirtualModel__Group_2__0();
 
                     state._fsp--;
@@ -2589,21 +2786,21 @@ public class InternalFMLParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__VirtualModel__Group__3"
-    // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:940:1: rule__VirtualModel__Group__3 : rule__VirtualModel__Group__3__Impl rule__VirtualModel__Group__4 ;
+    // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:996:1: rule__VirtualModel__Group__3 : rule__VirtualModel__Group__3__Impl rule__VirtualModel__Group__4 ;
     public final void rule__VirtualModel__Group__3() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:944:1: ( rule__VirtualModel__Group__3__Impl rule__VirtualModel__Group__4 )
-            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:945:2: rule__VirtualModel__Group__3__Impl rule__VirtualModel__Group__4
+            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:1000:1: ( rule__VirtualModel__Group__3__Impl rule__VirtualModel__Group__4 )
+            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:1001:2: rule__VirtualModel__Group__3__Impl rule__VirtualModel__Group__4
             {
-            pushFollow(FOLLOW_rule__VirtualModel__Group__3__Impl_in_rule__VirtualModel__Group__31932);
+            pushFollow(FOLLOW_rule__VirtualModel__Group__3__Impl_in_rule__VirtualModel__Group__32060);
             rule__VirtualModel__Group__3__Impl();
 
             state._fsp--;
 
-            pushFollow(FOLLOW_rule__VirtualModel__Group__4_in_rule__VirtualModel__Group__31935);
+            pushFollow(FOLLOW_rule__VirtualModel__Group__4_in_rule__VirtualModel__Group__32063);
             rule__VirtualModel__Group__4();
 
             state._fsp--;
@@ -2627,26 +2824,26 @@ public class InternalFMLParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__VirtualModel__Group__3__Impl"
-    // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:952:1: rule__VirtualModel__Group__3__Impl : ( ( ( 'uri' ) ) ( ( 'uri' )* ) ) ;
+    // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:1008:1: rule__VirtualModel__Group__3__Impl : ( ( ( 'uri' ) ) ( ( 'uri' )* ) ) ;
     public final void rule__VirtualModel__Group__3__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:956:1: ( ( ( ( 'uri' ) ) ( ( 'uri' )* ) ) )
-            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:957:1: ( ( ( 'uri' ) ) ( ( 'uri' )* ) )
+            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:1012:1: ( ( ( ( 'uri' ) ) ( ( 'uri' )* ) ) )
+            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:1013:1: ( ( ( 'uri' ) ) ( ( 'uri' )* ) )
             {
-            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:957:1: ( ( ( 'uri' ) ) ( ( 'uri' )* ) )
-            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:958:1: ( ( 'uri' ) ) ( ( 'uri' )* )
+            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:1013:1: ( ( ( 'uri' ) ) ( ( 'uri' )* ) )
+            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:1014:1: ( ( 'uri' ) ) ( ( 'uri' )* )
             {
-            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:958:1: ( ( 'uri' ) )
-            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:959:1: ( 'uri' )
+            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:1014:1: ( ( 'uri' ) )
+            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:1015:1: ( 'uri' )
             {
              before(grammarAccess.getVirtualModelAccess().getUriKeyword_3()); 
-            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:960:1: ( 'uri' )
-            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:961:2: 'uri'
+            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:1016:1: ( 'uri' )
+            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:1017:2: 'uri'
             {
-            match(input,27,FOLLOW_27_in_rule__VirtualModel__Group__3__Impl1966); 
+            match(input,27,FOLLOW_27_in_rule__VirtualModel__Group__3__Impl2094); 
 
             }
 
@@ -2654,32 +2851,32 @@ public class InternalFMLParser extends AbstractInternalContentAssistParser {
 
             }
 
-            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:965:1: ( ( 'uri' )* )
-            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:966:1: ( 'uri' )*
+            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:1021:1: ( ( 'uri' )* )
+            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:1022:1: ( 'uri' )*
             {
              before(grammarAccess.getVirtualModelAccess().getUriKeyword_3()); 
-            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:967:1: ( 'uri' )*
-            loop9:
+            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:1023:1: ( 'uri' )*
+            loop10:
             do {
-                int alt9=2;
-                int LA9_0 = input.LA(1);
+                int alt10=2;
+                int LA10_0 = input.LA(1);
 
-                if ( (LA9_0==27) ) {
-                    alt9=1;
+                if ( (LA10_0==27) ) {
+                    alt10=1;
                 }
 
 
-                switch (alt9) {
+                switch (alt10) {
             	case 1 :
-            	    // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:968:2: 'uri'
+            	    // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:1024:2: 'uri'
             	    {
-            	    match(input,27,FOLLOW_27_in_rule__VirtualModel__Group__3__Impl1982); 
+            	    match(input,27,FOLLOW_27_in_rule__VirtualModel__Group__3__Impl2110); 
 
             	    }
             	    break;
 
             	default :
-            	    break loop9;
+            	    break loop10;
                 }
             } while (true);
 
@@ -2709,21 +2906,21 @@ public class InternalFMLParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__VirtualModel__Group__4"
-    // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:980:1: rule__VirtualModel__Group__4 : rule__VirtualModel__Group__4__Impl rule__VirtualModel__Group__5 ;
+    // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:1036:1: rule__VirtualModel__Group__4 : rule__VirtualModel__Group__4__Impl rule__VirtualModel__Group__5 ;
     public final void rule__VirtualModel__Group__4() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:984:1: ( rule__VirtualModel__Group__4__Impl rule__VirtualModel__Group__5 )
-            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:985:2: rule__VirtualModel__Group__4__Impl rule__VirtualModel__Group__5
+            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:1040:1: ( rule__VirtualModel__Group__4__Impl rule__VirtualModel__Group__5 )
+            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:1041:2: rule__VirtualModel__Group__4__Impl rule__VirtualModel__Group__5
             {
-            pushFollow(FOLLOW_rule__VirtualModel__Group__4__Impl_in_rule__VirtualModel__Group__42017);
+            pushFollow(FOLLOW_rule__VirtualModel__Group__4__Impl_in_rule__VirtualModel__Group__42145);
             rule__VirtualModel__Group__4__Impl();
 
             state._fsp--;
 
-            pushFollow(FOLLOW_rule__VirtualModel__Group__5_in_rule__VirtualModel__Group__42020);
+            pushFollow(FOLLOW_rule__VirtualModel__Group__5_in_rule__VirtualModel__Group__42148);
             rule__VirtualModel__Group__5();
 
             state._fsp--;
@@ -2747,26 +2944,26 @@ public class InternalFMLParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__VirtualModel__Group__4__Impl"
-    // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:992:1: rule__VirtualModel__Group__4__Impl : ( ( ( '=' ) ) ( ( '=' )* ) ) ;
+    // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:1048:1: rule__VirtualModel__Group__4__Impl : ( ( ( '=' ) ) ( ( '=' )* ) ) ;
     public final void rule__VirtualModel__Group__4__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:996:1: ( ( ( ( '=' ) ) ( ( '=' )* ) ) )
-            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:997:1: ( ( ( '=' ) ) ( ( '=' )* ) )
+            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:1052:1: ( ( ( ( '=' ) ) ( ( '=' )* ) ) )
+            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:1053:1: ( ( ( '=' ) ) ( ( '=' )* ) )
             {
-            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:997:1: ( ( ( '=' ) ) ( ( '=' )* ) )
-            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:998:1: ( ( '=' ) ) ( ( '=' )* )
+            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:1053:1: ( ( ( '=' ) ) ( ( '=' )* ) )
+            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:1054:1: ( ( '=' ) ) ( ( '=' )* )
             {
-            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:998:1: ( ( '=' ) )
-            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:999:1: ( '=' )
+            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:1054:1: ( ( '=' ) )
+            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:1055:1: ( '=' )
             {
              before(grammarAccess.getVirtualModelAccess().getEqualsSignKeyword_4()); 
-            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:1000:1: ( '=' )
-            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:1001:2: '='
+            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:1056:1: ( '=' )
+            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:1057:2: '='
             {
-            match(input,28,FOLLOW_28_in_rule__VirtualModel__Group__4__Impl2051); 
+            match(input,28,FOLLOW_28_in_rule__VirtualModel__Group__4__Impl2179); 
 
             }
 
@@ -2774,32 +2971,32 @@ public class InternalFMLParser extends AbstractInternalContentAssistParser {
 
             }
 
-            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:1005:1: ( ( '=' )* )
-            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:1006:1: ( '=' )*
+            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:1061:1: ( ( '=' )* )
+            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:1062:1: ( '=' )*
             {
              before(grammarAccess.getVirtualModelAccess().getEqualsSignKeyword_4()); 
-            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:1007:1: ( '=' )*
-            loop10:
+            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:1063:1: ( '=' )*
+            loop11:
             do {
-                int alt10=2;
-                int LA10_0 = input.LA(1);
+                int alt11=2;
+                int LA11_0 = input.LA(1);
 
-                if ( (LA10_0==28) ) {
-                    alt10=1;
+                if ( (LA11_0==28) ) {
+                    alt11=1;
                 }
 
 
-                switch (alt10) {
+                switch (alt11) {
             	case 1 :
-            	    // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:1008:2: '='
+            	    // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:1064:2: '='
             	    {
-            	    match(input,28,FOLLOW_28_in_rule__VirtualModel__Group__4__Impl2067); 
+            	    match(input,28,FOLLOW_28_in_rule__VirtualModel__Group__4__Impl2195); 
 
             	    }
             	    break;
 
             	default :
-            	    break loop10;
+            	    break loop11;
                 }
             } while (true);
 
@@ -2829,21 +3026,21 @@ public class InternalFMLParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__VirtualModel__Group__5"
-    // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:1020:1: rule__VirtualModel__Group__5 : rule__VirtualModel__Group__5__Impl rule__VirtualModel__Group__6 ;
+    // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:1076:1: rule__VirtualModel__Group__5 : rule__VirtualModel__Group__5__Impl rule__VirtualModel__Group__6 ;
     public final void rule__VirtualModel__Group__5() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:1024:1: ( rule__VirtualModel__Group__5__Impl rule__VirtualModel__Group__6 )
-            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:1025:2: rule__VirtualModel__Group__5__Impl rule__VirtualModel__Group__6
+            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:1080:1: ( rule__VirtualModel__Group__5__Impl rule__VirtualModel__Group__6 )
+            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:1081:2: rule__VirtualModel__Group__5__Impl rule__VirtualModel__Group__6
             {
-            pushFollow(FOLLOW_rule__VirtualModel__Group__5__Impl_in_rule__VirtualModel__Group__52102);
+            pushFollow(FOLLOW_rule__VirtualModel__Group__5__Impl_in_rule__VirtualModel__Group__52230);
             rule__VirtualModel__Group__5__Impl();
 
             state._fsp--;
 
-            pushFollow(FOLLOW_rule__VirtualModel__Group__6_in_rule__VirtualModel__Group__52105);
+            pushFollow(FOLLOW_rule__VirtualModel__Group__6_in_rule__VirtualModel__Group__52233);
             rule__VirtualModel__Group__6();
 
             state._fsp--;
@@ -2867,23 +3064,23 @@ public class InternalFMLParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__VirtualModel__Group__5__Impl"
-    // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:1032:1: rule__VirtualModel__Group__5__Impl : ( ( rule__VirtualModel__UriAssignment_5 ) ) ;
+    // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:1088:1: rule__VirtualModel__Group__5__Impl : ( ( rule__VirtualModel__UriAssignment_5 ) ) ;
     public final void rule__VirtualModel__Group__5__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:1036:1: ( ( ( rule__VirtualModel__UriAssignment_5 ) ) )
-            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:1037:1: ( ( rule__VirtualModel__UriAssignment_5 ) )
+            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:1092:1: ( ( ( rule__VirtualModel__UriAssignment_5 ) ) )
+            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:1093:1: ( ( rule__VirtualModel__UriAssignment_5 ) )
             {
-            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:1037:1: ( ( rule__VirtualModel__UriAssignment_5 ) )
-            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:1038:1: ( rule__VirtualModel__UriAssignment_5 )
+            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:1093:1: ( ( rule__VirtualModel__UriAssignment_5 ) )
+            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:1094:1: ( rule__VirtualModel__UriAssignment_5 )
             {
              before(grammarAccess.getVirtualModelAccess().getUriAssignment_5()); 
-            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:1039:1: ( rule__VirtualModel__UriAssignment_5 )
-            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:1039:2: rule__VirtualModel__UriAssignment_5
+            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:1095:1: ( rule__VirtualModel__UriAssignment_5 )
+            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:1095:2: rule__VirtualModel__UriAssignment_5
             {
-            pushFollow(FOLLOW_rule__VirtualModel__UriAssignment_5_in_rule__VirtualModel__Group__5__Impl2132);
+            pushFollow(FOLLOW_rule__VirtualModel__UriAssignment_5_in_rule__VirtualModel__Group__5__Impl2260);
             rule__VirtualModel__UriAssignment_5();
 
             state._fsp--;
@@ -2914,21 +3111,21 @@ public class InternalFMLParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__VirtualModel__Group__6"
-    // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:1049:1: rule__VirtualModel__Group__6 : rule__VirtualModel__Group__6__Impl rule__VirtualModel__Group__7 ;
+    // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:1105:1: rule__VirtualModel__Group__6 : rule__VirtualModel__Group__6__Impl rule__VirtualModel__Group__7 ;
     public final void rule__VirtualModel__Group__6() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:1053:1: ( rule__VirtualModel__Group__6__Impl rule__VirtualModel__Group__7 )
-            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:1054:2: rule__VirtualModel__Group__6__Impl rule__VirtualModel__Group__7
+            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:1109:1: ( rule__VirtualModel__Group__6__Impl rule__VirtualModel__Group__7 )
+            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:1110:2: rule__VirtualModel__Group__6__Impl rule__VirtualModel__Group__7
             {
-            pushFollow(FOLLOW_rule__VirtualModel__Group__6__Impl_in_rule__VirtualModel__Group__62162);
+            pushFollow(FOLLOW_rule__VirtualModel__Group__6__Impl_in_rule__VirtualModel__Group__62290);
             rule__VirtualModel__Group__6__Impl();
 
             state._fsp--;
 
-            pushFollow(FOLLOW_rule__VirtualModel__Group__7_in_rule__VirtualModel__Group__62165);
+            pushFollow(FOLLOW_rule__VirtualModel__Group__7_in_rule__VirtualModel__Group__62293);
             rule__VirtualModel__Group__7();
 
             state._fsp--;
@@ -2952,20 +3149,20 @@ public class InternalFMLParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__VirtualModel__Group__6__Impl"
-    // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:1061:1: rule__VirtualModel__Group__6__Impl : ( '{' ) ;
+    // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:1117:1: rule__VirtualModel__Group__6__Impl : ( '{' ) ;
     public final void rule__VirtualModel__Group__6__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:1065:1: ( ( '{' ) )
-            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:1066:1: ( '{' )
+            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:1121:1: ( ( '{' ) )
+            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:1122:1: ( '{' )
             {
-            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:1066:1: ( '{' )
-            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:1067:1: '{'
+            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:1122:1: ( '{' )
+            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:1123:1: '{'
             {
              before(grammarAccess.getVirtualModelAccess().getLeftCurlyBracketKeyword_6()); 
-            match(input,29,FOLLOW_29_in_rule__VirtualModel__Group__6__Impl2193); 
+            match(input,29,FOLLOW_29_in_rule__VirtualModel__Group__6__Impl2321); 
              after(grammarAccess.getVirtualModelAccess().getLeftCurlyBracketKeyword_6()); 
 
             }
@@ -2989,21 +3186,21 @@ public class InternalFMLParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__VirtualModel__Group__7"
-    // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:1080:1: rule__VirtualModel__Group__7 : rule__VirtualModel__Group__7__Impl rule__VirtualModel__Group__8 ;
+    // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:1136:1: rule__VirtualModel__Group__7 : rule__VirtualModel__Group__7__Impl rule__VirtualModel__Group__8 ;
     public final void rule__VirtualModel__Group__7() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:1084:1: ( rule__VirtualModel__Group__7__Impl rule__VirtualModel__Group__8 )
-            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:1085:2: rule__VirtualModel__Group__7__Impl rule__VirtualModel__Group__8
+            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:1140:1: ( rule__VirtualModel__Group__7__Impl rule__VirtualModel__Group__8 )
+            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:1141:2: rule__VirtualModel__Group__7__Impl rule__VirtualModel__Group__8
             {
-            pushFollow(FOLLOW_rule__VirtualModel__Group__7__Impl_in_rule__VirtualModel__Group__72224);
+            pushFollow(FOLLOW_rule__VirtualModel__Group__7__Impl_in_rule__VirtualModel__Group__72352);
             rule__VirtualModel__Group__7__Impl();
 
             state._fsp--;
 
-            pushFollow(FOLLOW_rule__VirtualModel__Group__8_in_rule__VirtualModel__Group__72227);
+            pushFollow(FOLLOW_rule__VirtualModel__Group__8_in_rule__VirtualModel__Group__72355);
             rule__VirtualModel__Group__8();
 
             state._fsp--;
@@ -3027,35 +3224,35 @@ public class InternalFMLParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__VirtualModel__Group__7__Impl"
-    // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:1092:1: rule__VirtualModel__Group__7__Impl : ( ( rule__VirtualModel__ModelSlotsAssignment_7 )* ) ;
+    // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:1148:1: rule__VirtualModel__Group__7__Impl : ( ( rule__VirtualModel__ModelSlotsAssignment_7 )* ) ;
     public final void rule__VirtualModel__Group__7__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:1096:1: ( ( ( rule__VirtualModel__ModelSlotsAssignment_7 )* ) )
-            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:1097:1: ( ( rule__VirtualModel__ModelSlotsAssignment_7 )* )
+            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:1152:1: ( ( ( rule__VirtualModel__ModelSlotsAssignment_7 )* ) )
+            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:1153:1: ( ( rule__VirtualModel__ModelSlotsAssignment_7 )* )
             {
-            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:1097:1: ( ( rule__VirtualModel__ModelSlotsAssignment_7 )* )
-            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:1098:1: ( rule__VirtualModel__ModelSlotsAssignment_7 )*
+            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:1153:1: ( ( rule__VirtualModel__ModelSlotsAssignment_7 )* )
+            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:1154:1: ( rule__VirtualModel__ModelSlotsAssignment_7 )*
             {
              before(grammarAccess.getVirtualModelAccess().getModelSlotsAssignment_7()); 
-            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:1099:1: ( rule__VirtualModel__ModelSlotsAssignment_7 )*
-            loop11:
+            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:1155:1: ( rule__VirtualModel__ModelSlotsAssignment_7 )*
+            loop12:
             do {
-                int alt11=2;
-                int LA11_0 = input.LA(1);
+                int alt12=2;
+                int LA12_0 = input.LA(1);
 
-                if ( (LA11_0==32) ) {
-                    alt11=1;
+                if ( (LA12_0==32) ) {
+                    alt12=1;
                 }
 
 
-                switch (alt11) {
+                switch (alt12) {
             	case 1 :
-            	    // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:1099:2: rule__VirtualModel__ModelSlotsAssignment_7
+            	    // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:1155:2: rule__VirtualModel__ModelSlotsAssignment_7
             	    {
-            	    pushFollow(FOLLOW_rule__VirtualModel__ModelSlotsAssignment_7_in_rule__VirtualModel__Group__7__Impl2254);
+            	    pushFollow(FOLLOW_rule__VirtualModel__ModelSlotsAssignment_7_in_rule__VirtualModel__Group__7__Impl2382);
             	    rule__VirtualModel__ModelSlotsAssignment_7();
 
             	    state._fsp--;
@@ -3065,7 +3262,7 @@ public class InternalFMLParser extends AbstractInternalContentAssistParser {
             	    break;
 
             	default :
-            	    break loop11;
+            	    break loop12;
                 }
             } while (true);
 
@@ -3092,21 +3289,21 @@ public class InternalFMLParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__VirtualModel__Group__8"
-    // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:1109:1: rule__VirtualModel__Group__8 : rule__VirtualModel__Group__8__Impl rule__VirtualModel__Group__9 ;
+    // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:1165:1: rule__VirtualModel__Group__8 : rule__VirtualModel__Group__8__Impl rule__VirtualModel__Group__9 ;
     public final void rule__VirtualModel__Group__8() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:1113:1: ( rule__VirtualModel__Group__8__Impl rule__VirtualModel__Group__9 )
-            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:1114:2: rule__VirtualModel__Group__8__Impl rule__VirtualModel__Group__9
+            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:1169:1: ( rule__VirtualModel__Group__8__Impl rule__VirtualModel__Group__9 )
+            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:1170:2: rule__VirtualModel__Group__8__Impl rule__VirtualModel__Group__9
             {
-            pushFollow(FOLLOW_rule__VirtualModel__Group__8__Impl_in_rule__VirtualModel__Group__82285);
+            pushFollow(FOLLOW_rule__VirtualModel__Group__8__Impl_in_rule__VirtualModel__Group__82413);
             rule__VirtualModel__Group__8__Impl();
 
             state._fsp--;
 
-            pushFollow(FOLLOW_rule__VirtualModel__Group__9_in_rule__VirtualModel__Group__82288);
+            pushFollow(FOLLOW_rule__VirtualModel__Group__9_in_rule__VirtualModel__Group__82416);
             rule__VirtualModel__Group__9();
 
             state._fsp--;
@@ -3130,35 +3327,35 @@ public class InternalFMLParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__VirtualModel__Group__8__Impl"
-    // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:1121:1: rule__VirtualModel__Group__8__Impl : ( ( rule__VirtualModel__EditionPatternsAssignment_8 )* ) ;
+    // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:1177:1: rule__VirtualModel__Group__8__Impl : ( ( rule__VirtualModel__EditionPatternsAssignment_8 )* ) ;
     public final void rule__VirtualModel__Group__8__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:1125:1: ( ( ( rule__VirtualModel__EditionPatternsAssignment_8 )* ) )
-            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:1126:1: ( ( rule__VirtualModel__EditionPatternsAssignment_8 )* )
+            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:1181:1: ( ( ( rule__VirtualModel__EditionPatternsAssignment_8 )* ) )
+            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:1182:1: ( ( rule__VirtualModel__EditionPatternsAssignment_8 )* )
             {
-            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:1126:1: ( ( rule__VirtualModel__EditionPatternsAssignment_8 )* )
-            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:1127:1: ( rule__VirtualModel__EditionPatternsAssignment_8 )*
+            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:1182:1: ( ( rule__VirtualModel__EditionPatternsAssignment_8 )* )
+            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:1183:1: ( rule__VirtualModel__EditionPatternsAssignment_8 )*
             {
              before(grammarAccess.getVirtualModelAccess().getEditionPatternsAssignment_8()); 
-            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:1128:1: ( rule__VirtualModel__EditionPatternsAssignment_8 )*
-            loop12:
+            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:1184:1: ( rule__VirtualModel__EditionPatternsAssignment_8 )*
+            loop13:
             do {
-                int alt12=2;
-                int LA12_0 = input.LA(1);
+                int alt13=2;
+                int LA13_0 = input.LA(1);
 
-                if ( (LA12_0==37) ) {
-                    alt12=1;
+                if ( (LA13_0==37) ) {
+                    alt13=1;
                 }
 
 
-                switch (alt12) {
+                switch (alt13) {
             	case 1 :
-            	    // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:1128:2: rule__VirtualModel__EditionPatternsAssignment_8
+            	    // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:1184:2: rule__VirtualModel__EditionPatternsAssignment_8
             	    {
-            	    pushFollow(FOLLOW_rule__VirtualModel__EditionPatternsAssignment_8_in_rule__VirtualModel__Group__8__Impl2315);
+            	    pushFollow(FOLLOW_rule__VirtualModel__EditionPatternsAssignment_8_in_rule__VirtualModel__Group__8__Impl2443);
             	    rule__VirtualModel__EditionPatternsAssignment_8();
 
             	    state._fsp--;
@@ -3168,7 +3365,7 @@ public class InternalFMLParser extends AbstractInternalContentAssistParser {
             	    break;
 
             	default :
-            	    break loop12;
+            	    break loop13;
                 }
             } while (true);
 
@@ -3195,16 +3392,16 @@ public class InternalFMLParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__VirtualModel__Group__9"
-    // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:1138:1: rule__VirtualModel__Group__9 : rule__VirtualModel__Group__9__Impl ;
+    // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:1194:1: rule__VirtualModel__Group__9 : rule__VirtualModel__Group__9__Impl ;
     public final void rule__VirtualModel__Group__9() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:1142:1: ( rule__VirtualModel__Group__9__Impl )
-            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:1143:2: rule__VirtualModel__Group__9__Impl
+            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:1198:1: ( rule__VirtualModel__Group__9__Impl )
+            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:1199:2: rule__VirtualModel__Group__9__Impl
             {
-            pushFollow(FOLLOW_rule__VirtualModel__Group__9__Impl_in_rule__VirtualModel__Group__92346);
+            pushFollow(FOLLOW_rule__VirtualModel__Group__9__Impl_in_rule__VirtualModel__Group__92474);
             rule__VirtualModel__Group__9__Impl();
 
             state._fsp--;
@@ -3228,20 +3425,20 @@ public class InternalFMLParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__VirtualModel__Group__9__Impl"
-    // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:1149:1: rule__VirtualModel__Group__9__Impl : ( '}' ) ;
+    // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:1205:1: rule__VirtualModel__Group__9__Impl : ( '}' ) ;
     public final void rule__VirtualModel__Group__9__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:1153:1: ( ( '}' ) )
-            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:1154:1: ( '}' )
+            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:1209:1: ( ( '}' ) )
+            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:1210:1: ( '}' )
             {
-            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:1154:1: ( '}' )
-            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:1155:1: '}'
+            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:1210:1: ( '}' )
+            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:1211:1: '}'
             {
              before(grammarAccess.getVirtualModelAccess().getRightCurlyBracketKeyword_9()); 
-            match(input,30,FOLLOW_30_in_rule__VirtualModel__Group__9__Impl2374); 
+            match(input,30,FOLLOW_30_in_rule__VirtualModel__Group__9__Impl2502); 
              after(grammarAccess.getVirtualModelAccess().getRightCurlyBracketKeyword_9()); 
 
             }
@@ -3265,21 +3462,21 @@ public class InternalFMLParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__VirtualModel__Group_2__0"
-    // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:1188:1: rule__VirtualModel__Group_2__0 : rule__VirtualModel__Group_2__0__Impl rule__VirtualModel__Group_2__1 ;
+    // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:1244:1: rule__VirtualModel__Group_2__0 : rule__VirtualModel__Group_2__0__Impl rule__VirtualModel__Group_2__1 ;
     public final void rule__VirtualModel__Group_2__0() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:1192:1: ( rule__VirtualModel__Group_2__0__Impl rule__VirtualModel__Group_2__1 )
-            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:1193:2: rule__VirtualModel__Group_2__0__Impl rule__VirtualModel__Group_2__1
+            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:1248:1: ( rule__VirtualModel__Group_2__0__Impl rule__VirtualModel__Group_2__1 )
+            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:1249:2: rule__VirtualModel__Group_2__0__Impl rule__VirtualModel__Group_2__1
             {
-            pushFollow(FOLLOW_rule__VirtualModel__Group_2__0__Impl_in_rule__VirtualModel__Group_2__02425);
+            pushFollow(FOLLOW_rule__VirtualModel__Group_2__0__Impl_in_rule__VirtualModel__Group_2__02553);
             rule__VirtualModel__Group_2__0__Impl();
 
             state._fsp--;
 
-            pushFollow(FOLLOW_rule__VirtualModel__Group_2__1_in_rule__VirtualModel__Group_2__02428);
+            pushFollow(FOLLOW_rule__VirtualModel__Group_2__1_in_rule__VirtualModel__Group_2__02556);
             rule__VirtualModel__Group_2__1();
 
             state._fsp--;
@@ -3303,26 +3500,26 @@ public class InternalFMLParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__VirtualModel__Group_2__0__Impl"
-    // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:1200:1: rule__VirtualModel__Group_2__0__Impl : ( ( ( 'type' ) ) ( ( 'type' )* ) ) ;
+    // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:1256:1: rule__VirtualModel__Group_2__0__Impl : ( ( ( 'type' ) ) ( ( 'type' )* ) ) ;
     public final void rule__VirtualModel__Group_2__0__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:1204:1: ( ( ( ( 'type' ) ) ( ( 'type' )* ) ) )
-            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:1205:1: ( ( ( 'type' ) ) ( ( 'type' )* ) )
+            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:1260:1: ( ( ( ( 'type' ) ) ( ( 'type' )* ) ) )
+            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:1261:1: ( ( ( 'type' ) ) ( ( 'type' )* ) )
             {
-            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:1205:1: ( ( ( 'type' ) ) ( ( 'type' )* ) )
-            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:1206:1: ( ( 'type' ) ) ( ( 'type' )* )
+            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:1261:1: ( ( ( 'type' ) ) ( ( 'type' )* ) )
+            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:1262:1: ( ( 'type' ) ) ( ( 'type' )* )
             {
-            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:1206:1: ( ( 'type' ) )
-            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:1207:1: ( 'type' )
+            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:1262:1: ( ( 'type' ) )
+            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:1263:1: ( 'type' )
             {
              before(grammarAccess.getVirtualModelAccess().getTypeKeyword_2_0()); 
-            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:1208:1: ( 'type' )
-            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:1209:2: 'type'
+            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:1264:1: ( 'type' )
+            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:1265:2: 'type'
             {
-            match(input,31,FOLLOW_31_in_rule__VirtualModel__Group_2__0__Impl2459); 
+            match(input,31,FOLLOW_31_in_rule__VirtualModel__Group_2__0__Impl2587); 
 
             }
 
@@ -3330,32 +3527,32 @@ public class InternalFMLParser extends AbstractInternalContentAssistParser {
 
             }
 
-            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:1213:1: ( ( 'type' )* )
-            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:1214:1: ( 'type' )*
+            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:1269:1: ( ( 'type' )* )
+            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:1270:1: ( 'type' )*
             {
              before(grammarAccess.getVirtualModelAccess().getTypeKeyword_2_0()); 
-            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:1215:1: ( 'type' )*
-            loop13:
+            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:1271:1: ( 'type' )*
+            loop14:
             do {
-                int alt13=2;
-                int LA13_0 = input.LA(1);
+                int alt14=2;
+                int LA14_0 = input.LA(1);
 
-                if ( (LA13_0==31) ) {
-                    alt13=1;
+                if ( (LA14_0==31) ) {
+                    alt14=1;
                 }
 
 
-                switch (alt13) {
+                switch (alt14) {
             	case 1 :
-            	    // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:1216:2: 'type'
+            	    // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:1272:2: 'type'
             	    {
-            	    match(input,31,FOLLOW_31_in_rule__VirtualModel__Group_2__0__Impl2475); 
+            	    match(input,31,FOLLOW_31_in_rule__VirtualModel__Group_2__0__Impl2603); 
 
             	    }
             	    break;
 
             	default :
-            	    break loop13;
+            	    break loop14;
                 }
             } while (true);
 
@@ -3385,21 +3582,21 @@ public class InternalFMLParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__VirtualModel__Group_2__1"
-    // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:1228:1: rule__VirtualModel__Group_2__1 : rule__VirtualModel__Group_2__1__Impl rule__VirtualModel__Group_2__2 ;
+    // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:1284:1: rule__VirtualModel__Group_2__1 : rule__VirtualModel__Group_2__1__Impl rule__VirtualModel__Group_2__2 ;
     public final void rule__VirtualModel__Group_2__1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:1232:1: ( rule__VirtualModel__Group_2__1__Impl rule__VirtualModel__Group_2__2 )
-            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:1233:2: rule__VirtualModel__Group_2__1__Impl rule__VirtualModel__Group_2__2
+            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:1288:1: ( rule__VirtualModel__Group_2__1__Impl rule__VirtualModel__Group_2__2 )
+            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:1289:2: rule__VirtualModel__Group_2__1__Impl rule__VirtualModel__Group_2__2
             {
-            pushFollow(FOLLOW_rule__VirtualModel__Group_2__1__Impl_in_rule__VirtualModel__Group_2__12510);
+            pushFollow(FOLLOW_rule__VirtualModel__Group_2__1__Impl_in_rule__VirtualModel__Group_2__12638);
             rule__VirtualModel__Group_2__1__Impl();
 
             state._fsp--;
 
-            pushFollow(FOLLOW_rule__VirtualModel__Group_2__2_in_rule__VirtualModel__Group_2__12513);
+            pushFollow(FOLLOW_rule__VirtualModel__Group_2__2_in_rule__VirtualModel__Group_2__12641);
             rule__VirtualModel__Group_2__2();
 
             state._fsp--;
@@ -3423,26 +3620,26 @@ public class InternalFMLParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__VirtualModel__Group_2__1__Impl"
-    // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:1240:1: rule__VirtualModel__Group_2__1__Impl : ( ( ( '=' ) ) ( ( '=' )* ) ) ;
+    // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:1296:1: rule__VirtualModel__Group_2__1__Impl : ( ( ( '=' ) ) ( ( '=' )* ) ) ;
     public final void rule__VirtualModel__Group_2__1__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:1244:1: ( ( ( ( '=' ) ) ( ( '=' )* ) ) )
-            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:1245:1: ( ( ( '=' ) ) ( ( '=' )* ) )
+            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:1300:1: ( ( ( ( '=' ) ) ( ( '=' )* ) ) )
+            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:1301:1: ( ( ( '=' ) ) ( ( '=' )* ) )
             {
-            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:1245:1: ( ( ( '=' ) ) ( ( '=' )* ) )
-            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:1246:1: ( ( '=' ) ) ( ( '=' )* )
+            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:1301:1: ( ( ( '=' ) ) ( ( '=' )* ) )
+            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:1302:1: ( ( '=' ) ) ( ( '=' )* )
             {
-            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:1246:1: ( ( '=' ) )
-            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:1247:1: ( '=' )
+            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:1302:1: ( ( '=' ) )
+            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:1303:1: ( '=' )
             {
              before(grammarAccess.getVirtualModelAccess().getEqualsSignKeyword_2_1()); 
-            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:1248:1: ( '=' )
-            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:1249:2: '='
+            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:1304:1: ( '=' )
+            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:1305:2: '='
             {
-            match(input,28,FOLLOW_28_in_rule__VirtualModel__Group_2__1__Impl2544); 
+            match(input,28,FOLLOW_28_in_rule__VirtualModel__Group_2__1__Impl2672); 
 
             }
 
@@ -3450,32 +3647,32 @@ public class InternalFMLParser extends AbstractInternalContentAssistParser {
 
             }
 
-            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:1253:1: ( ( '=' )* )
-            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:1254:1: ( '=' )*
+            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:1309:1: ( ( '=' )* )
+            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:1310:1: ( '=' )*
             {
              before(grammarAccess.getVirtualModelAccess().getEqualsSignKeyword_2_1()); 
-            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:1255:1: ( '=' )*
-            loop14:
+            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:1311:1: ( '=' )*
+            loop15:
             do {
-                int alt14=2;
-                int LA14_0 = input.LA(1);
+                int alt15=2;
+                int LA15_0 = input.LA(1);
 
-                if ( (LA14_0==28) ) {
-                    alt14=1;
+                if ( (LA15_0==28) ) {
+                    alt15=1;
                 }
 
 
-                switch (alt14) {
+                switch (alt15) {
             	case 1 :
-            	    // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:1256:2: '='
+            	    // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:1312:2: '='
             	    {
-            	    match(input,28,FOLLOW_28_in_rule__VirtualModel__Group_2__1__Impl2560); 
+            	    match(input,28,FOLLOW_28_in_rule__VirtualModel__Group_2__1__Impl2688); 
 
             	    }
             	    break;
 
             	default :
-            	    break loop14;
+            	    break loop15;
                 }
             } while (true);
 
@@ -3505,16 +3702,16 @@ public class InternalFMLParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__VirtualModel__Group_2__2"
-    // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:1268:1: rule__VirtualModel__Group_2__2 : rule__VirtualModel__Group_2__2__Impl ;
+    // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:1324:1: rule__VirtualModel__Group_2__2 : rule__VirtualModel__Group_2__2__Impl ;
     public final void rule__VirtualModel__Group_2__2() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:1272:1: ( rule__VirtualModel__Group_2__2__Impl )
-            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:1273:2: rule__VirtualModel__Group_2__2__Impl
+            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:1328:1: ( rule__VirtualModel__Group_2__2__Impl )
+            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:1329:2: rule__VirtualModel__Group_2__2__Impl
             {
-            pushFollow(FOLLOW_rule__VirtualModel__Group_2__2__Impl_in_rule__VirtualModel__Group_2__22595);
+            pushFollow(FOLLOW_rule__VirtualModel__Group_2__2__Impl_in_rule__VirtualModel__Group_2__22723);
             rule__VirtualModel__Group_2__2__Impl();
 
             state._fsp--;
@@ -3538,23 +3735,23 @@ public class InternalFMLParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__VirtualModel__Group_2__2__Impl"
-    // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:1279:1: rule__VirtualModel__Group_2__2__Impl : ( ( rule__VirtualModel__TypeAssignment_2_2 ) ) ;
+    // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:1335:1: rule__VirtualModel__Group_2__2__Impl : ( ( rule__VirtualModel__TypeAssignment_2_2 ) ) ;
     public final void rule__VirtualModel__Group_2__2__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:1283:1: ( ( ( rule__VirtualModel__TypeAssignment_2_2 ) ) )
-            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:1284:1: ( ( rule__VirtualModel__TypeAssignment_2_2 ) )
+            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:1339:1: ( ( ( rule__VirtualModel__TypeAssignment_2_2 ) ) )
+            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:1340:1: ( ( rule__VirtualModel__TypeAssignment_2_2 ) )
             {
-            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:1284:1: ( ( rule__VirtualModel__TypeAssignment_2_2 ) )
-            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:1285:1: ( rule__VirtualModel__TypeAssignment_2_2 )
+            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:1340:1: ( ( rule__VirtualModel__TypeAssignment_2_2 ) )
+            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:1341:1: ( rule__VirtualModel__TypeAssignment_2_2 )
             {
              before(grammarAccess.getVirtualModelAccess().getTypeAssignment_2_2()); 
-            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:1286:1: ( rule__VirtualModel__TypeAssignment_2_2 )
-            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:1286:2: rule__VirtualModel__TypeAssignment_2_2
+            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:1342:1: ( rule__VirtualModel__TypeAssignment_2_2 )
+            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:1342:2: rule__VirtualModel__TypeAssignment_2_2
             {
-            pushFollow(FOLLOW_rule__VirtualModel__TypeAssignment_2_2_in_rule__VirtualModel__Group_2__2__Impl2622);
+            pushFollow(FOLLOW_rule__VirtualModel__TypeAssignment_2_2_in_rule__VirtualModel__Group_2__2__Impl2750);
             rule__VirtualModel__TypeAssignment_2_2();
 
             state._fsp--;
@@ -3585,21 +3782,21 @@ public class InternalFMLParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__ModelSlot__Group__0"
-    // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:1302:1: rule__ModelSlot__Group__0 : rule__ModelSlot__Group__0__Impl rule__ModelSlot__Group__1 ;
+    // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:1358:1: rule__ModelSlot__Group__0 : rule__ModelSlot__Group__0__Impl rule__ModelSlot__Group__1 ;
     public final void rule__ModelSlot__Group__0() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:1306:1: ( rule__ModelSlot__Group__0__Impl rule__ModelSlot__Group__1 )
-            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:1307:2: rule__ModelSlot__Group__0__Impl rule__ModelSlot__Group__1
+            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:1362:1: ( rule__ModelSlot__Group__0__Impl rule__ModelSlot__Group__1 )
+            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:1363:2: rule__ModelSlot__Group__0__Impl rule__ModelSlot__Group__1
             {
-            pushFollow(FOLLOW_rule__ModelSlot__Group__0__Impl_in_rule__ModelSlot__Group__02658);
+            pushFollow(FOLLOW_rule__ModelSlot__Group__0__Impl_in_rule__ModelSlot__Group__02786);
             rule__ModelSlot__Group__0__Impl();
 
             state._fsp--;
 
-            pushFollow(FOLLOW_rule__ModelSlot__Group__1_in_rule__ModelSlot__Group__02661);
+            pushFollow(FOLLOW_rule__ModelSlot__Group__1_in_rule__ModelSlot__Group__02789);
             rule__ModelSlot__Group__1();
 
             state._fsp--;
@@ -3623,20 +3820,20 @@ public class InternalFMLParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__ModelSlot__Group__0__Impl"
-    // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:1314:1: rule__ModelSlot__Group__0__Impl : ( 'ModelSlot' ) ;
+    // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:1370:1: rule__ModelSlot__Group__0__Impl : ( 'ModelSlot' ) ;
     public final void rule__ModelSlot__Group__0__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:1318:1: ( ( 'ModelSlot' ) )
-            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:1319:1: ( 'ModelSlot' )
+            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:1374:1: ( ( 'ModelSlot' ) )
+            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:1375:1: ( 'ModelSlot' )
             {
-            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:1319:1: ( 'ModelSlot' )
-            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:1320:1: 'ModelSlot'
+            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:1375:1: ( 'ModelSlot' )
+            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:1376:1: 'ModelSlot'
             {
              before(grammarAccess.getModelSlotAccess().getModelSlotKeyword_0()); 
-            match(input,32,FOLLOW_32_in_rule__ModelSlot__Group__0__Impl2689); 
+            match(input,32,FOLLOW_32_in_rule__ModelSlot__Group__0__Impl2817); 
              after(grammarAccess.getModelSlotAccess().getModelSlotKeyword_0()); 
 
             }
@@ -3660,21 +3857,21 @@ public class InternalFMLParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__ModelSlot__Group__1"
-    // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:1333:1: rule__ModelSlot__Group__1 : rule__ModelSlot__Group__1__Impl rule__ModelSlot__Group__2 ;
+    // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:1389:1: rule__ModelSlot__Group__1 : rule__ModelSlot__Group__1__Impl rule__ModelSlot__Group__2 ;
     public final void rule__ModelSlot__Group__1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:1337:1: ( rule__ModelSlot__Group__1__Impl rule__ModelSlot__Group__2 )
-            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:1338:2: rule__ModelSlot__Group__1__Impl rule__ModelSlot__Group__2
+            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:1393:1: ( rule__ModelSlot__Group__1__Impl rule__ModelSlot__Group__2 )
+            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:1394:2: rule__ModelSlot__Group__1__Impl rule__ModelSlot__Group__2
             {
-            pushFollow(FOLLOW_rule__ModelSlot__Group__1__Impl_in_rule__ModelSlot__Group__12720);
+            pushFollow(FOLLOW_rule__ModelSlot__Group__1__Impl_in_rule__ModelSlot__Group__12848);
             rule__ModelSlot__Group__1__Impl();
 
             state._fsp--;
 
-            pushFollow(FOLLOW_rule__ModelSlot__Group__2_in_rule__ModelSlot__Group__12723);
+            pushFollow(FOLLOW_rule__ModelSlot__Group__2_in_rule__ModelSlot__Group__12851);
             rule__ModelSlot__Group__2();
 
             state._fsp--;
@@ -3698,23 +3895,23 @@ public class InternalFMLParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__ModelSlot__Group__1__Impl"
-    // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:1345:1: rule__ModelSlot__Group__1__Impl : ( ( rule__ModelSlot__NameAssignment_1 ) ) ;
+    // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:1401:1: rule__ModelSlot__Group__1__Impl : ( ( rule__ModelSlot__NameAssignment_1 ) ) ;
     public final void rule__ModelSlot__Group__1__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:1349:1: ( ( ( rule__ModelSlot__NameAssignment_1 ) ) )
-            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:1350:1: ( ( rule__ModelSlot__NameAssignment_1 ) )
+            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:1405:1: ( ( ( rule__ModelSlot__NameAssignment_1 ) ) )
+            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:1406:1: ( ( rule__ModelSlot__NameAssignment_1 ) )
             {
-            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:1350:1: ( ( rule__ModelSlot__NameAssignment_1 ) )
-            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:1351:1: ( rule__ModelSlot__NameAssignment_1 )
+            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:1406:1: ( ( rule__ModelSlot__NameAssignment_1 ) )
+            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:1407:1: ( rule__ModelSlot__NameAssignment_1 )
             {
              before(grammarAccess.getModelSlotAccess().getNameAssignment_1()); 
-            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:1352:1: ( rule__ModelSlot__NameAssignment_1 )
-            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:1352:2: rule__ModelSlot__NameAssignment_1
+            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:1408:1: ( rule__ModelSlot__NameAssignment_1 )
+            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:1408:2: rule__ModelSlot__NameAssignment_1
             {
-            pushFollow(FOLLOW_rule__ModelSlot__NameAssignment_1_in_rule__ModelSlot__Group__1__Impl2750);
+            pushFollow(FOLLOW_rule__ModelSlot__NameAssignment_1_in_rule__ModelSlot__Group__1__Impl2878);
             rule__ModelSlot__NameAssignment_1();
 
             state._fsp--;
@@ -3745,21 +3942,21 @@ public class InternalFMLParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__ModelSlot__Group__2"
-    // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:1362:1: rule__ModelSlot__Group__2 : rule__ModelSlot__Group__2__Impl rule__ModelSlot__Group__3 ;
+    // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:1418:1: rule__ModelSlot__Group__2 : rule__ModelSlot__Group__2__Impl rule__ModelSlot__Group__3 ;
     public final void rule__ModelSlot__Group__2() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:1366:1: ( rule__ModelSlot__Group__2__Impl rule__ModelSlot__Group__3 )
-            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:1367:2: rule__ModelSlot__Group__2__Impl rule__ModelSlot__Group__3
+            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:1422:1: ( rule__ModelSlot__Group__2__Impl rule__ModelSlot__Group__3 )
+            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:1423:2: rule__ModelSlot__Group__2__Impl rule__ModelSlot__Group__3
             {
-            pushFollow(FOLLOW_rule__ModelSlot__Group__2__Impl_in_rule__ModelSlot__Group__22780);
+            pushFollow(FOLLOW_rule__ModelSlot__Group__2__Impl_in_rule__ModelSlot__Group__22908);
             rule__ModelSlot__Group__2__Impl();
 
             state._fsp--;
 
-            pushFollow(FOLLOW_rule__ModelSlot__Group__3_in_rule__ModelSlot__Group__22783);
+            pushFollow(FOLLOW_rule__ModelSlot__Group__3_in_rule__ModelSlot__Group__22911);
             rule__ModelSlot__Group__3();
 
             state._fsp--;
@@ -3783,26 +3980,26 @@ public class InternalFMLParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__ModelSlot__Group__2__Impl"
-    // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:1374:1: rule__ModelSlot__Group__2__Impl : ( ( ( 'type' ) ) ( ( 'type' )* ) ) ;
+    // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:1430:1: rule__ModelSlot__Group__2__Impl : ( ( ( 'type' ) ) ( ( 'type' )* ) ) ;
     public final void rule__ModelSlot__Group__2__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:1378:1: ( ( ( ( 'type' ) ) ( ( 'type' )* ) ) )
-            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:1379:1: ( ( ( 'type' ) ) ( ( 'type' )* ) )
+            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:1434:1: ( ( ( ( 'type' ) ) ( ( 'type' )* ) ) )
+            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:1435:1: ( ( ( 'type' ) ) ( ( 'type' )* ) )
             {
-            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:1379:1: ( ( ( 'type' ) ) ( ( 'type' )* ) )
-            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:1380:1: ( ( 'type' ) ) ( ( 'type' )* )
+            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:1435:1: ( ( ( 'type' ) ) ( ( 'type' )* ) )
+            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:1436:1: ( ( 'type' ) ) ( ( 'type' )* )
             {
-            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:1380:1: ( ( 'type' ) )
-            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:1381:1: ( 'type' )
+            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:1436:1: ( ( 'type' ) )
+            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:1437:1: ( 'type' )
             {
              before(grammarAccess.getModelSlotAccess().getTypeKeyword_2()); 
-            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:1382:1: ( 'type' )
-            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:1383:2: 'type'
+            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:1438:1: ( 'type' )
+            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:1439:2: 'type'
             {
-            match(input,31,FOLLOW_31_in_rule__ModelSlot__Group__2__Impl2814); 
+            match(input,31,FOLLOW_31_in_rule__ModelSlot__Group__2__Impl2942); 
 
             }
 
@@ -3810,32 +4007,32 @@ public class InternalFMLParser extends AbstractInternalContentAssistParser {
 
             }
 
-            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:1387:1: ( ( 'type' )* )
-            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:1388:1: ( 'type' )*
+            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:1443:1: ( ( 'type' )* )
+            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:1444:1: ( 'type' )*
             {
              before(grammarAccess.getModelSlotAccess().getTypeKeyword_2()); 
-            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:1389:1: ( 'type' )*
-            loop15:
+            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:1445:1: ( 'type' )*
+            loop16:
             do {
-                int alt15=2;
-                int LA15_0 = input.LA(1);
+                int alt16=2;
+                int LA16_0 = input.LA(1);
 
-                if ( (LA15_0==31) ) {
-                    alt15=1;
+                if ( (LA16_0==31) ) {
+                    alt16=1;
                 }
 
 
-                switch (alt15) {
+                switch (alt16) {
             	case 1 :
-            	    // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:1390:2: 'type'
+            	    // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:1446:2: 'type'
             	    {
-            	    match(input,31,FOLLOW_31_in_rule__ModelSlot__Group__2__Impl2830); 
+            	    match(input,31,FOLLOW_31_in_rule__ModelSlot__Group__2__Impl2958); 
 
             	    }
             	    break;
 
             	default :
-            	    break loop15;
+            	    break loop16;
                 }
             } while (true);
 
@@ -3865,21 +4062,21 @@ public class InternalFMLParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__ModelSlot__Group__3"
-    // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:1402:1: rule__ModelSlot__Group__3 : rule__ModelSlot__Group__3__Impl rule__ModelSlot__Group__4 ;
+    // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:1458:1: rule__ModelSlot__Group__3 : rule__ModelSlot__Group__3__Impl rule__ModelSlot__Group__4 ;
     public final void rule__ModelSlot__Group__3() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:1406:1: ( rule__ModelSlot__Group__3__Impl rule__ModelSlot__Group__4 )
-            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:1407:2: rule__ModelSlot__Group__3__Impl rule__ModelSlot__Group__4
+            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:1462:1: ( rule__ModelSlot__Group__3__Impl rule__ModelSlot__Group__4 )
+            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:1463:2: rule__ModelSlot__Group__3__Impl rule__ModelSlot__Group__4
             {
-            pushFollow(FOLLOW_rule__ModelSlot__Group__3__Impl_in_rule__ModelSlot__Group__32865);
+            pushFollow(FOLLOW_rule__ModelSlot__Group__3__Impl_in_rule__ModelSlot__Group__32993);
             rule__ModelSlot__Group__3__Impl();
 
             state._fsp--;
 
-            pushFollow(FOLLOW_rule__ModelSlot__Group__4_in_rule__ModelSlot__Group__32868);
+            pushFollow(FOLLOW_rule__ModelSlot__Group__4_in_rule__ModelSlot__Group__32996);
             rule__ModelSlot__Group__4();
 
             state._fsp--;
@@ -3903,26 +4100,26 @@ public class InternalFMLParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__ModelSlot__Group__3__Impl"
-    // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:1414:1: rule__ModelSlot__Group__3__Impl : ( ( ( '=' ) ) ( ( '=' )* ) ) ;
+    // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:1470:1: rule__ModelSlot__Group__3__Impl : ( ( ( '=' ) ) ( ( '=' )* ) ) ;
     public final void rule__ModelSlot__Group__3__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:1418:1: ( ( ( ( '=' ) ) ( ( '=' )* ) ) )
-            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:1419:1: ( ( ( '=' ) ) ( ( '=' )* ) )
+            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:1474:1: ( ( ( ( '=' ) ) ( ( '=' )* ) ) )
+            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:1475:1: ( ( ( '=' ) ) ( ( '=' )* ) )
             {
-            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:1419:1: ( ( ( '=' ) ) ( ( '=' )* ) )
-            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:1420:1: ( ( '=' ) ) ( ( '=' )* )
+            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:1475:1: ( ( ( '=' ) ) ( ( '=' )* ) )
+            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:1476:1: ( ( '=' ) ) ( ( '=' )* )
             {
-            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:1420:1: ( ( '=' ) )
-            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:1421:1: ( '=' )
+            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:1476:1: ( ( '=' ) )
+            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:1477:1: ( '=' )
             {
              before(grammarAccess.getModelSlotAccess().getEqualsSignKeyword_3()); 
-            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:1422:1: ( '=' )
-            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:1423:2: '='
+            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:1478:1: ( '=' )
+            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:1479:2: '='
             {
-            match(input,28,FOLLOW_28_in_rule__ModelSlot__Group__3__Impl2899); 
+            match(input,28,FOLLOW_28_in_rule__ModelSlot__Group__3__Impl3027); 
 
             }
 
@@ -3930,32 +4127,32 @@ public class InternalFMLParser extends AbstractInternalContentAssistParser {
 
             }
 
-            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:1427:1: ( ( '=' )* )
-            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:1428:1: ( '=' )*
+            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:1483:1: ( ( '=' )* )
+            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:1484:1: ( '=' )*
             {
              before(grammarAccess.getModelSlotAccess().getEqualsSignKeyword_3()); 
-            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:1429:1: ( '=' )*
-            loop16:
+            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:1485:1: ( '=' )*
+            loop17:
             do {
-                int alt16=2;
-                int LA16_0 = input.LA(1);
+                int alt17=2;
+                int LA17_0 = input.LA(1);
 
-                if ( (LA16_0==28) ) {
-                    alt16=1;
+                if ( (LA17_0==28) ) {
+                    alt17=1;
                 }
 
 
-                switch (alt16) {
+                switch (alt17) {
             	case 1 :
-            	    // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:1430:2: '='
+            	    // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:1486:2: '='
             	    {
-            	    match(input,28,FOLLOW_28_in_rule__ModelSlot__Group__3__Impl2915); 
+            	    match(input,28,FOLLOW_28_in_rule__ModelSlot__Group__3__Impl3043); 
 
             	    }
             	    break;
 
             	default :
-            	    break loop16;
+            	    break loop17;
                 }
             } while (true);
 
@@ -3985,21 +4182,21 @@ public class InternalFMLParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__ModelSlot__Group__4"
-    // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:1442:1: rule__ModelSlot__Group__4 : rule__ModelSlot__Group__4__Impl rule__ModelSlot__Group__5 ;
+    // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:1498:1: rule__ModelSlot__Group__4 : rule__ModelSlot__Group__4__Impl rule__ModelSlot__Group__5 ;
     public final void rule__ModelSlot__Group__4() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:1446:1: ( rule__ModelSlot__Group__4__Impl rule__ModelSlot__Group__5 )
-            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:1447:2: rule__ModelSlot__Group__4__Impl rule__ModelSlot__Group__5
+            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:1502:1: ( rule__ModelSlot__Group__4__Impl rule__ModelSlot__Group__5 )
+            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:1503:2: rule__ModelSlot__Group__4__Impl rule__ModelSlot__Group__5
             {
-            pushFollow(FOLLOW_rule__ModelSlot__Group__4__Impl_in_rule__ModelSlot__Group__42950);
+            pushFollow(FOLLOW_rule__ModelSlot__Group__4__Impl_in_rule__ModelSlot__Group__43078);
             rule__ModelSlot__Group__4__Impl();
 
             state._fsp--;
 
-            pushFollow(FOLLOW_rule__ModelSlot__Group__5_in_rule__ModelSlot__Group__42953);
+            pushFollow(FOLLOW_rule__ModelSlot__Group__5_in_rule__ModelSlot__Group__43081);
             rule__ModelSlot__Group__5();
 
             state._fsp--;
@@ -4023,23 +4220,23 @@ public class InternalFMLParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__ModelSlot__Group__4__Impl"
-    // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:1454:1: rule__ModelSlot__Group__4__Impl : ( ( rule__ModelSlot__TypeAssignment_4 ) ) ;
+    // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:1510:1: rule__ModelSlot__Group__4__Impl : ( ( rule__ModelSlot__TypeAssignment_4 ) ) ;
     public final void rule__ModelSlot__Group__4__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:1458:1: ( ( ( rule__ModelSlot__TypeAssignment_4 ) ) )
-            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:1459:1: ( ( rule__ModelSlot__TypeAssignment_4 ) )
+            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:1514:1: ( ( ( rule__ModelSlot__TypeAssignment_4 ) ) )
+            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:1515:1: ( ( rule__ModelSlot__TypeAssignment_4 ) )
             {
-            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:1459:1: ( ( rule__ModelSlot__TypeAssignment_4 ) )
-            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:1460:1: ( rule__ModelSlot__TypeAssignment_4 )
+            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:1515:1: ( ( rule__ModelSlot__TypeAssignment_4 ) )
+            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:1516:1: ( rule__ModelSlot__TypeAssignment_4 )
             {
              before(grammarAccess.getModelSlotAccess().getTypeAssignment_4()); 
-            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:1461:1: ( rule__ModelSlot__TypeAssignment_4 )
-            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:1461:2: rule__ModelSlot__TypeAssignment_4
+            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:1517:1: ( rule__ModelSlot__TypeAssignment_4 )
+            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:1517:2: rule__ModelSlot__TypeAssignment_4
             {
-            pushFollow(FOLLOW_rule__ModelSlot__TypeAssignment_4_in_rule__ModelSlot__Group__4__Impl2980);
+            pushFollow(FOLLOW_rule__ModelSlot__TypeAssignment_4_in_rule__ModelSlot__Group__4__Impl3108);
             rule__ModelSlot__TypeAssignment_4();
 
             state._fsp--;
@@ -4070,21 +4267,21 @@ public class InternalFMLParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__ModelSlot__Group__5"
-    // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:1471:1: rule__ModelSlot__Group__5 : rule__ModelSlot__Group__5__Impl rule__ModelSlot__Group__6 ;
+    // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:1527:1: rule__ModelSlot__Group__5 : rule__ModelSlot__Group__5__Impl rule__ModelSlot__Group__6 ;
     public final void rule__ModelSlot__Group__5() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:1475:1: ( rule__ModelSlot__Group__5__Impl rule__ModelSlot__Group__6 )
-            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:1476:2: rule__ModelSlot__Group__5__Impl rule__ModelSlot__Group__6
+            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:1531:1: ( rule__ModelSlot__Group__5__Impl rule__ModelSlot__Group__6 )
+            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:1532:2: rule__ModelSlot__Group__5__Impl rule__ModelSlot__Group__6
             {
-            pushFollow(FOLLOW_rule__ModelSlot__Group__5__Impl_in_rule__ModelSlot__Group__53010);
+            pushFollow(FOLLOW_rule__ModelSlot__Group__5__Impl_in_rule__ModelSlot__Group__53138);
             rule__ModelSlot__Group__5__Impl();
 
             state._fsp--;
 
-            pushFollow(FOLLOW_rule__ModelSlot__Group__6_in_rule__ModelSlot__Group__53013);
+            pushFollow(FOLLOW_rule__ModelSlot__Group__6_in_rule__ModelSlot__Group__53141);
             rule__ModelSlot__Group__6();
 
             state._fsp--;
@@ -4108,26 +4305,26 @@ public class InternalFMLParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__ModelSlot__Group__5__Impl"
-    // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:1483:1: rule__ModelSlot__Group__5__Impl : ( ( ( 'conformTo' ) ) ( ( 'conformTo' )* ) ) ;
+    // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:1539:1: rule__ModelSlot__Group__5__Impl : ( ( ( 'conformTo' ) ) ( ( 'conformTo' )* ) ) ;
     public final void rule__ModelSlot__Group__5__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:1487:1: ( ( ( ( 'conformTo' ) ) ( ( 'conformTo' )* ) ) )
-            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:1488:1: ( ( ( 'conformTo' ) ) ( ( 'conformTo' )* ) )
+            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:1543:1: ( ( ( ( 'conformTo' ) ) ( ( 'conformTo' )* ) ) )
+            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:1544:1: ( ( ( 'conformTo' ) ) ( ( 'conformTo' )* ) )
             {
-            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:1488:1: ( ( ( 'conformTo' ) ) ( ( 'conformTo' )* ) )
-            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:1489:1: ( ( 'conformTo' ) ) ( ( 'conformTo' )* )
+            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:1544:1: ( ( ( 'conformTo' ) ) ( ( 'conformTo' )* ) )
+            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:1545:1: ( ( 'conformTo' ) ) ( ( 'conformTo' )* )
             {
-            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:1489:1: ( ( 'conformTo' ) )
-            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:1490:1: ( 'conformTo' )
+            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:1545:1: ( ( 'conformTo' ) )
+            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:1546:1: ( 'conformTo' )
             {
              before(grammarAccess.getModelSlotAccess().getConformToKeyword_5()); 
-            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:1491:1: ( 'conformTo' )
-            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:1492:2: 'conformTo'
+            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:1547:1: ( 'conformTo' )
+            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:1548:2: 'conformTo'
             {
-            match(input,33,FOLLOW_33_in_rule__ModelSlot__Group__5__Impl3044); 
+            match(input,33,FOLLOW_33_in_rule__ModelSlot__Group__5__Impl3172); 
 
             }
 
@@ -4135,32 +4332,32 @@ public class InternalFMLParser extends AbstractInternalContentAssistParser {
 
             }
 
-            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:1496:1: ( ( 'conformTo' )* )
-            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:1497:1: ( 'conformTo' )*
+            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:1552:1: ( ( 'conformTo' )* )
+            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:1553:1: ( 'conformTo' )*
             {
              before(grammarAccess.getModelSlotAccess().getConformToKeyword_5()); 
-            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:1498:1: ( 'conformTo' )*
-            loop17:
+            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:1554:1: ( 'conformTo' )*
+            loop18:
             do {
-                int alt17=2;
-                int LA17_0 = input.LA(1);
+                int alt18=2;
+                int LA18_0 = input.LA(1);
 
-                if ( (LA17_0==33) ) {
-                    alt17=1;
+                if ( (LA18_0==33) ) {
+                    alt18=1;
                 }
 
 
-                switch (alt17) {
+                switch (alt18) {
             	case 1 :
-            	    // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:1499:2: 'conformTo'
+            	    // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:1555:2: 'conformTo'
             	    {
-            	    match(input,33,FOLLOW_33_in_rule__ModelSlot__Group__5__Impl3060); 
+            	    match(input,33,FOLLOW_33_in_rule__ModelSlot__Group__5__Impl3188); 
 
             	    }
             	    break;
 
             	default :
-            	    break loop17;
+            	    break loop18;
                 }
             } while (true);
 
@@ -4190,21 +4387,21 @@ public class InternalFMLParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__ModelSlot__Group__6"
-    // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:1511:1: rule__ModelSlot__Group__6 : rule__ModelSlot__Group__6__Impl rule__ModelSlot__Group__7 ;
+    // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:1567:1: rule__ModelSlot__Group__6 : rule__ModelSlot__Group__6__Impl rule__ModelSlot__Group__7 ;
     public final void rule__ModelSlot__Group__6() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:1515:1: ( rule__ModelSlot__Group__6__Impl rule__ModelSlot__Group__7 )
-            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:1516:2: rule__ModelSlot__Group__6__Impl rule__ModelSlot__Group__7
+            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:1571:1: ( rule__ModelSlot__Group__6__Impl rule__ModelSlot__Group__7 )
+            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:1572:2: rule__ModelSlot__Group__6__Impl rule__ModelSlot__Group__7
             {
-            pushFollow(FOLLOW_rule__ModelSlot__Group__6__Impl_in_rule__ModelSlot__Group__63095);
+            pushFollow(FOLLOW_rule__ModelSlot__Group__6__Impl_in_rule__ModelSlot__Group__63223);
             rule__ModelSlot__Group__6__Impl();
 
             state._fsp--;
 
-            pushFollow(FOLLOW_rule__ModelSlot__Group__7_in_rule__ModelSlot__Group__63098);
+            pushFollow(FOLLOW_rule__ModelSlot__Group__7_in_rule__ModelSlot__Group__63226);
             rule__ModelSlot__Group__7();
 
             state._fsp--;
@@ -4228,26 +4425,26 @@ public class InternalFMLParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__ModelSlot__Group__6__Impl"
-    // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:1523:1: rule__ModelSlot__Group__6__Impl : ( ( ( '=' ) ) ( ( '=' )* ) ) ;
+    // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:1579:1: rule__ModelSlot__Group__6__Impl : ( ( ( '=' ) ) ( ( '=' )* ) ) ;
     public final void rule__ModelSlot__Group__6__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:1527:1: ( ( ( ( '=' ) ) ( ( '=' )* ) ) )
-            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:1528:1: ( ( ( '=' ) ) ( ( '=' )* ) )
+            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:1583:1: ( ( ( ( '=' ) ) ( ( '=' )* ) ) )
+            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:1584:1: ( ( ( '=' ) ) ( ( '=' )* ) )
             {
-            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:1528:1: ( ( ( '=' ) ) ( ( '=' )* ) )
-            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:1529:1: ( ( '=' ) ) ( ( '=' )* )
+            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:1584:1: ( ( ( '=' ) ) ( ( '=' )* ) )
+            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:1585:1: ( ( '=' ) ) ( ( '=' )* )
             {
-            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:1529:1: ( ( '=' ) )
-            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:1530:1: ( '=' )
+            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:1585:1: ( ( '=' ) )
+            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:1586:1: ( '=' )
             {
              before(grammarAccess.getModelSlotAccess().getEqualsSignKeyword_6()); 
-            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:1531:1: ( '=' )
-            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:1532:2: '='
+            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:1587:1: ( '=' )
+            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:1588:2: '='
             {
-            match(input,28,FOLLOW_28_in_rule__ModelSlot__Group__6__Impl3129); 
+            match(input,28,FOLLOW_28_in_rule__ModelSlot__Group__6__Impl3257); 
 
             }
 
@@ -4255,32 +4452,32 @@ public class InternalFMLParser extends AbstractInternalContentAssistParser {
 
             }
 
-            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:1536:1: ( ( '=' )* )
-            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:1537:1: ( '=' )*
+            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:1592:1: ( ( '=' )* )
+            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:1593:1: ( '=' )*
             {
              before(grammarAccess.getModelSlotAccess().getEqualsSignKeyword_6()); 
-            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:1538:1: ( '=' )*
-            loop18:
+            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:1594:1: ( '=' )*
+            loop19:
             do {
-                int alt18=2;
-                int LA18_0 = input.LA(1);
+                int alt19=2;
+                int LA19_0 = input.LA(1);
 
-                if ( (LA18_0==28) ) {
-                    alt18=1;
+                if ( (LA19_0==28) ) {
+                    alt19=1;
                 }
 
 
-                switch (alt18) {
+                switch (alt19) {
             	case 1 :
-            	    // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:1539:2: '='
+            	    // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:1595:2: '='
             	    {
-            	    match(input,28,FOLLOW_28_in_rule__ModelSlot__Group__6__Impl3145); 
+            	    match(input,28,FOLLOW_28_in_rule__ModelSlot__Group__6__Impl3273); 
 
             	    }
             	    break;
 
             	default :
-            	    break loop18;
+            	    break loop19;
                 }
             } while (true);
 
@@ -4310,21 +4507,21 @@ public class InternalFMLParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__ModelSlot__Group__7"
-    // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:1551:1: rule__ModelSlot__Group__7 : rule__ModelSlot__Group__7__Impl rule__ModelSlot__Group__8 ;
+    // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:1607:1: rule__ModelSlot__Group__7 : rule__ModelSlot__Group__7__Impl rule__ModelSlot__Group__8 ;
     public final void rule__ModelSlot__Group__7() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:1555:1: ( rule__ModelSlot__Group__7__Impl rule__ModelSlot__Group__8 )
-            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:1556:2: rule__ModelSlot__Group__7__Impl rule__ModelSlot__Group__8
+            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:1611:1: ( rule__ModelSlot__Group__7__Impl rule__ModelSlot__Group__8 )
+            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:1612:2: rule__ModelSlot__Group__7__Impl rule__ModelSlot__Group__8
             {
-            pushFollow(FOLLOW_rule__ModelSlot__Group__7__Impl_in_rule__ModelSlot__Group__73180);
+            pushFollow(FOLLOW_rule__ModelSlot__Group__7__Impl_in_rule__ModelSlot__Group__73308);
             rule__ModelSlot__Group__7__Impl();
 
             state._fsp--;
 
-            pushFollow(FOLLOW_rule__ModelSlot__Group__8_in_rule__ModelSlot__Group__73183);
+            pushFollow(FOLLOW_rule__ModelSlot__Group__8_in_rule__ModelSlot__Group__73311);
             rule__ModelSlot__Group__8();
 
             state._fsp--;
@@ -4348,23 +4545,23 @@ public class InternalFMLParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__ModelSlot__Group__7__Impl"
-    // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:1563:1: rule__ModelSlot__Group__7__Impl : ( ( rule__ModelSlot__UriAssignment_7 ) ) ;
+    // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:1619:1: rule__ModelSlot__Group__7__Impl : ( ( rule__ModelSlot__UriAssignment_7 ) ) ;
     public final void rule__ModelSlot__Group__7__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:1567:1: ( ( ( rule__ModelSlot__UriAssignment_7 ) ) )
-            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:1568:1: ( ( rule__ModelSlot__UriAssignment_7 ) )
+            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:1623:1: ( ( ( rule__ModelSlot__UriAssignment_7 ) ) )
+            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:1624:1: ( ( rule__ModelSlot__UriAssignment_7 ) )
             {
-            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:1568:1: ( ( rule__ModelSlot__UriAssignment_7 ) )
-            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:1569:1: ( rule__ModelSlot__UriAssignment_7 )
+            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:1624:1: ( ( rule__ModelSlot__UriAssignment_7 ) )
+            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:1625:1: ( rule__ModelSlot__UriAssignment_7 )
             {
              before(grammarAccess.getModelSlotAccess().getUriAssignment_7()); 
-            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:1570:1: ( rule__ModelSlot__UriAssignment_7 )
-            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:1570:2: rule__ModelSlot__UriAssignment_7
+            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:1626:1: ( rule__ModelSlot__UriAssignment_7 )
+            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:1626:2: rule__ModelSlot__UriAssignment_7
             {
-            pushFollow(FOLLOW_rule__ModelSlot__UriAssignment_7_in_rule__ModelSlot__Group__7__Impl3210);
+            pushFollow(FOLLOW_rule__ModelSlot__UriAssignment_7_in_rule__ModelSlot__Group__7__Impl3338);
             rule__ModelSlot__UriAssignment_7();
 
             state._fsp--;
@@ -4395,21 +4592,21 @@ public class InternalFMLParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__ModelSlot__Group__8"
-    // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:1580:1: rule__ModelSlot__Group__8 : rule__ModelSlot__Group__8__Impl rule__ModelSlot__Group__9 ;
+    // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:1636:1: rule__ModelSlot__Group__8 : rule__ModelSlot__Group__8__Impl rule__ModelSlot__Group__9 ;
     public final void rule__ModelSlot__Group__8() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:1584:1: ( rule__ModelSlot__Group__8__Impl rule__ModelSlot__Group__9 )
-            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:1585:2: rule__ModelSlot__Group__8__Impl rule__ModelSlot__Group__9
+            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:1640:1: ( rule__ModelSlot__Group__8__Impl rule__ModelSlot__Group__9 )
+            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:1641:2: rule__ModelSlot__Group__8__Impl rule__ModelSlot__Group__9
             {
-            pushFollow(FOLLOW_rule__ModelSlot__Group__8__Impl_in_rule__ModelSlot__Group__83240);
+            pushFollow(FOLLOW_rule__ModelSlot__Group__8__Impl_in_rule__ModelSlot__Group__83368);
             rule__ModelSlot__Group__8__Impl();
 
             state._fsp--;
 
-            pushFollow(FOLLOW_rule__ModelSlot__Group__9_in_rule__ModelSlot__Group__83243);
+            pushFollow(FOLLOW_rule__ModelSlot__Group__9_in_rule__ModelSlot__Group__83371);
             rule__ModelSlot__Group__9();
 
             state._fsp--;
@@ -4433,26 +4630,26 @@ public class InternalFMLParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__ModelSlot__Group__8__Impl"
-    // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:1592:1: rule__ModelSlot__Group__8__Impl : ( ( ( 'required' ) ) ( ( 'required' )* ) ) ;
+    // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:1648:1: rule__ModelSlot__Group__8__Impl : ( ( ( 'required' ) ) ( ( 'required' )* ) ) ;
     public final void rule__ModelSlot__Group__8__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:1596:1: ( ( ( ( 'required' ) ) ( ( 'required' )* ) ) )
-            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:1597:1: ( ( ( 'required' ) ) ( ( 'required' )* ) )
+            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:1652:1: ( ( ( ( 'required' ) ) ( ( 'required' )* ) ) )
+            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:1653:1: ( ( ( 'required' ) ) ( ( 'required' )* ) )
             {
-            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:1597:1: ( ( ( 'required' ) ) ( ( 'required' )* ) )
-            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:1598:1: ( ( 'required' ) ) ( ( 'required' )* )
+            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:1653:1: ( ( ( 'required' ) ) ( ( 'required' )* ) )
+            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:1654:1: ( ( 'required' ) ) ( ( 'required' )* )
             {
-            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:1598:1: ( ( 'required' ) )
-            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:1599:1: ( 'required' )
+            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:1654:1: ( ( 'required' ) )
+            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:1655:1: ( 'required' )
             {
              before(grammarAccess.getModelSlotAccess().getRequiredKeyword_8()); 
-            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:1600:1: ( 'required' )
-            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:1601:2: 'required'
+            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:1656:1: ( 'required' )
+            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:1657:2: 'required'
             {
-            match(input,34,FOLLOW_34_in_rule__ModelSlot__Group__8__Impl3274); 
+            match(input,34,FOLLOW_34_in_rule__ModelSlot__Group__8__Impl3402); 
 
             }
 
@@ -4460,32 +4657,32 @@ public class InternalFMLParser extends AbstractInternalContentAssistParser {
 
             }
 
-            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:1605:1: ( ( 'required' )* )
-            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:1606:1: ( 'required' )*
+            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:1661:1: ( ( 'required' )* )
+            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:1662:1: ( 'required' )*
             {
              before(grammarAccess.getModelSlotAccess().getRequiredKeyword_8()); 
-            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:1607:1: ( 'required' )*
-            loop19:
+            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:1663:1: ( 'required' )*
+            loop20:
             do {
-                int alt19=2;
-                int LA19_0 = input.LA(1);
+                int alt20=2;
+                int LA20_0 = input.LA(1);
 
-                if ( (LA19_0==34) ) {
-                    alt19=1;
+                if ( (LA20_0==34) ) {
+                    alt20=1;
                 }
 
 
-                switch (alt19) {
+                switch (alt20) {
             	case 1 :
-            	    // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:1608:2: 'required'
+            	    // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:1664:2: 'required'
             	    {
-            	    match(input,34,FOLLOW_34_in_rule__ModelSlot__Group__8__Impl3290); 
+            	    match(input,34,FOLLOW_34_in_rule__ModelSlot__Group__8__Impl3418); 
 
             	    }
             	    break;
 
             	default :
-            	    break loop19;
+            	    break loop20;
                 }
             } while (true);
 
@@ -4515,21 +4712,21 @@ public class InternalFMLParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__ModelSlot__Group__9"
-    // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:1620:1: rule__ModelSlot__Group__9 : rule__ModelSlot__Group__9__Impl rule__ModelSlot__Group__10 ;
+    // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:1676:1: rule__ModelSlot__Group__9 : rule__ModelSlot__Group__9__Impl rule__ModelSlot__Group__10 ;
     public final void rule__ModelSlot__Group__9() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:1624:1: ( rule__ModelSlot__Group__9__Impl rule__ModelSlot__Group__10 )
-            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:1625:2: rule__ModelSlot__Group__9__Impl rule__ModelSlot__Group__10
+            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:1680:1: ( rule__ModelSlot__Group__9__Impl rule__ModelSlot__Group__10 )
+            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:1681:2: rule__ModelSlot__Group__9__Impl rule__ModelSlot__Group__10
             {
-            pushFollow(FOLLOW_rule__ModelSlot__Group__9__Impl_in_rule__ModelSlot__Group__93325);
+            pushFollow(FOLLOW_rule__ModelSlot__Group__9__Impl_in_rule__ModelSlot__Group__93453);
             rule__ModelSlot__Group__9__Impl();
 
             state._fsp--;
 
-            pushFollow(FOLLOW_rule__ModelSlot__Group__10_in_rule__ModelSlot__Group__93328);
+            pushFollow(FOLLOW_rule__ModelSlot__Group__10_in_rule__ModelSlot__Group__93456);
             rule__ModelSlot__Group__10();
 
             state._fsp--;
@@ -4553,26 +4750,26 @@ public class InternalFMLParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__ModelSlot__Group__9__Impl"
-    // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:1632:1: rule__ModelSlot__Group__9__Impl : ( ( ( '=' ) ) ( ( '=' )* ) ) ;
+    // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:1688:1: rule__ModelSlot__Group__9__Impl : ( ( ( '=' ) ) ( ( '=' )* ) ) ;
     public final void rule__ModelSlot__Group__9__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:1636:1: ( ( ( ( '=' ) ) ( ( '=' )* ) ) )
-            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:1637:1: ( ( ( '=' ) ) ( ( '=' )* ) )
+            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:1692:1: ( ( ( ( '=' ) ) ( ( '=' )* ) ) )
+            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:1693:1: ( ( ( '=' ) ) ( ( '=' )* ) )
             {
-            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:1637:1: ( ( ( '=' ) ) ( ( '=' )* ) )
-            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:1638:1: ( ( '=' ) ) ( ( '=' )* )
+            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:1693:1: ( ( ( '=' ) ) ( ( '=' )* ) )
+            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:1694:1: ( ( '=' ) ) ( ( '=' )* )
             {
-            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:1638:1: ( ( '=' ) )
-            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:1639:1: ( '=' )
+            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:1694:1: ( ( '=' ) )
+            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:1695:1: ( '=' )
             {
              before(grammarAccess.getModelSlotAccess().getEqualsSignKeyword_9()); 
-            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:1640:1: ( '=' )
-            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:1641:2: '='
+            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:1696:1: ( '=' )
+            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:1697:2: '='
             {
-            match(input,28,FOLLOW_28_in_rule__ModelSlot__Group__9__Impl3359); 
+            match(input,28,FOLLOW_28_in_rule__ModelSlot__Group__9__Impl3487); 
 
             }
 
@@ -4580,32 +4777,32 @@ public class InternalFMLParser extends AbstractInternalContentAssistParser {
 
             }
 
-            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:1645:1: ( ( '=' )* )
-            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:1646:1: ( '=' )*
+            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:1701:1: ( ( '=' )* )
+            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:1702:1: ( '=' )*
             {
              before(grammarAccess.getModelSlotAccess().getEqualsSignKeyword_9()); 
-            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:1647:1: ( '=' )*
-            loop20:
+            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:1703:1: ( '=' )*
+            loop21:
             do {
-                int alt20=2;
-                int LA20_0 = input.LA(1);
+                int alt21=2;
+                int LA21_0 = input.LA(1);
 
-                if ( (LA20_0==28) ) {
-                    alt20=1;
+                if ( (LA21_0==28) ) {
+                    alt21=1;
                 }
 
 
-                switch (alt20) {
+                switch (alt21) {
             	case 1 :
-            	    // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:1648:2: '='
+            	    // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:1704:2: '='
             	    {
-            	    match(input,28,FOLLOW_28_in_rule__ModelSlot__Group__9__Impl3375); 
+            	    match(input,28,FOLLOW_28_in_rule__ModelSlot__Group__9__Impl3503); 
 
             	    }
             	    break;
 
             	default :
-            	    break loop20;
+            	    break loop21;
                 }
             } while (true);
 
@@ -4635,21 +4832,21 @@ public class InternalFMLParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__ModelSlot__Group__10"
-    // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:1660:1: rule__ModelSlot__Group__10 : rule__ModelSlot__Group__10__Impl rule__ModelSlot__Group__11 ;
+    // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:1716:1: rule__ModelSlot__Group__10 : rule__ModelSlot__Group__10__Impl rule__ModelSlot__Group__11 ;
     public final void rule__ModelSlot__Group__10() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:1664:1: ( rule__ModelSlot__Group__10__Impl rule__ModelSlot__Group__11 )
-            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:1665:2: rule__ModelSlot__Group__10__Impl rule__ModelSlot__Group__11
+            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:1720:1: ( rule__ModelSlot__Group__10__Impl rule__ModelSlot__Group__11 )
+            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:1721:2: rule__ModelSlot__Group__10__Impl rule__ModelSlot__Group__11
             {
-            pushFollow(FOLLOW_rule__ModelSlot__Group__10__Impl_in_rule__ModelSlot__Group__103410);
+            pushFollow(FOLLOW_rule__ModelSlot__Group__10__Impl_in_rule__ModelSlot__Group__103538);
             rule__ModelSlot__Group__10__Impl();
 
             state._fsp--;
 
-            pushFollow(FOLLOW_rule__ModelSlot__Group__11_in_rule__ModelSlot__Group__103413);
+            pushFollow(FOLLOW_rule__ModelSlot__Group__11_in_rule__ModelSlot__Group__103541);
             rule__ModelSlot__Group__11();
 
             state._fsp--;
@@ -4673,23 +4870,23 @@ public class InternalFMLParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__ModelSlot__Group__10__Impl"
-    // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:1672:1: rule__ModelSlot__Group__10__Impl : ( ( rule__ModelSlot__RequiredAssignment_10 ) ) ;
+    // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:1728:1: rule__ModelSlot__Group__10__Impl : ( ( rule__ModelSlot__RequiredAssignment_10 ) ) ;
     public final void rule__ModelSlot__Group__10__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:1676:1: ( ( ( rule__ModelSlot__RequiredAssignment_10 ) ) )
-            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:1677:1: ( ( rule__ModelSlot__RequiredAssignment_10 ) )
+            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:1732:1: ( ( ( rule__ModelSlot__RequiredAssignment_10 ) ) )
+            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:1733:1: ( ( rule__ModelSlot__RequiredAssignment_10 ) )
             {
-            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:1677:1: ( ( rule__ModelSlot__RequiredAssignment_10 ) )
-            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:1678:1: ( rule__ModelSlot__RequiredAssignment_10 )
+            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:1733:1: ( ( rule__ModelSlot__RequiredAssignment_10 ) )
+            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:1734:1: ( rule__ModelSlot__RequiredAssignment_10 )
             {
              before(grammarAccess.getModelSlotAccess().getRequiredAssignment_10()); 
-            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:1679:1: ( rule__ModelSlot__RequiredAssignment_10 )
-            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:1679:2: rule__ModelSlot__RequiredAssignment_10
+            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:1735:1: ( rule__ModelSlot__RequiredAssignment_10 )
+            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:1735:2: rule__ModelSlot__RequiredAssignment_10
             {
-            pushFollow(FOLLOW_rule__ModelSlot__RequiredAssignment_10_in_rule__ModelSlot__Group__10__Impl3440);
+            pushFollow(FOLLOW_rule__ModelSlot__RequiredAssignment_10_in_rule__ModelSlot__Group__10__Impl3568);
             rule__ModelSlot__RequiredAssignment_10();
 
             state._fsp--;
@@ -4720,21 +4917,21 @@ public class InternalFMLParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__ModelSlot__Group__11"
-    // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:1689:1: rule__ModelSlot__Group__11 : rule__ModelSlot__Group__11__Impl rule__ModelSlot__Group__12 ;
+    // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:1745:1: rule__ModelSlot__Group__11 : rule__ModelSlot__Group__11__Impl rule__ModelSlot__Group__12 ;
     public final void rule__ModelSlot__Group__11() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:1693:1: ( rule__ModelSlot__Group__11__Impl rule__ModelSlot__Group__12 )
-            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:1694:2: rule__ModelSlot__Group__11__Impl rule__ModelSlot__Group__12
+            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:1749:1: ( rule__ModelSlot__Group__11__Impl rule__ModelSlot__Group__12 )
+            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:1750:2: rule__ModelSlot__Group__11__Impl rule__ModelSlot__Group__12
             {
-            pushFollow(FOLLOW_rule__ModelSlot__Group__11__Impl_in_rule__ModelSlot__Group__113470);
+            pushFollow(FOLLOW_rule__ModelSlot__Group__11__Impl_in_rule__ModelSlot__Group__113598);
             rule__ModelSlot__Group__11__Impl();
 
             state._fsp--;
 
-            pushFollow(FOLLOW_rule__ModelSlot__Group__12_in_rule__ModelSlot__Group__113473);
+            pushFollow(FOLLOW_rule__ModelSlot__Group__12_in_rule__ModelSlot__Group__113601);
             rule__ModelSlot__Group__12();
 
             state._fsp--;
@@ -4758,26 +4955,26 @@ public class InternalFMLParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__ModelSlot__Group__11__Impl"
-    // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:1701:1: rule__ModelSlot__Group__11__Impl : ( ( ( 'readOnly' ) ) ( ( 'readOnly' )* ) ) ;
+    // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:1757:1: rule__ModelSlot__Group__11__Impl : ( ( ( 'readOnly' ) ) ( ( 'readOnly' )* ) ) ;
     public final void rule__ModelSlot__Group__11__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:1705:1: ( ( ( ( 'readOnly' ) ) ( ( 'readOnly' )* ) ) )
-            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:1706:1: ( ( ( 'readOnly' ) ) ( ( 'readOnly' )* ) )
+            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:1761:1: ( ( ( ( 'readOnly' ) ) ( ( 'readOnly' )* ) ) )
+            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:1762:1: ( ( ( 'readOnly' ) ) ( ( 'readOnly' )* ) )
             {
-            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:1706:1: ( ( ( 'readOnly' ) ) ( ( 'readOnly' )* ) )
-            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:1707:1: ( ( 'readOnly' ) ) ( ( 'readOnly' )* )
+            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:1762:1: ( ( ( 'readOnly' ) ) ( ( 'readOnly' )* ) )
+            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:1763:1: ( ( 'readOnly' ) ) ( ( 'readOnly' )* )
             {
-            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:1707:1: ( ( 'readOnly' ) )
-            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:1708:1: ( 'readOnly' )
+            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:1763:1: ( ( 'readOnly' ) )
+            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:1764:1: ( 'readOnly' )
             {
              before(grammarAccess.getModelSlotAccess().getReadOnlyKeyword_11()); 
-            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:1709:1: ( 'readOnly' )
-            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:1710:2: 'readOnly'
+            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:1765:1: ( 'readOnly' )
+            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:1766:2: 'readOnly'
             {
-            match(input,35,FOLLOW_35_in_rule__ModelSlot__Group__11__Impl3504); 
+            match(input,35,FOLLOW_35_in_rule__ModelSlot__Group__11__Impl3632); 
 
             }
 
@@ -4785,32 +4982,32 @@ public class InternalFMLParser extends AbstractInternalContentAssistParser {
 
             }
 
-            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:1714:1: ( ( 'readOnly' )* )
-            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:1715:1: ( 'readOnly' )*
+            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:1770:1: ( ( 'readOnly' )* )
+            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:1771:1: ( 'readOnly' )*
             {
              before(grammarAccess.getModelSlotAccess().getReadOnlyKeyword_11()); 
-            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:1716:1: ( 'readOnly' )*
-            loop21:
+            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:1772:1: ( 'readOnly' )*
+            loop22:
             do {
-                int alt21=2;
-                int LA21_0 = input.LA(1);
+                int alt22=2;
+                int LA22_0 = input.LA(1);
 
-                if ( (LA21_0==35) ) {
-                    alt21=1;
+                if ( (LA22_0==35) ) {
+                    alt22=1;
                 }
 
 
-                switch (alt21) {
+                switch (alt22) {
             	case 1 :
-            	    // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:1717:2: 'readOnly'
+            	    // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:1773:2: 'readOnly'
             	    {
-            	    match(input,35,FOLLOW_35_in_rule__ModelSlot__Group__11__Impl3520); 
+            	    match(input,35,FOLLOW_35_in_rule__ModelSlot__Group__11__Impl3648); 
 
             	    }
             	    break;
 
             	default :
-            	    break loop21;
+            	    break loop22;
                 }
             } while (true);
 
@@ -4840,21 +5037,21 @@ public class InternalFMLParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__ModelSlot__Group__12"
-    // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:1729:1: rule__ModelSlot__Group__12 : rule__ModelSlot__Group__12__Impl rule__ModelSlot__Group__13 ;
+    // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:1785:1: rule__ModelSlot__Group__12 : rule__ModelSlot__Group__12__Impl rule__ModelSlot__Group__13 ;
     public final void rule__ModelSlot__Group__12() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:1733:1: ( rule__ModelSlot__Group__12__Impl rule__ModelSlot__Group__13 )
-            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:1734:2: rule__ModelSlot__Group__12__Impl rule__ModelSlot__Group__13
+            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:1789:1: ( rule__ModelSlot__Group__12__Impl rule__ModelSlot__Group__13 )
+            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:1790:2: rule__ModelSlot__Group__12__Impl rule__ModelSlot__Group__13
             {
-            pushFollow(FOLLOW_rule__ModelSlot__Group__12__Impl_in_rule__ModelSlot__Group__123555);
+            pushFollow(FOLLOW_rule__ModelSlot__Group__12__Impl_in_rule__ModelSlot__Group__123683);
             rule__ModelSlot__Group__12__Impl();
 
             state._fsp--;
 
-            pushFollow(FOLLOW_rule__ModelSlot__Group__13_in_rule__ModelSlot__Group__123558);
+            pushFollow(FOLLOW_rule__ModelSlot__Group__13_in_rule__ModelSlot__Group__123686);
             rule__ModelSlot__Group__13();
 
             state._fsp--;
@@ -4878,26 +5075,26 @@ public class InternalFMLParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__ModelSlot__Group__12__Impl"
-    // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:1741:1: rule__ModelSlot__Group__12__Impl : ( ( ( '=' ) ) ( ( '=' )* ) ) ;
+    // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:1797:1: rule__ModelSlot__Group__12__Impl : ( ( ( '=' ) ) ( ( '=' )* ) ) ;
     public final void rule__ModelSlot__Group__12__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:1745:1: ( ( ( ( '=' ) ) ( ( '=' )* ) ) )
-            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:1746:1: ( ( ( '=' ) ) ( ( '=' )* ) )
+            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:1801:1: ( ( ( ( '=' ) ) ( ( '=' )* ) ) )
+            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:1802:1: ( ( ( '=' ) ) ( ( '=' )* ) )
             {
-            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:1746:1: ( ( ( '=' ) ) ( ( '=' )* ) )
-            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:1747:1: ( ( '=' ) ) ( ( '=' )* )
+            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:1802:1: ( ( ( '=' ) ) ( ( '=' )* ) )
+            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:1803:1: ( ( '=' ) ) ( ( '=' )* )
             {
-            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:1747:1: ( ( '=' ) )
-            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:1748:1: ( '=' )
+            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:1803:1: ( ( '=' ) )
+            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:1804:1: ( '=' )
             {
              before(grammarAccess.getModelSlotAccess().getEqualsSignKeyword_12()); 
-            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:1749:1: ( '=' )
-            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:1750:2: '='
+            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:1805:1: ( '=' )
+            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:1806:2: '='
             {
-            match(input,28,FOLLOW_28_in_rule__ModelSlot__Group__12__Impl3589); 
+            match(input,28,FOLLOW_28_in_rule__ModelSlot__Group__12__Impl3717); 
 
             }
 
@@ -4905,32 +5102,32 @@ public class InternalFMLParser extends AbstractInternalContentAssistParser {
 
             }
 
-            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:1754:1: ( ( '=' )* )
-            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:1755:1: ( '=' )*
+            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:1810:1: ( ( '=' )* )
+            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:1811:1: ( '=' )*
             {
              before(grammarAccess.getModelSlotAccess().getEqualsSignKeyword_12()); 
-            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:1756:1: ( '=' )*
-            loop22:
+            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:1812:1: ( '=' )*
+            loop23:
             do {
-                int alt22=2;
-                int LA22_0 = input.LA(1);
+                int alt23=2;
+                int LA23_0 = input.LA(1);
 
-                if ( (LA22_0==28) ) {
-                    alt22=1;
+                if ( (LA23_0==28) ) {
+                    alt23=1;
                 }
 
 
-                switch (alt22) {
+                switch (alt23) {
             	case 1 :
-            	    // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:1757:2: '='
+            	    // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:1813:2: '='
             	    {
-            	    match(input,28,FOLLOW_28_in_rule__ModelSlot__Group__12__Impl3605); 
+            	    match(input,28,FOLLOW_28_in_rule__ModelSlot__Group__12__Impl3733); 
 
             	    }
             	    break;
 
             	default :
-            	    break loop22;
+            	    break loop23;
                 }
             } while (true);
 
@@ -4960,21 +5157,21 @@ public class InternalFMLParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__ModelSlot__Group__13"
-    // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:1769:1: rule__ModelSlot__Group__13 : rule__ModelSlot__Group__13__Impl rule__ModelSlot__Group__14 ;
+    // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:1825:1: rule__ModelSlot__Group__13 : rule__ModelSlot__Group__13__Impl rule__ModelSlot__Group__14 ;
     public final void rule__ModelSlot__Group__13() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:1773:1: ( rule__ModelSlot__Group__13__Impl rule__ModelSlot__Group__14 )
-            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:1774:2: rule__ModelSlot__Group__13__Impl rule__ModelSlot__Group__14
+            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:1829:1: ( rule__ModelSlot__Group__13__Impl rule__ModelSlot__Group__14 )
+            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:1830:2: rule__ModelSlot__Group__13__Impl rule__ModelSlot__Group__14
             {
-            pushFollow(FOLLOW_rule__ModelSlot__Group__13__Impl_in_rule__ModelSlot__Group__133640);
+            pushFollow(FOLLOW_rule__ModelSlot__Group__13__Impl_in_rule__ModelSlot__Group__133768);
             rule__ModelSlot__Group__13__Impl();
 
             state._fsp--;
 
-            pushFollow(FOLLOW_rule__ModelSlot__Group__14_in_rule__ModelSlot__Group__133643);
+            pushFollow(FOLLOW_rule__ModelSlot__Group__14_in_rule__ModelSlot__Group__133771);
             rule__ModelSlot__Group__14();
 
             state._fsp--;
@@ -4998,23 +5195,23 @@ public class InternalFMLParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__ModelSlot__Group__13__Impl"
-    // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:1781:1: rule__ModelSlot__Group__13__Impl : ( ( rule__ModelSlot__ReadOnlyAssignment_13 ) ) ;
+    // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:1837:1: rule__ModelSlot__Group__13__Impl : ( ( rule__ModelSlot__ReadOnlyAssignment_13 ) ) ;
     public final void rule__ModelSlot__Group__13__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:1785:1: ( ( ( rule__ModelSlot__ReadOnlyAssignment_13 ) ) )
-            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:1786:1: ( ( rule__ModelSlot__ReadOnlyAssignment_13 ) )
+            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:1841:1: ( ( ( rule__ModelSlot__ReadOnlyAssignment_13 ) ) )
+            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:1842:1: ( ( rule__ModelSlot__ReadOnlyAssignment_13 ) )
             {
-            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:1786:1: ( ( rule__ModelSlot__ReadOnlyAssignment_13 ) )
-            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:1787:1: ( rule__ModelSlot__ReadOnlyAssignment_13 )
+            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:1842:1: ( ( rule__ModelSlot__ReadOnlyAssignment_13 ) )
+            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:1843:1: ( rule__ModelSlot__ReadOnlyAssignment_13 )
             {
              before(grammarAccess.getModelSlotAccess().getReadOnlyAssignment_13()); 
-            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:1788:1: ( rule__ModelSlot__ReadOnlyAssignment_13 )
-            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:1788:2: rule__ModelSlot__ReadOnlyAssignment_13
+            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:1844:1: ( rule__ModelSlot__ReadOnlyAssignment_13 )
+            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:1844:2: rule__ModelSlot__ReadOnlyAssignment_13
             {
-            pushFollow(FOLLOW_rule__ModelSlot__ReadOnlyAssignment_13_in_rule__ModelSlot__Group__13__Impl3670);
+            pushFollow(FOLLOW_rule__ModelSlot__ReadOnlyAssignment_13_in_rule__ModelSlot__Group__13__Impl3798);
             rule__ModelSlot__ReadOnlyAssignment_13();
 
             state._fsp--;
@@ -5045,16 +5242,16 @@ public class InternalFMLParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__ModelSlot__Group__14"
-    // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:1798:1: rule__ModelSlot__Group__14 : rule__ModelSlot__Group__14__Impl ;
+    // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:1854:1: rule__ModelSlot__Group__14 : rule__ModelSlot__Group__14__Impl ;
     public final void rule__ModelSlot__Group__14() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:1802:1: ( rule__ModelSlot__Group__14__Impl )
-            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:1803:2: rule__ModelSlot__Group__14__Impl
+            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:1858:1: ( rule__ModelSlot__Group__14__Impl )
+            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:1859:2: rule__ModelSlot__Group__14__Impl
             {
-            pushFollow(FOLLOW_rule__ModelSlot__Group__14__Impl_in_rule__ModelSlot__Group__143700);
+            pushFollow(FOLLOW_rule__ModelSlot__Group__14__Impl_in_rule__ModelSlot__Group__143828);
             rule__ModelSlot__Group__14__Impl();
 
             state._fsp--;
@@ -5078,20 +5275,20 @@ public class InternalFMLParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__ModelSlot__Group__14__Impl"
-    // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:1809:1: rule__ModelSlot__Group__14__Impl : ( ';' ) ;
+    // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:1865:1: rule__ModelSlot__Group__14__Impl : ( ';' ) ;
     public final void rule__ModelSlot__Group__14__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:1813:1: ( ( ';' ) )
-            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:1814:1: ( ';' )
+            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:1869:1: ( ( ';' ) )
+            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:1870:1: ( ';' )
             {
-            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:1814:1: ( ';' )
-            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:1815:1: ';'
+            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:1870:1: ( ';' )
+            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:1871:1: ';'
             {
              before(grammarAccess.getModelSlotAccess().getSemicolonKeyword_14()); 
-            match(input,36,FOLLOW_36_in_rule__ModelSlot__Group__14__Impl3728); 
+            match(input,36,FOLLOW_36_in_rule__ModelSlot__Group__14__Impl3856); 
              after(grammarAccess.getModelSlotAccess().getSemicolonKeyword_14()); 
 
             }
@@ -5115,21 +5312,21 @@ public class InternalFMLParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__EditionPattern__Group__0"
-    // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:1858:1: rule__EditionPattern__Group__0 : rule__EditionPattern__Group__0__Impl rule__EditionPattern__Group__1 ;
+    // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:1914:1: rule__EditionPattern__Group__0 : rule__EditionPattern__Group__0__Impl rule__EditionPattern__Group__1 ;
     public final void rule__EditionPattern__Group__0() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:1862:1: ( rule__EditionPattern__Group__0__Impl rule__EditionPattern__Group__1 )
-            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:1863:2: rule__EditionPattern__Group__0__Impl rule__EditionPattern__Group__1
+            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:1918:1: ( rule__EditionPattern__Group__0__Impl rule__EditionPattern__Group__1 )
+            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:1919:2: rule__EditionPattern__Group__0__Impl rule__EditionPattern__Group__1
             {
-            pushFollow(FOLLOW_rule__EditionPattern__Group__0__Impl_in_rule__EditionPattern__Group__03789);
+            pushFollow(FOLLOW_rule__EditionPattern__Group__0__Impl_in_rule__EditionPattern__Group__03917);
             rule__EditionPattern__Group__0__Impl();
 
             state._fsp--;
 
-            pushFollow(FOLLOW_rule__EditionPattern__Group__1_in_rule__EditionPattern__Group__03792);
+            pushFollow(FOLLOW_rule__EditionPattern__Group__1_in_rule__EditionPattern__Group__03920);
             rule__EditionPattern__Group__1();
 
             state._fsp--;
@@ -5153,20 +5350,20 @@ public class InternalFMLParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__EditionPattern__Group__0__Impl"
-    // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:1870:1: rule__EditionPattern__Group__0__Impl : ( 'EditionPattern' ) ;
+    // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:1926:1: rule__EditionPattern__Group__0__Impl : ( 'EditionPattern' ) ;
     public final void rule__EditionPattern__Group__0__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:1874:1: ( ( 'EditionPattern' ) )
-            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:1875:1: ( 'EditionPattern' )
+            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:1930:1: ( ( 'EditionPattern' ) )
+            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:1931:1: ( 'EditionPattern' )
             {
-            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:1875:1: ( 'EditionPattern' )
-            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:1876:1: 'EditionPattern'
+            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:1931:1: ( 'EditionPattern' )
+            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:1932:1: 'EditionPattern'
             {
              before(grammarAccess.getEditionPatternAccess().getEditionPatternKeyword_0()); 
-            match(input,37,FOLLOW_37_in_rule__EditionPattern__Group__0__Impl3820); 
+            match(input,37,FOLLOW_37_in_rule__EditionPattern__Group__0__Impl3948); 
              after(grammarAccess.getEditionPatternAccess().getEditionPatternKeyword_0()); 
 
             }
@@ -5190,21 +5387,21 @@ public class InternalFMLParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__EditionPattern__Group__1"
-    // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:1889:1: rule__EditionPattern__Group__1 : rule__EditionPattern__Group__1__Impl rule__EditionPattern__Group__2 ;
+    // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:1945:1: rule__EditionPattern__Group__1 : rule__EditionPattern__Group__1__Impl rule__EditionPattern__Group__2 ;
     public final void rule__EditionPattern__Group__1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:1893:1: ( rule__EditionPattern__Group__1__Impl rule__EditionPattern__Group__2 )
-            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:1894:2: rule__EditionPattern__Group__1__Impl rule__EditionPattern__Group__2
+            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:1949:1: ( rule__EditionPattern__Group__1__Impl rule__EditionPattern__Group__2 )
+            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:1950:2: rule__EditionPattern__Group__1__Impl rule__EditionPattern__Group__2
             {
-            pushFollow(FOLLOW_rule__EditionPattern__Group__1__Impl_in_rule__EditionPattern__Group__13851);
+            pushFollow(FOLLOW_rule__EditionPattern__Group__1__Impl_in_rule__EditionPattern__Group__13979);
             rule__EditionPattern__Group__1__Impl();
 
             state._fsp--;
 
-            pushFollow(FOLLOW_rule__EditionPattern__Group__2_in_rule__EditionPattern__Group__13854);
+            pushFollow(FOLLOW_rule__EditionPattern__Group__2_in_rule__EditionPattern__Group__13982);
             rule__EditionPattern__Group__2();
 
             state._fsp--;
@@ -5228,23 +5425,23 @@ public class InternalFMLParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__EditionPattern__Group__1__Impl"
-    // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:1901:1: rule__EditionPattern__Group__1__Impl : ( ( rule__EditionPattern__NameAssignment_1 ) ) ;
+    // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:1957:1: rule__EditionPattern__Group__1__Impl : ( ( rule__EditionPattern__NameAssignment_1 ) ) ;
     public final void rule__EditionPattern__Group__1__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:1905:1: ( ( ( rule__EditionPattern__NameAssignment_1 ) ) )
-            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:1906:1: ( ( rule__EditionPattern__NameAssignment_1 ) )
+            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:1961:1: ( ( ( rule__EditionPattern__NameAssignment_1 ) ) )
+            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:1962:1: ( ( rule__EditionPattern__NameAssignment_1 ) )
             {
-            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:1906:1: ( ( rule__EditionPattern__NameAssignment_1 ) )
-            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:1907:1: ( rule__EditionPattern__NameAssignment_1 )
+            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:1962:1: ( ( rule__EditionPattern__NameAssignment_1 ) )
+            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:1963:1: ( rule__EditionPattern__NameAssignment_1 )
             {
              before(grammarAccess.getEditionPatternAccess().getNameAssignment_1()); 
-            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:1908:1: ( rule__EditionPattern__NameAssignment_1 )
-            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:1908:2: rule__EditionPattern__NameAssignment_1
+            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:1964:1: ( rule__EditionPattern__NameAssignment_1 )
+            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:1964:2: rule__EditionPattern__NameAssignment_1
             {
-            pushFollow(FOLLOW_rule__EditionPattern__NameAssignment_1_in_rule__EditionPattern__Group__1__Impl3881);
+            pushFollow(FOLLOW_rule__EditionPattern__NameAssignment_1_in_rule__EditionPattern__Group__1__Impl4009);
             rule__EditionPattern__NameAssignment_1();
 
             state._fsp--;
@@ -5275,21 +5472,21 @@ public class InternalFMLParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__EditionPattern__Group__2"
-    // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:1918:1: rule__EditionPattern__Group__2 : rule__EditionPattern__Group__2__Impl rule__EditionPattern__Group__3 ;
+    // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:1974:1: rule__EditionPattern__Group__2 : rule__EditionPattern__Group__2__Impl rule__EditionPattern__Group__3 ;
     public final void rule__EditionPattern__Group__2() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:1922:1: ( rule__EditionPattern__Group__2__Impl rule__EditionPattern__Group__3 )
-            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:1923:2: rule__EditionPattern__Group__2__Impl rule__EditionPattern__Group__3
+            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:1978:1: ( rule__EditionPattern__Group__2__Impl rule__EditionPattern__Group__3 )
+            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:1979:2: rule__EditionPattern__Group__2__Impl rule__EditionPattern__Group__3
             {
-            pushFollow(FOLLOW_rule__EditionPattern__Group__2__Impl_in_rule__EditionPattern__Group__23911);
+            pushFollow(FOLLOW_rule__EditionPattern__Group__2__Impl_in_rule__EditionPattern__Group__24039);
             rule__EditionPattern__Group__2__Impl();
 
             state._fsp--;
 
-            pushFollow(FOLLOW_rule__EditionPattern__Group__3_in_rule__EditionPattern__Group__23914);
+            pushFollow(FOLLOW_rule__EditionPattern__Group__3_in_rule__EditionPattern__Group__24042);
             rule__EditionPattern__Group__3();
 
             state._fsp--;
@@ -5313,31 +5510,31 @@ public class InternalFMLParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__EditionPattern__Group__2__Impl"
-    // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:1930:1: rule__EditionPattern__Group__2__Impl : ( ( rule__EditionPattern__Group_2__0 )? ) ;
+    // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:1986:1: rule__EditionPattern__Group__2__Impl : ( ( rule__EditionPattern__Group_2__0 )? ) ;
     public final void rule__EditionPattern__Group__2__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:1934:1: ( ( ( rule__EditionPattern__Group_2__0 )? ) )
-            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:1935:1: ( ( rule__EditionPattern__Group_2__0 )? )
+            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:1990:1: ( ( ( rule__EditionPattern__Group_2__0 )? ) )
+            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:1991:1: ( ( rule__EditionPattern__Group_2__0 )? )
             {
-            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:1935:1: ( ( rule__EditionPattern__Group_2__0 )? )
-            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:1936:1: ( rule__EditionPattern__Group_2__0 )?
+            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:1991:1: ( ( rule__EditionPattern__Group_2__0 )? )
+            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:1992:1: ( rule__EditionPattern__Group_2__0 )?
             {
              before(grammarAccess.getEditionPatternAccess().getGroup_2()); 
-            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:1937:1: ( rule__EditionPattern__Group_2__0 )?
-            int alt23=2;
-            int LA23_0 = input.LA(1);
+            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:1993:1: ( rule__EditionPattern__Group_2__0 )?
+            int alt24=2;
+            int LA24_0 = input.LA(1);
 
-            if ( (LA23_0==38) ) {
-                alt23=1;
+            if ( (LA24_0==38) ) {
+                alt24=1;
             }
-            switch (alt23) {
+            switch (alt24) {
                 case 1 :
-                    // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:1937:2: rule__EditionPattern__Group_2__0
+                    // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:1993:2: rule__EditionPattern__Group_2__0
                     {
-                    pushFollow(FOLLOW_rule__EditionPattern__Group_2__0_in_rule__EditionPattern__Group__2__Impl3941);
+                    pushFollow(FOLLOW_rule__EditionPattern__Group_2__0_in_rule__EditionPattern__Group__2__Impl4069);
                     rule__EditionPattern__Group_2__0();
 
                     state._fsp--;
@@ -5371,21 +5568,21 @@ public class InternalFMLParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__EditionPattern__Group__3"
-    // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:1947:1: rule__EditionPattern__Group__3 : rule__EditionPattern__Group__3__Impl rule__EditionPattern__Group__4 ;
+    // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:2003:1: rule__EditionPattern__Group__3 : rule__EditionPattern__Group__3__Impl rule__EditionPattern__Group__4 ;
     public final void rule__EditionPattern__Group__3() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:1951:1: ( rule__EditionPattern__Group__3__Impl rule__EditionPattern__Group__4 )
-            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:1952:2: rule__EditionPattern__Group__3__Impl rule__EditionPattern__Group__4
+            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:2007:1: ( rule__EditionPattern__Group__3__Impl rule__EditionPattern__Group__4 )
+            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:2008:2: rule__EditionPattern__Group__3__Impl rule__EditionPattern__Group__4
             {
-            pushFollow(FOLLOW_rule__EditionPattern__Group__3__Impl_in_rule__EditionPattern__Group__33972);
+            pushFollow(FOLLOW_rule__EditionPattern__Group__3__Impl_in_rule__EditionPattern__Group__34100);
             rule__EditionPattern__Group__3__Impl();
 
             state._fsp--;
 
-            pushFollow(FOLLOW_rule__EditionPattern__Group__4_in_rule__EditionPattern__Group__33975);
+            pushFollow(FOLLOW_rule__EditionPattern__Group__4_in_rule__EditionPattern__Group__34103);
             rule__EditionPattern__Group__4();
 
             state._fsp--;
@@ -5409,20 +5606,20 @@ public class InternalFMLParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__EditionPattern__Group__3__Impl"
-    // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:1959:1: rule__EditionPattern__Group__3__Impl : ( '{' ) ;
+    // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:2015:1: rule__EditionPattern__Group__3__Impl : ( '{' ) ;
     public final void rule__EditionPattern__Group__3__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:1963:1: ( ( '{' ) )
-            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:1964:1: ( '{' )
+            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:2019:1: ( ( '{' ) )
+            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:2020:1: ( '{' )
             {
-            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:1964:1: ( '{' )
-            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:1965:1: '{'
+            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:2020:1: ( '{' )
+            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:2021:1: '{'
             {
              before(grammarAccess.getEditionPatternAccess().getLeftCurlyBracketKeyword_3()); 
-            match(input,29,FOLLOW_29_in_rule__EditionPattern__Group__3__Impl4003); 
+            match(input,29,FOLLOW_29_in_rule__EditionPattern__Group__3__Impl4131); 
              after(grammarAccess.getEditionPatternAccess().getLeftCurlyBracketKeyword_3()); 
 
             }
@@ -5446,21 +5643,21 @@ public class InternalFMLParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__EditionPattern__Group__4"
-    // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:1978:1: rule__EditionPattern__Group__4 : rule__EditionPattern__Group__4__Impl rule__EditionPattern__Group__5 ;
+    // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:2034:1: rule__EditionPattern__Group__4 : rule__EditionPattern__Group__4__Impl rule__EditionPattern__Group__5 ;
     public final void rule__EditionPattern__Group__4() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:1982:1: ( rule__EditionPattern__Group__4__Impl rule__EditionPattern__Group__5 )
-            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:1983:2: rule__EditionPattern__Group__4__Impl rule__EditionPattern__Group__5
+            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:2038:1: ( rule__EditionPattern__Group__4__Impl rule__EditionPattern__Group__5 )
+            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:2039:2: rule__EditionPattern__Group__4__Impl rule__EditionPattern__Group__5
             {
-            pushFollow(FOLLOW_rule__EditionPattern__Group__4__Impl_in_rule__EditionPattern__Group__44034);
+            pushFollow(FOLLOW_rule__EditionPattern__Group__4__Impl_in_rule__EditionPattern__Group__44162);
             rule__EditionPattern__Group__4__Impl();
 
             state._fsp--;
 
-            pushFollow(FOLLOW_rule__EditionPattern__Group__5_in_rule__EditionPattern__Group__44037);
+            pushFollow(FOLLOW_rule__EditionPattern__Group__5_in_rule__EditionPattern__Group__44165);
             rule__EditionPattern__Group__5();
 
             state._fsp--;
@@ -5484,35 +5681,35 @@ public class InternalFMLParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__EditionPattern__Group__4__Impl"
-    // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:1990:1: rule__EditionPattern__Group__4__Impl : ( ( rule__EditionPattern__PatternRolesAssignment_4 )* ) ;
+    // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:2046:1: rule__EditionPattern__Group__4__Impl : ( ( rule__EditionPattern__PatternRolesAssignment_4 )* ) ;
     public final void rule__EditionPattern__Group__4__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:1994:1: ( ( ( rule__EditionPattern__PatternRolesAssignment_4 )* ) )
-            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:1995:1: ( ( rule__EditionPattern__PatternRolesAssignment_4 )* )
+            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:2050:1: ( ( ( rule__EditionPattern__PatternRolesAssignment_4 )* ) )
+            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:2051:1: ( ( rule__EditionPattern__PatternRolesAssignment_4 )* )
             {
-            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:1995:1: ( ( rule__EditionPattern__PatternRolesAssignment_4 )* )
-            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:1996:1: ( rule__EditionPattern__PatternRolesAssignment_4 )*
+            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:2051:1: ( ( rule__EditionPattern__PatternRolesAssignment_4 )* )
+            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:2052:1: ( rule__EditionPattern__PatternRolesAssignment_4 )*
             {
              before(grammarAccess.getEditionPatternAccess().getPatternRolesAssignment_4()); 
-            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:1997:1: ( rule__EditionPattern__PatternRolesAssignment_4 )*
-            loop24:
+            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:2053:1: ( rule__EditionPattern__PatternRolesAssignment_4 )*
+            loop25:
             do {
-                int alt24=2;
-                int LA24_0 = input.LA(1);
+                int alt25=2;
+                int LA25_0 = input.LA(1);
 
-                if ( (LA24_0==39) ) {
-                    alt24=1;
+                if ( (LA25_0==39) ) {
+                    alt25=1;
                 }
 
 
-                switch (alt24) {
+                switch (alt25) {
             	case 1 :
-            	    // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:1997:2: rule__EditionPattern__PatternRolesAssignment_4
+            	    // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:2053:2: rule__EditionPattern__PatternRolesAssignment_4
             	    {
-            	    pushFollow(FOLLOW_rule__EditionPattern__PatternRolesAssignment_4_in_rule__EditionPattern__Group__4__Impl4064);
+            	    pushFollow(FOLLOW_rule__EditionPattern__PatternRolesAssignment_4_in_rule__EditionPattern__Group__4__Impl4192);
             	    rule__EditionPattern__PatternRolesAssignment_4();
 
             	    state._fsp--;
@@ -5522,7 +5719,7 @@ public class InternalFMLParser extends AbstractInternalContentAssistParser {
             	    break;
 
             	default :
-            	    break loop24;
+            	    break loop25;
                 }
             } while (true);
 
@@ -5549,21 +5746,21 @@ public class InternalFMLParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__EditionPattern__Group__5"
-    // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:2007:1: rule__EditionPattern__Group__5 : rule__EditionPattern__Group__5__Impl rule__EditionPattern__Group__6 ;
+    // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:2063:1: rule__EditionPattern__Group__5 : rule__EditionPattern__Group__5__Impl rule__EditionPattern__Group__6 ;
     public final void rule__EditionPattern__Group__5() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:2011:1: ( rule__EditionPattern__Group__5__Impl rule__EditionPattern__Group__6 )
-            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:2012:2: rule__EditionPattern__Group__5__Impl rule__EditionPattern__Group__6
+            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:2067:1: ( rule__EditionPattern__Group__5__Impl rule__EditionPattern__Group__6 )
+            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:2068:2: rule__EditionPattern__Group__5__Impl rule__EditionPattern__Group__6
             {
-            pushFollow(FOLLOW_rule__EditionPattern__Group__5__Impl_in_rule__EditionPattern__Group__54095);
+            pushFollow(FOLLOW_rule__EditionPattern__Group__5__Impl_in_rule__EditionPattern__Group__54223);
             rule__EditionPattern__Group__5__Impl();
 
             state._fsp--;
 
-            pushFollow(FOLLOW_rule__EditionPattern__Group__6_in_rule__EditionPattern__Group__54098);
+            pushFollow(FOLLOW_rule__EditionPattern__Group__6_in_rule__EditionPattern__Group__54226);
             rule__EditionPattern__Group__6();
 
             state._fsp--;
@@ -5587,35 +5784,35 @@ public class InternalFMLParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__EditionPattern__Group__5__Impl"
-    // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:2019:1: rule__EditionPattern__Group__5__Impl : ( ( rule__EditionPattern__EditionSchemesAssignment_5 )* ) ;
+    // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:2075:1: rule__EditionPattern__Group__5__Impl : ( ( rule__EditionPattern__EditionSchemesAssignment_5 )* ) ;
     public final void rule__EditionPattern__Group__5__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:2023:1: ( ( ( rule__EditionPattern__EditionSchemesAssignment_5 )* ) )
-            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:2024:1: ( ( rule__EditionPattern__EditionSchemesAssignment_5 )* )
+            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:2079:1: ( ( ( rule__EditionPattern__EditionSchemesAssignment_5 )* ) )
+            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:2080:1: ( ( rule__EditionPattern__EditionSchemesAssignment_5 )* )
             {
-            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:2024:1: ( ( rule__EditionPattern__EditionSchemesAssignment_5 )* )
-            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:2025:1: ( rule__EditionPattern__EditionSchemesAssignment_5 )*
+            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:2080:1: ( ( rule__EditionPattern__EditionSchemesAssignment_5 )* )
+            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:2081:1: ( rule__EditionPattern__EditionSchemesAssignment_5 )*
             {
              before(grammarAccess.getEditionPatternAccess().getEditionSchemesAssignment_5()); 
-            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:2026:1: ( rule__EditionPattern__EditionSchemesAssignment_5 )*
-            loop25:
+            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:2082:1: ( rule__EditionPattern__EditionSchemesAssignment_5 )*
+            loop26:
             do {
-                int alt25=2;
-                int LA25_0 = input.LA(1);
+                int alt26=2;
+                int LA26_0 = input.LA(1);
 
-                if ( ((LA25_0>=15 && LA25_0<=18)) ) {
-                    alt25=1;
+                if ( ((LA26_0>=15 && LA26_0<=18)) ) {
+                    alt26=1;
                 }
 
 
-                switch (alt25) {
+                switch (alt26) {
             	case 1 :
-            	    // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:2026:2: rule__EditionPattern__EditionSchemesAssignment_5
+            	    // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:2082:2: rule__EditionPattern__EditionSchemesAssignment_5
             	    {
-            	    pushFollow(FOLLOW_rule__EditionPattern__EditionSchemesAssignment_5_in_rule__EditionPattern__Group__5__Impl4125);
+            	    pushFollow(FOLLOW_rule__EditionPattern__EditionSchemesAssignment_5_in_rule__EditionPattern__Group__5__Impl4253);
             	    rule__EditionPattern__EditionSchemesAssignment_5();
 
             	    state._fsp--;
@@ -5625,7 +5822,7 @@ public class InternalFMLParser extends AbstractInternalContentAssistParser {
             	    break;
 
             	default :
-            	    break loop25;
+            	    break loop26;
                 }
             } while (true);
 
@@ -5652,16 +5849,16 @@ public class InternalFMLParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__EditionPattern__Group__6"
-    // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:2036:1: rule__EditionPattern__Group__6 : rule__EditionPattern__Group__6__Impl ;
+    // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:2092:1: rule__EditionPattern__Group__6 : rule__EditionPattern__Group__6__Impl ;
     public final void rule__EditionPattern__Group__6() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:2040:1: ( rule__EditionPattern__Group__6__Impl )
-            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:2041:2: rule__EditionPattern__Group__6__Impl
+            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:2096:1: ( rule__EditionPattern__Group__6__Impl )
+            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:2097:2: rule__EditionPattern__Group__6__Impl
             {
-            pushFollow(FOLLOW_rule__EditionPattern__Group__6__Impl_in_rule__EditionPattern__Group__64156);
+            pushFollow(FOLLOW_rule__EditionPattern__Group__6__Impl_in_rule__EditionPattern__Group__64284);
             rule__EditionPattern__Group__6__Impl();
 
             state._fsp--;
@@ -5685,20 +5882,20 @@ public class InternalFMLParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__EditionPattern__Group__6__Impl"
-    // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:2047:1: rule__EditionPattern__Group__6__Impl : ( '}' ) ;
+    // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:2103:1: rule__EditionPattern__Group__6__Impl : ( '}' ) ;
     public final void rule__EditionPattern__Group__6__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:2051:1: ( ( '}' ) )
-            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:2052:1: ( '}' )
+            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:2107:1: ( ( '}' ) )
+            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:2108:1: ( '}' )
             {
-            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:2052:1: ( '}' )
-            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:2053:1: '}'
+            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:2108:1: ( '}' )
+            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:2109:1: '}'
             {
              before(grammarAccess.getEditionPatternAccess().getRightCurlyBracketKeyword_6()); 
-            match(input,30,FOLLOW_30_in_rule__EditionPattern__Group__6__Impl4184); 
+            match(input,30,FOLLOW_30_in_rule__EditionPattern__Group__6__Impl4312); 
              after(grammarAccess.getEditionPatternAccess().getRightCurlyBracketKeyword_6()); 
 
             }
@@ -5722,21 +5919,21 @@ public class InternalFMLParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__EditionPattern__Group_2__0"
-    // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:2080:1: rule__EditionPattern__Group_2__0 : rule__EditionPattern__Group_2__0__Impl rule__EditionPattern__Group_2__1 ;
+    // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:2136:1: rule__EditionPattern__Group_2__0 : rule__EditionPattern__Group_2__0__Impl rule__EditionPattern__Group_2__1 ;
     public final void rule__EditionPattern__Group_2__0() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:2084:1: ( rule__EditionPattern__Group_2__0__Impl rule__EditionPattern__Group_2__1 )
-            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:2085:2: rule__EditionPattern__Group_2__0__Impl rule__EditionPattern__Group_2__1
+            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:2140:1: ( rule__EditionPattern__Group_2__0__Impl rule__EditionPattern__Group_2__1 )
+            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:2141:2: rule__EditionPattern__Group_2__0__Impl rule__EditionPattern__Group_2__1
             {
-            pushFollow(FOLLOW_rule__EditionPattern__Group_2__0__Impl_in_rule__EditionPattern__Group_2__04229);
+            pushFollow(FOLLOW_rule__EditionPattern__Group_2__0__Impl_in_rule__EditionPattern__Group_2__04357);
             rule__EditionPattern__Group_2__0__Impl();
 
             state._fsp--;
 
-            pushFollow(FOLLOW_rule__EditionPattern__Group_2__1_in_rule__EditionPattern__Group_2__04232);
+            pushFollow(FOLLOW_rule__EditionPattern__Group_2__1_in_rule__EditionPattern__Group_2__04360);
             rule__EditionPattern__Group_2__1();
 
             state._fsp--;
@@ -5760,20 +5957,20 @@ public class InternalFMLParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__EditionPattern__Group_2__0__Impl"
-    // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:2092:1: rule__EditionPattern__Group_2__0__Impl : ( 'extends' ) ;
+    // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:2148:1: rule__EditionPattern__Group_2__0__Impl : ( 'extends' ) ;
     public final void rule__EditionPattern__Group_2__0__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:2096:1: ( ( 'extends' ) )
-            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:2097:1: ( 'extends' )
+            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:2152:1: ( ( 'extends' ) )
+            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:2153:1: ( 'extends' )
             {
-            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:2097:1: ( 'extends' )
-            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:2098:1: 'extends'
+            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:2153:1: ( 'extends' )
+            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:2154:1: 'extends'
             {
              before(grammarAccess.getEditionPatternAccess().getExtendsKeyword_2_0()); 
-            match(input,38,FOLLOW_38_in_rule__EditionPattern__Group_2__0__Impl4260); 
+            match(input,38,FOLLOW_38_in_rule__EditionPattern__Group_2__0__Impl4388); 
              after(grammarAccess.getEditionPatternAccess().getExtendsKeyword_2_0()); 
 
             }
@@ -5797,16 +5994,16 @@ public class InternalFMLParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__EditionPattern__Group_2__1"
-    // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:2111:1: rule__EditionPattern__Group_2__1 : rule__EditionPattern__Group_2__1__Impl ;
+    // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:2167:1: rule__EditionPattern__Group_2__1 : rule__EditionPattern__Group_2__1__Impl ;
     public final void rule__EditionPattern__Group_2__1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:2115:1: ( rule__EditionPattern__Group_2__1__Impl )
-            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:2116:2: rule__EditionPattern__Group_2__1__Impl
+            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:2171:1: ( rule__EditionPattern__Group_2__1__Impl )
+            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:2172:2: rule__EditionPattern__Group_2__1__Impl
             {
-            pushFollow(FOLLOW_rule__EditionPattern__Group_2__1__Impl_in_rule__EditionPattern__Group_2__14291);
+            pushFollow(FOLLOW_rule__EditionPattern__Group_2__1__Impl_in_rule__EditionPattern__Group_2__14419);
             rule__EditionPattern__Group_2__1__Impl();
 
             state._fsp--;
@@ -5830,23 +6027,23 @@ public class InternalFMLParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__EditionPattern__Group_2__1__Impl"
-    // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:2122:1: rule__EditionPattern__Group_2__1__Impl : ( ( rule__EditionPattern__SuperEditionPatternAssignment_2_1 ) ) ;
+    // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:2178:1: rule__EditionPattern__Group_2__1__Impl : ( ( rule__EditionPattern__SuperEditionPatternAssignment_2_1 ) ) ;
     public final void rule__EditionPattern__Group_2__1__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:2126:1: ( ( ( rule__EditionPattern__SuperEditionPatternAssignment_2_1 ) ) )
-            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:2127:1: ( ( rule__EditionPattern__SuperEditionPatternAssignment_2_1 ) )
+            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:2182:1: ( ( ( rule__EditionPattern__SuperEditionPatternAssignment_2_1 ) ) )
+            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:2183:1: ( ( rule__EditionPattern__SuperEditionPatternAssignment_2_1 ) )
             {
-            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:2127:1: ( ( rule__EditionPattern__SuperEditionPatternAssignment_2_1 ) )
-            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:2128:1: ( rule__EditionPattern__SuperEditionPatternAssignment_2_1 )
+            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:2183:1: ( ( rule__EditionPattern__SuperEditionPatternAssignment_2_1 ) )
+            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:2184:1: ( rule__EditionPattern__SuperEditionPatternAssignment_2_1 )
             {
              before(grammarAccess.getEditionPatternAccess().getSuperEditionPatternAssignment_2_1()); 
-            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:2129:1: ( rule__EditionPattern__SuperEditionPatternAssignment_2_1 )
-            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:2129:2: rule__EditionPattern__SuperEditionPatternAssignment_2_1
+            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:2185:1: ( rule__EditionPattern__SuperEditionPatternAssignment_2_1 )
+            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:2185:2: rule__EditionPattern__SuperEditionPatternAssignment_2_1
             {
-            pushFollow(FOLLOW_rule__EditionPattern__SuperEditionPatternAssignment_2_1_in_rule__EditionPattern__Group_2__1__Impl4318);
+            pushFollow(FOLLOW_rule__EditionPattern__SuperEditionPatternAssignment_2_1_in_rule__EditionPattern__Group_2__1__Impl4446);
             rule__EditionPattern__SuperEditionPatternAssignment_2_1();
 
             state._fsp--;
@@ -5877,21 +6074,21 @@ public class InternalFMLParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__PatternRole__Group__0"
-    // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:2143:1: rule__PatternRole__Group__0 : rule__PatternRole__Group__0__Impl rule__PatternRole__Group__1 ;
+    // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:2199:1: rule__PatternRole__Group__0 : rule__PatternRole__Group__0__Impl rule__PatternRole__Group__1 ;
     public final void rule__PatternRole__Group__0() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:2147:1: ( rule__PatternRole__Group__0__Impl rule__PatternRole__Group__1 )
-            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:2148:2: rule__PatternRole__Group__0__Impl rule__PatternRole__Group__1
+            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:2203:1: ( rule__PatternRole__Group__0__Impl rule__PatternRole__Group__1 )
+            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:2204:2: rule__PatternRole__Group__0__Impl rule__PatternRole__Group__1
             {
-            pushFollow(FOLLOW_rule__PatternRole__Group__0__Impl_in_rule__PatternRole__Group__04352);
+            pushFollow(FOLLOW_rule__PatternRole__Group__0__Impl_in_rule__PatternRole__Group__04480);
             rule__PatternRole__Group__0__Impl();
 
             state._fsp--;
 
-            pushFollow(FOLLOW_rule__PatternRole__Group__1_in_rule__PatternRole__Group__04355);
+            pushFollow(FOLLOW_rule__PatternRole__Group__1_in_rule__PatternRole__Group__04483);
             rule__PatternRole__Group__1();
 
             state._fsp--;
@@ -5915,20 +6112,20 @@ public class InternalFMLParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__PatternRole__Group__0__Impl"
-    // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:2155:1: rule__PatternRole__Group__0__Impl : ( 'PatternRole' ) ;
+    // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:2211:1: rule__PatternRole__Group__0__Impl : ( 'PatternRole' ) ;
     public final void rule__PatternRole__Group__0__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:2159:1: ( ( 'PatternRole' ) )
-            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:2160:1: ( 'PatternRole' )
+            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:2215:1: ( ( 'PatternRole' ) )
+            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:2216:1: ( 'PatternRole' )
             {
-            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:2160:1: ( 'PatternRole' )
-            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:2161:1: 'PatternRole'
+            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:2216:1: ( 'PatternRole' )
+            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:2217:1: 'PatternRole'
             {
              before(grammarAccess.getPatternRoleAccess().getPatternRoleKeyword_0()); 
-            match(input,39,FOLLOW_39_in_rule__PatternRole__Group__0__Impl4383); 
+            match(input,39,FOLLOW_39_in_rule__PatternRole__Group__0__Impl4511); 
              after(grammarAccess.getPatternRoleAccess().getPatternRoleKeyword_0()); 
 
             }
@@ -5952,21 +6149,21 @@ public class InternalFMLParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__PatternRole__Group__1"
-    // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:2174:1: rule__PatternRole__Group__1 : rule__PatternRole__Group__1__Impl rule__PatternRole__Group__2 ;
+    // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:2230:1: rule__PatternRole__Group__1 : rule__PatternRole__Group__1__Impl rule__PatternRole__Group__2 ;
     public final void rule__PatternRole__Group__1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:2178:1: ( rule__PatternRole__Group__1__Impl rule__PatternRole__Group__2 )
-            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:2179:2: rule__PatternRole__Group__1__Impl rule__PatternRole__Group__2
+            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:2234:1: ( rule__PatternRole__Group__1__Impl rule__PatternRole__Group__2 )
+            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:2235:2: rule__PatternRole__Group__1__Impl rule__PatternRole__Group__2
             {
-            pushFollow(FOLLOW_rule__PatternRole__Group__1__Impl_in_rule__PatternRole__Group__14414);
+            pushFollow(FOLLOW_rule__PatternRole__Group__1__Impl_in_rule__PatternRole__Group__14542);
             rule__PatternRole__Group__1__Impl();
 
             state._fsp--;
 
-            pushFollow(FOLLOW_rule__PatternRole__Group__2_in_rule__PatternRole__Group__14417);
+            pushFollow(FOLLOW_rule__PatternRole__Group__2_in_rule__PatternRole__Group__14545);
             rule__PatternRole__Group__2();
 
             state._fsp--;
@@ -5990,23 +6187,23 @@ public class InternalFMLParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__PatternRole__Group__1__Impl"
-    // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:2186:1: rule__PatternRole__Group__1__Impl : ( ( rule__PatternRole__NameAssignment_1 ) ) ;
+    // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:2242:1: rule__PatternRole__Group__1__Impl : ( ( rule__PatternRole__NameAssignment_1 ) ) ;
     public final void rule__PatternRole__Group__1__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:2190:1: ( ( ( rule__PatternRole__NameAssignment_1 ) ) )
-            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:2191:1: ( ( rule__PatternRole__NameAssignment_1 ) )
+            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:2246:1: ( ( ( rule__PatternRole__NameAssignment_1 ) ) )
+            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:2247:1: ( ( rule__PatternRole__NameAssignment_1 ) )
             {
-            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:2191:1: ( ( rule__PatternRole__NameAssignment_1 ) )
-            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:2192:1: ( rule__PatternRole__NameAssignment_1 )
+            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:2247:1: ( ( rule__PatternRole__NameAssignment_1 ) )
+            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:2248:1: ( rule__PatternRole__NameAssignment_1 )
             {
              before(grammarAccess.getPatternRoleAccess().getNameAssignment_1()); 
-            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:2193:1: ( rule__PatternRole__NameAssignment_1 )
-            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:2193:2: rule__PatternRole__NameAssignment_1
+            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:2249:1: ( rule__PatternRole__NameAssignment_1 )
+            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:2249:2: rule__PatternRole__NameAssignment_1
             {
-            pushFollow(FOLLOW_rule__PatternRole__NameAssignment_1_in_rule__PatternRole__Group__1__Impl4444);
+            pushFollow(FOLLOW_rule__PatternRole__NameAssignment_1_in_rule__PatternRole__Group__1__Impl4572);
             rule__PatternRole__NameAssignment_1();
 
             state._fsp--;
@@ -6037,21 +6234,21 @@ public class InternalFMLParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__PatternRole__Group__2"
-    // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:2203:1: rule__PatternRole__Group__2 : rule__PatternRole__Group__2__Impl rule__PatternRole__Group__3 ;
+    // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:2259:1: rule__PatternRole__Group__2 : rule__PatternRole__Group__2__Impl rule__PatternRole__Group__3 ;
     public final void rule__PatternRole__Group__2() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:2207:1: ( rule__PatternRole__Group__2__Impl rule__PatternRole__Group__3 )
-            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:2208:2: rule__PatternRole__Group__2__Impl rule__PatternRole__Group__3
+            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:2263:1: ( rule__PatternRole__Group__2__Impl rule__PatternRole__Group__3 )
+            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:2264:2: rule__PatternRole__Group__2__Impl rule__PatternRole__Group__3
             {
-            pushFollow(FOLLOW_rule__PatternRole__Group__2__Impl_in_rule__PatternRole__Group__24474);
+            pushFollow(FOLLOW_rule__PatternRole__Group__2__Impl_in_rule__PatternRole__Group__24602);
             rule__PatternRole__Group__2__Impl();
 
             state._fsp--;
 
-            pushFollow(FOLLOW_rule__PatternRole__Group__3_in_rule__PatternRole__Group__24477);
+            pushFollow(FOLLOW_rule__PatternRole__Group__3_in_rule__PatternRole__Group__24605);
             rule__PatternRole__Group__3();
 
             state._fsp--;
@@ -6075,20 +6272,20 @@ public class InternalFMLParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__PatternRole__Group__2__Impl"
-    // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:2215:1: rule__PatternRole__Group__2__Impl : ( 'as' ) ;
+    // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:2271:1: rule__PatternRole__Group__2__Impl : ( 'as' ) ;
     public final void rule__PatternRole__Group__2__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:2219:1: ( ( 'as' ) )
-            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:2220:1: ( 'as' )
+            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:2275:1: ( ( 'as' ) )
+            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:2276:1: ( 'as' )
             {
-            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:2220:1: ( 'as' )
-            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:2221:1: 'as'
+            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:2276:1: ( 'as' )
+            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:2277:1: 'as'
             {
              before(grammarAccess.getPatternRoleAccess().getAsKeyword_2()); 
-            match(input,40,FOLLOW_40_in_rule__PatternRole__Group__2__Impl4505); 
+            match(input,40,FOLLOW_40_in_rule__PatternRole__Group__2__Impl4633); 
              after(grammarAccess.getPatternRoleAccess().getAsKeyword_2()); 
 
             }
@@ -6112,21 +6309,21 @@ public class InternalFMLParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__PatternRole__Group__3"
-    // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:2234:1: rule__PatternRole__Group__3 : rule__PatternRole__Group__3__Impl rule__PatternRole__Group__4 ;
+    // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:2290:1: rule__PatternRole__Group__3 : rule__PatternRole__Group__3__Impl rule__PatternRole__Group__4 ;
     public final void rule__PatternRole__Group__3() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:2238:1: ( rule__PatternRole__Group__3__Impl rule__PatternRole__Group__4 )
-            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:2239:2: rule__PatternRole__Group__3__Impl rule__PatternRole__Group__4
+            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:2294:1: ( rule__PatternRole__Group__3__Impl rule__PatternRole__Group__4 )
+            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:2295:2: rule__PatternRole__Group__3__Impl rule__PatternRole__Group__4
             {
-            pushFollow(FOLLOW_rule__PatternRole__Group__3__Impl_in_rule__PatternRole__Group__34536);
+            pushFollow(FOLLOW_rule__PatternRole__Group__3__Impl_in_rule__PatternRole__Group__34664);
             rule__PatternRole__Group__3__Impl();
 
             state._fsp--;
 
-            pushFollow(FOLLOW_rule__PatternRole__Group__4_in_rule__PatternRole__Group__34539);
+            pushFollow(FOLLOW_rule__PatternRole__Group__4_in_rule__PatternRole__Group__34667);
             rule__PatternRole__Group__4();
 
             state._fsp--;
@@ -6150,23 +6347,23 @@ public class InternalFMLParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__PatternRole__Group__3__Impl"
-    // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:2246:1: rule__PatternRole__Group__3__Impl : ( ( rule__PatternRole__TypeAssignment_3 ) ) ;
+    // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:2302:1: rule__PatternRole__Group__3__Impl : ( ( rule__PatternRole__TypeAssignment_3 ) ) ;
     public final void rule__PatternRole__Group__3__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:2250:1: ( ( ( rule__PatternRole__TypeAssignment_3 ) ) )
-            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:2251:1: ( ( rule__PatternRole__TypeAssignment_3 ) )
+            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:2306:1: ( ( ( rule__PatternRole__TypeAssignment_3 ) ) )
+            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:2307:1: ( ( rule__PatternRole__TypeAssignment_3 ) )
             {
-            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:2251:1: ( ( rule__PatternRole__TypeAssignment_3 ) )
-            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:2252:1: ( rule__PatternRole__TypeAssignment_3 )
+            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:2307:1: ( ( rule__PatternRole__TypeAssignment_3 ) )
+            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:2308:1: ( rule__PatternRole__TypeAssignment_3 )
             {
              before(grammarAccess.getPatternRoleAccess().getTypeAssignment_3()); 
-            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:2253:1: ( rule__PatternRole__TypeAssignment_3 )
-            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:2253:2: rule__PatternRole__TypeAssignment_3
+            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:2309:1: ( rule__PatternRole__TypeAssignment_3 )
+            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:2309:2: rule__PatternRole__TypeAssignment_3
             {
-            pushFollow(FOLLOW_rule__PatternRole__TypeAssignment_3_in_rule__PatternRole__Group__3__Impl4566);
+            pushFollow(FOLLOW_rule__PatternRole__TypeAssignment_3_in_rule__PatternRole__Group__3__Impl4694);
             rule__PatternRole__TypeAssignment_3();
 
             state._fsp--;
@@ -6197,21 +6394,21 @@ public class InternalFMLParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__PatternRole__Group__4"
-    // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:2263:1: rule__PatternRole__Group__4 : rule__PatternRole__Group__4__Impl rule__PatternRole__Group__5 ;
+    // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:2319:1: rule__PatternRole__Group__4 : rule__PatternRole__Group__4__Impl rule__PatternRole__Group__5 ;
     public final void rule__PatternRole__Group__4() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:2267:1: ( rule__PatternRole__Group__4__Impl rule__PatternRole__Group__5 )
-            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:2268:2: rule__PatternRole__Group__4__Impl rule__PatternRole__Group__5
+            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:2323:1: ( rule__PatternRole__Group__4__Impl rule__PatternRole__Group__5 )
+            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:2324:2: rule__PatternRole__Group__4__Impl rule__PatternRole__Group__5
             {
-            pushFollow(FOLLOW_rule__PatternRole__Group__4__Impl_in_rule__PatternRole__Group__44596);
+            pushFollow(FOLLOW_rule__PatternRole__Group__4__Impl_in_rule__PatternRole__Group__44724);
             rule__PatternRole__Group__4__Impl();
 
             state._fsp--;
 
-            pushFollow(FOLLOW_rule__PatternRole__Group__5_in_rule__PatternRole__Group__44599);
+            pushFollow(FOLLOW_rule__PatternRole__Group__5_in_rule__PatternRole__Group__44727);
             rule__PatternRole__Group__5();
 
             state._fsp--;
@@ -6235,20 +6432,20 @@ public class InternalFMLParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__PatternRole__Group__4__Impl"
-    // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:2275:1: rule__PatternRole__Group__4__Impl : ( 'conformTo' ) ;
+    // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:2331:1: rule__PatternRole__Group__4__Impl : ( 'conformTo' ) ;
     public final void rule__PatternRole__Group__4__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:2279:1: ( ( 'conformTo' ) )
-            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:2280:1: ( 'conformTo' )
+            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:2335:1: ( ( 'conformTo' ) )
+            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:2336:1: ( 'conformTo' )
             {
-            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:2280:1: ( 'conformTo' )
-            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:2281:1: 'conformTo'
+            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:2336:1: ( 'conformTo' )
+            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:2337:1: 'conformTo'
             {
              before(grammarAccess.getPatternRoleAccess().getConformToKeyword_4()); 
-            match(input,33,FOLLOW_33_in_rule__PatternRole__Group__4__Impl4627); 
+            match(input,33,FOLLOW_33_in_rule__PatternRole__Group__4__Impl4755); 
              after(grammarAccess.getPatternRoleAccess().getConformToKeyword_4()); 
 
             }
@@ -6272,21 +6469,21 @@ public class InternalFMLParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__PatternRole__Group__5"
-    // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:2294:1: rule__PatternRole__Group__5 : rule__PatternRole__Group__5__Impl rule__PatternRole__Group__6 ;
+    // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:2350:1: rule__PatternRole__Group__5 : rule__PatternRole__Group__5__Impl rule__PatternRole__Group__6 ;
     public final void rule__PatternRole__Group__5() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:2298:1: ( rule__PatternRole__Group__5__Impl rule__PatternRole__Group__6 )
-            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:2299:2: rule__PatternRole__Group__5__Impl rule__PatternRole__Group__6
+            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:2354:1: ( rule__PatternRole__Group__5__Impl rule__PatternRole__Group__6 )
+            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:2355:2: rule__PatternRole__Group__5__Impl rule__PatternRole__Group__6
             {
-            pushFollow(FOLLOW_rule__PatternRole__Group__5__Impl_in_rule__PatternRole__Group__54658);
+            pushFollow(FOLLOW_rule__PatternRole__Group__5__Impl_in_rule__PatternRole__Group__54786);
             rule__PatternRole__Group__5__Impl();
 
             state._fsp--;
 
-            pushFollow(FOLLOW_rule__PatternRole__Group__6_in_rule__PatternRole__Group__54661);
+            pushFollow(FOLLOW_rule__PatternRole__Group__6_in_rule__PatternRole__Group__54789);
             rule__PatternRole__Group__6();
 
             state._fsp--;
@@ -6310,23 +6507,23 @@ public class InternalFMLParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__PatternRole__Group__5__Impl"
-    // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:2306:1: rule__PatternRole__Group__5__Impl : ( ( rule__PatternRole__ModelElementAssignment_5 ) ) ;
+    // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:2362:1: rule__PatternRole__Group__5__Impl : ( ( rule__PatternRole__ModelElementAssignment_5 ) ) ;
     public final void rule__PatternRole__Group__5__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:2310:1: ( ( ( rule__PatternRole__ModelElementAssignment_5 ) ) )
-            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:2311:1: ( ( rule__PatternRole__ModelElementAssignment_5 ) )
+            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:2366:1: ( ( ( rule__PatternRole__ModelElementAssignment_5 ) ) )
+            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:2367:1: ( ( rule__PatternRole__ModelElementAssignment_5 ) )
             {
-            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:2311:1: ( ( rule__PatternRole__ModelElementAssignment_5 ) )
-            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:2312:1: ( rule__PatternRole__ModelElementAssignment_5 )
+            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:2367:1: ( ( rule__PatternRole__ModelElementAssignment_5 ) )
+            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:2368:1: ( rule__PatternRole__ModelElementAssignment_5 )
             {
              before(grammarAccess.getPatternRoleAccess().getModelElementAssignment_5()); 
-            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:2313:1: ( rule__PatternRole__ModelElementAssignment_5 )
-            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:2313:2: rule__PatternRole__ModelElementAssignment_5
+            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:2369:1: ( rule__PatternRole__ModelElementAssignment_5 )
+            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:2369:2: rule__PatternRole__ModelElementAssignment_5
             {
-            pushFollow(FOLLOW_rule__PatternRole__ModelElementAssignment_5_in_rule__PatternRole__Group__5__Impl4688);
+            pushFollow(FOLLOW_rule__PatternRole__ModelElementAssignment_5_in_rule__PatternRole__Group__5__Impl4816);
             rule__PatternRole__ModelElementAssignment_5();
 
             state._fsp--;
@@ -6357,21 +6554,21 @@ public class InternalFMLParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__PatternRole__Group__6"
-    // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:2323:1: rule__PatternRole__Group__6 : rule__PatternRole__Group__6__Impl rule__PatternRole__Group__7 ;
+    // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:2379:1: rule__PatternRole__Group__6 : rule__PatternRole__Group__6__Impl rule__PatternRole__Group__7 ;
     public final void rule__PatternRole__Group__6() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:2327:1: ( rule__PatternRole__Group__6__Impl rule__PatternRole__Group__7 )
-            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:2328:2: rule__PatternRole__Group__6__Impl rule__PatternRole__Group__7
+            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:2383:1: ( rule__PatternRole__Group__6__Impl rule__PatternRole__Group__7 )
+            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:2384:2: rule__PatternRole__Group__6__Impl rule__PatternRole__Group__7
             {
-            pushFollow(FOLLOW_rule__PatternRole__Group__6__Impl_in_rule__PatternRole__Group__64718);
+            pushFollow(FOLLOW_rule__PatternRole__Group__6__Impl_in_rule__PatternRole__Group__64846);
             rule__PatternRole__Group__6__Impl();
 
             state._fsp--;
 
-            pushFollow(FOLLOW_rule__PatternRole__Group__7_in_rule__PatternRole__Group__64721);
+            pushFollow(FOLLOW_rule__PatternRole__Group__7_in_rule__PatternRole__Group__64849);
             rule__PatternRole__Group__7();
 
             state._fsp--;
@@ -6395,20 +6592,20 @@ public class InternalFMLParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__PatternRole__Group__6__Impl"
-    // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:2335:1: rule__PatternRole__Group__6__Impl : ( 'from' ) ;
+    // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:2391:1: rule__PatternRole__Group__6__Impl : ( 'from' ) ;
     public final void rule__PatternRole__Group__6__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:2339:1: ( ( 'from' ) )
-            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:2340:1: ( 'from' )
+            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:2395:1: ( ( 'from' ) )
+            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:2396:1: ( 'from' )
             {
-            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:2340:1: ( 'from' )
-            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:2341:1: 'from'
+            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:2396:1: ( 'from' )
+            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:2397:1: 'from'
             {
              before(grammarAccess.getPatternRoleAccess().getFromKeyword_6()); 
-            match(input,41,FOLLOW_41_in_rule__PatternRole__Group__6__Impl4749); 
+            match(input,41,FOLLOW_41_in_rule__PatternRole__Group__6__Impl4877); 
              after(grammarAccess.getPatternRoleAccess().getFromKeyword_6()); 
 
             }
@@ -6432,21 +6629,21 @@ public class InternalFMLParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__PatternRole__Group__7"
-    // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:2354:1: rule__PatternRole__Group__7 : rule__PatternRole__Group__7__Impl rule__PatternRole__Group__8 ;
+    // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:2410:1: rule__PatternRole__Group__7 : rule__PatternRole__Group__7__Impl rule__PatternRole__Group__8 ;
     public final void rule__PatternRole__Group__7() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:2358:1: ( rule__PatternRole__Group__7__Impl rule__PatternRole__Group__8 )
-            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:2359:2: rule__PatternRole__Group__7__Impl rule__PatternRole__Group__8
+            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:2414:1: ( rule__PatternRole__Group__7__Impl rule__PatternRole__Group__8 )
+            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:2415:2: rule__PatternRole__Group__7__Impl rule__PatternRole__Group__8
             {
-            pushFollow(FOLLOW_rule__PatternRole__Group__7__Impl_in_rule__PatternRole__Group__74780);
+            pushFollow(FOLLOW_rule__PatternRole__Group__7__Impl_in_rule__PatternRole__Group__74908);
             rule__PatternRole__Group__7__Impl();
 
             state._fsp--;
 
-            pushFollow(FOLLOW_rule__PatternRole__Group__8_in_rule__PatternRole__Group__74783);
+            pushFollow(FOLLOW_rule__PatternRole__Group__8_in_rule__PatternRole__Group__74911);
             rule__PatternRole__Group__8();
 
             state._fsp--;
@@ -6470,23 +6667,23 @@ public class InternalFMLParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__PatternRole__Group__7__Impl"
-    // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:2366:1: rule__PatternRole__Group__7__Impl : ( ( rule__PatternRole__ModelSlotAssignment_7 ) ) ;
+    // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:2422:1: rule__PatternRole__Group__7__Impl : ( ( rule__PatternRole__ModelSlotAssignment_7 ) ) ;
     public final void rule__PatternRole__Group__7__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:2370:1: ( ( ( rule__PatternRole__ModelSlotAssignment_7 ) ) )
-            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:2371:1: ( ( rule__PatternRole__ModelSlotAssignment_7 ) )
+            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:2426:1: ( ( ( rule__PatternRole__ModelSlotAssignment_7 ) ) )
+            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:2427:1: ( ( rule__PatternRole__ModelSlotAssignment_7 ) )
             {
-            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:2371:1: ( ( rule__PatternRole__ModelSlotAssignment_7 ) )
-            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:2372:1: ( rule__PatternRole__ModelSlotAssignment_7 )
+            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:2427:1: ( ( rule__PatternRole__ModelSlotAssignment_7 ) )
+            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:2428:1: ( rule__PatternRole__ModelSlotAssignment_7 )
             {
              before(grammarAccess.getPatternRoleAccess().getModelSlotAssignment_7()); 
-            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:2373:1: ( rule__PatternRole__ModelSlotAssignment_7 )
-            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:2373:2: rule__PatternRole__ModelSlotAssignment_7
+            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:2429:1: ( rule__PatternRole__ModelSlotAssignment_7 )
+            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:2429:2: rule__PatternRole__ModelSlotAssignment_7
             {
-            pushFollow(FOLLOW_rule__PatternRole__ModelSlotAssignment_7_in_rule__PatternRole__Group__7__Impl4810);
+            pushFollow(FOLLOW_rule__PatternRole__ModelSlotAssignment_7_in_rule__PatternRole__Group__7__Impl4938);
             rule__PatternRole__ModelSlotAssignment_7();
 
             state._fsp--;
@@ -6517,16 +6714,16 @@ public class InternalFMLParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__PatternRole__Group__8"
-    // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:2383:1: rule__PatternRole__Group__8 : rule__PatternRole__Group__8__Impl ;
+    // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:2439:1: rule__PatternRole__Group__8 : rule__PatternRole__Group__8__Impl ;
     public final void rule__PatternRole__Group__8() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:2387:1: ( rule__PatternRole__Group__8__Impl )
-            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:2388:2: rule__PatternRole__Group__8__Impl
+            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:2443:1: ( rule__PatternRole__Group__8__Impl )
+            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:2444:2: rule__PatternRole__Group__8__Impl
             {
-            pushFollow(FOLLOW_rule__PatternRole__Group__8__Impl_in_rule__PatternRole__Group__84840);
+            pushFollow(FOLLOW_rule__PatternRole__Group__8__Impl_in_rule__PatternRole__Group__84968);
             rule__PatternRole__Group__8__Impl();
 
             state._fsp--;
@@ -6550,20 +6747,20 @@ public class InternalFMLParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__PatternRole__Group__8__Impl"
-    // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:2394:1: rule__PatternRole__Group__8__Impl : ( ';' ) ;
+    // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:2450:1: rule__PatternRole__Group__8__Impl : ( ';' ) ;
     public final void rule__PatternRole__Group__8__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:2398:1: ( ( ';' ) )
-            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:2399:1: ( ';' )
+            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:2454:1: ( ( ';' ) )
+            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:2455:1: ( ';' )
             {
-            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:2399:1: ( ';' )
-            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:2400:1: ';'
+            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:2455:1: ( ';' )
+            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:2456:1: ';'
             {
              before(grammarAccess.getPatternRoleAccess().getSemicolonKeyword_8()); 
-            match(input,36,FOLLOW_36_in_rule__PatternRole__Group__8__Impl4868); 
+            match(input,36,FOLLOW_36_in_rule__PatternRole__Group__8__Impl4996); 
              after(grammarAccess.getPatternRoleAccess().getSemicolonKeyword_8()); 
 
             }
@@ -6587,21 +6784,21 @@ public class InternalFMLParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__EditionScheme__Group__0"
-    // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:2431:1: rule__EditionScheme__Group__0 : rule__EditionScheme__Group__0__Impl rule__EditionScheme__Group__1 ;
+    // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:2487:1: rule__EditionScheme__Group__0 : rule__EditionScheme__Group__0__Impl rule__EditionScheme__Group__1 ;
     public final void rule__EditionScheme__Group__0() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:2435:1: ( rule__EditionScheme__Group__0__Impl rule__EditionScheme__Group__1 )
-            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:2436:2: rule__EditionScheme__Group__0__Impl rule__EditionScheme__Group__1
+            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:2491:1: ( rule__EditionScheme__Group__0__Impl rule__EditionScheme__Group__1 )
+            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:2492:2: rule__EditionScheme__Group__0__Impl rule__EditionScheme__Group__1
             {
-            pushFollow(FOLLOW_rule__EditionScheme__Group__0__Impl_in_rule__EditionScheme__Group__04917);
+            pushFollow(FOLLOW_rule__EditionScheme__Group__0__Impl_in_rule__EditionScheme__Group__05045);
             rule__EditionScheme__Group__0__Impl();
 
             state._fsp--;
 
-            pushFollow(FOLLOW_rule__EditionScheme__Group__1_in_rule__EditionScheme__Group__04920);
+            pushFollow(FOLLOW_rule__EditionScheme__Group__1_in_rule__EditionScheme__Group__05048);
             rule__EditionScheme__Group__1();
 
             state._fsp--;
@@ -6625,23 +6822,23 @@ public class InternalFMLParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__EditionScheme__Group__0__Impl"
-    // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:2443:1: rule__EditionScheme__Group__0__Impl : ( ( rule__EditionScheme__EditionSchemeTypeAssignment_0 ) ) ;
+    // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:2499:1: rule__EditionScheme__Group__0__Impl : ( ( rule__EditionScheme__EditionSchemeTypeAssignment_0 ) ) ;
     public final void rule__EditionScheme__Group__0__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:2447:1: ( ( ( rule__EditionScheme__EditionSchemeTypeAssignment_0 ) ) )
-            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:2448:1: ( ( rule__EditionScheme__EditionSchemeTypeAssignment_0 ) )
+            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:2503:1: ( ( ( rule__EditionScheme__EditionSchemeTypeAssignment_0 ) ) )
+            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:2504:1: ( ( rule__EditionScheme__EditionSchemeTypeAssignment_0 ) )
             {
-            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:2448:1: ( ( rule__EditionScheme__EditionSchemeTypeAssignment_0 ) )
-            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:2449:1: ( rule__EditionScheme__EditionSchemeTypeAssignment_0 )
+            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:2504:1: ( ( rule__EditionScheme__EditionSchemeTypeAssignment_0 ) )
+            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:2505:1: ( rule__EditionScheme__EditionSchemeTypeAssignment_0 )
             {
              before(grammarAccess.getEditionSchemeAccess().getEditionSchemeTypeAssignment_0()); 
-            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:2450:1: ( rule__EditionScheme__EditionSchemeTypeAssignment_0 )
-            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:2450:2: rule__EditionScheme__EditionSchemeTypeAssignment_0
+            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:2506:1: ( rule__EditionScheme__EditionSchemeTypeAssignment_0 )
+            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:2506:2: rule__EditionScheme__EditionSchemeTypeAssignment_0
             {
-            pushFollow(FOLLOW_rule__EditionScheme__EditionSchemeTypeAssignment_0_in_rule__EditionScheme__Group__0__Impl4947);
+            pushFollow(FOLLOW_rule__EditionScheme__EditionSchemeTypeAssignment_0_in_rule__EditionScheme__Group__0__Impl5075);
             rule__EditionScheme__EditionSchemeTypeAssignment_0();
 
             state._fsp--;
@@ -6672,21 +6869,21 @@ public class InternalFMLParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__EditionScheme__Group__1"
-    // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:2460:1: rule__EditionScheme__Group__1 : rule__EditionScheme__Group__1__Impl rule__EditionScheme__Group__2 ;
+    // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:2516:1: rule__EditionScheme__Group__1 : rule__EditionScheme__Group__1__Impl rule__EditionScheme__Group__2 ;
     public final void rule__EditionScheme__Group__1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:2464:1: ( rule__EditionScheme__Group__1__Impl rule__EditionScheme__Group__2 )
-            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:2465:2: rule__EditionScheme__Group__1__Impl rule__EditionScheme__Group__2
+            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:2520:1: ( rule__EditionScheme__Group__1__Impl rule__EditionScheme__Group__2 )
+            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:2521:2: rule__EditionScheme__Group__1__Impl rule__EditionScheme__Group__2
             {
-            pushFollow(FOLLOW_rule__EditionScheme__Group__1__Impl_in_rule__EditionScheme__Group__14977);
+            pushFollow(FOLLOW_rule__EditionScheme__Group__1__Impl_in_rule__EditionScheme__Group__15105);
             rule__EditionScheme__Group__1__Impl();
 
             state._fsp--;
 
-            pushFollow(FOLLOW_rule__EditionScheme__Group__2_in_rule__EditionScheme__Group__14980);
+            pushFollow(FOLLOW_rule__EditionScheme__Group__2_in_rule__EditionScheme__Group__15108);
             rule__EditionScheme__Group__2();
 
             state._fsp--;
@@ -6710,23 +6907,23 @@ public class InternalFMLParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__EditionScheme__Group__1__Impl"
-    // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:2472:1: rule__EditionScheme__Group__1__Impl : ( ( rule__EditionScheme__NameAssignment_1 ) ) ;
+    // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:2528:1: rule__EditionScheme__Group__1__Impl : ( ( rule__EditionScheme__NameAssignment_1 ) ) ;
     public final void rule__EditionScheme__Group__1__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:2476:1: ( ( ( rule__EditionScheme__NameAssignment_1 ) ) )
-            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:2477:1: ( ( rule__EditionScheme__NameAssignment_1 ) )
+            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:2532:1: ( ( ( rule__EditionScheme__NameAssignment_1 ) ) )
+            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:2533:1: ( ( rule__EditionScheme__NameAssignment_1 ) )
             {
-            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:2477:1: ( ( rule__EditionScheme__NameAssignment_1 ) )
-            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:2478:1: ( rule__EditionScheme__NameAssignment_1 )
+            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:2533:1: ( ( rule__EditionScheme__NameAssignment_1 ) )
+            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:2534:1: ( rule__EditionScheme__NameAssignment_1 )
             {
              before(grammarAccess.getEditionSchemeAccess().getNameAssignment_1()); 
-            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:2479:1: ( rule__EditionScheme__NameAssignment_1 )
-            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:2479:2: rule__EditionScheme__NameAssignment_1
+            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:2535:1: ( rule__EditionScheme__NameAssignment_1 )
+            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:2535:2: rule__EditionScheme__NameAssignment_1
             {
-            pushFollow(FOLLOW_rule__EditionScheme__NameAssignment_1_in_rule__EditionScheme__Group__1__Impl5007);
+            pushFollow(FOLLOW_rule__EditionScheme__NameAssignment_1_in_rule__EditionScheme__Group__1__Impl5135);
             rule__EditionScheme__NameAssignment_1();
 
             state._fsp--;
@@ -6757,21 +6954,21 @@ public class InternalFMLParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__EditionScheme__Group__2"
-    // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:2489:1: rule__EditionScheme__Group__2 : rule__EditionScheme__Group__2__Impl rule__EditionScheme__Group__3 ;
+    // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:2545:1: rule__EditionScheme__Group__2 : rule__EditionScheme__Group__2__Impl rule__EditionScheme__Group__3 ;
     public final void rule__EditionScheme__Group__2() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:2493:1: ( rule__EditionScheme__Group__2__Impl rule__EditionScheme__Group__3 )
-            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:2494:2: rule__EditionScheme__Group__2__Impl rule__EditionScheme__Group__3
+            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:2549:1: ( rule__EditionScheme__Group__2__Impl rule__EditionScheme__Group__3 )
+            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:2550:2: rule__EditionScheme__Group__2__Impl rule__EditionScheme__Group__3
             {
-            pushFollow(FOLLOW_rule__EditionScheme__Group__2__Impl_in_rule__EditionScheme__Group__25037);
+            pushFollow(FOLLOW_rule__EditionScheme__Group__2__Impl_in_rule__EditionScheme__Group__25165);
             rule__EditionScheme__Group__2__Impl();
 
             state._fsp--;
 
-            pushFollow(FOLLOW_rule__EditionScheme__Group__3_in_rule__EditionScheme__Group__25040);
+            pushFollow(FOLLOW_rule__EditionScheme__Group__3_in_rule__EditionScheme__Group__25168);
             rule__EditionScheme__Group__3();
 
             state._fsp--;
@@ -6795,20 +6992,20 @@ public class InternalFMLParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__EditionScheme__Group__2__Impl"
-    // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:2501:1: rule__EditionScheme__Group__2__Impl : ( '(' ) ;
+    // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:2557:1: rule__EditionScheme__Group__2__Impl : ( '(' ) ;
     public final void rule__EditionScheme__Group__2__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:2505:1: ( ( '(' ) )
-            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:2506:1: ( '(' )
+            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:2561:1: ( ( '(' ) )
+            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:2562:1: ( '(' )
             {
-            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:2506:1: ( '(' )
-            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:2507:1: '('
+            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:2562:1: ( '(' )
+            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:2563:1: '('
             {
              before(grammarAccess.getEditionSchemeAccess().getLeftParenthesisKeyword_2()); 
-            match(input,42,FOLLOW_42_in_rule__EditionScheme__Group__2__Impl5068); 
+            match(input,42,FOLLOW_42_in_rule__EditionScheme__Group__2__Impl5196); 
              after(grammarAccess.getEditionSchemeAccess().getLeftParenthesisKeyword_2()); 
 
             }
@@ -6832,21 +7029,21 @@ public class InternalFMLParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__EditionScheme__Group__3"
-    // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:2520:1: rule__EditionScheme__Group__3 : rule__EditionScheme__Group__3__Impl rule__EditionScheme__Group__4 ;
+    // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:2576:1: rule__EditionScheme__Group__3 : rule__EditionScheme__Group__3__Impl rule__EditionScheme__Group__4 ;
     public final void rule__EditionScheme__Group__3() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:2524:1: ( rule__EditionScheme__Group__3__Impl rule__EditionScheme__Group__4 )
-            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:2525:2: rule__EditionScheme__Group__3__Impl rule__EditionScheme__Group__4
+            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:2580:1: ( rule__EditionScheme__Group__3__Impl rule__EditionScheme__Group__4 )
+            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:2581:2: rule__EditionScheme__Group__3__Impl rule__EditionScheme__Group__4
             {
-            pushFollow(FOLLOW_rule__EditionScheme__Group__3__Impl_in_rule__EditionScheme__Group__35099);
+            pushFollow(FOLLOW_rule__EditionScheme__Group__3__Impl_in_rule__EditionScheme__Group__35227);
             rule__EditionScheme__Group__3__Impl();
 
             state._fsp--;
 
-            pushFollow(FOLLOW_rule__EditionScheme__Group__4_in_rule__EditionScheme__Group__35102);
+            pushFollow(FOLLOW_rule__EditionScheme__Group__4_in_rule__EditionScheme__Group__35230);
             rule__EditionScheme__Group__4();
 
             state._fsp--;
@@ -6870,31 +7067,31 @@ public class InternalFMLParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__EditionScheme__Group__3__Impl"
-    // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:2532:1: rule__EditionScheme__Group__3__Impl : ( ( rule__EditionScheme__Group_3__0 )? ) ;
+    // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:2588:1: rule__EditionScheme__Group__3__Impl : ( ( rule__EditionScheme__Group_3__0 )? ) ;
     public final void rule__EditionScheme__Group__3__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:2536:1: ( ( ( rule__EditionScheme__Group_3__0 )? ) )
-            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:2537:1: ( ( rule__EditionScheme__Group_3__0 )? )
+            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:2592:1: ( ( ( rule__EditionScheme__Group_3__0 )? ) )
+            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:2593:1: ( ( rule__EditionScheme__Group_3__0 )? )
             {
-            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:2537:1: ( ( rule__EditionScheme__Group_3__0 )? )
-            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:2538:1: ( rule__EditionScheme__Group_3__0 )?
+            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:2593:1: ( ( rule__EditionScheme__Group_3__0 )? )
+            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:2594:1: ( rule__EditionScheme__Group_3__0 )?
             {
              before(grammarAccess.getEditionSchemeAccess().getGroup_3()); 
-            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:2539:1: ( rule__EditionScheme__Group_3__0 )?
-            int alt26=2;
-            int LA26_0 = input.LA(1);
+            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:2595:1: ( rule__EditionScheme__Group_3__0 )?
+            int alt27=2;
+            int LA27_0 = input.LA(1);
 
-            if ( (LA26_0==14) ) {
-                alt26=1;
+            if ( (LA27_0==14) ) {
+                alt27=1;
             }
-            switch (alt26) {
+            switch (alt27) {
                 case 1 :
-                    // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:2539:2: rule__EditionScheme__Group_3__0
+                    // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:2595:2: rule__EditionScheme__Group_3__0
                     {
-                    pushFollow(FOLLOW_rule__EditionScheme__Group_3__0_in_rule__EditionScheme__Group__3__Impl5129);
+                    pushFollow(FOLLOW_rule__EditionScheme__Group_3__0_in_rule__EditionScheme__Group__3__Impl5257);
                     rule__EditionScheme__Group_3__0();
 
                     state._fsp--;
@@ -6928,21 +7125,21 @@ public class InternalFMLParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__EditionScheme__Group__4"
-    // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:2549:1: rule__EditionScheme__Group__4 : rule__EditionScheme__Group__4__Impl rule__EditionScheme__Group__5 ;
+    // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:2605:1: rule__EditionScheme__Group__4 : rule__EditionScheme__Group__4__Impl rule__EditionScheme__Group__5 ;
     public final void rule__EditionScheme__Group__4() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:2553:1: ( rule__EditionScheme__Group__4__Impl rule__EditionScheme__Group__5 )
-            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:2554:2: rule__EditionScheme__Group__4__Impl rule__EditionScheme__Group__5
+            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:2609:1: ( rule__EditionScheme__Group__4__Impl rule__EditionScheme__Group__5 )
+            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:2610:2: rule__EditionScheme__Group__4__Impl rule__EditionScheme__Group__5
             {
-            pushFollow(FOLLOW_rule__EditionScheme__Group__4__Impl_in_rule__EditionScheme__Group__45160);
+            pushFollow(FOLLOW_rule__EditionScheme__Group__4__Impl_in_rule__EditionScheme__Group__45288);
             rule__EditionScheme__Group__4__Impl();
 
             state._fsp--;
 
-            pushFollow(FOLLOW_rule__EditionScheme__Group__5_in_rule__EditionScheme__Group__45163);
+            pushFollow(FOLLOW_rule__EditionScheme__Group__5_in_rule__EditionScheme__Group__45291);
             rule__EditionScheme__Group__5();
 
             state._fsp--;
@@ -6966,20 +7163,20 @@ public class InternalFMLParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__EditionScheme__Group__4__Impl"
-    // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:2561:1: rule__EditionScheme__Group__4__Impl : ( ')' ) ;
+    // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:2617:1: rule__EditionScheme__Group__4__Impl : ( ')' ) ;
     public final void rule__EditionScheme__Group__4__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:2565:1: ( ( ')' ) )
-            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:2566:1: ( ')' )
+            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:2621:1: ( ( ')' ) )
+            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:2622:1: ( ')' )
             {
-            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:2566:1: ( ')' )
-            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:2567:1: ')'
+            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:2622:1: ( ')' )
+            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:2623:1: ')'
             {
              before(grammarAccess.getEditionSchemeAccess().getRightParenthesisKeyword_4()); 
-            match(input,43,FOLLOW_43_in_rule__EditionScheme__Group__4__Impl5191); 
+            match(input,43,FOLLOW_43_in_rule__EditionScheme__Group__4__Impl5319); 
              after(grammarAccess.getEditionSchemeAccess().getRightParenthesisKeyword_4()); 
 
             }
@@ -7003,21 +7200,21 @@ public class InternalFMLParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__EditionScheme__Group__5"
-    // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:2580:1: rule__EditionScheme__Group__5 : rule__EditionScheme__Group__5__Impl rule__EditionScheme__Group__6 ;
+    // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:2636:1: rule__EditionScheme__Group__5 : rule__EditionScheme__Group__5__Impl rule__EditionScheme__Group__6 ;
     public final void rule__EditionScheme__Group__5() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:2584:1: ( rule__EditionScheme__Group__5__Impl rule__EditionScheme__Group__6 )
-            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:2585:2: rule__EditionScheme__Group__5__Impl rule__EditionScheme__Group__6
+            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:2640:1: ( rule__EditionScheme__Group__5__Impl rule__EditionScheme__Group__6 )
+            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:2641:2: rule__EditionScheme__Group__5__Impl rule__EditionScheme__Group__6
             {
-            pushFollow(FOLLOW_rule__EditionScheme__Group__5__Impl_in_rule__EditionScheme__Group__55222);
+            pushFollow(FOLLOW_rule__EditionScheme__Group__5__Impl_in_rule__EditionScheme__Group__55350);
             rule__EditionScheme__Group__5__Impl();
 
             state._fsp--;
 
-            pushFollow(FOLLOW_rule__EditionScheme__Group__6_in_rule__EditionScheme__Group__55225);
+            pushFollow(FOLLOW_rule__EditionScheme__Group__6_in_rule__EditionScheme__Group__55353);
             rule__EditionScheme__Group__6();
 
             state._fsp--;
@@ -7041,20 +7238,20 @@ public class InternalFMLParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__EditionScheme__Group__5__Impl"
-    // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:2592:1: rule__EditionScheme__Group__5__Impl : ( '{' ) ;
+    // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:2648:1: rule__EditionScheme__Group__5__Impl : ( '{' ) ;
     public final void rule__EditionScheme__Group__5__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:2596:1: ( ( '{' ) )
-            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:2597:1: ( '{' )
+            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:2652:1: ( ( '{' ) )
+            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:2653:1: ( '{' )
             {
-            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:2597:1: ( '{' )
-            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:2598:1: '{'
+            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:2653:1: ( '{' )
+            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:2654:1: '{'
             {
              before(grammarAccess.getEditionSchemeAccess().getLeftCurlyBracketKeyword_5()); 
-            match(input,29,FOLLOW_29_in_rule__EditionScheme__Group__5__Impl5253); 
+            match(input,29,FOLLOW_29_in_rule__EditionScheme__Group__5__Impl5381); 
              after(grammarAccess.getEditionSchemeAccess().getLeftCurlyBracketKeyword_5()); 
 
             }
@@ -7078,21 +7275,21 @@ public class InternalFMLParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__EditionScheme__Group__6"
-    // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:2611:1: rule__EditionScheme__Group__6 : rule__EditionScheme__Group__6__Impl rule__EditionScheme__Group__7 ;
+    // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:2667:1: rule__EditionScheme__Group__6 : rule__EditionScheme__Group__6__Impl rule__EditionScheme__Group__7 ;
     public final void rule__EditionScheme__Group__6() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:2615:1: ( rule__EditionScheme__Group__6__Impl rule__EditionScheme__Group__7 )
-            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:2616:2: rule__EditionScheme__Group__6__Impl rule__EditionScheme__Group__7
+            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:2671:1: ( rule__EditionScheme__Group__6__Impl rule__EditionScheme__Group__7 )
+            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:2672:2: rule__EditionScheme__Group__6__Impl rule__EditionScheme__Group__7
             {
-            pushFollow(FOLLOW_rule__EditionScheme__Group__6__Impl_in_rule__EditionScheme__Group__65284);
+            pushFollow(FOLLOW_rule__EditionScheme__Group__6__Impl_in_rule__EditionScheme__Group__65412);
             rule__EditionScheme__Group__6__Impl();
 
             state._fsp--;
 
-            pushFollow(FOLLOW_rule__EditionScheme__Group__7_in_rule__EditionScheme__Group__65287);
+            pushFollow(FOLLOW_rule__EditionScheme__Group__7_in_rule__EditionScheme__Group__65415);
             rule__EditionScheme__Group__7();
 
             state._fsp--;
@@ -7116,35 +7313,35 @@ public class InternalFMLParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__EditionScheme__Group__6__Impl"
-    // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:2623:1: rule__EditionScheme__Group__6__Impl : ( ( rule__EditionScheme__EditionActionAssignment_6 )* ) ;
+    // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:2679:1: rule__EditionScheme__Group__6__Impl : ( ( rule__EditionScheme__EditionActionAssignment_6 )* ) ;
     public final void rule__EditionScheme__Group__6__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:2627:1: ( ( ( rule__EditionScheme__EditionActionAssignment_6 )* ) )
-            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:2628:1: ( ( rule__EditionScheme__EditionActionAssignment_6 )* )
+            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:2683:1: ( ( ( rule__EditionScheme__EditionActionAssignment_6 )* ) )
+            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:2684:1: ( ( rule__EditionScheme__EditionActionAssignment_6 )* )
             {
-            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:2628:1: ( ( rule__EditionScheme__EditionActionAssignment_6 )* )
-            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:2629:1: ( rule__EditionScheme__EditionActionAssignment_6 )*
+            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:2684:1: ( ( rule__EditionScheme__EditionActionAssignment_6 )* )
+            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:2685:1: ( rule__EditionScheme__EditionActionAssignment_6 )*
             {
              before(grammarAccess.getEditionSchemeAccess().getEditionActionAssignment_6()); 
-            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:2630:1: ( rule__EditionScheme__EditionActionAssignment_6 )*
-            loop27:
+            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:2686:1: ( rule__EditionScheme__EditionActionAssignment_6 )*
+            loop28:
             do {
-                int alt27=2;
-                int LA27_0 = input.LA(1);
+                int alt28=2;
+                int LA28_0 = input.LA(1);
 
-                if ( (LA27_0==RULE_ID||LA27_0==48) ) {
-                    alt27=1;
+                if ( (LA28_0==RULE_ID||(LA28_0>=48 && LA28_0<=49)) ) {
+                    alt28=1;
                 }
 
 
-                switch (alt27) {
+                switch (alt28) {
             	case 1 :
-            	    // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:2630:2: rule__EditionScheme__EditionActionAssignment_6
+            	    // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:2686:2: rule__EditionScheme__EditionActionAssignment_6
             	    {
-            	    pushFollow(FOLLOW_rule__EditionScheme__EditionActionAssignment_6_in_rule__EditionScheme__Group__6__Impl5314);
+            	    pushFollow(FOLLOW_rule__EditionScheme__EditionActionAssignment_6_in_rule__EditionScheme__Group__6__Impl5442);
             	    rule__EditionScheme__EditionActionAssignment_6();
 
             	    state._fsp--;
@@ -7154,7 +7351,7 @@ public class InternalFMLParser extends AbstractInternalContentAssistParser {
             	    break;
 
             	default :
-            	    break loop27;
+            	    break loop28;
                 }
             } while (true);
 
@@ -7181,16 +7378,16 @@ public class InternalFMLParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__EditionScheme__Group__7"
-    // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:2640:1: rule__EditionScheme__Group__7 : rule__EditionScheme__Group__7__Impl ;
+    // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:2696:1: rule__EditionScheme__Group__7 : rule__EditionScheme__Group__7__Impl ;
     public final void rule__EditionScheme__Group__7() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:2644:1: ( rule__EditionScheme__Group__7__Impl )
-            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:2645:2: rule__EditionScheme__Group__7__Impl
+            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:2700:1: ( rule__EditionScheme__Group__7__Impl )
+            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:2701:2: rule__EditionScheme__Group__7__Impl
             {
-            pushFollow(FOLLOW_rule__EditionScheme__Group__7__Impl_in_rule__EditionScheme__Group__75345);
+            pushFollow(FOLLOW_rule__EditionScheme__Group__7__Impl_in_rule__EditionScheme__Group__75473);
             rule__EditionScheme__Group__7__Impl();
 
             state._fsp--;
@@ -7214,20 +7411,20 @@ public class InternalFMLParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__EditionScheme__Group__7__Impl"
-    // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:2651:1: rule__EditionScheme__Group__7__Impl : ( '}' ) ;
+    // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:2707:1: rule__EditionScheme__Group__7__Impl : ( '}' ) ;
     public final void rule__EditionScheme__Group__7__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:2655:1: ( ( '}' ) )
-            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:2656:1: ( '}' )
+            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:2711:1: ( ( '}' ) )
+            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:2712:1: ( '}' )
             {
-            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:2656:1: ( '}' )
-            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:2657:1: '}'
+            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:2712:1: ( '}' )
+            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:2713:1: '}'
             {
              before(grammarAccess.getEditionSchemeAccess().getRightCurlyBracketKeyword_7()); 
-            match(input,30,FOLLOW_30_in_rule__EditionScheme__Group__7__Impl5373); 
+            match(input,30,FOLLOW_30_in_rule__EditionScheme__Group__7__Impl5501); 
              after(grammarAccess.getEditionSchemeAccess().getRightCurlyBracketKeyword_7()); 
 
             }
@@ -7251,21 +7448,21 @@ public class InternalFMLParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__EditionScheme__Group_3__0"
-    // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:2686:1: rule__EditionScheme__Group_3__0 : rule__EditionScheme__Group_3__0__Impl rule__EditionScheme__Group_3__1 ;
+    // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:2742:1: rule__EditionScheme__Group_3__0 : rule__EditionScheme__Group_3__0__Impl rule__EditionScheme__Group_3__1 ;
     public final void rule__EditionScheme__Group_3__0() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:2690:1: ( rule__EditionScheme__Group_3__0__Impl rule__EditionScheme__Group_3__1 )
-            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:2691:2: rule__EditionScheme__Group_3__0__Impl rule__EditionScheme__Group_3__1
+            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:2746:1: ( rule__EditionScheme__Group_3__0__Impl rule__EditionScheme__Group_3__1 )
+            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:2747:2: rule__EditionScheme__Group_3__0__Impl rule__EditionScheme__Group_3__1
             {
-            pushFollow(FOLLOW_rule__EditionScheme__Group_3__0__Impl_in_rule__EditionScheme__Group_3__05420);
+            pushFollow(FOLLOW_rule__EditionScheme__Group_3__0__Impl_in_rule__EditionScheme__Group_3__05548);
             rule__EditionScheme__Group_3__0__Impl();
 
             state._fsp--;
 
-            pushFollow(FOLLOW_rule__EditionScheme__Group_3__1_in_rule__EditionScheme__Group_3__05423);
+            pushFollow(FOLLOW_rule__EditionScheme__Group_3__1_in_rule__EditionScheme__Group_3__05551);
             rule__EditionScheme__Group_3__1();
 
             state._fsp--;
@@ -7289,26 +7486,26 @@ public class InternalFMLParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__EditionScheme__Group_3__0__Impl"
-    // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:2698:1: rule__EditionScheme__Group_3__0__Impl : ( ( ( rule__EditionScheme__ParameterAssignment_3_0 ) ) ( ( rule__EditionScheme__ParameterAssignment_3_0 )* ) ) ;
+    // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:2754:1: rule__EditionScheme__Group_3__0__Impl : ( ( ( rule__EditionScheme__ParameterAssignment_3_0 ) ) ( ( rule__EditionScheme__ParameterAssignment_3_0 )* ) ) ;
     public final void rule__EditionScheme__Group_3__0__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:2702:1: ( ( ( ( rule__EditionScheme__ParameterAssignment_3_0 ) ) ( ( rule__EditionScheme__ParameterAssignment_3_0 )* ) ) )
-            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:2703:1: ( ( ( rule__EditionScheme__ParameterAssignment_3_0 ) ) ( ( rule__EditionScheme__ParameterAssignment_3_0 )* ) )
+            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:2758:1: ( ( ( ( rule__EditionScheme__ParameterAssignment_3_0 ) ) ( ( rule__EditionScheme__ParameterAssignment_3_0 )* ) ) )
+            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:2759:1: ( ( ( rule__EditionScheme__ParameterAssignment_3_0 ) ) ( ( rule__EditionScheme__ParameterAssignment_3_0 )* ) )
             {
-            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:2703:1: ( ( ( rule__EditionScheme__ParameterAssignment_3_0 ) ) ( ( rule__EditionScheme__ParameterAssignment_3_0 )* ) )
-            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:2704:1: ( ( rule__EditionScheme__ParameterAssignment_3_0 ) ) ( ( rule__EditionScheme__ParameterAssignment_3_0 )* )
+            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:2759:1: ( ( ( rule__EditionScheme__ParameterAssignment_3_0 ) ) ( ( rule__EditionScheme__ParameterAssignment_3_0 )* ) )
+            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:2760:1: ( ( rule__EditionScheme__ParameterAssignment_3_0 ) ) ( ( rule__EditionScheme__ParameterAssignment_3_0 )* )
             {
-            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:2704:1: ( ( rule__EditionScheme__ParameterAssignment_3_0 ) )
-            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:2705:1: ( rule__EditionScheme__ParameterAssignment_3_0 )
+            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:2760:1: ( ( rule__EditionScheme__ParameterAssignment_3_0 ) )
+            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:2761:1: ( rule__EditionScheme__ParameterAssignment_3_0 )
             {
              before(grammarAccess.getEditionSchemeAccess().getParameterAssignment_3_0()); 
-            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:2706:1: ( rule__EditionScheme__ParameterAssignment_3_0 )
-            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:2706:2: rule__EditionScheme__ParameterAssignment_3_0
+            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:2762:1: ( rule__EditionScheme__ParameterAssignment_3_0 )
+            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:2762:2: rule__EditionScheme__ParameterAssignment_3_0
             {
-            pushFollow(FOLLOW_rule__EditionScheme__ParameterAssignment_3_0_in_rule__EditionScheme__Group_3__0__Impl5452);
+            pushFollow(FOLLOW_rule__EditionScheme__ParameterAssignment_3_0_in_rule__EditionScheme__Group_3__0__Impl5580);
             rule__EditionScheme__ParameterAssignment_3_0();
 
             state._fsp--;
@@ -7320,26 +7517,26 @@ public class InternalFMLParser extends AbstractInternalContentAssistParser {
 
             }
 
-            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:2709:1: ( ( rule__EditionScheme__ParameterAssignment_3_0 )* )
-            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:2710:1: ( rule__EditionScheme__ParameterAssignment_3_0 )*
+            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:2765:1: ( ( rule__EditionScheme__ParameterAssignment_3_0 )* )
+            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:2766:1: ( rule__EditionScheme__ParameterAssignment_3_0 )*
             {
              before(grammarAccess.getEditionSchemeAccess().getParameterAssignment_3_0()); 
-            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:2711:1: ( rule__EditionScheme__ParameterAssignment_3_0 )*
-            loop28:
+            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:2767:1: ( rule__EditionScheme__ParameterAssignment_3_0 )*
+            loop29:
             do {
-                int alt28=2;
-                int LA28_0 = input.LA(1);
+                int alt29=2;
+                int LA29_0 = input.LA(1);
 
-                if ( (LA28_0==14) ) {
-                    alt28=1;
+                if ( (LA29_0==14) ) {
+                    alt29=1;
                 }
 
 
-                switch (alt28) {
+                switch (alt29) {
             	case 1 :
-            	    // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:2711:2: rule__EditionScheme__ParameterAssignment_3_0
+            	    // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:2767:2: rule__EditionScheme__ParameterAssignment_3_0
             	    {
-            	    pushFollow(FOLLOW_rule__EditionScheme__ParameterAssignment_3_0_in_rule__EditionScheme__Group_3__0__Impl5464);
+            	    pushFollow(FOLLOW_rule__EditionScheme__ParameterAssignment_3_0_in_rule__EditionScheme__Group_3__0__Impl5592);
             	    rule__EditionScheme__ParameterAssignment_3_0();
 
             	    state._fsp--;
@@ -7349,7 +7546,7 @@ public class InternalFMLParser extends AbstractInternalContentAssistParser {
             	    break;
 
             	default :
-            	    break loop28;
+            	    break loop29;
                 }
             } while (true);
 
@@ -7379,16 +7576,16 @@ public class InternalFMLParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__EditionScheme__Group_3__1"
-    // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:2722:1: rule__EditionScheme__Group_3__1 : rule__EditionScheme__Group_3__1__Impl ;
+    // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:2778:1: rule__EditionScheme__Group_3__1 : rule__EditionScheme__Group_3__1__Impl ;
     public final void rule__EditionScheme__Group_3__1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:2726:1: ( rule__EditionScheme__Group_3__1__Impl )
-            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:2727:2: rule__EditionScheme__Group_3__1__Impl
+            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:2782:1: ( rule__EditionScheme__Group_3__1__Impl )
+            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:2783:2: rule__EditionScheme__Group_3__1__Impl
             {
-            pushFollow(FOLLOW_rule__EditionScheme__Group_3__1__Impl_in_rule__EditionScheme__Group_3__15497);
+            pushFollow(FOLLOW_rule__EditionScheme__Group_3__1__Impl_in_rule__EditionScheme__Group_3__15625);
             rule__EditionScheme__Group_3__1__Impl();
 
             state._fsp--;
@@ -7412,35 +7609,35 @@ public class InternalFMLParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__EditionScheme__Group_3__1__Impl"
-    // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:2733:1: rule__EditionScheme__Group_3__1__Impl : ( ( rule__EditionScheme__Group_3_1__0 )* ) ;
+    // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:2789:1: rule__EditionScheme__Group_3__1__Impl : ( ( rule__EditionScheme__Group_3_1__0 )* ) ;
     public final void rule__EditionScheme__Group_3__1__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:2737:1: ( ( ( rule__EditionScheme__Group_3_1__0 )* ) )
-            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:2738:1: ( ( rule__EditionScheme__Group_3_1__0 )* )
+            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:2793:1: ( ( ( rule__EditionScheme__Group_3_1__0 )* ) )
+            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:2794:1: ( ( rule__EditionScheme__Group_3_1__0 )* )
             {
-            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:2738:1: ( ( rule__EditionScheme__Group_3_1__0 )* )
-            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:2739:1: ( rule__EditionScheme__Group_3_1__0 )*
+            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:2794:1: ( ( rule__EditionScheme__Group_3_1__0 )* )
+            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:2795:1: ( rule__EditionScheme__Group_3_1__0 )*
             {
              before(grammarAccess.getEditionSchemeAccess().getGroup_3_1()); 
-            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:2740:1: ( rule__EditionScheme__Group_3_1__0 )*
-            loop29:
+            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:2796:1: ( rule__EditionScheme__Group_3_1__0 )*
+            loop30:
             do {
-                int alt29=2;
-                int LA29_0 = input.LA(1);
+                int alt30=2;
+                int LA30_0 = input.LA(1);
 
-                if ( (LA29_0==44) ) {
-                    alt29=1;
+                if ( (LA30_0==44) ) {
+                    alt30=1;
                 }
 
 
-                switch (alt29) {
+                switch (alt30) {
             	case 1 :
-            	    // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:2740:2: rule__EditionScheme__Group_3_1__0
+            	    // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:2796:2: rule__EditionScheme__Group_3_1__0
             	    {
-            	    pushFollow(FOLLOW_rule__EditionScheme__Group_3_1__0_in_rule__EditionScheme__Group_3__1__Impl5524);
+            	    pushFollow(FOLLOW_rule__EditionScheme__Group_3_1__0_in_rule__EditionScheme__Group_3__1__Impl5652);
             	    rule__EditionScheme__Group_3_1__0();
 
             	    state._fsp--;
@@ -7450,7 +7647,7 @@ public class InternalFMLParser extends AbstractInternalContentAssistParser {
             	    break;
 
             	default :
-            	    break loop29;
+            	    break loop30;
                 }
             } while (true);
 
@@ -7477,21 +7674,21 @@ public class InternalFMLParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__EditionScheme__Group_3_1__0"
-    // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:2754:1: rule__EditionScheme__Group_3_1__0 : rule__EditionScheme__Group_3_1__0__Impl rule__EditionScheme__Group_3_1__1 ;
+    // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:2810:1: rule__EditionScheme__Group_3_1__0 : rule__EditionScheme__Group_3_1__0__Impl rule__EditionScheme__Group_3_1__1 ;
     public final void rule__EditionScheme__Group_3_1__0() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:2758:1: ( rule__EditionScheme__Group_3_1__0__Impl rule__EditionScheme__Group_3_1__1 )
-            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:2759:2: rule__EditionScheme__Group_3_1__0__Impl rule__EditionScheme__Group_3_1__1
+            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:2814:1: ( rule__EditionScheme__Group_3_1__0__Impl rule__EditionScheme__Group_3_1__1 )
+            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:2815:2: rule__EditionScheme__Group_3_1__0__Impl rule__EditionScheme__Group_3_1__1
             {
-            pushFollow(FOLLOW_rule__EditionScheme__Group_3_1__0__Impl_in_rule__EditionScheme__Group_3_1__05559);
+            pushFollow(FOLLOW_rule__EditionScheme__Group_3_1__0__Impl_in_rule__EditionScheme__Group_3_1__05687);
             rule__EditionScheme__Group_3_1__0__Impl();
 
             state._fsp--;
 
-            pushFollow(FOLLOW_rule__EditionScheme__Group_3_1__1_in_rule__EditionScheme__Group_3_1__05562);
+            pushFollow(FOLLOW_rule__EditionScheme__Group_3_1__1_in_rule__EditionScheme__Group_3_1__05690);
             rule__EditionScheme__Group_3_1__1();
 
             state._fsp--;
@@ -7515,26 +7712,26 @@ public class InternalFMLParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__EditionScheme__Group_3_1__0__Impl"
-    // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:2766:1: rule__EditionScheme__Group_3_1__0__Impl : ( ( ( ',' ) ) ( ( ',' )* ) ) ;
+    // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:2822:1: rule__EditionScheme__Group_3_1__0__Impl : ( ( ( ',' ) ) ( ( ',' )* ) ) ;
     public final void rule__EditionScheme__Group_3_1__0__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:2770:1: ( ( ( ( ',' ) ) ( ( ',' )* ) ) )
-            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:2771:1: ( ( ( ',' ) ) ( ( ',' )* ) )
+            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:2826:1: ( ( ( ( ',' ) ) ( ( ',' )* ) ) )
+            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:2827:1: ( ( ( ',' ) ) ( ( ',' )* ) )
             {
-            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:2771:1: ( ( ( ',' ) ) ( ( ',' )* ) )
-            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:2772:1: ( ( ',' ) ) ( ( ',' )* )
+            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:2827:1: ( ( ( ',' ) ) ( ( ',' )* ) )
+            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:2828:1: ( ( ',' ) ) ( ( ',' )* )
             {
-            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:2772:1: ( ( ',' ) )
-            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:2773:1: ( ',' )
+            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:2828:1: ( ( ',' ) )
+            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:2829:1: ( ',' )
             {
              before(grammarAccess.getEditionSchemeAccess().getCommaKeyword_3_1_0()); 
-            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:2774:1: ( ',' )
-            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:2775:2: ','
+            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:2830:1: ( ',' )
+            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:2831:2: ','
             {
-            match(input,44,FOLLOW_44_in_rule__EditionScheme__Group_3_1__0__Impl5593); 
+            match(input,44,FOLLOW_44_in_rule__EditionScheme__Group_3_1__0__Impl5721); 
 
             }
 
@@ -7542,32 +7739,32 @@ public class InternalFMLParser extends AbstractInternalContentAssistParser {
 
             }
 
-            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:2779:1: ( ( ',' )* )
-            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:2780:1: ( ',' )*
+            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:2835:1: ( ( ',' )* )
+            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:2836:1: ( ',' )*
             {
              before(grammarAccess.getEditionSchemeAccess().getCommaKeyword_3_1_0()); 
-            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:2781:1: ( ',' )*
-            loop30:
+            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:2837:1: ( ',' )*
+            loop31:
             do {
-                int alt30=2;
-                int LA30_0 = input.LA(1);
+                int alt31=2;
+                int LA31_0 = input.LA(1);
 
-                if ( (LA30_0==44) ) {
-                    alt30=1;
+                if ( (LA31_0==44) ) {
+                    alt31=1;
                 }
 
 
-                switch (alt30) {
+                switch (alt31) {
             	case 1 :
-            	    // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:2782:2: ','
+            	    // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:2838:2: ','
             	    {
-            	    match(input,44,FOLLOW_44_in_rule__EditionScheme__Group_3_1__0__Impl5609); 
+            	    match(input,44,FOLLOW_44_in_rule__EditionScheme__Group_3_1__0__Impl5737); 
 
             	    }
             	    break;
 
             	default :
-            	    break loop30;
+            	    break loop31;
                 }
             } while (true);
 
@@ -7597,16 +7794,16 @@ public class InternalFMLParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__EditionScheme__Group_3_1__1"
-    // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:2794:1: rule__EditionScheme__Group_3_1__1 : rule__EditionScheme__Group_3_1__1__Impl ;
+    // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:2850:1: rule__EditionScheme__Group_3_1__1 : rule__EditionScheme__Group_3_1__1__Impl ;
     public final void rule__EditionScheme__Group_3_1__1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:2798:1: ( rule__EditionScheme__Group_3_1__1__Impl )
-            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:2799:2: rule__EditionScheme__Group_3_1__1__Impl
+            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:2854:1: ( rule__EditionScheme__Group_3_1__1__Impl )
+            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:2855:2: rule__EditionScheme__Group_3_1__1__Impl
             {
-            pushFollow(FOLLOW_rule__EditionScheme__Group_3_1__1__Impl_in_rule__EditionScheme__Group_3_1__15644);
+            pushFollow(FOLLOW_rule__EditionScheme__Group_3_1__1__Impl_in_rule__EditionScheme__Group_3_1__15772);
             rule__EditionScheme__Group_3_1__1__Impl();
 
             state._fsp--;
@@ -7630,23 +7827,23 @@ public class InternalFMLParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__EditionScheme__Group_3_1__1__Impl"
-    // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:2805:1: rule__EditionScheme__Group_3_1__1__Impl : ( ( rule__EditionScheme__ParameterAssignment_3_1_1 ) ) ;
+    // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:2861:1: rule__EditionScheme__Group_3_1__1__Impl : ( ( rule__EditionScheme__ParameterAssignment_3_1_1 ) ) ;
     public final void rule__EditionScheme__Group_3_1__1__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:2809:1: ( ( ( rule__EditionScheme__ParameterAssignment_3_1_1 ) ) )
-            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:2810:1: ( ( rule__EditionScheme__ParameterAssignment_3_1_1 ) )
+            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:2865:1: ( ( ( rule__EditionScheme__ParameterAssignment_3_1_1 ) ) )
+            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:2866:1: ( ( rule__EditionScheme__ParameterAssignment_3_1_1 ) )
             {
-            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:2810:1: ( ( rule__EditionScheme__ParameterAssignment_3_1_1 ) )
-            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:2811:1: ( rule__EditionScheme__ParameterAssignment_3_1_1 )
+            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:2866:1: ( ( rule__EditionScheme__ParameterAssignment_3_1_1 ) )
+            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:2867:1: ( rule__EditionScheme__ParameterAssignment_3_1_1 )
             {
              before(grammarAccess.getEditionSchemeAccess().getParameterAssignment_3_1_1()); 
-            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:2812:1: ( rule__EditionScheme__ParameterAssignment_3_1_1 )
-            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:2812:2: rule__EditionScheme__ParameterAssignment_3_1_1
+            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:2868:1: ( rule__EditionScheme__ParameterAssignment_3_1_1 )
+            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:2868:2: rule__EditionScheme__ParameterAssignment_3_1_1
             {
-            pushFollow(FOLLOW_rule__EditionScheme__ParameterAssignment_3_1_1_in_rule__EditionScheme__Group_3_1__1__Impl5671);
+            pushFollow(FOLLOW_rule__EditionScheme__ParameterAssignment_3_1_1_in_rule__EditionScheme__Group_3_1__1__Impl5799);
             rule__EditionScheme__ParameterAssignment_3_1_1();
 
             state._fsp--;
@@ -7677,21 +7874,21 @@ public class InternalFMLParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Parameter__Group__0"
-    // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:2826:1: rule__Parameter__Group__0 : rule__Parameter__Group__0__Impl rule__Parameter__Group__1 ;
+    // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:2882:1: rule__Parameter__Group__0 : rule__Parameter__Group__0__Impl rule__Parameter__Group__1 ;
     public final void rule__Parameter__Group__0() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:2830:1: ( rule__Parameter__Group__0__Impl rule__Parameter__Group__1 )
-            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:2831:2: rule__Parameter__Group__0__Impl rule__Parameter__Group__1
+            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:2886:1: ( rule__Parameter__Group__0__Impl rule__Parameter__Group__1 )
+            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:2887:2: rule__Parameter__Group__0__Impl rule__Parameter__Group__1
             {
-            pushFollow(FOLLOW_rule__Parameter__Group__0__Impl_in_rule__Parameter__Group__05705);
+            pushFollow(FOLLOW_rule__Parameter__Group__0__Impl_in_rule__Parameter__Group__05833);
             rule__Parameter__Group__0__Impl();
 
             state._fsp--;
 
-            pushFollow(FOLLOW_rule__Parameter__Group__1_in_rule__Parameter__Group__05708);
+            pushFollow(FOLLOW_rule__Parameter__Group__1_in_rule__Parameter__Group__05836);
             rule__Parameter__Group__1();
 
             state._fsp--;
@@ -7715,23 +7912,23 @@ public class InternalFMLParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Parameter__Group__0__Impl"
-    // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:2838:1: rule__Parameter__Group__0__Impl : ( ( rule__Parameter__WidgetAssignment_0 ) ) ;
+    // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:2894:1: rule__Parameter__Group__0__Impl : ( ( rule__Parameter__WidgetAssignment_0 ) ) ;
     public final void rule__Parameter__Group__0__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:2842:1: ( ( ( rule__Parameter__WidgetAssignment_0 ) ) )
-            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:2843:1: ( ( rule__Parameter__WidgetAssignment_0 ) )
+            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:2898:1: ( ( ( rule__Parameter__WidgetAssignment_0 ) ) )
+            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:2899:1: ( ( rule__Parameter__WidgetAssignment_0 ) )
             {
-            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:2843:1: ( ( rule__Parameter__WidgetAssignment_0 ) )
-            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:2844:1: ( rule__Parameter__WidgetAssignment_0 )
+            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:2899:1: ( ( rule__Parameter__WidgetAssignment_0 ) )
+            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:2900:1: ( rule__Parameter__WidgetAssignment_0 )
             {
              before(grammarAccess.getParameterAccess().getWidgetAssignment_0()); 
-            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:2845:1: ( rule__Parameter__WidgetAssignment_0 )
-            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:2845:2: rule__Parameter__WidgetAssignment_0
+            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:2901:1: ( rule__Parameter__WidgetAssignment_0 )
+            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:2901:2: rule__Parameter__WidgetAssignment_0
             {
-            pushFollow(FOLLOW_rule__Parameter__WidgetAssignment_0_in_rule__Parameter__Group__0__Impl5735);
+            pushFollow(FOLLOW_rule__Parameter__WidgetAssignment_0_in_rule__Parameter__Group__0__Impl5863);
             rule__Parameter__WidgetAssignment_0();
 
             state._fsp--;
@@ -7762,21 +7959,21 @@ public class InternalFMLParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Parameter__Group__1"
-    // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:2855:1: rule__Parameter__Group__1 : rule__Parameter__Group__1__Impl rule__Parameter__Group__2 ;
+    // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:2911:1: rule__Parameter__Group__1 : rule__Parameter__Group__1__Impl rule__Parameter__Group__2 ;
     public final void rule__Parameter__Group__1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:2859:1: ( rule__Parameter__Group__1__Impl rule__Parameter__Group__2 )
-            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:2860:2: rule__Parameter__Group__1__Impl rule__Parameter__Group__2
+            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:2915:1: ( rule__Parameter__Group__1__Impl rule__Parameter__Group__2 )
+            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:2916:2: rule__Parameter__Group__1__Impl rule__Parameter__Group__2
             {
-            pushFollow(FOLLOW_rule__Parameter__Group__1__Impl_in_rule__Parameter__Group__15765);
+            pushFollow(FOLLOW_rule__Parameter__Group__1__Impl_in_rule__Parameter__Group__15893);
             rule__Parameter__Group__1__Impl();
 
             state._fsp--;
 
-            pushFollow(FOLLOW_rule__Parameter__Group__2_in_rule__Parameter__Group__15768);
+            pushFollow(FOLLOW_rule__Parameter__Group__2_in_rule__Parameter__Group__15896);
             rule__Parameter__Group__2();
 
             state._fsp--;
@@ -7800,20 +7997,20 @@ public class InternalFMLParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Parameter__Group__1__Impl"
-    // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:2867:1: rule__Parameter__Group__1__Impl : ( ':' ) ;
+    // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:2923:1: rule__Parameter__Group__1__Impl : ( ':' ) ;
     public final void rule__Parameter__Group__1__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:2871:1: ( ( ':' ) )
-            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:2872:1: ( ':' )
+            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:2927:1: ( ( ':' ) )
+            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:2928:1: ( ':' )
             {
-            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:2872:1: ( ':' )
-            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:2873:1: ':'
+            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:2928:1: ( ':' )
+            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:2929:1: ':'
             {
              before(grammarAccess.getParameterAccess().getColonKeyword_1()); 
-            match(input,45,FOLLOW_45_in_rule__Parameter__Group__1__Impl5796); 
+            match(input,45,FOLLOW_45_in_rule__Parameter__Group__1__Impl5924); 
              after(grammarAccess.getParameterAccess().getColonKeyword_1()); 
 
             }
@@ -7837,21 +8034,21 @@ public class InternalFMLParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Parameter__Group__2"
-    // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:2886:1: rule__Parameter__Group__2 : rule__Parameter__Group__2__Impl rule__Parameter__Group__3 ;
+    // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:2942:1: rule__Parameter__Group__2 : rule__Parameter__Group__2__Impl rule__Parameter__Group__3 ;
     public final void rule__Parameter__Group__2() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:2890:1: ( rule__Parameter__Group__2__Impl rule__Parameter__Group__3 )
-            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:2891:2: rule__Parameter__Group__2__Impl rule__Parameter__Group__3
+            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:2946:1: ( rule__Parameter__Group__2__Impl rule__Parameter__Group__3 )
+            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:2947:2: rule__Parameter__Group__2__Impl rule__Parameter__Group__3
             {
-            pushFollow(FOLLOW_rule__Parameter__Group__2__Impl_in_rule__Parameter__Group__25827);
+            pushFollow(FOLLOW_rule__Parameter__Group__2__Impl_in_rule__Parameter__Group__25955);
             rule__Parameter__Group__2__Impl();
 
             state._fsp--;
 
-            pushFollow(FOLLOW_rule__Parameter__Group__3_in_rule__Parameter__Group__25830);
+            pushFollow(FOLLOW_rule__Parameter__Group__3_in_rule__Parameter__Group__25958);
             rule__Parameter__Group__3();
 
             state._fsp--;
@@ -7875,23 +8072,23 @@ public class InternalFMLParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Parameter__Group__2__Impl"
-    // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:2898:1: rule__Parameter__Group__2__Impl : ( ( rule__Parameter__EditionPatternAssignment_2 ) ) ;
+    // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:2954:1: rule__Parameter__Group__2__Impl : ( ( rule__Parameter__EditionPatternAssignment_2 ) ) ;
     public final void rule__Parameter__Group__2__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:2902:1: ( ( ( rule__Parameter__EditionPatternAssignment_2 ) ) )
-            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:2903:1: ( ( rule__Parameter__EditionPatternAssignment_2 ) )
+            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:2958:1: ( ( ( rule__Parameter__EditionPatternAssignment_2 ) ) )
+            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:2959:1: ( ( rule__Parameter__EditionPatternAssignment_2 ) )
             {
-            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:2903:1: ( ( rule__Parameter__EditionPatternAssignment_2 ) )
-            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:2904:1: ( rule__Parameter__EditionPatternAssignment_2 )
+            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:2959:1: ( ( rule__Parameter__EditionPatternAssignment_2 ) )
+            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:2960:1: ( rule__Parameter__EditionPatternAssignment_2 )
             {
              before(grammarAccess.getParameterAccess().getEditionPatternAssignment_2()); 
-            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:2905:1: ( rule__Parameter__EditionPatternAssignment_2 )
-            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:2905:2: rule__Parameter__EditionPatternAssignment_2
+            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:2961:1: ( rule__Parameter__EditionPatternAssignment_2 )
+            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:2961:2: rule__Parameter__EditionPatternAssignment_2
             {
-            pushFollow(FOLLOW_rule__Parameter__EditionPatternAssignment_2_in_rule__Parameter__Group__2__Impl5857);
+            pushFollow(FOLLOW_rule__Parameter__EditionPatternAssignment_2_in_rule__Parameter__Group__2__Impl5985);
             rule__Parameter__EditionPatternAssignment_2();
 
             state._fsp--;
@@ -7922,16 +8119,16 @@ public class InternalFMLParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Parameter__Group__3"
-    // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:2915:1: rule__Parameter__Group__3 : rule__Parameter__Group__3__Impl ;
+    // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:2971:1: rule__Parameter__Group__3 : rule__Parameter__Group__3__Impl ;
     public final void rule__Parameter__Group__3() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:2919:1: ( rule__Parameter__Group__3__Impl )
-            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:2920:2: rule__Parameter__Group__3__Impl
+            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:2975:1: ( rule__Parameter__Group__3__Impl )
+            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:2976:2: rule__Parameter__Group__3__Impl
             {
-            pushFollow(FOLLOW_rule__Parameter__Group__3__Impl_in_rule__Parameter__Group__35887);
+            pushFollow(FOLLOW_rule__Parameter__Group__3__Impl_in_rule__Parameter__Group__36015);
             rule__Parameter__Group__3__Impl();
 
             state._fsp--;
@@ -7955,23 +8152,23 @@ public class InternalFMLParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Parameter__Group__3__Impl"
-    // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:2926:1: rule__Parameter__Group__3__Impl : ( ( rule__Parameter__NameAssignment_3 ) ) ;
+    // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:2982:1: rule__Parameter__Group__3__Impl : ( ( rule__Parameter__NameAssignment_3 ) ) ;
     public final void rule__Parameter__Group__3__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:2930:1: ( ( ( rule__Parameter__NameAssignment_3 ) ) )
-            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:2931:1: ( ( rule__Parameter__NameAssignment_3 ) )
+            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:2986:1: ( ( ( rule__Parameter__NameAssignment_3 ) ) )
+            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:2987:1: ( ( rule__Parameter__NameAssignment_3 ) )
             {
-            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:2931:1: ( ( rule__Parameter__NameAssignment_3 ) )
-            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:2932:1: ( rule__Parameter__NameAssignment_3 )
+            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:2987:1: ( ( rule__Parameter__NameAssignment_3 ) )
+            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:2988:1: ( rule__Parameter__NameAssignment_3 )
             {
              before(grammarAccess.getParameterAccess().getNameAssignment_3()); 
-            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:2933:1: ( rule__Parameter__NameAssignment_3 )
-            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:2933:2: rule__Parameter__NameAssignment_3
+            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:2989:1: ( rule__Parameter__NameAssignment_3 )
+            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:2989:2: rule__Parameter__NameAssignment_3
             {
-            pushFollow(FOLLOW_rule__Parameter__NameAssignment_3_in_rule__Parameter__Group__3__Impl5914);
+            pushFollow(FOLLOW_rule__Parameter__NameAssignment_3_in_rule__Parameter__Group__3__Impl6042);
             rule__Parameter__NameAssignment_3();
 
             state._fsp--;
@@ -8002,21 +8199,21 @@ public class InternalFMLParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__DeclarePatternRole__Group__0"
-    // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:2951:1: rule__DeclarePatternRole__Group__0 : rule__DeclarePatternRole__Group__0__Impl rule__DeclarePatternRole__Group__1 ;
+    // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:3007:1: rule__DeclarePatternRole__Group__0 : rule__DeclarePatternRole__Group__0__Impl rule__DeclarePatternRole__Group__1 ;
     public final void rule__DeclarePatternRole__Group__0() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:2955:1: ( rule__DeclarePatternRole__Group__0__Impl rule__DeclarePatternRole__Group__1 )
-            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:2956:2: rule__DeclarePatternRole__Group__0__Impl rule__DeclarePatternRole__Group__1
+            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:3011:1: ( rule__DeclarePatternRole__Group__0__Impl rule__DeclarePatternRole__Group__1 )
+            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:3012:2: rule__DeclarePatternRole__Group__0__Impl rule__DeclarePatternRole__Group__1
             {
-            pushFollow(FOLLOW_rule__DeclarePatternRole__Group__0__Impl_in_rule__DeclarePatternRole__Group__05952);
+            pushFollow(FOLLOW_rule__DeclarePatternRole__Group__0__Impl_in_rule__DeclarePatternRole__Group__06080);
             rule__DeclarePatternRole__Group__0__Impl();
 
             state._fsp--;
 
-            pushFollow(FOLLOW_rule__DeclarePatternRole__Group__1_in_rule__DeclarePatternRole__Group__05955);
+            pushFollow(FOLLOW_rule__DeclarePatternRole__Group__1_in_rule__DeclarePatternRole__Group__06083);
             rule__DeclarePatternRole__Group__1();
 
             state._fsp--;
@@ -8040,31 +8237,74 @@ public class InternalFMLParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__DeclarePatternRole__Group__0__Impl"
-    // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:2963:1: rule__DeclarePatternRole__Group__0__Impl : ( ( rule__DeclarePatternRole__PatternRoleAssignment_0 ) ) ;
+    // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:3019:1: rule__DeclarePatternRole__Group__0__Impl : ( ( ( rule__DeclarePatternRole__Group_0__0 ) ) ( ( rule__DeclarePatternRole__Group_0__0 )* ) ) ;
     public final void rule__DeclarePatternRole__Group__0__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:2967:1: ( ( ( rule__DeclarePatternRole__PatternRoleAssignment_0 ) ) )
-            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:2968:1: ( ( rule__DeclarePatternRole__PatternRoleAssignment_0 ) )
+            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:3023:1: ( ( ( ( rule__DeclarePatternRole__Group_0__0 ) ) ( ( rule__DeclarePatternRole__Group_0__0 )* ) ) )
+            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:3024:1: ( ( ( rule__DeclarePatternRole__Group_0__0 ) ) ( ( rule__DeclarePatternRole__Group_0__0 )* ) )
             {
-            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:2968:1: ( ( rule__DeclarePatternRole__PatternRoleAssignment_0 ) )
-            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:2969:1: ( rule__DeclarePatternRole__PatternRoleAssignment_0 )
+            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:3024:1: ( ( ( rule__DeclarePatternRole__Group_0__0 ) ) ( ( rule__DeclarePatternRole__Group_0__0 )* ) )
+            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:3025:1: ( ( rule__DeclarePatternRole__Group_0__0 ) ) ( ( rule__DeclarePatternRole__Group_0__0 )* )
             {
-             before(grammarAccess.getDeclarePatternRoleAccess().getPatternRoleAssignment_0()); 
-            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:2970:1: ( rule__DeclarePatternRole__PatternRoleAssignment_0 )
-            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:2970:2: rule__DeclarePatternRole__PatternRoleAssignment_0
+            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:3025:1: ( ( rule__DeclarePatternRole__Group_0__0 ) )
+            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:3026:1: ( rule__DeclarePatternRole__Group_0__0 )
             {
-            pushFollow(FOLLOW_rule__DeclarePatternRole__PatternRoleAssignment_0_in_rule__DeclarePatternRole__Group__0__Impl5982);
-            rule__DeclarePatternRole__PatternRoleAssignment_0();
+             before(grammarAccess.getDeclarePatternRoleAccess().getGroup_0()); 
+            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:3027:1: ( rule__DeclarePatternRole__Group_0__0 )
+            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:3027:2: rule__DeclarePatternRole__Group_0__0
+            {
+            pushFollow(FOLLOW_rule__DeclarePatternRole__Group_0__0_in_rule__DeclarePatternRole__Group__0__Impl6112);
+            rule__DeclarePatternRole__Group_0__0();
 
             state._fsp--;
 
 
             }
 
-             after(grammarAccess.getDeclarePatternRoleAccess().getPatternRoleAssignment_0()); 
+             after(grammarAccess.getDeclarePatternRoleAccess().getGroup_0()); 
+
+            }
+
+            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:3030:1: ( ( rule__DeclarePatternRole__Group_0__0 )* )
+            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:3031:1: ( rule__DeclarePatternRole__Group_0__0 )*
+            {
+             before(grammarAccess.getDeclarePatternRoleAccess().getGroup_0()); 
+            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:3032:1: ( rule__DeclarePatternRole__Group_0__0 )*
+            loop32:
+            do {
+                int alt32=2;
+                int LA32_0 = input.LA(1);
+
+                if ( (LA32_0==RULE_ID) ) {
+                    alt32=1;
+                }
+
+
+                switch (alt32) {
+            	case 1 :
+            	    // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:3032:2: rule__DeclarePatternRole__Group_0__0
+            	    {
+            	    pushFollow(FOLLOW_rule__DeclarePatternRole__Group_0__0_in_rule__DeclarePatternRole__Group__0__Impl6124);
+            	    rule__DeclarePatternRole__Group_0__0();
+
+            	    state._fsp--;
+
+
+            	    }
+            	    break;
+
+            	default :
+            	    break loop32;
+                }
+            } while (true);
+
+             after(grammarAccess.getDeclarePatternRoleAccess().getGroup_0()); 
+
+            }
+
 
             }
 
@@ -8087,22 +8327,17 @@ public class InternalFMLParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__DeclarePatternRole__Group__1"
-    // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:2980:1: rule__DeclarePatternRole__Group__1 : rule__DeclarePatternRole__Group__1__Impl rule__DeclarePatternRole__Group__2 ;
+    // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:3043:1: rule__DeclarePatternRole__Group__1 : rule__DeclarePatternRole__Group__1__Impl ;
     public final void rule__DeclarePatternRole__Group__1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:2984:1: ( rule__DeclarePatternRole__Group__1__Impl rule__DeclarePatternRole__Group__2 )
-            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:2985:2: rule__DeclarePatternRole__Group__1__Impl rule__DeclarePatternRole__Group__2
+            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:3047:1: ( rule__DeclarePatternRole__Group__1__Impl )
+            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:3048:2: rule__DeclarePatternRole__Group__1__Impl
             {
-            pushFollow(FOLLOW_rule__DeclarePatternRole__Group__1__Impl_in_rule__DeclarePatternRole__Group__16012);
+            pushFollow(FOLLOW_rule__DeclarePatternRole__Group__1__Impl_in_rule__DeclarePatternRole__Group__16157);
             rule__DeclarePatternRole__Group__1__Impl();
-
-            state._fsp--;
-
-            pushFollow(FOLLOW_rule__DeclarePatternRole__Group__2_in_rule__DeclarePatternRole__Group__16015);
-            rule__DeclarePatternRole__Group__2();
 
             state._fsp--;
 
@@ -8125,21 +8360,31 @@ public class InternalFMLParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__DeclarePatternRole__Group__1__Impl"
-    // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:2992:1: rule__DeclarePatternRole__Group__1__Impl : ( '=' ) ;
+    // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:3054:1: rule__DeclarePatternRole__Group__1__Impl : ( ( rule__DeclarePatternRole__Alternatives_1 ) ) ;
     public final void rule__DeclarePatternRole__Group__1__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:2996:1: ( ( '=' ) )
-            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:2997:1: ( '=' )
+            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:3058:1: ( ( ( rule__DeclarePatternRole__Alternatives_1 ) ) )
+            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:3059:1: ( ( rule__DeclarePatternRole__Alternatives_1 ) )
             {
-            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:2997:1: ( '=' )
-            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:2998:1: '='
+            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:3059:1: ( ( rule__DeclarePatternRole__Alternatives_1 ) )
+            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:3060:1: ( rule__DeclarePatternRole__Alternatives_1 )
             {
-             before(grammarAccess.getDeclarePatternRoleAccess().getEqualsSignKeyword_1()); 
-            match(input,28,FOLLOW_28_in_rule__DeclarePatternRole__Group__1__Impl6043); 
-             after(grammarAccess.getDeclarePatternRoleAccess().getEqualsSignKeyword_1()); 
+             before(grammarAccess.getDeclarePatternRoleAccess().getAlternatives_1()); 
+            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:3061:1: ( rule__DeclarePatternRole__Alternatives_1 )
+            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:3061:2: rule__DeclarePatternRole__Alternatives_1
+            {
+            pushFollow(FOLLOW_rule__DeclarePatternRole__Alternatives_1_in_rule__DeclarePatternRole__Group__1__Impl6184);
+            rule__DeclarePatternRole__Alternatives_1();
+
+            state._fsp--;
+
+
+            }
+
+             after(grammarAccess.getDeclarePatternRoleAccess().getAlternatives_1()); 
 
             }
 
@@ -8161,98 +8406,23 @@ public class InternalFMLParser extends AbstractInternalContentAssistParser {
     // $ANTLR end "rule__DeclarePatternRole__Group__1__Impl"
 
 
-    // $ANTLR start "rule__DeclarePatternRole__Group__2"
-    // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:3011:1: rule__DeclarePatternRole__Group__2 : rule__DeclarePatternRole__Group__2__Impl rule__DeclarePatternRole__Group__3 ;
-    public final void rule__DeclarePatternRole__Group__2() throws RecognitionException {
+    // $ANTLR start "rule__DeclarePatternRole__Group_0__0"
+    // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:3075:1: rule__DeclarePatternRole__Group_0__0 : rule__DeclarePatternRole__Group_0__0__Impl rule__DeclarePatternRole__Group_0__1 ;
+    public final void rule__DeclarePatternRole__Group_0__0() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:3015:1: ( rule__DeclarePatternRole__Group__2__Impl rule__DeclarePatternRole__Group__3 )
-            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:3016:2: rule__DeclarePatternRole__Group__2__Impl rule__DeclarePatternRole__Group__3
+            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:3079:1: ( rule__DeclarePatternRole__Group_0__0__Impl rule__DeclarePatternRole__Group_0__1 )
+            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:3080:2: rule__DeclarePatternRole__Group_0__0__Impl rule__DeclarePatternRole__Group_0__1
             {
-            pushFollow(FOLLOW_rule__DeclarePatternRole__Group__2__Impl_in_rule__DeclarePatternRole__Group__26074);
-            rule__DeclarePatternRole__Group__2__Impl();
+            pushFollow(FOLLOW_rule__DeclarePatternRole__Group_0__0__Impl_in_rule__DeclarePatternRole__Group_0__06218);
+            rule__DeclarePatternRole__Group_0__0__Impl();
 
             state._fsp--;
 
-            pushFollow(FOLLOW_rule__DeclarePatternRole__Group__3_in_rule__DeclarePatternRole__Group__26077);
-            rule__DeclarePatternRole__Group__3();
-
-            state._fsp--;
-
-
-            }
-
-        }
-        catch (RecognitionException re) {
-            reportError(re);
-            recover(input,re);
-        }
-        finally {
-
-            	restoreStackSize(stackSize);
-
-        }
-        return ;
-    }
-    // $ANTLR end "rule__DeclarePatternRole__Group__2"
-
-
-    // $ANTLR start "rule__DeclarePatternRole__Group__2__Impl"
-    // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:3023:1: rule__DeclarePatternRole__Group__2__Impl : ( 'parameters' ) ;
-    public final void rule__DeclarePatternRole__Group__2__Impl() throws RecognitionException {
-
-        		int stackSize = keepStackSize();
-            
-        try {
-            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:3027:1: ( ( 'parameters' ) )
-            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:3028:1: ( 'parameters' )
-            {
-            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:3028:1: ( 'parameters' )
-            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:3029:1: 'parameters'
-            {
-             before(grammarAccess.getDeclarePatternRoleAccess().getParametersKeyword_2()); 
-            match(input,46,FOLLOW_46_in_rule__DeclarePatternRole__Group__2__Impl6105); 
-             after(grammarAccess.getDeclarePatternRoleAccess().getParametersKeyword_2()); 
-
-            }
-
-
-            }
-
-        }
-        catch (RecognitionException re) {
-            reportError(re);
-            recover(input,re);
-        }
-        finally {
-
-            	restoreStackSize(stackSize);
-
-        }
-        return ;
-    }
-    // $ANTLR end "rule__DeclarePatternRole__Group__2__Impl"
-
-
-    // $ANTLR start "rule__DeclarePatternRole__Group__3"
-    // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:3042:1: rule__DeclarePatternRole__Group__3 : rule__DeclarePatternRole__Group__3__Impl rule__DeclarePatternRole__Group__4 ;
-    public final void rule__DeclarePatternRole__Group__3() throws RecognitionException {
-
-        		int stackSize = keepStackSize();
-            
-        try {
-            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:3046:1: ( rule__DeclarePatternRole__Group__3__Impl rule__DeclarePatternRole__Group__4 )
-            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:3047:2: rule__DeclarePatternRole__Group__3__Impl rule__DeclarePatternRole__Group__4
-            {
-            pushFollow(FOLLOW_rule__DeclarePatternRole__Group__3__Impl_in_rule__DeclarePatternRole__Group__36136);
-            rule__DeclarePatternRole__Group__3__Impl();
-
-            state._fsp--;
-
-            pushFollow(FOLLOW_rule__DeclarePatternRole__Group__4_in_rule__DeclarePatternRole__Group__36139);
-            rule__DeclarePatternRole__Group__4();
+            pushFollow(FOLLOW_rule__DeclarePatternRole__Group_0__1_in_rule__DeclarePatternRole__Group_0__06221);
+            rule__DeclarePatternRole__Group_0__1();
 
             state._fsp--;
 
@@ -8271,25 +8441,78 @@ public class InternalFMLParser extends AbstractInternalContentAssistParser {
         }
         return ;
     }
-    // $ANTLR end "rule__DeclarePatternRole__Group__3"
+    // $ANTLR end "rule__DeclarePatternRole__Group_0__0"
 
 
-    // $ANTLR start "rule__DeclarePatternRole__Group__3__Impl"
-    // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:3054:1: rule__DeclarePatternRole__Group__3__Impl : ( '.' ) ;
-    public final void rule__DeclarePatternRole__Group__3__Impl() throws RecognitionException {
+    // $ANTLR start "rule__DeclarePatternRole__Group_0__0__Impl"
+    // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:3087:1: rule__DeclarePatternRole__Group_0__0__Impl : ( ( ( rule__DeclarePatternRole__PatternRoleAssignment_0_0 ) ) ( ( rule__DeclarePatternRole__PatternRoleAssignment_0_0 )* ) ) ;
+    public final void rule__DeclarePatternRole__Group_0__0__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:3058:1: ( ( '.' ) )
-            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:3059:1: ( '.' )
+            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:3091:1: ( ( ( ( rule__DeclarePatternRole__PatternRoleAssignment_0_0 ) ) ( ( rule__DeclarePatternRole__PatternRoleAssignment_0_0 )* ) ) )
+            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:3092:1: ( ( ( rule__DeclarePatternRole__PatternRoleAssignment_0_0 ) ) ( ( rule__DeclarePatternRole__PatternRoleAssignment_0_0 )* ) )
             {
-            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:3059:1: ( '.' )
-            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:3060:1: '.'
+            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:3092:1: ( ( ( rule__DeclarePatternRole__PatternRoleAssignment_0_0 ) ) ( ( rule__DeclarePatternRole__PatternRoleAssignment_0_0 )* ) )
+            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:3093:1: ( ( rule__DeclarePatternRole__PatternRoleAssignment_0_0 ) ) ( ( rule__DeclarePatternRole__PatternRoleAssignment_0_0 )* )
             {
-             before(grammarAccess.getDeclarePatternRoleAccess().getFullStopKeyword_3()); 
-            match(input,47,FOLLOW_47_in_rule__DeclarePatternRole__Group__3__Impl6167); 
-             after(grammarAccess.getDeclarePatternRoleAccess().getFullStopKeyword_3()); 
+            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:3093:1: ( ( rule__DeclarePatternRole__PatternRoleAssignment_0_0 ) )
+            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:3094:1: ( rule__DeclarePatternRole__PatternRoleAssignment_0_0 )
+            {
+             before(grammarAccess.getDeclarePatternRoleAccess().getPatternRoleAssignment_0_0()); 
+            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:3095:1: ( rule__DeclarePatternRole__PatternRoleAssignment_0_0 )
+            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:3095:2: rule__DeclarePatternRole__PatternRoleAssignment_0_0
+            {
+            pushFollow(FOLLOW_rule__DeclarePatternRole__PatternRoleAssignment_0_0_in_rule__DeclarePatternRole__Group_0__0__Impl6250);
+            rule__DeclarePatternRole__PatternRoleAssignment_0_0();
+
+            state._fsp--;
+
+
+            }
+
+             after(grammarAccess.getDeclarePatternRoleAccess().getPatternRoleAssignment_0_0()); 
+
+            }
+
+            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:3098:1: ( ( rule__DeclarePatternRole__PatternRoleAssignment_0_0 )* )
+            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:3099:1: ( rule__DeclarePatternRole__PatternRoleAssignment_0_0 )*
+            {
+             before(grammarAccess.getDeclarePatternRoleAccess().getPatternRoleAssignment_0_0()); 
+            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:3100:1: ( rule__DeclarePatternRole__PatternRoleAssignment_0_0 )*
+            loop33:
+            do {
+                int alt33=2;
+                int LA33_0 = input.LA(1);
+
+                if ( (LA33_0==RULE_ID) ) {
+                    alt33=1;
+                }
+
+
+                switch (alt33) {
+            	case 1 :
+            	    // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:3100:2: rule__DeclarePatternRole__PatternRoleAssignment_0_0
+            	    {
+            	    pushFollow(FOLLOW_rule__DeclarePatternRole__PatternRoleAssignment_0_0_in_rule__DeclarePatternRole__Group_0__0__Impl6262);
+            	    rule__DeclarePatternRole__PatternRoleAssignment_0_0();
+
+            	    state._fsp--;
+
+
+            	    }
+            	    break;
+
+            	default :
+            	    break loop33;
+                }
+            } while (true);
+
+             after(grammarAccess.getDeclarePatternRoleAccess().getPatternRoleAssignment_0_0()); 
+
+            }
+
 
             }
 
@@ -8308,106 +8531,21 @@ public class InternalFMLParser extends AbstractInternalContentAssistParser {
         }
         return ;
     }
-    // $ANTLR end "rule__DeclarePatternRole__Group__3__Impl"
+    // $ANTLR end "rule__DeclarePatternRole__Group_0__0__Impl"
 
 
-    // $ANTLR start "rule__DeclarePatternRole__Group__4"
-    // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:3073:1: rule__DeclarePatternRole__Group__4 : rule__DeclarePatternRole__Group__4__Impl rule__DeclarePatternRole__Group__5 ;
-    public final void rule__DeclarePatternRole__Group__4() throws RecognitionException {
-
-        		int stackSize = keepStackSize();
-            
-        try {
-            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:3077:1: ( rule__DeclarePatternRole__Group__4__Impl rule__DeclarePatternRole__Group__5 )
-            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:3078:2: rule__DeclarePatternRole__Group__4__Impl rule__DeclarePatternRole__Group__5
-            {
-            pushFollow(FOLLOW_rule__DeclarePatternRole__Group__4__Impl_in_rule__DeclarePatternRole__Group__46198);
-            rule__DeclarePatternRole__Group__4__Impl();
-
-            state._fsp--;
-
-            pushFollow(FOLLOW_rule__DeclarePatternRole__Group__5_in_rule__DeclarePatternRole__Group__46201);
-            rule__DeclarePatternRole__Group__5();
-
-            state._fsp--;
-
-
-            }
-
-        }
-        catch (RecognitionException re) {
-            reportError(re);
-            recover(input,re);
-        }
-        finally {
-
-            	restoreStackSize(stackSize);
-
-        }
-        return ;
-    }
-    // $ANTLR end "rule__DeclarePatternRole__Group__4"
-
-
-    // $ANTLR start "rule__DeclarePatternRole__Group__4__Impl"
-    // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:3085:1: rule__DeclarePatternRole__Group__4__Impl : ( ( rule__DeclarePatternRole__ParameterAssignment_4 ) ) ;
-    public final void rule__DeclarePatternRole__Group__4__Impl() throws RecognitionException {
+    // $ANTLR start "rule__DeclarePatternRole__Group_0__1"
+    // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:3111:1: rule__DeclarePatternRole__Group_0__1 : rule__DeclarePatternRole__Group_0__1__Impl ;
+    public final void rule__DeclarePatternRole__Group_0__1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:3089:1: ( ( ( rule__DeclarePatternRole__ParameterAssignment_4 ) ) )
-            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:3090:1: ( ( rule__DeclarePatternRole__ParameterAssignment_4 ) )
+            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:3115:1: ( rule__DeclarePatternRole__Group_0__1__Impl )
+            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:3116:2: rule__DeclarePatternRole__Group_0__1__Impl
             {
-            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:3090:1: ( ( rule__DeclarePatternRole__ParameterAssignment_4 ) )
-            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:3091:1: ( rule__DeclarePatternRole__ParameterAssignment_4 )
-            {
-             before(grammarAccess.getDeclarePatternRoleAccess().getParameterAssignment_4()); 
-            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:3092:1: ( rule__DeclarePatternRole__ParameterAssignment_4 )
-            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:3092:2: rule__DeclarePatternRole__ParameterAssignment_4
-            {
-            pushFollow(FOLLOW_rule__DeclarePatternRole__ParameterAssignment_4_in_rule__DeclarePatternRole__Group__4__Impl6228);
-            rule__DeclarePatternRole__ParameterAssignment_4();
-
-            state._fsp--;
-
-
-            }
-
-             after(grammarAccess.getDeclarePatternRoleAccess().getParameterAssignment_4()); 
-
-            }
-
-
-            }
-
-        }
-        catch (RecognitionException re) {
-            reportError(re);
-            recover(input,re);
-        }
-        finally {
-
-            	restoreStackSize(stackSize);
-
-        }
-        return ;
-    }
-    // $ANTLR end "rule__DeclarePatternRole__Group__4__Impl"
-
-
-    // $ANTLR start "rule__DeclarePatternRole__Group__5"
-    // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:3102:1: rule__DeclarePatternRole__Group__5 : rule__DeclarePatternRole__Group__5__Impl ;
-    public final void rule__DeclarePatternRole__Group__5() throws RecognitionException {
-
-        		int stackSize = keepStackSize();
-            
-        try {
-            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:3106:1: ( rule__DeclarePatternRole__Group__5__Impl )
-            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:3107:2: rule__DeclarePatternRole__Group__5__Impl
-            {
-            pushFollow(FOLLOW_rule__DeclarePatternRole__Group__5__Impl_in_rule__DeclarePatternRole__Group__56258);
-            rule__DeclarePatternRole__Group__5__Impl();
+            pushFollow(FOLLOW_rule__DeclarePatternRole__Group_0__1__Impl_in_rule__DeclarePatternRole__Group_0__16295);
+            rule__DeclarePatternRole__Group_0__1__Impl();
 
             state._fsp--;
 
@@ -8426,25 +8564,25 @@ public class InternalFMLParser extends AbstractInternalContentAssistParser {
         }
         return ;
     }
-    // $ANTLR end "rule__DeclarePatternRole__Group__5"
+    // $ANTLR end "rule__DeclarePatternRole__Group_0__1"
 
 
-    // $ANTLR start "rule__DeclarePatternRole__Group__5__Impl"
-    // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:3113:1: rule__DeclarePatternRole__Group__5__Impl : ( ';' ) ;
-    public final void rule__DeclarePatternRole__Group__5__Impl() throws RecognitionException {
+    // $ANTLR start "rule__DeclarePatternRole__Group_0__1__Impl"
+    // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:3122:1: rule__DeclarePatternRole__Group_0__1__Impl : ( '=' ) ;
+    public final void rule__DeclarePatternRole__Group_0__1__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:3117:1: ( ( ';' ) )
-            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:3118:1: ( ';' )
+            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:3126:1: ( ( '=' ) )
+            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:3127:1: ( '=' )
             {
-            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:3118:1: ( ';' )
-            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:3119:1: ';'
+            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:3127:1: ( '=' )
+            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:3128:1: '='
             {
-             before(grammarAccess.getDeclarePatternRoleAccess().getSemicolonKeyword_5()); 
-            match(input,36,FOLLOW_36_in_rule__DeclarePatternRole__Group__5__Impl6286); 
-             after(grammarAccess.getDeclarePatternRoleAccess().getSemicolonKeyword_5()); 
+             before(grammarAccess.getDeclarePatternRoleAccess().getEqualsSignKeyword_0_1()); 
+            match(input,28,FOLLOW_28_in_rule__DeclarePatternRole__Group_0__1__Impl6323); 
+             after(grammarAccess.getDeclarePatternRoleAccess().getEqualsSignKeyword_0_1()); 
 
             }
 
@@ -8463,25 +8601,648 @@ public class InternalFMLParser extends AbstractInternalContentAssistParser {
         }
         return ;
     }
-    // $ANTLR end "rule__DeclarePatternRole__Group__5__Impl"
+    // $ANTLR end "rule__DeclarePatternRole__Group_0__1__Impl"
+
+
+    // $ANTLR start "rule__DeclarePatternRole__Group_1_0__0"
+    // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:3145:1: rule__DeclarePatternRole__Group_1_0__0 : rule__DeclarePatternRole__Group_1_0__0__Impl rule__DeclarePatternRole__Group_1_0__1 ;
+    public final void rule__DeclarePatternRole__Group_1_0__0() throws RecognitionException {
+
+        		int stackSize = keepStackSize();
+            
+        try {
+            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:3149:1: ( rule__DeclarePatternRole__Group_1_0__0__Impl rule__DeclarePatternRole__Group_1_0__1 )
+            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:3150:2: rule__DeclarePatternRole__Group_1_0__0__Impl rule__DeclarePatternRole__Group_1_0__1
+            {
+            pushFollow(FOLLOW_rule__DeclarePatternRole__Group_1_0__0__Impl_in_rule__DeclarePatternRole__Group_1_0__06358);
+            rule__DeclarePatternRole__Group_1_0__0__Impl();
+
+            state._fsp--;
+
+            pushFollow(FOLLOW_rule__DeclarePatternRole__Group_1_0__1_in_rule__DeclarePatternRole__Group_1_0__06361);
+            rule__DeclarePatternRole__Group_1_0__1();
+
+            state._fsp--;
+
+
+            }
+
+        }
+        catch (RecognitionException re) {
+            reportError(re);
+            recover(input,re);
+        }
+        finally {
+
+            	restoreStackSize(stackSize);
+
+        }
+        return ;
+    }
+    // $ANTLR end "rule__DeclarePatternRole__Group_1_0__0"
+
+
+    // $ANTLR start "rule__DeclarePatternRole__Group_1_0__0__Impl"
+    // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:3157:1: rule__DeclarePatternRole__Group_1_0__0__Impl : ( 'parameters' ) ;
+    public final void rule__DeclarePatternRole__Group_1_0__0__Impl() throws RecognitionException {
+
+        		int stackSize = keepStackSize();
+            
+        try {
+            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:3161:1: ( ( 'parameters' ) )
+            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:3162:1: ( 'parameters' )
+            {
+            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:3162:1: ( 'parameters' )
+            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:3163:1: 'parameters'
+            {
+             before(grammarAccess.getDeclarePatternRoleAccess().getParametersKeyword_1_0_0()); 
+            match(input,46,FOLLOW_46_in_rule__DeclarePatternRole__Group_1_0__0__Impl6389); 
+             after(grammarAccess.getDeclarePatternRoleAccess().getParametersKeyword_1_0_0()); 
+
+            }
+
+
+            }
+
+        }
+        catch (RecognitionException re) {
+            reportError(re);
+            recover(input,re);
+        }
+        finally {
+
+            	restoreStackSize(stackSize);
+
+        }
+        return ;
+    }
+    // $ANTLR end "rule__DeclarePatternRole__Group_1_0__0__Impl"
+
+
+    // $ANTLR start "rule__DeclarePatternRole__Group_1_0__1"
+    // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:3176:1: rule__DeclarePatternRole__Group_1_0__1 : rule__DeclarePatternRole__Group_1_0__1__Impl rule__DeclarePatternRole__Group_1_0__2 ;
+    public final void rule__DeclarePatternRole__Group_1_0__1() throws RecognitionException {
+
+        		int stackSize = keepStackSize();
+            
+        try {
+            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:3180:1: ( rule__DeclarePatternRole__Group_1_0__1__Impl rule__DeclarePatternRole__Group_1_0__2 )
+            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:3181:2: rule__DeclarePatternRole__Group_1_0__1__Impl rule__DeclarePatternRole__Group_1_0__2
+            {
+            pushFollow(FOLLOW_rule__DeclarePatternRole__Group_1_0__1__Impl_in_rule__DeclarePatternRole__Group_1_0__16420);
+            rule__DeclarePatternRole__Group_1_0__1__Impl();
+
+            state._fsp--;
+
+            pushFollow(FOLLOW_rule__DeclarePatternRole__Group_1_0__2_in_rule__DeclarePatternRole__Group_1_0__16423);
+            rule__DeclarePatternRole__Group_1_0__2();
+
+            state._fsp--;
+
+
+            }
+
+        }
+        catch (RecognitionException re) {
+            reportError(re);
+            recover(input,re);
+        }
+        finally {
+
+            	restoreStackSize(stackSize);
+
+        }
+        return ;
+    }
+    // $ANTLR end "rule__DeclarePatternRole__Group_1_0__1"
+
+
+    // $ANTLR start "rule__DeclarePatternRole__Group_1_0__1__Impl"
+    // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:3188:1: rule__DeclarePatternRole__Group_1_0__1__Impl : ( '.' ) ;
+    public final void rule__DeclarePatternRole__Group_1_0__1__Impl() throws RecognitionException {
+
+        		int stackSize = keepStackSize();
+            
+        try {
+            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:3192:1: ( ( '.' ) )
+            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:3193:1: ( '.' )
+            {
+            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:3193:1: ( '.' )
+            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:3194:1: '.'
+            {
+             before(grammarAccess.getDeclarePatternRoleAccess().getFullStopKeyword_1_0_1()); 
+            match(input,47,FOLLOW_47_in_rule__DeclarePatternRole__Group_1_0__1__Impl6451); 
+             after(grammarAccess.getDeclarePatternRoleAccess().getFullStopKeyword_1_0_1()); 
+
+            }
+
+
+            }
+
+        }
+        catch (RecognitionException re) {
+            reportError(re);
+            recover(input,re);
+        }
+        finally {
+
+            	restoreStackSize(stackSize);
+
+        }
+        return ;
+    }
+    // $ANTLR end "rule__DeclarePatternRole__Group_1_0__1__Impl"
+
+
+    // $ANTLR start "rule__DeclarePatternRole__Group_1_0__2"
+    // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:3207:1: rule__DeclarePatternRole__Group_1_0__2 : rule__DeclarePatternRole__Group_1_0__2__Impl rule__DeclarePatternRole__Group_1_0__3 ;
+    public final void rule__DeclarePatternRole__Group_1_0__2() throws RecognitionException {
+
+        		int stackSize = keepStackSize();
+            
+        try {
+            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:3211:1: ( rule__DeclarePatternRole__Group_1_0__2__Impl rule__DeclarePatternRole__Group_1_0__3 )
+            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:3212:2: rule__DeclarePatternRole__Group_1_0__2__Impl rule__DeclarePatternRole__Group_1_0__3
+            {
+            pushFollow(FOLLOW_rule__DeclarePatternRole__Group_1_0__2__Impl_in_rule__DeclarePatternRole__Group_1_0__26482);
+            rule__DeclarePatternRole__Group_1_0__2__Impl();
+
+            state._fsp--;
+
+            pushFollow(FOLLOW_rule__DeclarePatternRole__Group_1_0__3_in_rule__DeclarePatternRole__Group_1_0__26485);
+            rule__DeclarePatternRole__Group_1_0__3();
+
+            state._fsp--;
+
+
+            }
+
+        }
+        catch (RecognitionException re) {
+            reportError(re);
+            recover(input,re);
+        }
+        finally {
+
+            	restoreStackSize(stackSize);
+
+        }
+        return ;
+    }
+    // $ANTLR end "rule__DeclarePatternRole__Group_1_0__2"
+
+
+    // $ANTLR start "rule__DeclarePatternRole__Group_1_0__2__Impl"
+    // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:3219:1: rule__DeclarePatternRole__Group_1_0__2__Impl : ( ( rule__DeclarePatternRole__ParameterAssignment_1_0_2 ) ) ;
+    public final void rule__DeclarePatternRole__Group_1_0__2__Impl() throws RecognitionException {
+
+        		int stackSize = keepStackSize();
+            
+        try {
+            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:3223:1: ( ( ( rule__DeclarePatternRole__ParameterAssignment_1_0_2 ) ) )
+            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:3224:1: ( ( rule__DeclarePatternRole__ParameterAssignment_1_0_2 ) )
+            {
+            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:3224:1: ( ( rule__DeclarePatternRole__ParameterAssignment_1_0_2 ) )
+            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:3225:1: ( rule__DeclarePatternRole__ParameterAssignment_1_0_2 )
+            {
+             before(grammarAccess.getDeclarePatternRoleAccess().getParameterAssignment_1_0_2()); 
+            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:3226:1: ( rule__DeclarePatternRole__ParameterAssignment_1_0_2 )
+            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:3226:2: rule__DeclarePatternRole__ParameterAssignment_1_0_2
+            {
+            pushFollow(FOLLOW_rule__DeclarePatternRole__ParameterAssignment_1_0_2_in_rule__DeclarePatternRole__Group_1_0__2__Impl6512);
+            rule__DeclarePatternRole__ParameterAssignment_1_0_2();
+
+            state._fsp--;
+
+
+            }
+
+             after(grammarAccess.getDeclarePatternRoleAccess().getParameterAssignment_1_0_2()); 
+
+            }
+
+
+            }
+
+        }
+        catch (RecognitionException re) {
+            reportError(re);
+            recover(input,re);
+        }
+        finally {
+
+            	restoreStackSize(stackSize);
+
+        }
+        return ;
+    }
+    // $ANTLR end "rule__DeclarePatternRole__Group_1_0__2__Impl"
+
+
+    // $ANTLR start "rule__DeclarePatternRole__Group_1_0__3"
+    // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:3236:1: rule__DeclarePatternRole__Group_1_0__3 : rule__DeclarePatternRole__Group_1_0__3__Impl ;
+    public final void rule__DeclarePatternRole__Group_1_0__3() throws RecognitionException {
+
+        		int stackSize = keepStackSize();
+            
+        try {
+            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:3240:1: ( rule__DeclarePatternRole__Group_1_0__3__Impl )
+            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:3241:2: rule__DeclarePatternRole__Group_1_0__3__Impl
+            {
+            pushFollow(FOLLOW_rule__DeclarePatternRole__Group_1_0__3__Impl_in_rule__DeclarePatternRole__Group_1_0__36542);
+            rule__DeclarePatternRole__Group_1_0__3__Impl();
+
+            state._fsp--;
+
+
+            }
+
+        }
+        catch (RecognitionException re) {
+            reportError(re);
+            recover(input,re);
+        }
+        finally {
+
+            	restoreStackSize(stackSize);
+
+        }
+        return ;
+    }
+    // $ANTLR end "rule__DeclarePatternRole__Group_1_0__3"
+
+
+    // $ANTLR start "rule__DeclarePatternRole__Group_1_0__3__Impl"
+    // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:3247:1: rule__DeclarePatternRole__Group_1_0__3__Impl : ( ';' ) ;
+    public final void rule__DeclarePatternRole__Group_1_0__3__Impl() throws RecognitionException {
+
+        		int stackSize = keepStackSize();
+            
+        try {
+            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:3251:1: ( ( ';' ) )
+            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:3252:1: ( ';' )
+            {
+            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:3252:1: ( ';' )
+            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:3253:1: ';'
+            {
+             before(grammarAccess.getDeclarePatternRoleAccess().getSemicolonKeyword_1_0_3()); 
+            match(input,36,FOLLOW_36_in_rule__DeclarePatternRole__Group_1_0__3__Impl6570); 
+             after(grammarAccess.getDeclarePatternRoleAccess().getSemicolonKeyword_1_0_3()); 
+
+            }
+
+
+            }
+
+        }
+        catch (RecognitionException re) {
+            reportError(re);
+            recover(input,re);
+        }
+        finally {
+
+            	restoreStackSize(stackSize);
+
+        }
+        return ;
+    }
+    // $ANTLR end "rule__DeclarePatternRole__Group_1_0__3__Impl"
+
+
+    // $ANTLR start "rule__DeclarePatternRole__Group_1_1__0"
+    // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:3274:1: rule__DeclarePatternRole__Group_1_1__0 : rule__DeclarePatternRole__Group_1_1__0__Impl rule__DeclarePatternRole__Group_1_1__1 ;
+    public final void rule__DeclarePatternRole__Group_1_1__0() throws RecognitionException {
+
+        		int stackSize = keepStackSize();
+            
+        try {
+            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:3278:1: ( rule__DeclarePatternRole__Group_1_1__0__Impl rule__DeclarePatternRole__Group_1_1__1 )
+            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:3279:2: rule__DeclarePatternRole__Group_1_1__0__Impl rule__DeclarePatternRole__Group_1_1__1
+            {
+            pushFollow(FOLLOW_rule__DeclarePatternRole__Group_1_1__0__Impl_in_rule__DeclarePatternRole__Group_1_1__06609);
+            rule__DeclarePatternRole__Group_1_1__0__Impl();
+
+            state._fsp--;
+
+            pushFollow(FOLLOW_rule__DeclarePatternRole__Group_1_1__1_in_rule__DeclarePatternRole__Group_1_1__06612);
+            rule__DeclarePatternRole__Group_1_1__1();
+
+            state._fsp--;
+
+
+            }
+
+        }
+        catch (RecognitionException re) {
+            reportError(re);
+            recover(input,re);
+        }
+        finally {
+
+            	restoreStackSize(stackSize);
+
+        }
+        return ;
+    }
+    // $ANTLR end "rule__DeclarePatternRole__Group_1_1__0"
+
+
+    // $ANTLR start "rule__DeclarePatternRole__Group_1_1__0__Impl"
+    // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:3286:1: rule__DeclarePatternRole__Group_1_1__0__Impl : ( ( ( '(' ) ) ( ( '(' )* ) ) ;
+    public final void rule__DeclarePatternRole__Group_1_1__0__Impl() throws RecognitionException {
+
+        		int stackSize = keepStackSize();
+            
+        try {
+            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:3290:1: ( ( ( ( '(' ) ) ( ( '(' )* ) ) )
+            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:3291:1: ( ( ( '(' ) ) ( ( '(' )* ) )
+            {
+            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:3291:1: ( ( ( '(' ) ) ( ( '(' )* ) )
+            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:3292:1: ( ( '(' ) ) ( ( '(' )* )
+            {
+            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:3292:1: ( ( '(' ) )
+            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:3293:1: ( '(' )
+            {
+             before(grammarAccess.getDeclarePatternRoleAccess().getLeftParenthesisKeyword_1_1_0()); 
+            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:3294:1: ( '(' )
+            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:3295:2: '('
+            {
+            match(input,42,FOLLOW_42_in_rule__DeclarePatternRole__Group_1_1__0__Impl6643); 
+
+            }
+
+             after(grammarAccess.getDeclarePatternRoleAccess().getLeftParenthesisKeyword_1_1_0()); 
+
+            }
+
+            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:3299:1: ( ( '(' )* )
+            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:3300:1: ( '(' )*
+            {
+             before(grammarAccess.getDeclarePatternRoleAccess().getLeftParenthesisKeyword_1_1_0()); 
+            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:3301:1: ( '(' )*
+            loop34:
+            do {
+                int alt34=2;
+                int LA34_0 = input.LA(1);
+
+                if ( (LA34_0==42) ) {
+                    alt34=1;
+                }
+
+
+                switch (alt34) {
+            	case 1 :
+            	    // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:3302:2: '('
+            	    {
+            	    match(input,42,FOLLOW_42_in_rule__DeclarePatternRole__Group_1_1__0__Impl6659); 
+
+            	    }
+            	    break;
+
+            	default :
+            	    break loop34;
+                }
+            } while (true);
+
+             after(grammarAccess.getDeclarePatternRoleAccess().getLeftParenthesisKeyword_1_1_0()); 
+
+            }
+
+
+            }
+
+
+            }
+
+        }
+        catch (RecognitionException re) {
+            reportError(re);
+            recover(input,re);
+        }
+        finally {
+
+            	restoreStackSize(stackSize);
+
+        }
+        return ;
+    }
+    // $ANTLR end "rule__DeclarePatternRole__Group_1_1__0__Impl"
+
+
+    // $ANTLR start "rule__DeclarePatternRole__Group_1_1__1"
+    // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:3314:1: rule__DeclarePatternRole__Group_1_1__1 : rule__DeclarePatternRole__Group_1_1__1__Impl rule__DeclarePatternRole__Group_1_1__2 ;
+    public final void rule__DeclarePatternRole__Group_1_1__1() throws RecognitionException {
+
+        		int stackSize = keepStackSize();
+            
+        try {
+            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:3318:1: ( rule__DeclarePatternRole__Group_1_1__1__Impl rule__DeclarePatternRole__Group_1_1__2 )
+            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:3319:2: rule__DeclarePatternRole__Group_1_1__1__Impl rule__DeclarePatternRole__Group_1_1__2
+            {
+            pushFollow(FOLLOW_rule__DeclarePatternRole__Group_1_1__1__Impl_in_rule__DeclarePatternRole__Group_1_1__16694);
+            rule__DeclarePatternRole__Group_1_1__1__Impl();
+
+            state._fsp--;
+
+            pushFollow(FOLLOW_rule__DeclarePatternRole__Group_1_1__2_in_rule__DeclarePatternRole__Group_1_1__16697);
+            rule__DeclarePatternRole__Group_1_1__2();
+
+            state._fsp--;
+
+
+            }
+
+        }
+        catch (RecognitionException re) {
+            reportError(re);
+            recover(input,re);
+        }
+        finally {
+
+            	restoreStackSize(stackSize);
+
+        }
+        return ;
+    }
+    // $ANTLR end "rule__DeclarePatternRole__Group_1_1__1"
+
+
+    // $ANTLR start "rule__DeclarePatternRole__Group_1_1__1__Impl"
+    // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:3326:1: rule__DeclarePatternRole__Group_1_1__1__Impl : ( ( ( rule__DeclarePatternRole__AddAssignment_1_1_1 ) ) ( ( rule__DeclarePatternRole__AddAssignment_1_1_1 )* ) ) ;
+    public final void rule__DeclarePatternRole__Group_1_1__1__Impl() throws RecognitionException {
+
+        		int stackSize = keepStackSize();
+            
+        try {
+            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:3330:1: ( ( ( ( rule__DeclarePatternRole__AddAssignment_1_1_1 ) ) ( ( rule__DeclarePatternRole__AddAssignment_1_1_1 )* ) ) )
+            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:3331:1: ( ( ( rule__DeclarePatternRole__AddAssignment_1_1_1 ) ) ( ( rule__DeclarePatternRole__AddAssignment_1_1_1 )* ) )
+            {
+            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:3331:1: ( ( ( rule__DeclarePatternRole__AddAssignment_1_1_1 ) ) ( ( rule__DeclarePatternRole__AddAssignment_1_1_1 )* ) )
+            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:3332:1: ( ( rule__DeclarePatternRole__AddAssignment_1_1_1 ) ) ( ( rule__DeclarePatternRole__AddAssignment_1_1_1 )* )
+            {
+            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:3332:1: ( ( rule__DeclarePatternRole__AddAssignment_1_1_1 ) )
+            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:3333:1: ( rule__DeclarePatternRole__AddAssignment_1_1_1 )
+            {
+             before(grammarAccess.getDeclarePatternRoleAccess().getAddAssignment_1_1_1()); 
+            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:3334:1: ( rule__DeclarePatternRole__AddAssignment_1_1_1 )
+            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:3334:2: rule__DeclarePatternRole__AddAssignment_1_1_1
+            {
+            pushFollow(FOLLOW_rule__DeclarePatternRole__AddAssignment_1_1_1_in_rule__DeclarePatternRole__Group_1_1__1__Impl6726);
+            rule__DeclarePatternRole__AddAssignment_1_1_1();
+
+            state._fsp--;
+
+
+            }
+
+             after(grammarAccess.getDeclarePatternRoleAccess().getAddAssignment_1_1_1()); 
+
+            }
+
+            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:3337:1: ( ( rule__DeclarePatternRole__AddAssignment_1_1_1 )* )
+            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:3338:1: ( rule__DeclarePatternRole__AddAssignment_1_1_1 )*
+            {
+             before(grammarAccess.getDeclarePatternRoleAccess().getAddAssignment_1_1_1()); 
+            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:3339:1: ( rule__DeclarePatternRole__AddAssignment_1_1_1 )*
+            loop35:
+            do {
+                int alt35=2;
+                int LA35_0 = input.LA(1);
+
+                if ( (LA35_0==49) ) {
+                    alt35=1;
+                }
+
+
+                switch (alt35) {
+            	case 1 :
+            	    // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:3339:2: rule__DeclarePatternRole__AddAssignment_1_1_1
+            	    {
+            	    pushFollow(FOLLOW_rule__DeclarePatternRole__AddAssignment_1_1_1_in_rule__DeclarePatternRole__Group_1_1__1__Impl6738);
+            	    rule__DeclarePatternRole__AddAssignment_1_1_1();
+
+            	    state._fsp--;
+
+
+            	    }
+            	    break;
+
+            	default :
+            	    break loop35;
+                }
+            } while (true);
+
+             after(grammarAccess.getDeclarePatternRoleAccess().getAddAssignment_1_1_1()); 
+
+            }
+
+
+            }
+
+
+            }
+
+        }
+        catch (RecognitionException re) {
+            reportError(re);
+            recover(input,re);
+        }
+        finally {
+
+            	restoreStackSize(stackSize);
+
+        }
+        return ;
+    }
+    // $ANTLR end "rule__DeclarePatternRole__Group_1_1__1__Impl"
+
+
+    // $ANTLR start "rule__DeclarePatternRole__Group_1_1__2"
+    // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:3350:1: rule__DeclarePatternRole__Group_1_1__2 : rule__DeclarePatternRole__Group_1_1__2__Impl ;
+    public final void rule__DeclarePatternRole__Group_1_1__2() throws RecognitionException {
+
+        		int stackSize = keepStackSize();
+            
+        try {
+            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:3354:1: ( rule__DeclarePatternRole__Group_1_1__2__Impl )
+            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:3355:2: rule__DeclarePatternRole__Group_1_1__2__Impl
+            {
+            pushFollow(FOLLOW_rule__DeclarePatternRole__Group_1_1__2__Impl_in_rule__DeclarePatternRole__Group_1_1__26771);
+            rule__DeclarePatternRole__Group_1_1__2__Impl();
+
+            state._fsp--;
+
+
+            }
+
+        }
+        catch (RecognitionException re) {
+            reportError(re);
+            recover(input,re);
+        }
+        finally {
+
+            	restoreStackSize(stackSize);
+
+        }
+        return ;
+    }
+    // $ANTLR end "rule__DeclarePatternRole__Group_1_1__2"
+
+
+    // $ANTLR start "rule__DeclarePatternRole__Group_1_1__2__Impl"
+    // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:3361:1: rule__DeclarePatternRole__Group_1_1__2__Impl : ( ')' ) ;
+    public final void rule__DeclarePatternRole__Group_1_1__2__Impl() throws RecognitionException {
+
+        		int stackSize = keepStackSize();
+            
+        try {
+            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:3365:1: ( ( ')' ) )
+            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:3366:1: ( ')' )
+            {
+            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:3366:1: ( ')' )
+            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:3367:1: ')'
+            {
+             before(grammarAccess.getDeclarePatternRoleAccess().getRightParenthesisKeyword_1_1_2()); 
+            match(input,43,FOLLOW_43_in_rule__DeclarePatternRole__Group_1_1__2__Impl6799); 
+             after(grammarAccess.getDeclarePatternRoleAccess().getRightParenthesisKeyword_1_1_2()); 
+
+            }
+
+
+            }
+
+        }
+        catch (RecognitionException re) {
+            reportError(re);
+            recover(input,re);
+        }
+        finally {
+
+            	restoreStackSize(stackSize);
+
+        }
+        return ;
+    }
+    // $ANTLR end "rule__DeclarePatternRole__Group_1_1__2__Impl"
 
 
     // $ANTLR start "rule__DeleteAction__Group__0"
-    // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:3144:1: rule__DeleteAction__Group__0 : rule__DeleteAction__Group__0__Impl rule__DeleteAction__Group__1 ;
+    // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:3386:1: rule__DeleteAction__Group__0 : rule__DeleteAction__Group__0__Impl rule__DeleteAction__Group__1 ;
     public final void rule__DeleteAction__Group__0() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:3148:1: ( rule__DeleteAction__Group__0__Impl rule__DeleteAction__Group__1 )
-            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:3149:2: rule__DeleteAction__Group__0__Impl rule__DeleteAction__Group__1
+            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:3390:1: ( rule__DeleteAction__Group__0__Impl rule__DeleteAction__Group__1 )
+            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:3391:2: rule__DeleteAction__Group__0__Impl rule__DeleteAction__Group__1
             {
-            pushFollow(FOLLOW_rule__DeleteAction__Group__0__Impl_in_rule__DeleteAction__Group__06329);
+            pushFollow(FOLLOW_rule__DeleteAction__Group__0__Impl_in_rule__DeleteAction__Group__06836);
             rule__DeleteAction__Group__0__Impl();
 
             state._fsp--;
 
-            pushFollow(FOLLOW_rule__DeleteAction__Group__1_in_rule__DeleteAction__Group__06332);
+            pushFollow(FOLLOW_rule__DeleteAction__Group__1_in_rule__DeleteAction__Group__06839);
             rule__DeleteAction__Group__1();
 
             state._fsp--;
@@ -8505,20 +9266,20 @@ public class InternalFMLParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__DeleteAction__Group__0__Impl"
-    // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:3156:1: rule__DeleteAction__Group__0__Impl : ( 'delete' ) ;
+    // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:3398:1: rule__DeleteAction__Group__0__Impl : ( 'delete' ) ;
     public final void rule__DeleteAction__Group__0__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:3160:1: ( ( 'delete' ) )
-            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:3161:1: ( 'delete' )
+            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:3402:1: ( ( 'delete' ) )
+            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:3403:1: ( 'delete' )
             {
-            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:3161:1: ( 'delete' )
-            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:3162:1: 'delete'
+            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:3403:1: ( 'delete' )
+            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:3404:1: 'delete'
             {
              before(grammarAccess.getDeleteActionAccess().getDeleteKeyword_0()); 
-            match(input,48,FOLLOW_48_in_rule__DeleteAction__Group__0__Impl6360); 
+            match(input,48,FOLLOW_48_in_rule__DeleteAction__Group__0__Impl6867); 
              after(grammarAccess.getDeleteActionAccess().getDeleteKeyword_0()); 
 
             }
@@ -8542,21 +9303,21 @@ public class InternalFMLParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__DeleteAction__Group__1"
-    // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:3175:1: rule__DeleteAction__Group__1 : rule__DeleteAction__Group__1__Impl rule__DeleteAction__Group__2 ;
+    // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:3417:1: rule__DeleteAction__Group__1 : rule__DeleteAction__Group__1__Impl rule__DeleteAction__Group__2 ;
     public final void rule__DeleteAction__Group__1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:3179:1: ( rule__DeleteAction__Group__1__Impl rule__DeleteAction__Group__2 )
-            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:3180:2: rule__DeleteAction__Group__1__Impl rule__DeleteAction__Group__2
+            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:3421:1: ( rule__DeleteAction__Group__1__Impl rule__DeleteAction__Group__2 )
+            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:3422:2: rule__DeleteAction__Group__1__Impl rule__DeleteAction__Group__2
             {
-            pushFollow(FOLLOW_rule__DeleteAction__Group__1__Impl_in_rule__DeleteAction__Group__16391);
+            pushFollow(FOLLOW_rule__DeleteAction__Group__1__Impl_in_rule__DeleteAction__Group__16898);
             rule__DeleteAction__Group__1__Impl();
 
             state._fsp--;
 
-            pushFollow(FOLLOW_rule__DeleteAction__Group__2_in_rule__DeleteAction__Group__16394);
+            pushFollow(FOLLOW_rule__DeleteAction__Group__2_in_rule__DeleteAction__Group__16901);
             rule__DeleteAction__Group__2();
 
             state._fsp--;
@@ -8580,23 +9341,23 @@ public class InternalFMLParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__DeleteAction__Group__1__Impl"
-    // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:3187:1: rule__DeleteAction__Group__1__Impl : ( ( rule__DeleteAction__PatternRoleAssignment_1 ) ) ;
+    // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:3429:1: rule__DeleteAction__Group__1__Impl : ( ( rule__DeleteAction__PatternRoleAssignment_1 ) ) ;
     public final void rule__DeleteAction__Group__1__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:3191:1: ( ( ( rule__DeleteAction__PatternRoleAssignment_1 ) ) )
-            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:3192:1: ( ( rule__DeleteAction__PatternRoleAssignment_1 ) )
+            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:3433:1: ( ( ( rule__DeleteAction__PatternRoleAssignment_1 ) ) )
+            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:3434:1: ( ( rule__DeleteAction__PatternRoleAssignment_1 ) )
             {
-            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:3192:1: ( ( rule__DeleteAction__PatternRoleAssignment_1 ) )
-            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:3193:1: ( rule__DeleteAction__PatternRoleAssignment_1 )
+            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:3434:1: ( ( rule__DeleteAction__PatternRoleAssignment_1 ) )
+            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:3435:1: ( rule__DeleteAction__PatternRoleAssignment_1 )
             {
              before(grammarAccess.getDeleteActionAccess().getPatternRoleAssignment_1()); 
-            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:3194:1: ( rule__DeleteAction__PatternRoleAssignment_1 )
-            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:3194:2: rule__DeleteAction__PatternRoleAssignment_1
+            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:3436:1: ( rule__DeleteAction__PatternRoleAssignment_1 )
+            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:3436:2: rule__DeleteAction__PatternRoleAssignment_1
             {
-            pushFollow(FOLLOW_rule__DeleteAction__PatternRoleAssignment_1_in_rule__DeleteAction__Group__1__Impl6421);
+            pushFollow(FOLLOW_rule__DeleteAction__PatternRoleAssignment_1_in_rule__DeleteAction__Group__1__Impl6928);
             rule__DeleteAction__PatternRoleAssignment_1();
 
             state._fsp--;
@@ -8627,16 +9388,16 @@ public class InternalFMLParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__DeleteAction__Group__2"
-    // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:3204:1: rule__DeleteAction__Group__2 : rule__DeleteAction__Group__2__Impl ;
+    // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:3446:1: rule__DeleteAction__Group__2 : rule__DeleteAction__Group__2__Impl ;
     public final void rule__DeleteAction__Group__2() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:3208:1: ( rule__DeleteAction__Group__2__Impl )
-            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:3209:2: rule__DeleteAction__Group__2__Impl
+            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:3450:1: ( rule__DeleteAction__Group__2__Impl )
+            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:3451:2: rule__DeleteAction__Group__2__Impl
             {
-            pushFollow(FOLLOW_rule__DeleteAction__Group__2__Impl_in_rule__DeleteAction__Group__26451);
+            pushFollow(FOLLOW_rule__DeleteAction__Group__2__Impl_in_rule__DeleteAction__Group__26958);
             rule__DeleteAction__Group__2__Impl();
 
             state._fsp--;
@@ -8660,20 +9421,20 @@ public class InternalFMLParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__DeleteAction__Group__2__Impl"
-    // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:3215:1: rule__DeleteAction__Group__2__Impl : ( ';' ) ;
+    // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:3457:1: rule__DeleteAction__Group__2__Impl : ( ';' ) ;
     public final void rule__DeleteAction__Group__2__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:3219:1: ( ( ';' ) )
-            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:3220:1: ( ';' )
+            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:3461:1: ( ( ';' ) )
+            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:3462:1: ( ';' )
             {
-            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:3220:1: ( ';' )
-            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:3221:1: ';'
+            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:3462:1: ( ';' )
+            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:3463:1: ';'
             {
              before(grammarAccess.getDeleteActionAccess().getSemicolonKeyword_2()); 
-            match(input,36,FOLLOW_36_in_rule__DeleteAction__Group__2__Impl6479); 
+            match(input,36,FOLLOW_36_in_rule__DeleteAction__Group__2__Impl6986); 
              after(grammarAccess.getDeleteActionAccess().getSemicolonKeyword_2()); 
 
             }
@@ -8696,21 +9457,561 @@ public class InternalFMLParser extends AbstractInternalContentAssistParser {
     // $ANTLR end "rule__DeleteAction__Group__2__Impl"
 
 
+    // $ANTLR start "rule__AddEMFObjectIndividual__Group__0"
+    // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:3482:1: rule__AddEMFObjectIndividual__Group__0 : rule__AddEMFObjectIndividual__Group__0__Impl rule__AddEMFObjectIndividual__Group__1 ;
+    public final void rule__AddEMFObjectIndividual__Group__0() throws RecognitionException {
+
+        		int stackSize = keepStackSize();
+            
+        try {
+            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:3486:1: ( rule__AddEMFObjectIndividual__Group__0__Impl rule__AddEMFObjectIndividual__Group__1 )
+            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:3487:2: rule__AddEMFObjectIndividual__Group__0__Impl rule__AddEMFObjectIndividual__Group__1
+            {
+            pushFollow(FOLLOW_rule__AddEMFObjectIndividual__Group__0__Impl_in_rule__AddEMFObjectIndividual__Group__07023);
+            rule__AddEMFObjectIndividual__Group__0__Impl();
+
+            state._fsp--;
+
+            pushFollow(FOLLOW_rule__AddEMFObjectIndividual__Group__1_in_rule__AddEMFObjectIndividual__Group__07026);
+            rule__AddEMFObjectIndividual__Group__1();
+
+            state._fsp--;
+
+
+            }
+
+        }
+        catch (RecognitionException re) {
+            reportError(re);
+            recover(input,re);
+        }
+        finally {
+
+            	restoreStackSize(stackSize);
+
+        }
+        return ;
+    }
+    // $ANTLR end "rule__AddEMFObjectIndividual__Group__0"
+
+
+    // $ANTLR start "rule__AddEMFObjectIndividual__Group__0__Impl"
+    // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:3494:1: rule__AddEMFObjectIndividual__Group__0__Impl : ( 'AddEMFObjectIndividual' ) ;
+    public final void rule__AddEMFObjectIndividual__Group__0__Impl() throws RecognitionException {
+
+        		int stackSize = keepStackSize();
+            
+        try {
+            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:3498:1: ( ( 'AddEMFObjectIndividual' ) )
+            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:3499:1: ( 'AddEMFObjectIndividual' )
+            {
+            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:3499:1: ( 'AddEMFObjectIndividual' )
+            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:3500:1: 'AddEMFObjectIndividual'
+            {
+             before(grammarAccess.getAddEMFObjectIndividualAccess().getAddEMFObjectIndividualKeyword_0()); 
+            match(input,49,FOLLOW_49_in_rule__AddEMFObjectIndividual__Group__0__Impl7054); 
+             after(grammarAccess.getAddEMFObjectIndividualAccess().getAddEMFObjectIndividualKeyword_0()); 
+
+            }
+
+
+            }
+
+        }
+        catch (RecognitionException re) {
+            reportError(re);
+            recover(input,re);
+        }
+        finally {
+
+            	restoreStackSize(stackSize);
+
+        }
+        return ;
+    }
+    // $ANTLR end "rule__AddEMFObjectIndividual__Group__0__Impl"
+
+
+    // $ANTLR start "rule__AddEMFObjectIndividual__Group__1"
+    // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:3513:1: rule__AddEMFObjectIndividual__Group__1 : rule__AddEMFObjectIndividual__Group__1__Impl rule__AddEMFObjectIndividual__Group__2 ;
+    public final void rule__AddEMFObjectIndividual__Group__1() throws RecognitionException {
+
+        		int stackSize = keepStackSize();
+            
+        try {
+            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:3517:1: ( rule__AddEMFObjectIndividual__Group__1__Impl rule__AddEMFObjectIndividual__Group__2 )
+            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:3518:2: rule__AddEMFObjectIndividual__Group__1__Impl rule__AddEMFObjectIndividual__Group__2
+            {
+            pushFollow(FOLLOW_rule__AddEMFObjectIndividual__Group__1__Impl_in_rule__AddEMFObjectIndividual__Group__17085);
+            rule__AddEMFObjectIndividual__Group__1__Impl();
+
+            state._fsp--;
+
+            pushFollow(FOLLOW_rule__AddEMFObjectIndividual__Group__2_in_rule__AddEMFObjectIndividual__Group__17088);
+            rule__AddEMFObjectIndividual__Group__2();
+
+            state._fsp--;
+
+
+            }
+
+        }
+        catch (RecognitionException re) {
+            reportError(re);
+            recover(input,re);
+        }
+        finally {
+
+            	restoreStackSize(stackSize);
+
+        }
+        return ;
+    }
+    // $ANTLR end "rule__AddEMFObjectIndividual__Group__1"
+
+
+    // $ANTLR start "rule__AddEMFObjectIndividual__Group__1__Impl"
+    // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:3525:1: rule__AddEMFObjectIndividual__Group__1__Impl : ( 'conformTo' ) ;
+    public final void rule__AddEMFObjectIndividual__Group__1__Impl() throws RecognitionException {
+
+        		int stackSize = keepStackSize();
+            
+        try {
+            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:3529:1: ( ( 'conformTo' ) )
+            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:3530:1: ( 'conformTo' )
+            {
+            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:3530:1: ( 'conformTo' )
+            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:3531:1: 'conformTo'
+            {
+             before(grammarAccess.getAddEMFObjectIndividualAccess().getConformToKeyword_1()); 
+            match(input,33,FOLLOW_33_in_rule__AddEMFObjectIndividual__Group__1__Impl7116); 
+             after(grammarAccess.getAddEMFObjectIndividualAccess().getConformToKeyword_1()); 
+
+            }
+
+
+            }
+
+        }
+        catch (RecognitionException re) {
+            reportError(re);
+            recover(input,re);
+        }
+        finally {
+
+            	restoreStackSize(stackSize);
+
+        }
+        return ;
+    }
+    // $ANTLR end "rule__AddEMFObjectIndividual__Group__1__Impl"
+
+
+    // $ANTLR start "rule__AddEMFObjectIndividual__Group__2"
+    // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:3544:1: rule__AddEMFObjectIndividual__Group__2 : rule__AddEMFObjectIndividual__Group__2__Impl rule__AddEMFObjectIndividual__Group__3 ;
+    public final void rule__AddEMFObjectIndividual__Group__2() throws RecognitionException {
+
+        		int stackSize = keepStackSize();
+            
+        try {
+            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:3548:1: ( rule__AddEMFObjectIndividual__Group__2__Impl rule__AddEMFObjectIndividual__Group__3 )
+            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:3549:2: rule__AddEMFObjectIndividual__Group__2__Impl rule__AddEMFObjectIndividual__Group__3
+            {
+            pushFollow(FOLLOW_rule__AddEMFObjectIndividual__Group__2__Impl_in_rule__AddEMFObjectIndividual__Group__27147);
+            rule__AddEMFObjectIndividual__Group__2__Impl();
+
+            state._fsp--;
+
+            pushFollow(FOLLOW_rule__AddEMFObjectIndividual__Group__3_in_rule__AddEMFObjectIndividual__Group__27150);
+            rule__AddEMFObjectIndividual__Group__3();
+
+            state._fsp--;
+
+
+            }
+
+        }
+        catch (RecognitionException re) {
+            reportError(re);
+            recover(input,re);
+        }
+        finally {
+
+            	restoreStackSize(stackSize);
+
+        }
+        return ;
+    }
+    // $ANTLR end "rule__AddEMFObjectIndividual__Group__2"
+
+
+    // $ANTLR start "rule__AddEMFObjectIndividual__Group__2__Impl"
+    // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:3556:1: rule__AddEMFObjectIndividual__Group__2__Impl : ( ( rule__AddEMFObjectIndividual__EditionPatternAssignment_2 ) ) ;
+    public final void rule__AddEMFObjectIndividual__Group__2__Impl() throws RecognitionException {
+
+        		int stackSize = keepStackSize();
+            
+        try {
+            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:3560:1: ( ( ( rule__AddEMFObjectIndividual__EditionPatternAssignment_2 ) ) )
+            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:3561:1: ( ( rule__AddEMFObjectIndividual__EditionPatternAssignment_2 ) )
+            {
+            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:3561:1: ( ( rule__AddEMFObjectIndividual__EditionPatternAssignment_2 ) )
+            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:3562:1: ( rule__AddEMFObjectIndividual__EditionPatternAssignment_2 )
+            {
+             before(grammarAccess.getAddEMFObjectIndividualAccess().getEditionPatternAssignment_2()); 
+            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:3563:1: ( rule__AddEMFObjectIndividual__EditionPatternAssignment_2 )
+            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:3563:2: rule__AddEMFObjectIndividual__EditionPatternAssignment_2
+            {
+            pushFollow(FOLLOW_rule__AddEMFObjectIndividual__EditionPatternAssignment_2_in_rule__AddEMFObjectIndividual__Group__2__Impl7177);
+            rule__AddEMFObjectIndividual__EditionPatternAssignment_2();
+
+            state._fsp--;
+
+
+            }
+
+             after(grammarAccess.getAddEMFObjectIndividualAccess().getEditionPatternAssignment_2()); 
+
+            }
+
+
+            }
+
+        }
+        catch (RecognitionException re) {
+            reportError(re);
+            recover(input,re);
+        }
+        finally {
+
+            	restoreStackSize(stackSize);
+
+        }
+        return ;
+    }
+    // $ANTLR end "rule__AddEMFObjectIndividual__Group__2__Impl"
+
+
+    // $ANTLR start "rule__AddEMFObjectIndividual__Group__3"
+    // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:3573:1: rule__AddEMFObjectIndividual__Group__3 : rule__AddEMFObjectIndividual__Group__3__Impl rule__AddEMFObjectIndividual__Group__4 ;
+    public final void rule__AddEMFObjectIndividual__Group__3() throws RecognitionException {
+
+        		int stackSize = keepStackSize();
+            
+        try {
+            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:3577:1: ( rule__AddEMFObjectIndividual__Group__3__Impl rule__AddEMFObjectIndividual__Group__4 )
+            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:3578:2: rule__AddEMFObjectIndividual__Group__3__Impl rule__AddEMFObjectIndividual__Group__4
+            {
+            pushFollow(FOLLOW_rule__AddEMFObjectIndividual__Group__3__Impl_in_rule__AddEMFObjectIndividual__Group__37207);
+            rule__AddEMFObjectIndividual__Group__3__Impl();
+
+            state._fsp--;
+
+            pushFollow(FOLLOW_rule__AddEMFObjectIndividual__Group__4_in_rule__AddEMFObjectIndividual__Group__37210);
+            rule__AddEMFObjectIndividual__Group__4();
+
+            state._fsp--;
+
+
+            }
+
+        }
+        catch (RecognitionException re) {
+            reportError(re);
+            recover(input,re);
+        }
+        finally {
+
+            	restoreStackSize(stackSize);
+
+        }
+        return ;
+    }
+    // $ANTLR end "rule__AddEMFObjectIndividual__Group__3"
+
+
+    // $ANTLR start "rule__AddEMFObjectIndividual__Group__3__Impl"
+    // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:3585:1: rule__AddEMFObjectIndividual__Group__3__Impl : ( 'from' ) ;
+    public final void rule__AddEMFObjectIndividual__Group__3__Impl() throws RecognitionException {
+
+        		int stackSize = keepStackSize();
+            
+        try {
+            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:3589:1: ( ( 'from' ) )
+            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:3590:1: ( 'from' )
+            {
+            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:3590:1: ( 'from' )
+            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:3591:1: 'from'
+            {
+             before(grammarAccess.getAddEMFObjectIndividualAccess().getFromKeyword_3()); 
+            match(input,41,FOLLOW_41_in_rule__AddEMFObjectIndividual__Group__3__Impl7238); 
+             after(grammarAccess.getAddEMFObjectIndividualAccess().getFromKeyword_3()); 
+
+            }
+
+
+            }
+
+        }
+        catch (RecognitionException re) {
+            reportError(re);
+            recover(input,re);
+        }
+        finally {
+
+            	restoreStackSize(stackSize);
+
+        }
+        return ;
+    }
+    // $ANTLR end "rule__AddEMFObjectIndividual__Group__3__Impl"
+
+
+    // $ANTLR start "rule__AddEMFObjectIndividual__Group__4"
+    // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:3604:1: rule__AddEMFObjectIndividual__Group__4 : rule__AddEMFObjectIndividual__Group__4__Impl rule__AddEMFObjectIndividual__Group__5 ;
+    public final void rule__AddEMFObjectIndividual__Group__4() throws RecognitionException {
+
+        		int stackSize = keepStackSize();
+            
+        try {
+            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:3608:1: ( rule__AddEMFObjectIndividual__Group__4__Impl rule__AddEMFObjectIndividual__Group__5 )
+            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:3609:2: rule__AddEMFObjectIndividual__Group__4__Impl rule__AddEMFObjectIndividual__Group__5
+            {
+            pushFollow(FOLLOW_rule__AddEMFObjectIndividual__Group__4__Impl_in_rule__AddEMFObjectIndividual__Group__47269);
+            rule__AddEMFObjectIndividual__Group__4__Impl();
+
+            state._fsp--;
+
+            pushFollow(FOLLOW_rule__AddEMFObjectIndividual__Group__5_in_rule__AddEMFObjectIndividual__Group__47272);
+            rule__AddEMFObjectIndividual__Group__5();
+
+            state._fsp--;
+
+
+            }
+
+        }
+        catch (RecognitionException re) {
+            reportError(re);
+            recover(input,re);
+        }
+        finally {
+
+            	restoreStackSize(stackSize);
+
+        }
+        return ;
+    }
+    // $ANTLR end "rule__AddEMFObjectIndividual__Group__4"
+
+
+    // $ANTLR start "rule__AddEMFObjectIndividual__Group__4__Impl"
+    // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:3616:1: rule__AddEMFObjectIndividual__Group__4__Impl : ( ( rule__AddEMFObjectIndividual__ModelSlotAssignment_4 ) ) ;
+    public final void rule__AddEMFObjectIndividual__Group__4__Impl() throws RecognitionException {
+
+        		int stackSize = keepStackSize();
+            
+        try {
+            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:3620:1: ( ( ( rule__AddEMFObjectIndividual__ModelSlotAssignment_4 ) ) )
+            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:3621:1: ( ( rule__AddEMFObjectIndividual__ModelSlotAssignment_4 ) )
+            {
+            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:3621:1: ( ( rule__AddEMFObjectIndividual__ModelSlotAssignment_4 ) )
+            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:3622:1: ( rule__AddEMFObjectIndividual__ModelSlotAssignment_4 )
+            {
+             before(grammarAccess.getAddEMFObjectIndividualAccess().getModelSlotAssignment_4()); 
+            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:3623:1: ( rule__AddEMFObjectIndividual__ModelSlotAssignment_4 )
+            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:3623:2: rule__AddEMFObjectIndividual__ModelSlotAssignment_4
+            {
+            pushFollow(FOLLOW_rule__AddEMFObjectIndividual__ModelSlotAssignment_4_in_rule__AddEMFObjectIndividual__Group__4__Impl7299);
+            rule__AddEMFObjectIndividual__ModelSlotAssignment_4();
+
+            state._fsp--;
+
+
+            }
+
+             after(grammarAccess.getAddEMFObjectIndividualAccess().getModelSlotAssignment_4()); 
+
+            }
+
+
+            }
+
+        }
+        catch (RecognitionException re) {
+            reportError(re);
+            recover(input,re);
+        }
+        finally {
+
+            	restoreStackSize(stackSize);
+
+        }
+        return ;
+    }
+    // $ANTLR end "rule__AddEMFObjectIndividual__Group__4__Impl"
+
+
+    // $ANTLR start "rule__AddEMFObjectIndividual__Group__5"
+    // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:3633:1: rule__AddEMFObjectIndividual__Group__5 : rule__AddEMFObjectIndividual__Group__5__Impl rule__AddEMFObjectIndividual__Group__6 ;
+    public final void rule__AddEMFObjectIndividual__Group__5() throws RecognitionException {
+
+        		int stackSize = keepStackSize();
+            
+        try {
+            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:3637:1: ( rule__AddEMFObjectIndividual__Group__5__Impl rule__AddEMFObjectIndividual__Group__6 )
+            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:3638:2: rule__AddEMFObjectIndividual__Group__5__Impl rule__AddEMFObjectIndividual__Group__6
+            {
+            pushFollow(FOLLOW_rule__AddEMFObjectIndividual__Group__5__Impl_in_rule__AddEMFObjectIndividual__Group__57329);
+            rule__AddEMFObjectIndividual__Group__5__Impl();
+
+            state._fsp--;
+
+            pushFollow(FOLLOW_rule__AddEMFObjectIndividual__Group__6_in_rule__AddEMFObjectIndividual__Group__57332);
+            rule__AddEMFObjectIndividual__Group__6();
+
+            state._fsp--;
+
+
+            }
+
+        }
+        catch (RecognitionException re) {
+            reportError(re);
+            recover(input,re);
+        }
+        finally {
+
+            	restoreStackSize(stackSize);
+
+        }
+        return ;
+    }
+    // $ANTLR end "rule__AddEMFObjectIndividual__Group__5"
+
+
+    // $ANTLR start "rule__AddEMFObjectIndividual__Group__5__Impl"
+    // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:3645:1: rule__AddEMFObjectIndividual__Group__5__Impl : ( '{' ) ;
+    public final void rule__AddEMFObjectIndividual__Group__5__Impl() throws RecognitionException {
+
+        		int stackSize = keepStackSize();
+            
+        try {
+            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:3649:1: ( ( '{' ) )
+            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:3650:1: ( '{' )
+            {
+            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:3650:1: ( '{' )
+            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:3651:1: '{'
+            {
+             before(grammarAccess.getAddEMFObjectIndividualAccess().getLeftCurlyBracketKeyword_5()); 
+            match(input,29,FOLLOW_29_in_rule__AddEMFObjectIndividual__Group__5__Impl7360); 
+             after(grammarAccess.getAddEMFObjectIndividualAccess().getLeftCurlyBracketKeyword_5()); 
+
+            }
+
+
+            }
+
+        }
+        catch (RecognitionException re) {
+            reportError(re);
+            recover(input,re);
+        }
+        finally {
+
+            	restoreStackSize(stackSize);
+
+        }
+        return ;
+    }
+    // $ANTLR end "rule__AddEMFObjectIndividual__Group__5__Impl"
+
+
+    // $ANTLR start "rule__AddEMFObjectIndividual__Group__6"
+    // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:3664:1: rule__AddEMFObjectIndividual__Group__6 : rule__AddEMFObjectIndividual__Group__6__Impl ;
+    public final void rule__AddEMFObjectIndividual__Group__6() throws RecognitionException {
+
+        		int stackSize = keepStackSize();
+            
+        try {
+            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:3668:1: ( rule__AddEMFObjectIndividual__Group__6__Impl )
+            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:3669:2: rule__AddEMFObjectIndividual__Group__6__Impl
+            {
+            pushFollow(FOLLOW_rule__AddEMFObjectIndividual__Group__6__Impl_in_rule__AddEMFObjectIndividual__Group__67391);
+            rule__AddEMFObjectIndividual__Group__6__Impl();
+
+            state._fsp--;
+
+
+            }
+
+        }
+        catch (RecognitionException re) {
+            reportError(re);
+            recover(input,re);
+        }
+        finally {
+
+            	restoreStackSize(stackSize);
+
+        }
+        return ;
+    }
+    // $ANTLR end "rule__AddEMFObjectIndividual__Group__6"
+
+
+    // $ANTLR start "rule__AddEMFObjectIndividual__Group__6__Impl"
+    // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:3675:1: rule__AddEMFObjectIndividual__Group__6__Impl : ( '}' ) ;
+    public final void rule__AddEMFObjectIndividual__Group__6__Impl() throws RecognitionException {
+
+        		int stackSize = keepStackSize();
+            
+        try {
+            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:3679:1: ( ( '}' ) )
+            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:3680:1: ( '}' )
+            {
+            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:3680:1: ( '}' )
+            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:3681:1: '}'
+            {
+             before(grammarAccess.getAddEMFObjectIndividualAccess().getRightCurlyBracketKeyword_6()); 
+            match(input,30,FOLLOW_30_in_rule__AddEMFObjectIndividual__Group__6__Impl7419); 
+             after(grammarAccess.getAddEMFObjectIndividualAccess().getRightCurlyBracketKeyword_6()); 
+
+            }
+
+
+            }
+
+        }
+        catch (RecognitionException re) {
+            reportError(re);
+            recover(input,re);
+        }
+        finally {
+
+            	restoreStackSize(stackSize);
+
+        }
+        return ;
+    }
+    // $ANTLR end "rule__AddEMFObjectIndividual__Group__6__Impl"
+
+
     // $ANTLR start "rule__ViewDef__NameAssignment_1"
-    // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:3241:1: rule__ViewDef__NameAssignment_1 : ( RULE_ID ) ;
+    // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:3709:1: rule__ViewDef__NameAssignment_1 : ( RULE_ID ) ;
     public final void rule__ViewDef__NameAssignment_1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:3245:1: ( ( RULE_ID ) )
-            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:3246:1: ( RULE_ID )
+            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:3713:1: ( ( RULE_ID ) )
+            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:3714:1: ( RULE_ID )
             {
-            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:3246:1: ( RULE_ID )
-            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:3247:1: RULE_ID
+            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:3714:1: ( RULE_ID )
+            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:3715:1: RULE_ID
             {
              before(grammarAccess.getViewDefAccess().getNameIDTerminalRuleCall_1_0()); 
-            match(input,RULE_ID,FOLLOW_RULE_ID_in_rule__ViewDef__NameAssignment_16521); 
+            match(input,RULE_ID,FOLLOW_RULE_ID_in_rule__ViewDef__NameAssignment_17469); 
              after(grammarAccess.getViewDefAccess().getNameIDTerminalRuleCall_1_0()); 
 
             }
@@ -8734,20 +10035,20 @@ public class InternalFMLParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__ViewDef__UriAssignment_4"
-    // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:3256:1: rule__ViewDef__UriAssignment_4 : ( RULE_URISTRING ) ;
+    // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:3724:1: rule__ViewDef__UriAssignment_4 : ( RULE_URISTRING ) ;
     public final void rule__ViewDef__UriAssignment_4() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:3260:1: ( ( RULE_URISTRING ) )
-            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:3261:1: ( RULE_URISTRING )
+            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:3728:1: ( ( RULE_URISTRING ) )
+            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:3729:1: ( RULE_URISTRING )
             {
-            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:3261:1: ( RULE_URISTRING )
-            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:3262:1: RULE_URISTRING
+            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:3729:1: ( RULE_URISTRING )
+            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:3730:1: RULE_URISTRING
             {
              before(grammarAccess.getViewDefAccess().getUriURISTRINGTerminalRuleCall_4_0()); 
-            match(input,RULE_URISTRING,FOLLOW_RULE_URISTRING_in_rule__ViewDef__UriAssignment_46552); 
+            match(input,RULE_URISTRING,FOLLOW_RULE_URISTRING_in_rule__ViewDef__UriAssignment_47500); 
              after(grammarAccess.getViewDefAccess().getUriURISTRINGTerminalRuleCall_4_0()); 
 
             }
@@ -8771,20 +10072,20 @@ public class InternalFMLParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__ViewDef__ElementsAssignment_6"
-    // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:3271:1: rule__ViewDef__ElementsAssignment_6 : ( ruleVirtualModel ) ;
+    // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:3739:1: rule__ViewDef__ElementsAssignment_6 : ( ruleVirtualModel ) ;
     public final void rule__ViewDef__ElementsAssignment_6() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:3275:1: ( ( ruleVirtualModel ) )
-            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:3276:1: ( ruleVirtualModel )
+            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:3743:1: ( ( ruleVirtualModel ) )
+            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:3744:1: ( ruleVirtualModel )
             {
-            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:3276:1: ( ruleVirtualModel )
-            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:3277:1: ruleVirtualModel
+            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:3744:1: ( ruleVirtualModel )
+            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:3745:1: ruleVirtualModel
             {
              before(grammarAccess.getViewDefAccess().getElementsVirtualModelParserRuleCall_6_0()); 
-            pushFollow(FOLLOW_ruleVirtualModel_in_rule__ViewDef__ElementsAssignment_66583);
+            pushFollow(FOLLOW_ruleVirtualModel_in_rule__ViewDef__ElementsAssignment_67531);
             ruleVirtualModel();
 
             state._fsp--;
@@ -8812,20 +10113,20 @@ public class InternalFMLParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__VirtualModel__NameAssignment_1"
-    // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:3286:1: rule__VirtualModel__NameAssignment_1 : ( RULE_ID ) ;
+    // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:3754:1: rule__VirtualModel__NameAssignment_1 : ( RULE_ID ) ;
     public final void rule__VirtualModel__NameAssignment_1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:3290:1: ( ( RULE_ID ) )
-            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:3291:1: ( RULE_ID )
+            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:3758:1: ( ( RULE_ID ) )
+            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:3759:1: ( RULE_ID )
             {
-            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:3291:1: ( RULE_ID )
-            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:3292:1: RULE_ID
+            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:3759:1: ( RULE_ID )
+            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:3760:1: RULE_ID
             {
              before(grammarAccess.getVirtualModelAccess().getNameIDTerminalRuleCall_1_0()); 
-            match(input,RULE_ID,FOLLOW_RULE_ID_in_rule__VirtualModel__NameAssignment_16614); 
+            match(input,RULE_ID,FOLLOW_RULE_ID_in_rule__VirtualModel__NameAssignment_17562); 
              after(grammarAccess.getVirtualModelAccess().getNameIDTerminalRuleCall_1_0()); 
 
             }
@@ -8849,20 +10150,20 @@ public class InternalFMLParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__VirtualModel__TypeAssignment_2_2"
-    // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:3301:1: rule__VirtualModel__TypeAssignment_2_2 : ( ruleVMTYPE ) ;
+    // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:3769:1: rule__VirtualModel__TypeAssignment_2_2 : ( ruleVMTYPE ) ;
     public final void rule__VirtualModel__TypeAssignment_2_2() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:3305:1: ( ( ruleVMTYPE ) )
-            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:3306:1: ( ruleVMTYPE )
+            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:3773:1: ( ( ruleVMTYPE ) )
+            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:3774:1: ( ruleVMTYPE )
             {
-            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:3306:1: ( ruleVMTYPE )
-            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:3307:1: ruleVMTYPE
+            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:3774:1: ( ruleVMTYPE )
+            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:3775:1: ruleVMTYPE
             {
              before(grammarAccess.getVirtualModelAccess().getTypeVMTYPEEnumRuleCall_2_2_0()); 
-            pushFollow(FOLLOW_ruleVMTYPE_in_rule__VirtualModel__TypeAssignment_2_26645);
+            pushFollow(FOLLOW_ruleVMTYPE_in_rule__VirtualModel__TypeAssignment_2_27593);
             ruleVMTYPE();
 
             state._fsp--;
@@ -8890,20 +10191,20 @@ public class InternalFMLParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__VirtualModel__UriAssignment_5"
-    // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:3316:1: rule__VirtualModel__UriAssignment_5 : ( RULE_URISTRING ) ;
+    // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:3784:1: rule__VirtualModel__UriAssignment_5 : ( RULE_URISTRING ) ;
     public final void rule__VirtualModel__UriAssignment_5() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:3320:1: ( ( RULE_URISTRING ) )
-            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:3321:1: ( RULE_URISTRING )
+            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:3788:1: ( ( RULE_URISTRING ) )
+            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:3789:1: ( RULE_URISTRING )
             {
-            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:3321:1: ( RULE_URISTRING )
-            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:3322:1: RULE_URISTRING
+            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:3789:1: ( RULE_URISTRING )
+            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:3790:1: RULE_URISTRING
             {
              before(grammarAccess.getVirtualModelAccess().getUriURISTRINGTerminalRuleCall_5_0()); 
-            match(input,RULE_URISTRING,FOLLOW_RULE_URISTRING_in_rule__VirtualModel__UriAssignment_56676); 
+            match(input,RULE_URISTRING,FOLLOW_RULE_URISTRING_in_rule__VirtualModel__UriAssignment_57624); 
              after(grammarAccess.getVirtualModelAccess().getUriURISTRINGTerminalRuleCall_5_0()); 
 
             }
@@ -8927,20 +10228,20 @@ public class InternalFMLParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__VirtualModel__ModelSlotsAssignment_7"
-    // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:3331:1: rule__VirtualModel__ModelSlotsAssignment_7 : ( ruleModelSlot ) ;
+    // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:3799:1: rule__VirtualModel__ModelSlotsAssignment_7 : ( ruleModelSlot ) ;
     public final void rule__VirtualModel__ModelSlotsAssignment_7() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:3335:1: ( ( ruleModelSlot ) )
-            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:3336:1: ( ruleModelSlot )
+            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:3803:1: ( ( ruleModelSlot ) )
+            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:3804:1: ( ruleModelSlot )
             {
-            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:3336:1: ( ruleModelSlot )
-            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:3337:1: ruleModelSlot
+            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:3804:1: ( ruleModelSlot )
+            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:3805:1: ruleModelSlot
             {
              before(grammarAccess.getVirtualModelAccess().getModelSlotsModelSlotParserRuleCall_7_0()); 
-            pushFollow(FOLLOW_ruleModelSlot_in_rule__VirtualModel__ModelSlotsAssignment_76707);
+            pushFollow(FOLLOW_ruleModelSlot_in_rule__VirtualModel__ModelSlotsAssignment_77655);
             ruleModelSlot();
 
             state._fsp--;
@@ -8968,20 +10269,20 @@ public class InternalFMLParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__VirtualModel__EditionPatternsAssignment_8"
-    // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:3346:1: rule__VirtualModel__EditionPatternsAssignment_8 : ( ruleEditionPattern ) ;
+    // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:3814:1: rule__VirtualModel__EditionPatternsAssignment_8 : ( ruleEditionPattern ) ;
     public final void rule__VirtualModel__EditionPatternsAssignment_8() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:3350:1: ( ( ruleEditionPattern ) )
-            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:3351:1: ( ruleEditionPattern )
+            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:3818:1: ( ( ruleEditionPattern ) )
+            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:3819:1: ( ruleEditionPattern )
             {
-            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:3351:1: ( ruleEditionPattern )
-            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:3352:1: ruleEditionPattern
+            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:3819:1: ( ruleEditionPattern )
+            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:3820:1: ruleEditionPattern
             {
              before(grammarAccess.getVirtualModelAccess().getEditionPatternsEditionPatternParserRuleCall_8_0()); 
-            pushFollow(FOLLOW_ruleEditionPattern_in_rule__VirtualModel__EditionPatternsAssignment_86738);
+            pushFollow(FOLLOW_ruleEditionPattern_in_rule__VirtualModel__EditionPatternsAssignment_87686);
             ruleEditionPattern();
 
             state._fsp--;
@@ -9009,20 +10310,20 @@ public class InternalFMLParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__ModelSlot__NameAssignment_1"
-    // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:3361:1: rule__ModelSlot__NameAssignment_1 : ( RULE_ID ) ;
+    // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:3829:1: rule__ModelSlot__NameAssignment_1 : ( RULE_ID ) ;
     public final void rule__ModelSlot__NameAssignment_1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:3365:1: ( ( RULE_ID ) )
-            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:3366:1: ( RULE_ID )
+            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:3833:1: ( ( RULE_ID ) )
+            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:3834:1: ( RULE_ID )
             {
-            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:3366:1: ( RULE_ID )
-            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:3367:1: RULE_ID
+            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:3834:1: ( RULE_ID )
+            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:3835:1: RULE_ID
             {
              before(grammarAccess.getModelSlotAccess().getNameIDTerminalRuleCall_1_0()); 
-            match(input,RULE_ID,FOLLOW_RULE_ID_in_rule__ModelSlot__NameAssignment_16769); 
+            match(input,RULE_ID,FOLLOW_RULE_ID_in_rule__ModelSlot__NameAssignment_17717); 
              after(grammarAccess.getModelSlotAccess().getNameIDTerminalRuleCall_1_0()); 
 
             }
@@ -9046,20 +10347,20 @@ public class InternalFMLParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__ModelSlot__TypeAssignment_4"
-    // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:3376:1: rule__ModelSlot__TypeAssignment_4 : ( ruleMSTYPE ) ;
+    // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:3844:1: rule__ModelSlot__TypeAssignment_4 : ( ruleMSTYPE ) ;
     public final void rule__ModelSlot__TypeAssignment_4() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:3380:1: ( ( ruleMSTYPE ) )
-            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:3381:1: ( ruleMSTYPE )
+            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:3848:1: ( ( ruleMSTYPE ) )
+            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:3849:1: ( ruleMSTYPE )
             {
-            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:3381:1: ( ruleMSTYPE )
-            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:3382:1: ruleMSTYPE
+            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:3849:1: ( ruleMSTYPE )
+            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:3850:1: ruleMSTYPE
             {
              before(grammarAccess.getModelSlotAccess().getTypeMSTYPEEnumRuleCall_4_0()); 
-            pushFollow(FOLLOW_ruleMSTYPE_in_rule__ModelSlot__TypeAssignment_46800);
+            pushFollow(FOLLOW_ruleMSTYPE_in_rule__ModelSlot__TypeAssignment_47748);
             ruleMSTYPE();
 
             state._fsp--;
@@ -9087,20 +10388,20 @@ public class InternalFMLParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__ModelSlot__UriAssignment_7"
-    // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:3391:1: rule__ModelSlot__UriAssignment_7 : ( RULE_URISTRING ) ;
+    // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:3859:1: rule__ModelSlot__UriAssignment_7 : ( RULE_URISTRING ) ;
     public final void rule__ModelSlot__UriAssignment_7() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:3395:1: ( ( RULE_URISTRING ) )
-            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:3396:1: ( RULE_URISTRING )
+            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:3863:1: ( ( RULE_URISTRING ) )
+            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:3864:1: ( RULE_URISTRING )
             {
-            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:3396:1: ( RULE_URISTRING )
-            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:3397:1: RULE_URISTRING
+            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:3864:1: ( RULE_URISTRING )
+            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:3865:1: RULE_URISTRING
             {
              before(grammarAccess.getModelSlotAccess().getUriURISTRINGTerminalRuleCall_7_0()); 
-            match(input,RULE_URISTRING,FOLLOW_RULE_URISTRING_in_rule__ModelSlot__UriAssignment_76831); 
+            match(input,RULE_URISTRING,FOLLOW_RULE_URISTRING_in_rule__ModelSlot__UriAssignment_77779); 
              after(grammarAccess.getModelSlotAccess().getUriURISTRINGTerminalRuleCall_7_0()); 
 
             }
@@ -9124,20 +10425,20 @@ public class InternalFMLParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__ModelSlot__RequiredAssignment_10"
-    // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:3406:1: rule__ModelSlot__RequiredAssignment_10 : ( RULE_BOOL ) ;
+    // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:3874:1: rule__ModelSlot__RequiredAssignment_10 : ( RULE_BOOL ) ;
     public final void rule__ModelSlot__RequiredAssignment_10() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:3410:1: ( ( RULE_BOOL ) )
-            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:3411:1: ( RULE_BOOL )
+            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:3878:1: ( ( RULE_BOOL ) )
+            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:3879:1: ( RULE_BOOL )
             {
-            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:3411:1: ( RULE_BOOL )
-            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:3412:1: RULE_BOOL
+            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:3879:1: ( RULE_BOOL )
+            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:3880:1: RULE_BOOL
             {
              before(grammarAccess.getModelSlotAccess().getRequiredBOOLTerminalRuleCall_10_0()); 
-            match(input,RULE_BOOL,FOLLOW_RULE_BOOL_in_rule__ModelSlot__RequiredAssignment_106862); 
+            match(input,RULE_BOOL,FOLLOW_RULE_BOOL_in_rule__ModelSlot__RequiredAssignment_107810); 
              after(grammarAccess.getModelSlotAccess().getRequiredBOOLTerminalRuleCall_10_0()); 
 
             }
@@ -9161,20 +10462,20 @@ public class InternalFMLParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__ModelSlot__ReadOnlyAssignment_13"
-    // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:3421:1: rule__ModelSlot__ReadOnlyAssignment_13 : ( RULE_BOOL ) ;
+    // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:3889:1: rule__ModelSlot__ReadOnlyAssignment_13 : ( RULE_BOOL ) ;
     public final void rule__ModelSlot__ReadOnlyAssignment_13() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:3425:1: ( ( RULE_BOOL ) )
-            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:3426:1: ( RULE_BOOL )
+            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:3893:1: ( ( RULE_BOOL ) )
+            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:3894:1: ( RULE_BOOL )
             {
-            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:3426:1: ( RULE_BOOL )
-            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:3427:1: RULE_BOOL
+            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:3894:1: ( RULE_BOOL )
+            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:3895:1: RULE_BOOL
             {
              before(grammarAccess.getModelSlotAccess().getReadOnlyBOOLTerminalRuleCall_13_0()); 
-            match(input,RULE_BOOL,FOLLOW_RULE_BOOL_in_rule__ModelSlot__ReadOnlyAssignment_136893); 
+            match(input,RULE_BOOL,FOLLOW_RULE_BOOL_in_rule__ModelSlot__ReadOnlyAssignment_137841); 
              after(grammarAccess.getModelSlotAccess().getReadOnlyBOOLTerminalRuleCall_13_0()); 
 
             }
@@ -9198,20 +10499,20 @@ public class InternalFMLParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__EditionPattern__NameAssignment_1"
-    // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:3436:1: rule__EditionPattern__NameAssignment_1 : ( RULE_ID ) ;
+    // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:3904:1: rule__EditionPattern__NameAssignment_1 : ( RULE_ID ) ;
     public final void rule__EditionPattern__NameAssignment_1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:3440:1: ( ( RULE_ID ) )
-            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:3441:1: ( RULE_ID )
+            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:3908:1: ( ( RULE_ID ) )
+            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:3909:1: ( RULE_ID )
             {
-            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:3441:1: ( RULE_ID )
-            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:3442:1: RULE_ID
+            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:3909:1: ( RULE_ID )
+            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:3910:1: RULE_ID
             {
              before(grammarAccess.getEditionPatternAccess().getNameIDTerminalRuleCall_1_0()); 
-            match(input,RULE_ID,FOLLOW_RULE_ID_in_rule__EditionPattern__NameAssignment_16924); 
+            match(input,RULE_ID,FOLLOW_RULE_ID_in_rule__EditionPattern__NameAssignment_17872); 
              after(grammarAccess.getEditionPatternAccess().getNameIDTerminalRuleCall_1_0()); 
 
             }
@@ -9235,24 +10536,24 @@ public class InternalFMLParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__EditionPattern__SuperEditionPatternAssignment_2_1"
-    // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:3451:1: rule__EditionPattern__SuperEditionPatternAssignment_2_1 : ( ( RULE_ID ) ) ;
+    // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:3919:1: rule__EditionPattern__SuperEditionPatternAssignment_2_1 : ( ( RULE_ID ) ) ;
     public final void rule__EditionPattern__SuperEditionPatternAssignment_2_1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:3455:1: ( ( ( RULE_ID ) ) )
-            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:3456:1: ( ( RULE_ID ) )
+            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:3923:1: ( ( ( RULE_ID ) ) )
+            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:3924:1: ( ( RULE_ID ) )
             {
-            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:3456:1: ( ( RULE_ID ) )
-            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:3457:1: ( RULE_ID )
+            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:3924:1: ( ( RULE_ID ) )
+            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:3925:1: ( RULE_ID )
             {
              before(grammarAccess.getEditionPatternAccess().getSuperEditionPatternEditionPatternCrossReference_2_1_0()); 
-            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:3458:1: ( RULE_ID )
-            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:3459:1: RULE_ID
+            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:3926:1: ( RULE_ID )
+            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:3927:1: RULE_ID
             {
              before(grammarAccess.getEditionPatternAccess().getSuperEditionPatternEditionPatternIDTerminalRuleCall_2_1_0_1()); 
-            match(input,RULE_ID,FOLLOW_RULE_ID_in_rule__EditionPattern__SuperEditionPatternAssignment_2_16959); 
+            match(input,RULE_ID,FOLLOW_RULE_ID_in_rule__EditionPattern__SuperEditionPatternAssignment_2_17907); 
              after(grammarAccess.getEditionPatternAccess().getSuperEditionPatternEditionPatternIDTerminalRuleCall_2_1_0_1()); 
 
             }
@@ -9280,20 +10581,20 @@ public class InternalFMLParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__EditionPattern__PatternRolesAssignment_4"
-    // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:3470:1: rule__EditionPattern__PatternRolesAssignment_4 : ( rulePatternRole ) ;
+    // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:3938:1: rule__EditionPattern__PatternRolesAssignment_4 : ( rulePatternRole ) ;
     public final void rule__EditionPattern__PatternRolesAssignment_4() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:3474:1: ( ( rulePatternRole ) )
-            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:3475:1: ( rulePatternRole )
+            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:3942:1: ( ( rulePatternRole ) )
+            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:3943:1: ( rulePatternRole )
             {
-            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:3475:1: ( rulePatternRole )
-            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:3476:1: rulePatternRole
+            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:3943:1: ( rulePatternRole )
+            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:3944:1: rulePatternRole
             {
              before(grammarAccess.getEditionPatternAccess().getPatternRolesPatternRoleParserRuleCall_4_0()); 
-            pushFollow(FOLLOW_rulePatternRole_in_rule__EditionPattern__PatternRolesAssignment_46994);
+            pushFollow(FOLLOW_rulePatternRole_in_rule__EditionPattern__PatternRolesAssignment_47942);
             rulePatternRole();
 
             state._fsp--;
@@ -9321,20 +10622,20 @@ public class InternalFMLParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__EditionPattern__EditionSchemesAssignment_5"
-    // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:3485:1: rule__EditionPattern__EditionSchemesAssignment_5 : ( ruleEditionScheme ) ;
+    // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:3953:1: rule__EditionPattern__EditionSchemesAssignment_5 : ( ruleEditionScheme ) ;
     public final void rule__EditionPattern__EditionSchemesAssignment_5() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:3489:1: ( ( ruleEditionScheme ) )
-            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:3490:1: ( ruleEditionScheme )
+            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:3957:1: ( ( ruleEditionScheme ) )
+            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:3958:1: ( ruleEditionScheme )
             {
-            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:3490:1: ( ruleEditionScheme )
-            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:3491:1: ruleEditionScheme
+            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:3958:1: ( ruleEditionScheme )
+            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:3959:1: ruleEditionScheme
             {
              before(grammarAccess.getEditionPatternAccess().getEditionSchemesEditionSchemeParserRuleCall_5_0()); 
-            pushFollow(FOLLOW_ruleEditionScheme_in_rule__EditionPattern__EditionSchemesAssignment_57025);
+            pushFollow(FOLLOW_ruleEditionScheme_in_rule__EditionPattern__EditionSchemesAssignment_57973);
             ruleEditionScheme();
 
             state._fsp--;
@@ -9362,20 +10663,20 @@ public class InternalFMLParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__PatternRole__NameAssignment_1"
-    // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:3500:1: rule__PatternRole__NameAssignment_1 : ( RULE_ID ) ;
+    // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:3968:1: rule__PatternRole__NameAssignment_1 : ( RULE_ID ) ;
     public final void rule__PatternRole__NameAssignment_1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:3504:1: ( ( RULE_ID ) )
-            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:3505:1: ( RULE_ID )
+            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:3972:1: ( ( RULE_ID ) )
+            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:3973:1: ( RULE_ID )
             {
-            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:3505:1: ( RULE_ID )
-            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:3506:1: RULE_ID
+            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:3973:1: ( RULE_ID )
+            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:3974:1: RULE_ID
             {
              before(grammarAccess.getPatternRoleAccess().getNameIDTerminalRuleCall_1_0()); 
-            match(input,RULE_ID,FOLLOW_RULE_ID_in_rule__PatternRole__NameAssignment_17056); 
+            match(input,RULE_ID,FOLLOW_RULE_ID_in_rule__PatternRole__NameAssignment_18004); 
              after(grammarAccess.getPatternRoleAccess().getNameIDTerminalRuleCall_1_0()); 
 
             }
@@ -9399,20 +10700,20 @@ public class InternalFMLParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__PatternRole__TypeAssignment_3"
-    // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:3515:1: rule__PatternRole__TypeAssignment_3 : ( rulePRTYPE ) ;
+    // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:3983:1: rule__PatternRole__TypeAssignment_3 : ( rulePRTYPE ) ;
     public final void rule__PatternRole__TypeAssignment_3() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:3519:1: ( ( rulePRTYPE ) )
-            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:3520:1: ( rulePRTYPE )
+            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:3987:1: ( ( rulePRTYPE ) )
+            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:3988:1: ( rulePRTYPE )
             {
-            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:3520:1: ( rulePRTYPE )
-            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:3521:1: rulePRTYPE
+            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:3988:1: ( rulePRTYPE )
+            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:3989:1: rulePRTYPE
             {
              before(grammarAccess.getPatternRoleAccess().getTypePRTYPEEnumRuleCall_3_0()); 
-            pushFollow(FOLLOW_rulePRTYPE_in_rule__PatternRole__TypeAssignment_37087);
+            pushFollow(FOLLOW_rulePRTYPE_in_rule__PatternRole__TypeAssignment_38035);
             rulePRTYPE();
 
             state._fsp--;
@@ -9440,21 +10741,21 @@ public class InternalFMLParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__PatternRole__ModelElementAssignment_5"
-    // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:3530:1: rule__PatternRole__ModelElementAssignment_5 : ( RULE_STRING ) ;
+    // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:3998:1: rule__PatternRole__ModelElementAssignment_5 : ( RULE_ID ) ;
     public final void rule__PatternRole__ModelElementAssignment_5() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:3534:1: ( ( RULE_STRING ) )
-            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:3535:1: ( RULE_STRING )
+            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:4002:1: ( ( RULE_ID ) )
+            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:4003:1: ( RULE_ID )
             {
-            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:3535:1: ( RULE_STRING )
-            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:3536:1: RULE_STRING
+            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:4003:1: ( RULE_ID )
+            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:4004:1: RULE_ID
             {
-             before(grammarAccess.getPatternRoleAccess().getModelElementSTRINGTerminalRuleCall_5_0()); 
-            match(input,RULE_STRING,FOLLOW_RULE_STRING_in_rule__PatternRole__ModelElementAssignment_57118); 
-             after(grammarAccess.getPatternRoleAccess().getModelElementSTRINGTerminalRuleCall_5_0()); 
+             before(grammarAccess.getPatternRoleAccess().getModelElementIDTerminalRuleCall_5_0()); 
+            match(input,RULE_ID,FOLLOW_RULE_ID_in_rule__PatternRole__ModelElementAssignment_58066); 
+             after(grammarAccess.getPatternRoleAccess().getModelElementIDTerminalRuleCall_5_0()); 
 
             }
 
@@ -9477,24 +10778,24 @@ public class InternalFMLParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__PatternRole__ModelSlotAssignment_7"
-    // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:3545:1: rule__PatternRole__ModelSlotAssignment_7 : ( ( RULE_ID ) ) ;
+    // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:4013:1: rule__PatternRole__ModelSlotAssignment_7 : ( ( RULE_ID ) ) ;
     public final void rule__PatternRole__ModelSlotAssignment_7() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:3549:1: ( ( ( RULE_ID ) ) )
-            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:3550:1: ( ( RULE_ID ) )
+            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:4017:1: ( ( ( RULE_ID ) ) )
+            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:4018:1: ( ( RULE_ID ) )
             {
-            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:3550:1: ( ( RULE_ID ) )
-            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:3551:1: ( RULE_ID )
+            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:4018:1: ( ( RULE_ID ) )
+            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:4019:1: ( RULE_ID )
             {
              before(grammarAccess.getPatternRoleAccess().getModelSlotModelSlotCrossReference_7_0()); 
-            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:3552:1: ( RULE_ID )
-            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:3553:1: RULE_ID
+            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:4020:1: ( RULE_ID )
+            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:4021:1: RULE_ID
             {
              before(grammarAccess.getPatternRoleAccess().getModelSlotModelSlotIDTerminalRuleCall_7_0_1()); 
-            match(input,RULE_ID,FOLLOW_RULE_ID_in_rule__PatternRole__ModelSlotAssignment_77153); 
+            match(input,RULE_ID,FOLLOW_RULE_ID_in_rule__PatternRole__ModelSlotAssignment_78101); 
              after(grammarAccess.getPatternRoleAccess().getModelSlotModelSlotIDTerminalRuleCall_7_0_1()); 
 
             }
@@ -9522,20 +10823,20 @@ public class InternalFMLParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__EditionScheme__EditionSchemeTypeAssignment_0"
-    // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:3564:1: rule__EditionScheme__EditionSchemeTypeAssignment_0 : ( ruleEditionSchemeType ) ;
+    // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:4032:1: rule__EditionScheme__EditionSchemeTypeAssignment_0 : ( ruleEditionSchemeType ) ;
     public final void rule__EditionScheme__EditionSchemeTypeAssignment_0() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:3568:1: ( ( ruleEditionSchemeType ) )
-            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:3569:1: ( ruleEditionSchemeType )
+            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:4036:1: ( ( ruleEditionSchemeType ) )
+            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:4037:1: ( ruleEditionSchemeType )
             {
-            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:3569:1: ( ruleEditionSchemeType )
-            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:3570:1: ruleEditionSchemeType
+            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:4037:1: ( ruleEditionSchemeType )
+            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:4038:1: ruleEditionSchemeType
             {
              before(grammarAccess.getEditionSchemeAccess().getEditionSchemeTypeEditionSchemeTypeEnumRuleCall_0_0()); 
-            pushFollow(FOLLOW_ruleEditionSchemeType_in_rule__EditionScheme__EditionSchemeTypeAssignment_07188);
+            pushFollow(FOLLOW_ruleEditionSchemeType_in_rule__EditionScheme__EditionSchemeTypeAssignment_08136);
             ruleEditionSchemeType();
 
             state._fsp--;
@@ -9563,20 +10864,20 @@ public class InternalFMLParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__EditionScheme__NameAssignment_1"
-    // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:3579:1: rule__EditionScheme__NameAssignment_1 : ( RULE_ID ) ;
+    // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:4047:1: rule__EditionScheme__NameAssignment_1 : ( RULE_ID ) ;
     public final void rule__EditionScheme__NameAssignment_1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:3583:1: ( ( RULE_ID ) )
-            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:3584:1: ( RULE_ID )
+            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:4051:1: ( ( RULE_ID ) )
+            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:4052:1: ( RULE_ID )
             {
-            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:3584:1: ( RULE_ID )
-            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:3585:1: RULE_ID
+            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:4052:1: ( RULE_ID )
+            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:4053:1: RULE_ID
             {
              before(grammarAccess.getEditionSchemeAccess().getNameIDTerminalRuleCall_1_0()); 
-            match(input,RULE_ID,FOLLOW_RULE_ID_in_rule__EditionScheme__NameAssignment_17219); 
+            match(input,RULE_ID,FOLLOW_RULE_ID_in_rule__EditionScheme__NameAssignment_18167); 
              after(grammarAccess.getEditionSchemeAccess().getNameIDTerminalRuleCall_1_0()); 
 
             }
@@ -9600,20 +10901,20 @@ public class InternalFMLParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__EditionScheme__ParameterAssignment_3_0"
-    // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:3594:1: rule__EditionScheme__ParameterAssignment_3_0 : ( ruleParameter ) ;
+    // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:4062:1: rule__EditionScheme__ParameterAssignment_3_0 : ( ruleParameter ) ;
     public final void rule__EditionScheme__ParameterAssignment_3_0() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:3598:1: ( ( ruleParameter ) )
-            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:3599:1: ( ruleParameter )
+            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:4066:1: ( ( ruleParameter ) )
+            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:4067:1: ( ruleParameter )
             {
-            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:3599:1: ( ruleParameter )
-            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:3600:1: ruleParameter
+            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:4067:1: ( ruleParameter )
+            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:4068:1: ruleParameter
             {
              before(grammarAccess.getEditionSchemeAccess().getParameterParameterParserRuleCall_3_0_0()); 
-            pushFollow(FOLLOW_ruleParameter_in_rule__EditionScheme__ParameterAssignment_3_07250);
+            pushFollow(FOLLOW_ruleParameter_in_rule__EditionScheme__ParameterAssignment_3_08198);
             ruleParameter();
 
             state._fsp--;
@@ -9641,20 +10942,20 @@ public class InternalFMLParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__EditionScheme__ParameterAssignment_3_1_1"
-    // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:3609:1: rule__EditionScheme__ParameterAssignment_3_1_1 : ( ruleParameter ) ;
+    // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:4077:1: rule__EditionScheme__ParameterAssignment_3_1_1 : ( ruleParameter ) ;
     public final void rule__EditionScheme__ParameterAssignment_3_1_1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:3613:1: ( ( ruleParameter ) )
-            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:3614:1: ( ruleParameter )
+            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:4081:1: ( ( ruleParameter ) )
+            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:4082:1: ( ruleParameter )
             {
-            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:3614:1: ( ruleParameter )
-            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:3615:1: ruleParameter
+            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:4082:1: ( ruleParameter )
+            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:4083:1: ruleParameter
             {
              before(grammarAccess.getEditionSchemeAccess().getParameterParameterParserRuleCall_3_1_1_0()); 
-            pushFollow(FOLLOW_ruleParameter_in_rule__EditionScheme__ParameterAssignment_3_1_17281);
+            pushFollow(FOLLOW_ruleParameter_in_rule__EditionScheme__ParameterAssignment_3_1_18229);
             ruleParameter();
 
             state._fsp--;
@@ -9682,20 +10983,20 @@ public class InternalFMLParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__EditionScheme__EditionActionAssignment_6"
-    // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:3624:1: rule__EditionScheme__EditionActionAssignment_6 : ( ruleEditionAction ) ;
+    // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:4092:1: rule__EditionScheme__EditionActionAssignment_6 : ( ruleEditionAction ) ;
     public final void rule__EditionScheme__EditionActionAssignment_6() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:3628:1: ( ( ruleEditionAction ) )
-            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:3629:1: ( ruleEditionAction )
+            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:4096:1: ( ( ruleEditionAction ) )
+            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:4097:1: ( ruleEditionAction )
             {
-            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:3629:1: ( ruleEditionAction )
-            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:3630:1: ruleEditionAction
+            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:4097:1: ( ruleEditionAction )
+            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:4098:1: ruleEditionAction
             {
              before(grammarAccess.getEditionSchemeAccess().getEditionActionEditionActionParserRuleCall_6_0()); 
-            pushFollow(FOLLOW_ruleEditionAction_in_rule__EditionScheme__EditionActionAssignment_67312);
+            pushFollow(FOLLOW_ruleEditionAction_in_rule__EditionScheme__EditionActionAssignment_68260);
             ruleEditionAction();
 
             state._fsp--;
@@ -9723,20 +11024,20 @@ public class InternalFMLParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Parameter__WidgetAssignment_0"
-    // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:3639:1: rule__Parameter__WidgetAssignment_0 : ( rulePRTYPE ) ;
+    // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:4107:1: rule__Parameter__WidgetAssignment_0 : ( rulePRTYPE ) ;
     public final void rule__Parameter__WidgetAssignment_0() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:3643:1: ( ( rulePRTYPE ) )
-            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:3644:1: ( rulePRTYPE )
+            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:4111:1: ( ( rulePRTYPE ) )
+            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:4112:1: ( rulePRTYPE )
             {
-            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:3644:1: ( rulePRTYPE )
-            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:3645:1: rulePRTYPE
+            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:4112:1: ( rulePRTYPE )
+            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:4113:1: rulePRTYPE
             {
              before(grammarAccess.getParameterAccess().getWidgetPRTYPEEnumRuleCall_0_0()); 
-            pushFollow(FOLLOW_rulePRTYPE_in_rule__Parameter__WidgetAssignment_07343);
+            pushFollow(FOLLOW_rulePRTYPE_in_rule__Parameter__WidgetAssignment_08291);
             rulePRTYPE();
 
             state._fsp--;
@@ -9764,24 +11065,24 @@ public class InternalFMLParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Parameter__EditionPatternAssignment_2"
-    // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:3654:1: rule__Parameter__EditionPatternAssignment_2 : ( ( RULE_ID ) ) ;
+    // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:4122:1: rule__Parameter__EditionPatternAssignment_2 : ( ( RULE_ID ) ) ;
     public final void rule__Parameter__EditionPatternAssignment_2() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:3658:1: ( ( ( RULE_ID ) ) )
-            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:3659:1: ( ( RULE_ID ) )
+            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:4126:1: ( ( ( RULE_ID ) ) )
+            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:4127:1: ( ( RULE_ID ) )
             {
-            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:3659:1: ( ( RULE_ID ) )
-            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:3660:1: ( RULE_ID )
+            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:4127:1: ( ( RULE_ID ) )
+            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:4128:1: ( RULE_ID )
             {
              before(grammarAccess.getParameterAccess().getEditionPatternEditionPatternCrossReference_2_0()); 
-            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:3661:1: ( RULE_ID )
-            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:3662:1: RULE_ID
+            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:4129:1: ( RULE_ID )
+            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:4130:1: RULE_ID
             {
              before(grammarAccess.getParameterAccess().getEditionPatternEditionPatternIDTerminalRuleCall_2_0_1()); 
-            match(input,RULE_ID,FOLLOW_RULE_ID_in_rule__Parameter__EditionPatternAssignment_27378); 
+            match(input,RULE_ID,FOLLOW_RULE_ID_in_rule__Parameter__EditionPatternAssignment_28326); 
              after(grammarAccess.getParameterAccess().getEditionPatternEditionPatternIDTerminalRuleCall_2_0_1()); 
 
             }
@@ -9809,20 +11110,20 @@ public class InternalFMLParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Parameter__NameAssignment_3"
-    // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:3673:1: rule__Parameter__NameAssignment_3 : ( RULE_ID ) ;
+    // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:4141:1: rule__Parameter__NameAssignment_3 : ( RULE_ID ) ;
     public final void rule__Parameter__NameAssignment_3() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:3677:1: ( ( RULE_ID ) )
-            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:3678:1: ( RULE_ID )
+            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:4145:1: ( ( RULE_ID ) )
+            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:4146:1: ( RULE_ID )
             {
-            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:3678:1: ( RULE_ID )
-            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:3679:1: RULE_ID
+            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:4146:1: ( RULE_ID )
+            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:4147:1: RULE_ID
             {
              before(grammarAccess.getParameterAccess().getNameIDTerminalRuleCall_3_0()); 
-            match(input,RULE_ID,FOLLOW_RULE_ID_in_rule__Parameter__NameAssignment_37413); 
+            match(input,RULE_ID,FOLLOW_RULE_ID_in_rule__Parameter__NameAssignment_38361); 
              after(grammarAccess.getParameterAccess().getNameIDTerminalRuleCall_3_0()); 
 
             }
@@ -9845,30 +11146,30 @@ public class InternalFMLParser extends AbstractInternalContentAssistParser {
     // $ANTLR end "rule__Parameter__NameAssignment_3"
 
 
-    // $ANTLR start "rule__DeclarePatternRole__PatternRoleAssignment_0"
-    // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:3688:1: rule__DeclarePatternRole__PatternRoleAssignment_0 : ( ( RULE_ID ) ) ;
-    public final void rule__DeclarePatternRole__PatternRoleAssignment_0() throws RecognitionException {
+    // $ANTLR start "rule__DeclarePatternRole__PatternRoleAssignment_0_0"
+    // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:4156:1: rule__DeclarePatternRole__PatternRoleAssignment_0_0 : ( ( RULE_ID ) ) ;
+    public final void rule__DeclarePatternRole__PatternRoleAssignment_0_0() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:3692:1: ( ( ( RULE_ID ) ) )
-            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:3693:1: ( ( RULE_ID ) )
+            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:4160:1: ( ( ( RULE_ID ) ) )
+            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:4161:1: ( ( RULE_ID ) )
             {
-            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:3693:1: ( ( RULE_ID ) )
-            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:3694:1: ( RULE_ID )
+            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:4161:1: ( ( RULE_ID ) )
+            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:4162:1: ( RULE_ID )
             {
-             before(grammarAccess.getDeclarePatternRoleAccess().getPatternRolePatternRoleCrossReference_0_0()); 
-            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:3695:1: ( RULE_ID )
-            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:3696:1: RULE_ID
+             before(grammarAccess.getDeclarePatternRoleAccess().getPatternRolePatternRoleCrossReference_0_0_0()); 
+            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:4163:1: ( RULE_ID )
+            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:4164:1: RULE_ID
             {
-             before(grammarAccess.getDeclarePatternRoleAccess().getPatternRolePatternRoleIDTerminalRuleCall_0_0_1()); 
-            match(input,RULE_ID,FOLLOW_RULE_ID_in_rule__DeclarePatternRole__PatternRoleAssignment_07448); 
-             after(grammarAccess.getDeclarePatternRoleAccess().getPatternRolePatternRoleIDTerminalRuleCall_0_0_1()); 
+             before(grammarAccess.getDeclarePatternRoleAccess().getPatternRolePatternRoleIDTerminalRuleCall_0_0_0_1()); 
+            match(input,RULE_ID,FOLLOW_RULE_ID_in_rule__DeclarePatternRole__PatternRoleAssignment_0_08396); 
+             after(grammarAccess.getDeclarePatternRoleAccess().getPatternRolePatternRoleIDTerminalRuleCall_0_0_0_1()); 
 
             }
 
-             after(grammarAccess.getDeclarePatternRoleAccess().getPatternRolePatternRoleCrossReference_0_0()); 
+             after(grammarAccess.getDeclarePatternRoleAccess().getPatternRolePatternRoleCrossReference_0_0_0()); 
 
             }
 
@@ -9887,33 +11188,33 @@ public class InternalFMLParser extends AbstractInternalContentAssistParser {
         }
         return ;
     }
-    // $ANTLR end "rule__DeclarePatternRole__PatternRoleAssignment_0"
+    // $ANTLR end "rule__DeclarePatternRole__PatternRoleAssignment_0_0"
 
 
-    // $ANTLR start "rule__DeclarePatternRole__ParameterAssignment_4"
-    // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:3707:1: rule__DeclarePatternRole__ParameterAssignment_4 : ( ( RULE_ID ) ) ;
-    public final void rule__DeclarePatternRole__ParameterAssignment_4() throws RecognitionException {
+    // $ANTLR start "rule__DeclarePatternRole__ParameterAssignment_1_0_2"
+    // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:4175:1: rule__DeclarePatternRole__ParameterAssignment_1_0_2 : ( ( RULE_ID ) ) ;
+    public final void rule__DeclarePatternRole__ParameterAssignment_1_0_2() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:3711:1: ( ( ( RULE_ID ) ) )
-            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:3712:1: ( ( RULE_ID ) )
+            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:4179:1: ( ( ( RULE_ID ) ) )
+            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:4180:1: ( ( RULE_ID ) )
             {
-            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:3712:1: ( ( RULE_ID ) )
-            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:3713:1: ( RULE_ID )
+            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:4180:1: ( ( RULE_ID ) )
+            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:4181:1: ( RULE_ID )
             {
-             before(grammarAccess.getDeclarePatternRoleAccess().getParameterParameterCrossReference_4_0()); 
-            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:3714:1: ( RULE_ID )
-            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:3715:1: RULE_ID
+             before(grammarAccess.getDeclarePatternRoleAccess().getParameterParameterCrossReference_1_0_2_0()); 
+            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:4182:1: ( RULE_ID )
+            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:4183:1: RULE_ID
             {
-             before(grammarAccess.getDeclarePatternRoleAccess().getParameterParameterIDTerminalRuleCall_4_0_1()); 
-            match(input,RULE_ID,FOLLOW_RULE_ID_in_rule__DeclarePatternRole__ParameterAssignment_47487); 
-             after(grammarAccess.getDeclarePatternRoleAccess().getParameterParameterIDTerminalRuleCall_4_0_1()); 
+             before(grammarAccess.getDeclarePatternRoleAccess().getParameterParameterIDTerminalRuleCall_1_0_2_0_1()); 
+            match(input,RULE_ID,FOLLOW_RULE_ID_in_rule__DeclarePatternRole__ParameterAssignment_1_0_28435); 
+             after(grammarAccess.getDeclarePatternRoleAccess().getParameterParameterIDTerminalRuleCall_1_0_2_0_1()); 
 
             }
 
-             after(grammarAccess.getDeclarePatternRoleAccess().getParameterParameterCrossReference_4_0()); 
+             after(grammarAccess.getDeclarePatternRoleAccess().getParameterParameterCrossReference_1_0_2_0()); 
 
             }
 
@@ -9932,28 +11233,69 @@ public class InternalFMLParser extends AbstractInternalContentAssistParser {
         }
         return ;
     }
-    // $ANTLR end "rule__DeclarePatternRole__ParameterAssignment_4"
+    // $ANTLR end "rule__DeclarePatternRole__ParameterAssignment_1_0_2"
+
+
+    // $ANTLR start "rule__DeclarePatternRole__AddAssignment_1_1_1"
+    // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:4194:1: rule__DeclarePatternRole__AddAssignment_1_1_1 : ( ruleAddEMFObjectIndividual ) ;
+    public final void rule__DeclarePatternRole__AddAssignment_1_1_1() throws RecognitionException {
+
+        		int stackSize = keepStackSize();
+            
+        try {
+            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:4198:1: ( ( ruleAddEMFObjectIndividual ) )
+            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:4199:1: ( ruleAddEMFObjectIndividual )
+            {
+            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:4199:1: ( ruleAddEMFObjectIndividual )
+            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:4200:1: ruleAddEMFObjectIndividual
+            {
+             before(grammarAccess.getDeclarePatternRoleAccess().getAddAddEMFObjectIndividualParserRuleCall_1_1_1_0()); 
+            pushFollow(FOLLOW_ruleAddEMFObjectIndividual_in_rule__DeclarePatternRole__AddAssignment_1_1_18470);
+            ruleAddEMFObjectIndividual();
+
+            state._fsp--;
+
+             after(grammarAccess.getDeclarePatternRoleAccess().getAddAddEMFObjectIndividualParserRuleCall_1_1_1_0()); 
+
+            }
+
+
+            }
+
+        }
+        catch (RecognitionException re) {
+            reportError(re);
+            recover(input,re);
+        }
+        finally {
+
+            	restoreStackSize(stackSize);
+
+        }
+        return ;
+    }
+    // $ANTLR end "rule__DeclarePatternRole__AddAssignment_1_1_1"
 
 
     // $ANTLR start "rule__DeleteAction__PatternRoleAssignment_1"
-    // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:3726:1: rule__DeleteAction__PatternRoleAssignment_1 : ( ( RULE_ID ) ) ;
+    // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:4209:1: rule__DeleteAction__PatternRoleAssignment_1 : ( ( RULE_ID ) ) ;
     public final void rule__DeleteAction__PatternRoleAssignment_1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:3730:1: ( ( ( RULE_ID ) ) )
-            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:3731:1: ( ( RULE_ID ) )
+            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:4213:1: ( ( ( RULE_ID ) ) )
+            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:4214:1: ( ( RULE_ID ) )
             {
-            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:3731:1: ( ( RULE_ID ) )
-            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:3732:1: ( RULE_ID )
+            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:4214:1: ( ( RULE_ID ) )
+            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:4215:1: ( RULE_ID )
             {
              before(grammarAccess.getDeleteActionAccess().getPatternRolePatternRoleCrossReference_1_0()); 
-            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:3733:1: ( RULE_ID )
-            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:3734:1: RULE_ID
+            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:4216:1: ( RULE_ID )
+            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:4217:1: RULE_ID
             {
              before(grammarAccess.getDeleteActionAccess().getPatternRolePatternRoleIDTerminalRuleCall_1_0_1()); 
-            match(input,RULE_ID,FOLLOW_RULE_ID_in_rule__DeleteAction__PatternRoleAssignment_17526); 
+            match(input,RULE_ID,FOLLOW_RULE_ID_in_rule__DeleteAction__PatternRoleAssignment_18505); 
              after(grammarAccess.getDeleteActionAccess().getPatternRolePatternRoleIDTerminalRuleCall_1_0_1()); 
 
             }
@@ -9978,6 +11320,96 @@ public class InternalFMLParser extends AbstractInternalContentAssistParser {
         return ;
     }
     // $ANTLR end "rule__DeleteAction__PatternRoleAssignment_1"
+
+
+    // $ANTLR start "rule__AddEMFObjectIndividual__EditionPatternAssignment_2"
+    // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:4228:1: rule__AddEMFObjectIndividual__EditionPatternAssignment_2 : ( ( RULE_ID ) ) ;
+    public final void rule__AddEMFObjectIndividual__EditionPatternAssignment_2() throws RecognitionException {
+
+        		int stackSize = keepStackSize();
+            
+        try {
+            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:4232:1: ( ( ( RULE_ID ) ) )
+            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:4233:1: ( ( RULE_ID ) )
+            {
+            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:4233:1: ( ( RULE_ID ) )
+            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:4234:1: ( RULE_ID )
+            {
+             before(grammarAccess.getAddEMFObjectIndividualAccess().getEditionPatternEditionPatternCrossReference_2_0()); 
+            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:4235:1: ( RULE_ID )
+            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:4236:1: RULE_ID
+            {
+             before(grammarAccess.getAddEMFObjectIndividualAccess().getEditionPatternEditionPatternIDTerminalRuleCall_2_0_1()); 
+            match(input,RULE_ID,FOLLOW_RULE_ID_in_rule__AddEMFObjectIndividual__EditionPatternAssignment_28544); 
+             after(grammarAccess.getAddEMFObjectIndividualAccess().getEditionPatternEditionPatternIDTerminalRuleCall_2_0_1()); 
+
+            }
+
+             after(grammarAccess.getAddEMFObjectIndividualAccess().getEditionPatternEditionPatternCrossReference_2_0()); 
+
+            }
+
+
+            }
+
+        }
+        catch (RecognitionException re) {
+            reportError(re);
+            recover(input,re);
+        }
+        finally {
+
+            	restoreStackSize(stackSize);
+
+        }
+        return ;
+    }
+    // $ANTLR end "rule__AddEMFObjectIndividual__EditionPatternAssignment_2"
+
+
+    // $ANTLR start "rule__AddEMFObjectIndividual__ModelSlotAssignment_4"
+    // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:4247:1: rule__AddEMFObjectIndividual__ModelSlotAssignment_4 : ( ( RULE_ID ) ) ;
+    public final void rule__AddEMFObjectIndividual__ModelSlotAssignment_4() throws RecognitionException {
+
+        		int stackSize = keepStackSize();
+            
+        try {
+            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:4251:1: ( ( ( RULE_ID ) ) )
+            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:4252:1: ( ( RULE_ID ) )
+            {
+            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:4252:1: ( ( RULE_ID ) )
+            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:4253:1: ( RULE_ID )
+            {
+             before(grammarAccess.getAddEMFObjectIndividualAccess().getModelSlotModelSlotCrossReference_4_0()); 
+            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:4254:1: ( RULE_ID )
+            // ../org.xtext.example.FlexoLanguage.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalFML.g:4255:1: RULE_ID
+            {
+             before(grammarAccess.getAddEMFObjectIndividualAccess().getModelSlotModelSlotIDTerminalRuleCall_4_0_1()); 
+            match(input,RULE_ID,FOLLOW_RULE_ID_in_rule__AddEMFObjectIndividual__ModelSlotAssignment_48583); 
+             after(grammarAccess.getAddEMFObjectIndividualAccess().getModelSlotModelSlotIDTerminalRuleCall_4_0_1()); 
+
+            }
+
+             after(grammarAccess.getAddEMFObjectIndividualAccess().getModelSlotModelSlotCrossReference_4_0()); 
+
+            }
+
+
+            }
+
+        }
+        catch (RecognitionException re) {
+            reportError(re);
+            recover(input,re);
+        }
+        finally {
+
+            	restoreStackSize(stackSize);
+
+        }
+        return ;
+    }
+    // $ANTLR end "rule__AddEMFObjectIndividual__ModelSlotAssignment_4"
 
     // Delegated rules
 
@@ -10017,294 +11449,339 @@ public class InternalFMLParser extends AbstractInternalContentAssistParser {
     public static final BitSet FOLLOW_ruleDeleteAction_in_entryRuleDeleteAction660 = new BitSet(new long[]{0x0000000000000000L});
     public static final BitSet FOLLOW_EOF_in_entryRuleDeleteAction667 = new BitSet(new long[]{0x0000000000000002L});
     public static final BitSet FOLLOW_rule__DeleteAction__Group__0_in_ruleDeleteAction693 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__EditionSchemeType__Alternatives_in_ruleEditionSchemeType730 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__MSTYPE__Alternatives_in_ruleMSTYPE766 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__VMTYPE__Alternatives_in_ruleVMTYPE802 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_14_in_rulePRTYPE839 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_ruleDeclarePatternRole_in_rule__BuiltInAction__Alternatives876 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_ruleDeleteAction_in_rule__BuiltInAction__Alternatives893 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_15_in_rule__EditionSchemeType__Alternatives926 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_16_in_rule__EditionSchemeType__Alternatives947 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_17_in_rule__EditionSchemeType__Alternatives968 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_18_in_rule__EditionSchemeType__Alternatives989 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_19_in_rule__MSTYPE__Alternatives1025 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_20_in_rule__MSTYPE__Alternatives1046 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_21_in_rule__MSTYPE__Alternatives1067 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_22_in_rule__MSTYPE__Alternatives1088 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_23_in_rule__MSTYPE__Alternatives1109 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_24_in_rule__VMTYPE__Alternatives1145 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_25_in_rule__VMTYPE__Alternatives1166 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__ViewDef__Group__0__Impl_in_rule__ViewDef__Group__01199 = new BitSet(new long[]{0x0000000000000010L});
-    public static final BitSet FOLLOW_rule__ViewDef__Group__1_in_rule__ViewDef__Group__01202 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_26_in_rule__ViewDef__Group__0__Impl1230 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__ViewDef__Group__1__Impl_in_rule__ViewDef__Group__11261 = new BitSet(new long[]{0x0000000008000000L});
-    public static final BitSet FOLLOW_rule__ViewDef__Group__2_in_rule__ViewDef__Group__11264 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__ViewDef__NameAssignment_1_in_rule__ViewDef__Group__1__Impl1291 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__ViewDef__Group__2__Impl_in_rule__ViewDef__Group__21321 = new BitSet(new long[]{0x0000000010000000L});
-    public static final BitSet FOLLOW_rule__ViewDef__Group__3_in_rule__ViewDef__Group__21324 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_27_in_rule__ViewDef__Group__2__Impl1355 = new BitSet(new long[]{0x0000000008000002L});
-    public static final BitSet FOLLOW_27_in_rule__ViewDef__Group__2__Impl1371 = new BitSet(new long[]{0x0000000008000002L});
-    public static final BitSet FOLLOW_rule__ViewDef__Group__3__Impl_in_rule__ViewDef__Group__31406 = new BitSet(new long[]{0x0000000000000020L});
-    public static final BitSet FOLLOW_rule__ViewDef__Group__4_in_rule__ViewDef__Group__31409 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_28_in_rule__ViewDef__Group__3__Impl1440 = new BitSet(new long[]{0x0000000010000002L});
-    public static final BitSet FOLLOW_28_in_rule__ViewDef__Group__3__Impl1456 = new BitSet(new long[]{0x0000000010000002L});
-    public static final BitSet FOLLOW_rule__ViewDef__Group__4__Impl_in_rule__ViewDef__Group__41491 = new BitSet(new long[]{0x0000000020000000L});
-    public static final BitSet FOLLOW_rule__ViewDef__Group__5_in_rule__ViewDef__Group__41494 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__ViewDef__UriAssignment_4_in_rule__ViewDef__Group__4__Impl1521 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__ViewDef__Group__5__Impl_in_rule__ViewDef__Group__51551 = new BitSet(new long[]{0x0000000042000000L});
-    public static final BitSet FOLLOW_rule__ViewDef__Group__6_in_rule__ViewDef__Group__51554 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_29_in_rule__ViewDef__Group__5__Impl1582 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__ViewDef__Group__6__Impl_in_rule__ViewDef__Group__61613 = new BitSet(new long[]{0x0000000042000000L});
-    public static final BitSet FOLLOW_rule__ViewDef__Group__7_in_rule__ViewDef__Group__61616 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__ViewDef__ElementsAssignment_6_in_rule__ViewDef__Group__6__Impl1643 = new BitSet(new long[]{0x0000000002000002L});
-    public static final BitSet FOLLOW_rule__ViewDef__Group__7__Impl_in_rule__ViewDef__Group__71674 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_30_in_rule__ViewDef__Group__7__Impl1702 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__VirtualModel__Group__0__Impl_in_rule__VirtualModel__Group__01749 = new BitSet(new long[]{0x0000000000000010L});
-    public static final BitSet FOLLOW_rule__VirtualModel__Group__1_in_rule__VirtualModel__Group__01752 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_25_in_rule__VirtualModel__Group__0__Impl1780 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__VirtualModel__Group__1__Impl_in_rule__VirtualModel__Group__11811 = new BitSet(new long[]{0x0000000088000000L});
-    public static final BitSet FOLLOW_rule__VirtualModel__Group__2_in_rule__VirtualModel__Group__11814 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__VirtualModel__NameAssignment_1_in_rule__VirtualModel__Group__1__Impl1841 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__VirtualModel__Group__2__Impl_in_rule__VirtualModel__Group__21871 = new BitSet(new long[]{0x0000000088000000L});
-    public static final BitSet FOLLOW_rule__VirtualModel__Group__3_in_rule__VirtualModel__Group__21874 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__VirtualModel__Group_2__0_in_rule__VirtualModel__Group__2__Impl1901 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__VirtualModel__Group__3__Impl_in_rule__VirtualModel__Group__31932 = new BitSet(new long[]{0x0000000010000000L});
-    public static final BitSet FOLLOW_rule__VirtualModel__Group__4_in_rule__VirtualModel__Group__31935 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_27_in_rule__VirtualModel__Group__3__Impl1966 = new BitSet(new long[]{0x0000000008000002L});
-    public static final BitSet FOLLOW_27_in_rule__VirtualModel__Group__3__Impl1982 = new BitSet(new long[]{0x0000000008000002L});
-    public static final BitSet FOLLOW_rule__VirtualModel__Group__4__Impl_in_rule__VirtualModel__Group__42017 = new BitSet(new long[]{0x0000000000000020L});
-    public static final BitSet FOLLOW_rule__VirtualModel__Group__5_in_rule__VirtualModel__Group__42020 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_28_in_rule__VirtualModel__Group__4__Impl2051 = new BitSet(new long[]{0x0000000010000002L});
-    public static final BitSet FOLLOW_28_in_rule__VirtualModel__Group__4__Impl2067 = new BitSet(new long[]{0x0000000010000002L});
-    public static final BitSet FOLLOW_rule__VirtualModel__Group__5__Impl_in_rule__VirtualModel__Group__52102 = new BitSet(new long[]{0x0000000020000000L});
-    public static final BitSet FOLLOW_rule__VirtualModel__Group__6_in_rule__VirtualModel__Group__52105 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__VirtualModel__UriAssignment_5_in_rule__VirtualModel__Group__5__Impl2132 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__VirtualModel__Group__6__Impl_in_rule__VirtualModel__Group__62162 = new BitSet(new long[]{0x0000002140000000L});
-    public static final BitSet FOLLOW_rule__VirtualModel__Group__7_in_rule__VirtualModel__Group__62165 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_29_in_rule__VirtualModel__Group__6__Impl2193 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__VirtualModel__Group__7__Impl_in_rule__VirtualModel__Group__72224 = new BitSet(new long[]{0x0000002140000000L});
-    public static final BitSet FOLLOW_rule__VirtualModel__Group__8_in_rule__VirtualModel__Group__72227 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__VirtualModel__ModelSlotsAssignment_7_in_rule__VirtualModel__Group__7__Impl2254 = new BitSet(new long[]{0x0000000100000002L});
-    public static final BitSet FOLLOW_rule__VirtualModel__Group__8__Impl_in_rule__VirtualModel__Group__82285 = new BitSet(new long[]{0x0000002140000000L});
-    public static final BitSet FOLLOW_rule__VirtualModel__Group__9_in_rule__VirtualModel__Group__82288 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__VirtualModel__EditionPatternsAssignment_8_in_rule__VirtualModel__Group__8__Impl2315 = new BitSet(new long[]{0x0000002000000002L});
-    public static final BitSet FOLLOW_rule__VirtualModel__Group__9__Impl_in_rule__VirtualModel__Group__92346 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_30_in_rule__VirtualModel__Group__9__Impl2374 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__VirtualModel__Group_2__0__Impl_in_rule__VirtualModel__Group_2__02425 = new BitSet(new long[]{0x0000000010000000L});
-    public static final BitSet FOLLOW_rule__VirtualModel__Group_2__1_in_rule__VirtualModel__Group_2__02428 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_31_in_rule__VirtualModel__Group_2__0__Impl2459 = new BitSet(new long[]{0x0000000080000002L});
-    public static final BitSet FOLLOW_31_in_rule__VirtualModel__Group_2__0__Impl2475 = new BitSet(new long[]{0x0000000080000002L});
-    public static final BitSet FOLLOW_rule__VirtualModel__Group_2__1__Impl_in_rule__VirtualModel__Group_2__12510 = new BitSet(new long[]{0x0000000003000000L});
-    public static final BitSet FOLLOW_rule__VirtualModel__Group_2__2_in_rule__VirtualModel__Group_2__12513 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_28_in_rule__VirtualModel__Group_2__1__Impl2544 = new BitSet(new long[]{0x0000000010000002L});
-    public static final BitSet FOLLOW_28_in_rule__VirtualModel__Group_2__1__Impl2560 = new BitSet(new long[]{0x0000000010000002L});
-    public static final BitSet FOLLOW_rule__VirtualModel__Group_2__2__Impl_in_rule__VirtualModel__Group_2__22595 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__VirtualModel__TypeAssignment_2_2_in_rule__VirtualModel__Group_2__2__Impl2622 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__ModelSlot__Group__0__Impl_in_rule__ModelSlot__Group__02658 = new BitSet(new long[]{0x0000000000000010L});
-    public static final BitSet FOLLOW_rule__ModelSlot__Group__1_in_rule__ModelSlot__Group__02661 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_32_in_rule__ModelSlot__Group__0__Impl2689 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__ModelSlot__Group__1__Impl_in_rule__ModelSlot__Group__12720 = new BitSet(new long[]{0x0000000080000000L});
-    public static final BitSet FOLLOW_rule__ModelSlot__Group__2_in_rule__ModelSlot__Group__12723 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__ModelSlot__NameAssignment_1_in_rule__ModelSlot__Group__1__Impl2750 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__ModelSlot__Group__2__Impl_in_rule__ModelSlot__Group__22780 = new BitSet(new long[]{0x0000000010000000L});
-    public static final BitSet FOLLOW_rule__ModelSlot__Group__3_in_rule__ModelSlot__Group__22783 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_31_in_rule__ModelSlot__Group__2__Impl2814 = new BitSet(new long[]{0x0000000080000002L});
-    public static final BitSet FOLLOW_31_in_rule__ModelSlot__Group__2__Impl2830 = new BitSet(new long[]{0x0000000080000002L});
-    public static final BitSet FOLLOW_rule__ModelSlot__Group__3__Impl_in_rule__ModelSlot__Group__32865 = new BitSet(new long[]{0x0000000000F80000L});
-    public static final BitSet FOLLOW_rule__ModelSlot__Group__4_in_rule__ModelSlot__Group__32868 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_28_in_rule__ModelSlot__Group__3__Impl2899 = new BitSet(new long[]{0x0000000010000002L});
-    public static final BitSet FOLLOW_28_in_rule__ModelSlot__Group__3__Impl2915 = new BitSet(new long[]{0x0000000010000002L});
-    public static final BitSet FOLLOW_rule__ModelSlot__Group__4__Impl_in_rule__ModelSlot__Group__42950 = new BitSet(new long[]{0x0000000200000000L});
-    public static final BitSet FOLLOW_rule__ModelSlot__Group__5_in_rule__ModelSlot__Group__42953 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__ModelSlot__TypeAssignment_4_in_rule__ModelSlot__Group__4__Impl2980 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__ModelSlot__Group__5__Impl_in_rule__ModelSlot__Group__53010 = new BitSet(new long[]{0x0000000010000000L});
-    public static final BitSet FOLLOW_rule__ModelSlot__Group__6_in_rule__ModelSlot__Group__53013 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_33_in_rule__ModelSlot__Group__5__Impl3044 = new BitSet(new long[]{0x0000000200000002L});
-    public static final BitSet FOLLOW_33_in_rule__ModelSlot__Group__5__Impl3060 = new BitSet(new long[]{0x0000000200000002L});
-    public static final BitSet FOLLOW_rule__ModelSlot__Group__6__Impl_in_rule__ModelSlot__Group__63095 = new BitSet(new long[]{0x0000000000000020L});
-    public static final BitSet FOLLOW_rule__ModelSlot__Group__7_in_rule__ModelSlot__Group__63098 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_28_in_rule__ModelSlot__Group__6__Impl3129 = new BitSet(new long[]{0x0000000010000002L});
-    public static final BitSet FOLLOW_28_in_rule__ModelSlot__Group__6__Impl3145 = new BitSet(new long[]{0x0000000010000002L});
-    public static final BitSet FOLLOW_rule__ModelSlot__Group__7__Impl_in_rule__ModelSlot__Group__73180 = new BitSet(new long[]{0x0000000400000000L});
-    public static final BitSet FOLLOW_rule__ModelSlot__Group__8_in_rule__ModelSlot__Group__73183 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__ModelSlot__UriAssignment_7_in_rule__ModelSlot__Group__7__Impl3210 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__ModelSlot__Group__8__Impl_in_rule__ModelSlot__Group__83240 = new BitSet(new long[]{0x0000000010000000L});
-    public static final BitSet FOLLOW_rule__ModelSlot__Group__9_in_rule__ModelSlot__Group__83243 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_34_in_rule__ModelSlot__Group__8__Impl3274 = new BitSet(new long[]{0x0000000400000002L});
-    public static final BitSet FOLLOW_34_in_rule__ModelSlot__Group__8__Impl3290 = new BitSet(new long[]{0x0000000400000002L});
-    public static final BitSet FOLLOW_rule__ModelSlot__Group__9__Impl_in_rule__ModelSlot__Group__93325 = new BitSet(new long[]{0x0000000000000040L});
-    public static final BitSet FOLLOW_rule__ModelSlot__Group__10_in_rule__ModelSlot__Group__93328 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_28_in_rule__ModelSlot__Group__9__Impl3359 = new BitSet(new long[]{0x0000000010000002L});
-    public static final BitSet FOLLOW_28_in_rule__ModelSlot__Group__9__Impl3375 = new BitSet(new long[]{0x0000000010000002L});
-    public static final BitSet FOLLOW_rule__ModelSlot__Group__10__Impl_in_rule__ModelSlot__Group__103410 = new BitSet(new long[]{0x0000000800000000L});
-    public static final BitSet FOLLOW_rule__ModelSlot__Group__11_in_rule__ModelSlot__Group__103413 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__ModelSlot__RequiredAssignment_10_in_rule__ModelSlot__Group__10__Impl3440 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__ModelSlot__Group__11__Impl_in_rule__ModelSlot__Group__113470 = new BitSet(new long[]{0x0000000010000000L});
-    public static final BitSet FOLLOW_rule__ModelSlot__Group__12_in_rule__ModelSlot__Group__113473 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_35_in_rule__ModelSlot__Group__11__Impl3504 = new BitSet(new long[]{0x0000000800000002L});
-    public static final BitSet FOLLOW_35_in_rule__ModelSlot__Group__11__Impl3520 = new BitSet(new long[]{0x0000000800000002L});
-    public static final BitSet FOLLOW_rule__ModelSlot__Group__12__Impl_in_rule__ModelSlot__Group__123555 = new BitSet(new long[]{0x0000000000000040L});
-    public static final BitSet FOLLOW_rule__ModelSlot__Group__13_in_rule__ModelSlot__Group__123558 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_28_in_rule__ModelSlot__Group__12__Impl3589 = new BitSet(new long[]{0x0000000010000002L});
-    public static final BitSet FOLLOW_28_in_rule__ModelSlot__Group__12__Impl3605 = new BitSet(new long[]{0x0000000010000002L});
-    public static final BitSet FOLLOW_rule__ModelSlot__Group__13__Impl_in_rule__ModelSlot__Group__133640 = new BitSet(new long[]{0x0000001000000000L});
-    public static final BitSet FOLLOW_rule__ModelSlot__Group__14_in_rule__ModelSlot__Group__133643 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__ModelSlot__ReadOnlyAssignment_13_in_rule__ModelSlot__Group__13__Impl3670 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__ModelSlot__Group__14__Impl_in_rule__ModelSlot__Group__143700 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_36_in_rule__ModelSlot__Group__14__Impl3728 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__EditionPattern__Group__0__Impl_in_rule__EditionPattern__Group__03789 = new BitSet(new long[]{0x0000000000000010L});
-    public static final BitSet FOLLOW_rule__EditionPattern__Group__1_in_rule__EditionPattern__Group__03792 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_37_in_rule__EditionPattern__Group__0__Impl3820 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__EditionPattern__Group__1__Impl_in_rule__EditionPattern__Group__13851 = new BitSet(new long[]{0x0000004020000000L});
-    public static final BitSet FOLLOW_rule__EditionPattern__Group__2_in_rule__EditionPattern__Group__13854 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__EditionPattern__NameAssignment_1_in_rule__EditionPattern__Group__1__Impl3881 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__EditionPattern__Group__2__Impl_in_rule__EditionPattern__Group__23911 = new BitSet(new long[]{0x0000004020000000L});
-    public static final BitSet FOLLOW_rule__EditionPattern__Group__3_in_rule__EditionPattern__Group__23914 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__EditionPattern__Group_2__0_in_rule__EditionPattern__Group__2__Impl3941 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__EditionPattern__Group__3__Impl_in_rule__EditionPattern__Group__33972 = new BitSet(new long[]{0x0000008040078000L});
-    public static final BitSet FOLLOW_rule__EditionPattern__Group__4_in_rule__EditionPattern__Group__33975 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_29_in_rule__EditionPattern__Group__3__Impl4003 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__EditionPattern__Group__4__Impl_in_rule__EditionPattern__Group__44034 = new BitSet(new long[]{0x0000008040078000L});
-    public static final BitSet FOLLOW_rule__EditionPattern__Group__5_in_rule__EditionPattern__Group__44037 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__EditionPattern__PatternRolesAssignment_4_in_rule__EditionPattern__Group__4__Impl4064 = new BitSet(new long[]{0x0000008000000002L});
-    public static final BitSet FOLLOW_rule__EditionPattern__Group__5__Impl_in_rule__EditionPattern__Group__54095 = new BitSet(new long[]{0x0000008040078000L});
-    public static final BitSet FOLLOW_rule__EditionPattern__Group__6_in_rule__EditionPattern__Group__54098 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__EditionPattern__EditionSchemesAssignment_5_in_rule__EditionPattern__Group__5__Impl4125 = new BitSet(new long[]{0x0000000000078002L});
-    public static final BitSet FOLLOW_rule__EditionPattern__Group__6__Impl_in_rule__EditionPattern__Group__64156 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_30_in_rule__EditionPattern__Group__6__Impl4184 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__EditionPattern__Group_2__0__Impl_in_rule__EditionPattern__Group_2__04229 = new BitSet(new long[]{0x0000000000000010L});
-    public static final BitSet FOLLOW_rule__EditionPattern__Group_2__1_in_rule__EditionPattern__Group_2__04232 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_38_in_rule__EditionPattern__Group_2__0__Impl4260 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__EditionPattern__Group_2__1__Impl_in_rule__EditionPattern__Group_2__14291 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__EditionPattern__SuperEditionPatternAssignment_2_1_in_rule__EditionPattern__Group_2__1__Impl4318 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__PatternRole__Group__0__Impl_in_rule__PatternRole__Group__04352 = new BitSet(new long[]{0x0000000000000010L});
-    public static final BitSet FOLLOW_rule__PatternRole__Group__1_in_rule__PatternRole__Group__04355 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_39_in_rule__PatternRole__Group__0__Impl4383 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__PatternRole__Group__1__Impl_in_rule__PatternRole__Group__14414 = new BitSet(new long[]{0x0000010000000000L});
-    public static final BitSet FOLLOW_rule__PatternRole__Group__2_in_rule__PatternRole__Group__14417 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__PatternRole__NameAssignment_1_in_rule__PatternRole__Group__1__Impl4444 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__PatternRole__Group__2__Impl_in_rule__PatternRole__Group__24474 = new BitSet(new long[]{0x0000000000004000L});
-    public static final BitSet FOLLOW_rule__PatternRole__Group__3_in_rule__PatternRole__Group__24477 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_40_in_rule__PatternRole__Group__2__Impl4505 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__PatternRole__Group__3__Impl_in_rule__PatternRole__Group__34536 = new BitSet(new long[]{0x0000000200000000L});
-    public static final BitSet FOLLOW_rule__PatternRole__Group__4_in_rule__PatternRole__Group__34539 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__PatternRole__TypeAssignment_3_in_rule__PatternRole__Group__3__Impl4566 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__PatternRole__Group__4__Impl_in_rule__PatternRole__Group__44596 = new BitSet(new long[]{0x0000000000000080L});
-    public static final BitSet FOLLOW_rule__PatternRole__Group__5_in_rule__PatternRole__Group__44599 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_33_in_rule__PatternRole__Group__4__Impl4627 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__PatternRole__Group__5__Impl_in_rule__PatternRole__Group__54658 = new BitSet(new long[]{0x0000020000000000L});
-    public static final BitSet FOLLOW_rule__PatternRole__Group__6_in_rule__PatternRole__Group__54661 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__PatternRole__ModelElementAssignment_5_in_rule__PatternRole__Group__5__Impl4688 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__PatternRole__Group__6__Impl_in_rule__PatternRole__Group__64718 = new BitSet(new long[]{0x0000000000000010L});
-    public static final BitSet FOLLOW_rule__PatternRole__Group__7_in_rule__PatternRole__Group__64721 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_41_in_rule__PatternRole__Group__6__Impl4749 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__PatternRole__Group__7__Impl_in_rule__PatternRole__Group__74780 = new BitSet(new long[]{0x0000001000000000L});
-    public static final BitSet FOLLOW_rule__PatternRole__Group__8_in_rule__PatternRole__Group__74783 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__PatternRole__ModelSlotAssignment_7_in_rule__PatternRole__Group__7__Impl4810 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__PatternRole__Group__8__Impl_in_rule__PatternRole__Group__84840 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_36_in_rule__PatternRole__Group__8__Impl4868 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__EditionScheme__Group__0__Impl_in_rule__EditionScheme__Group__04917 = new BitSet(new long[]{0x0000000000000010L});
-    public static final BitSet FOLLOW_rule__EditionScheme__Group__1_in_rule__EditionScheme__Group__04920 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__EditionScheme__EditionSchemeTypeAssignment_0_in_rule__EditionScheme__Group__0__Impl4947 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__EditionScheme__Group__1__Impl_in_rule__EditionScheme__Group__14977 = new BitSet(new long[]{0x0000040000000000L});
-    public static final BitSet FOLLOW_rule__EditionScheme__Group__2_in_rule__EditionScheme__Group__14980 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__EditionScheme__NameAssignment_1_in_rule__EditionScheme__Group__1__Impl5007 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__EditionScheme__Group__2__Impl_in_rule__EditionScheme__Group__25037 = new BitSet(new long[]{0x0000080000004000L});
-    public static final BitSet FOLLOW_rule__EditionScheme__Group__3_in_rule__EditionScheme__Group__25040 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_42_in_rule__EditionScheme__Group__2__Impl5068 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__EditionScheme__Group__3__Impl_in_rule__EditionScheme__Group__35099 = new BitSet(new long[]{0x0000080000004000L});
-    public static final BitSet FOLLOW_rule__EditionScheme__Group__4_in_rule__EditionScheme__Group__35102 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__EditionScheme__Group_3__0_in_rule__EditionScheme__Group__3__Impl5129 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__EditionScheme__Group__4__Impl_in_rule__EditionScheme__Group__45160 = new BitSet(new long[]{0x0000000020000000L});
-    public static final BitSet FOLLOW_rule__EditionScheme__Group__5_in_rule__EditionScheme__Group__45163 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_43_in_rule__EditionScheme__Group__4__Impl5191 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__EditionScheme__Group__5__Impl_in_rule__EditionScheme__Group__55222 = new BitSet(new long[]{0x0001000040000010L});
-    public static final BitSet FOLLOW_rule__EditionScheme__Group__6_in_rule__EditionScheme__Group__55225 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_29_in_rule__EditionScheme__Group__5__Impl5253 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__EditionScheme__Group__6__Impl_in_rule__EditionScheme__Group__65284 = new BitSet(new long[]{0x0001000040000010L});
-    public static final BitSet FOLLOW_rule__EditionScheme__Group__7_in_rule__EditionScheme__Group__65287 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__EditionScheme__EditionActionAssignment_6_in_rule__EditionScheme__Group__6__Impl5314 = new BitSet(new long[]{0x0001000000000012L});
-    public static final BitSet FOLLOW_rule__EditionScheme__Group__7__Impl_in_rule__EditionScheme__Group__75345 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_30_in_rule__EditionScheme__Group__7__Impl5373 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__EditionScheme__Group_3__0__Impl_in_rule__EditionScheme__Group_3__05420 = new BitSet(new long[]{0x0000100000000000L});
-    public static final BitSet FOLLOW_rule__EditionScheme__Group_3__1_in_rule__EditionScheme__Group_3__05423 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__EditionScheme__ParameterAssignment_3_0_in_rule__EditionScheme__Group_3__0__Impl5452 = new BitSet(new long[]{0x0000000000004002L});
-    public static final BitSet FOLLOW_rule__EditionScheme__ParameterAssignment_3_0_in_rule__EditionScheme__Group_3__0__Impl5464 = new BitSet(new long[]{0x0000000000004002L});
-    public static final BitSet FOLLOW_rule__EditionScheme__Group_3__1__Impl_in_rule__EditionScheme__Group_3__15497 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__EditionScheme__Group_3_1__0_in_rule__EditionScheme__Group_3__1__Impl5524 = new BitSet(new long[]{0x0000100000000002L});
-    public static final BitSet FOLLOW_rule__EditionScheme__Group_3_1__0__Impl_in_rule__EditionScheme__Group_3_1__05559 = new BitSet(new long[]{0x0000000000004000L});
-    public static final BitSet FOLLOW_rule__EditionScheme__Group_3_1__1_in_rule__EditionScheme__Group_3_1__05562 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_44_in_rule__EditionScheme__Group_3_1__0__Impl5593 = new BitSet(new long[]{0x0000100000000002L});
-    public static final BitSet FOLLOW_44_in_rule__EditionScheme__Group_3_1__0__Impl5609 = new BitSet(new long[]{0x0000100000000002L});
-    public static final BitSet FOLLOW_rule__EditionScheme__Group_3_1__1__Impl_in_rule__EditionScheme__Group_3_1__15644 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__EditionScheme__ParameterAssignment_3_1_1_in_rule__EditionScheme__Group_3_1__1__Impl5671 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__Parameter__Group__0__Impl_in_rule__Parameter__Group__05705 = new BitSet(new long[]{0x0000200000000000L});
-    public static final BitSet FOLLOW_rule__Parameter__Group__1_in_rule__Parameter__Group__05708 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__Parameter__WidgetAssignment_0_in_rule__Parameter__Group__0__Impl5735 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__Parameter__Group__1__Impl_in_rule__Parameter__Group__15765 = new BitSet(new long[]{0x0000000000000010L});
-    public static final BitSet FOLLOW_rule__Parameter__Group__2_in_rule__Parameter__Group__15768 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_45_in_rule__Parameter__Group__1__Impl5796 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__Parameter__Group__2__Impl_in_rule__Parameter__Group__25827 = new BitSet(new long[]{0x0000000000000010L});
-    public static final BitSet FOLLOW_rule__Parameter__Group__3_in_rule__Parameter__Group__25830 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__Parameter__EditionPatternAssignment_2_in_rule__Parameter__Group__2__Impl5857 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__Parameter__Group__3__Impl_in_rule__Parameter__Group__35887 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__Parameter__NameAssignment_3_in_rule__Parameter__Group__3__Impl5914 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__DeclarePatternRole__Group__0__Impl_in_rule__DeclarePatternRole__Group__05952 = new BitSet(new long[]{0x0000000010000000L});
-    public static final BitSet FOLLOW_rule__DeclarePatternRole__Group__1_in_rule__DeclarePatternRole__Group__05955 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__DeclarePatternRole__PatternRoleAssignment_0_in_rule__DeclarePatternRole__Group__0__Impl5982 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__DeclarePatternRole__Group__1__Impl_in_rule__DeclarePatternRole__Group__16012 = new BitSet(new long[]{0x0000400000000000L});
-    public static final BitSet FOLLOW_rule__DeclarePatternRole__Group__2_in_rule__DeclarePatternRole__Group__16015 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_28_in_rule__DeclarePatternRole__Group__1__Impl6043 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__DeclarePatternRole__Group__2__Impl_in_rule__DeclarePatternRole__Group__26074 = new BitSet(new long[]{0x0000800000000000L});
-    public static final BitSet FOLLOW_rule__DeclarePatternRole__Group__3_in_rule__DeclarePatternRole__Group__26077 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_46_in_rule__DeclarePatternRole__Group__2__Impl6105 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__DeclarePatternRole__Group__3__Impl_in_rule__DeclarePatternRole__Group__36136 = new BitSet(new long[]{0x0000000000000010L});
-    public static final BitSet FOLLOW_rule__DeclarePatternRole__Group__4_in_rule__DeclarePatternRole__Group__36139 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_47_in_rule__DeclarePatternRole__Group__3__Impl6167 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__DeclarePatternRole__Group__4__Impl_in_rule__DeclarePatternRole__Group__46198 = new BitSet(new long[]{0x0000001000000000L});
-    public static final BitSet FOLLOW_rule__DeclarePatternRole__Group__5_in_rule__DeclarePatternRole__Group__46201 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__DeclarePatternRole__ParameterAssignment_4_in_rule__DeclarePatternRole__Group__4__Impl6228 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__DeclarePatternRole__Group__5__Impl_in_rule__DeclarePatternRole__Group__56258 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_36_in_rule__DeclarePatternRole__Group__5__Impl6286 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__DeleteAction__Group__0__Impl_in_rule__DeleteAction__Group__06329 = new BitSet(new long[]{0x0000000000000010L});
-    public static final BitSet FOLLOW_rule__DeleteAction__Group__1_in_rule__DeleteAction__Group__06332 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_48_in_rule__DeleteAction__Group__0__Impl6360 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__DeleteAction__Group__1__Impl_in_rule__DeleteAction__Group__16391 = new BitSet(new long[]{0x0000001000000000L});
-    public static final BitSet FOLLOW_rule__DeleteAction__Group__2_in_rule__DeleteAction__Group__16394 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__DeleteAction__PatternRoleAssignment_1_in_rule__DeleteAction__Group__1__Impl6421 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__DeleteAction__Group__2__Impl_in_rule__DeleteAction__Group__26451 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_36_in_rule__DeleteAction__Group__2__Impl6479 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_RULE_ID_in_rule__ViewDef__NameAssignment_16521 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_RULE_URISTRING_in_rule__ViewDef__UriAssignment_46552 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_ruleVirtualModel_in_rule__ViewDef__ElementsAssignment_66583 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_RULE_ID_in_rule__VirtualModel__NameAssignment_16614 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_ruleVMTYPE_in_rule__VirtualModel__TypeAssignment_2_26645 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_RULE_URISTRING_in_rule__VirtualModel__UriAssignment_56676 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_ruleModelSlot_in_rule__VirtualModel__ModelSlotsAssignment_76707 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_ruleEditionPattern_in_rule__VirtualModel__EditionPatternsAssignment_86738 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_RULE_ID_in_rule__ModelSlot__NameAssignment_16769 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_ruleMSTYPE_in_rule__ModelSlot__TypeAssignment_46800 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_RULE_URISTRING_in_rule__ModelSlot__UriAssignment_76831 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_RULE_BOOL_in_rule__ModelSlot__RequiredAssignment_106862 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_RULE_BOOL_in_rule__ModelSlot__ReadOnlyAssignment_136893 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_RULE_ID_in_rule__EditionPattern__NameAssignment_16924 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_RULE_ID_in_rule__EditionPattern__SuperEditionPatternAssignment_2_16959 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rulePatternRole_in_rule__EditionPattern__PatternRolesAssignment_46994 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_ruleEditionScheme_in_rule__EditionPattern__EditionSchemesAssignment_57025 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_RULE_ID_in_rule__PatternRole__NameAssignment_17056 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rulePRTYPE_in_rule__PatternRole__TypeAssignment_37087 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_RULE_STRING_in_rule__PatternRole__ModelElementAssignment_57118 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_RULE_ID_in_rule__PatternRole__ModelSlotAssignment_77153 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_ruleEditionSchemeType_in_rule__EditionScheme__EditionSchemeTypeAssignment_07188 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_RULE_ID_in_rule__EditionScheme__NameAssignment_17219 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_ruleParameter_in_rule__EditionScheme__ParameterAssignment_3_07250 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_ruleParameter_in_rule__EditionScheme__ParameterAssignment_3_1_17281 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_ruleEditionAction_in_rule__EditionScheme__EditionActionAssignment_67312 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rulePRTYPE_in_rule__Parameter__WidgetAssignment_07343 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_RULE_ID_in_rule__Parameter__EditionPatternAssignment_27378 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_RULE_ID_in_rule__Parameter__NameAssignment_37413 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_RULE_ID_in_rule__DeclarePatternRole__PatternRoleAssignment_07448 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_RULE_ID_in_rule__DeclarePatternRole__ParameterAssignment_47487 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_RULE_ID_in_rule__DeleteAction__PatternRoleAssignment_17526 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_ruleAddEMFObjectIndividual_in_entryRuleAddEMFObjectIndividual720 = new BitSet(new long[]{0x0000000000000000L});
+    public static final BitSet FOLLOW_EOF_in_entryRuleAddEMFObjectIndividual727 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__AddEMFObjectIndividual__Group__0_in_ruleAddEMFObjectIndividual753 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__EditionSchemeType__Alternatives_in_ruleEditionSchemeType790 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__MSTYPE__Alternatives_in_ruleMSTYPE826 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__VMTYPE__Alternatives_in_ruleVMTYPE862 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_14_in_rulePRTYPE899 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_ruleDeclarePatternRole_in_rule__BuiltInAction__Alternatives936 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_ruleDeleteAction_in_rule__BuiltInAction__Alternatives953 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_ruleAddEMFObjectIndividual_in_rule__BuiltInAction__Alternatives970 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__DeclarePatternRole__Group_1_0__0_in_rule__DeclarePatternRole__Alternatives_11002 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__DeclarePatternRole__Group_1_1__0_in_rule__DeclarePatternRole__Alternatives_11020 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_15_in_rule__EditionSchemeType__Alternatives1054 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_16_in_rule__EditionSchemeType__Alternatives1075 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_17_in_rule__EditionSchemeType__Alternatives1096 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_18_in_rule__EditionSchemeType__Alternatives1117 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_19_in_rule__MSTYPE__Alternatives1153 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_20_in_rule__MSTYPE__Alternatives1174 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_21_in_rule__MSTYPE__Alternatives1195 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_22_in_rule__MSTYPE__Alternatives1216 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_23_in_rule__MSTYPE__Alternatives1237 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_24_in_rule__VMTYPE__Alternatives1273 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_25_in_rule__VMTYPE__Alternatives1294 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__ViewDef__Group__0__Impl_in_rule__ViewDef__Group__01327 = new BitSet(new long[]{0x0000000000000010L});
+    public static final BitSet FOLLOW_rule__ViewDef__Group__1_in_rule__ViewDef__Group__01330 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_26_in_rule__ViewDef__Group__0__Impl1358 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__ViewDef__Group__1__Impl_in_rule__ViewDef__Group__11389 = new BitSet(new long[]{0x0000000008000000L});
+    public static final BitSet FOLLOW_rule__ViewDef__Group__2_in_rule__ViewDef__Group__11392 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__ViewDef__NameAssignment_1_in_rule__ViewDef__Group__1__Impl1419 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__ViewDef__Group__2__Impl_in_rule__ViewDef__Group__21449 = new BitSet(new long[]{0x0000000010000000L});
+    public static final BitSet FOLLOW_rule__ViewDef__Group__3_in_rule__ViewDef__Group__21452 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_27_in_rule__ViewDef__Group__2__Impl1483 = new BitSet(new long[]{0x0000000008000002L});
+    public static final BitSet FOLLOW_27_in_rule__ViewDef__Group__2__Impl1499 = new BitSet(new long[]{0x0000000008000002L});
+    public static final BitSet FOLLOW_rule__ViewDef__Group__3__Impl_in_rule__ViewDef__Group__31534 = new BitSet(new long[]{0x0000000000000020L});
+    public static final BitSet FOLLOW_rule__ViewDef__Group__4_in_rule__ViewDef__Group__31537 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_28_in_rule__ViewDef__Group__3__Impl1568 = new BitSet(new long[]{0x0000000010000002L});
+    public static final BitSet FOLLOW_28_in_rule__ViewDef__Group__3__Impl1584 = new BitSet(new long[]{0x0000000010000002L});
+    public static final BitSet FOLLOW_rule__ViewDef__Group__4__Impl_in_rule__ViewDef__Group__41619 = new BitSet(new long[]{0x0000000020000000L});
+    public static final BitSet FOLLOW_rule__ViewDef__Group__5_in_rule__ViewDef__Group__41622 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__ViewDef__UriAssignment_4_in_rule__ViewDef__Group__4__Impl1649 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__ViewDef__Group__5__Impl_in_rule__ViewDef__Group__51679 = new BitSet(new long[]{0x0000000042000000L});
+    public static final BitSet FOLLOW_rule__ViewDef__Group__6_in_rule__ViewDef__Group__51682 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_29_in_rule__ViewDef__Group__5__Impl1710 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__ViewDef__Group__6__Impl_in_rule__ViewDef__Group__61741 = new BitSet(new long[]{0x0000000042000000L});
+    public static final BitSet FOLLOW_rule__ViewDef__Group__7_in_rule__ViewDef__Group__61744 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__ViewDef__ElementsAssignment_6_in_rule__ViewDef__Group__6__Impl1771 = new BitSet(new long[]{0x0000000002000002L});
+    public static final BitSet FOLLOW_rule__ViewDef__Group__7__Impl_in_rule__ViewDef__Group__71802 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_30_in_rule__ViewDef__Group__7__Impl1830 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__VirtualModel__Group__0__Impl_in_rule__VirtualModel__Group__01877 = new BitSet(new long[]{0x0000000000000010L});
+    public static final BitSet FOLLOW_rule__VirtualModel__Group__1_in_rule__VirtualModel__Group__01880 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_25_in_rule__VirtualModel__Group__0__Impl1908 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__VirtualModel__Group__1__Impl_in_rule__VirtualModel__Group__11939 = new BitSet(new long[]{0x0000000088000000L});
+    public static final BitSet FOLLOW_rule__VirtualModel__Group__2_in_rule__VirtualModel__Group__11942 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__VirtualModel__NameAssignment_1_in_rule__VirtualModel__Group__1__Impl1969 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__VirtualModel__Group__2__Impl_in_rule__VirtualModel__Group__21999 = new BitSet(new long[]{0x0000000088000000L});
+    public static final BitSet FOLLOW_rule__VirtualModel__Group__3_in_rule__VirtualModel__Group__22002 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__VirtualModel__Group_2__0_in_rule__VirtualModel__Group__2__Impl2029 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__VirtualModel__Group__3__Impl_in_rule__VirtualModel__Group__32060 = new BitSet(new long[]{0x0000000010000000L});
+    public static final BitSet FOLLOW_rule__VirtualModel__Group__4_in_rule__VirtualModel__Group__32063 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_27_in_rule__VirtualModel__Group__3__Impl2094 = new BitSet(new long[]{0x0000000008000002L});
+    public static final BitSet FOLLOW_27_in_rule__VirtualModel__Group__3__Impl2110 = new BitSet(new long[]{0x0000000008000002L});
+    public static final BitSet FOLLOW_rule__VirtualModel__Group__4__Impl_in_rule__VirtualModel__Group__42145 = new BitSet(new long[]{0x0000000000000020L});
+    public static final BitSet FOLLOW_rule__VirtualModel__Group__5_in_rule__VirtualModel__Group__42148 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_28_in_rule__VirtualModel__Group__4__Impl2179 = new BitSet(new long[]{0x0000000010000002L});
+    public static final BitSet FOLLOW_28_in_rule__VirtualModel__Group__4__Impl2195 = new BitSet(new long[]{0x0000000010000002L});
+    public static final BitSet FOLLOW_rule__VirtualModel__Group__5__Impl_in_rule__VirtualModel__Group__52230 = new BitSet(new long[]{0x0000000020000000L});
+    public static final BitSet FOLLOW_rule__VirtualModel__Group__6_in_rule__VirtualModel__Group__52233 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__VirtualModel__UriAssignment_5_in_rule__VirtualModel__Group__5__Impl2260 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__VirtualModel__Group__6__Impl_in_rule__VirtualModel__Group__62290 = new BitSet(new long[]{0x0000002140000000L});
+    public static final BitSet FOLLOW_rule__VirtualModel__Group__7_in_rule__VirtualModel__Group__62293 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_29_in_rule__VirtualModel__Group__6__Impl2321 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__VirtualModel__Group__7__Impl_in_rule__VirtualModel__Group__72352 = new BitSet(new long[]{0x0000002140000000L});
+    public static final BitSet FOLLOW_rule__VirtualModel__Group__8_in_rule__VirtualModel__Group__72355 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__VirtualModel__ModelSlotsAssignment_7_in_rule__VirtualModel__Group__7__Impl2382 = new BitSet(new long[]{0x0000000100000002L});
+    public static final BitSet FOLLOW_rule__VirtualModel__Group__8__Impl_in_rule__VirtualModel__Group__82413 = new BitSet(new long[]{0x0000002140000000L});
+    public static final BitSet FOLLOW_rule__VirtualModel__Group__9_in_rule__VirtualModel__Group__82416 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__VirtualModel__EditionPatternsAssignment_8_in_rule__VirtualModel__Group__8__Impl2443 = new BitSet(new long[]{0x0000002000000002L});
+    public static final BitSet FOLLOW_rule__VirtualModel__Group__9__Impl_in_rule__VirtualModel__Group__92474 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_30_in_rule__VirtualModel__Group__9__Impl2502 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__VirtualModel__Group_2__0__Impl_in_rule__VirtualModel__Group_2__02553 = new BitSet(new long[]{0x0000000010000000L});
+    public static final BitSet FOLLOW_rule__VirtualModel__Group_2__1_in_rule__VirtualModel__Group_2__02556 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_31_in_rule__VirtualModel__Group_2__0__Impl2587 = new BitSet(new long[]{0x0000000080000002L});
+    public static final BitSet FOLLOW_31_in_rule__VirtualModel__Group_2__0__Impl2603 = new BitSet(new long[]{0x0000000080000002L});
+    public static final BitSet FOLLOW_rule__VirtualModel__Group_2__1__Impl_in_rule__VirtualModel__Group_2__12638 = new BitSet(new long[]{0x0000000003000000L});
+    public static final BitSet FOLLOW_rule__VirtualModel__Group_2__2_in_rule__VirtualModel__Group_2__12641 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_28_in_rule__VirtualModel__Group_2__1__Impl2672 = new BitSet(new long[]{0x0000000010000002L});
+    public static final BitSet FOLLOW_28_in_rule__VirtualModel__Group_2__1__Impl2688 = new BitSet(new long[]{0x0000000010000002L});
+    public static final BitSet FOLLOW_rule__VirtualModel__Group_2__2__Impl_in_rule__VirtualModel__Group_2__22723 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__VirtualModel__TypeAssignment_2_2_in_rule__VirtualModel__Group_2__2__Impl2750 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__ModelSlot__Group__0__Impl_in_rule__ModelSlot__Group__02786 = new BitSet(new long[]{0x0000000000000010L});
+    public static final BitSet FOLLOW_rule__ModelSlot__Group__1_in_rule__ModelSlot__Group__02789 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_32_in_rule__ModelSlot__Group__0__Impl2817 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__ModelSlot__Group__1__Impl_in_rule__ModelSlot__Group__12848 = new BitSet(new long[]{0x0000000080000000L});
+    public static final BitSet FOLLOW_rule__ModelSlot__Group__2_in_rule__ModelSlot__Group__12851 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__ModelSlot__NameAssignment_1_in_rule__ModelSlot__Group__1__Impl2878 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__ModelSlot__Group__2__Impl_in_rule__ModelSlot__Group__22908 = new BitSet(new long[]{0x0000000010000000L});
+    public static final BitSet FOLLOW_rule__ModelSlot__Group__3_in_rule__ModelSlot__Group__22911 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_31_in_rule__ModelSlot__Group__2__Impl2942 = new BitSet(new long[]{0x0000000080000002L});
+    public static final BitSet FOLLOW_31_in_rule__ModelSlot__Group__2__Impl2958 = new BitSet(new long[]{0x0000000080000002L});
+    public static final BitSet FOLLOW_rule__ModelSlot__Group__3__Impl_in_rule__ModelSlot__Group__32993 = new BitSet(new long[]{0x0000000000F80000L});
+    public static final BitSet FOLLOW_rule__ModelSlot__Group__4_in_rule__ModelSlot__Group__32996 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_28_in_rule__ModelSlot__Group__3__Impl3027 = new BitSet(new long[]{0x0000000010000002L});
+    public static final BitSet FOLLOW_28_in_rule__ModelSlot__Group__3__Impl3043 = new BitSet(new long[]{0x0000000010000002L});
+    public static final BitSet FOLLOW_rule__ModelSlot__Group__4__Impl_in_rule__ModelSlot__Group__43078 = new BitSet(new long[]{0x0000000200000000L});
+    public static final BitSet FOLLOW_rule__ModelSlot__Group__5_in_rule__ModelSlot__Group__43081 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__ModelSlot__TypeAssignment_4_in_rule__ModelSlot__Group__4__Impl3108 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__ModelSlot__Group__5__Impl_in_rule__ModelSlot__Group__53138 = new BitSet(new long[]{0x0000000010000000L});
+    public static final BitSet FOLLOW_rule__ModelSlot__Group__6_in_rule__ModelSlot__Group__53141 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_33_in_rule__ModelSlot__Group__5__Impl3172 = new BitSet(new long[]{0x0000000200000002L});
+    public static final BitSet FOLLOW_33_in_rule__ModelSlot__Group__5__Impl3188 = new BitSet(new long[]{0x0000000200000002L});
+    public static final BitSet FOLLOW_rule__ModelSlot__Group__6__Impl_in_rule__ModelSlot__Group__63223 = new BitSet(new long[]{0x0000000000000020L});
+    public static final BitSet FOLLOW_rule__ModelSlot__Group__7_in_rule__ModelSlot__Group__63226 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_28_in_rule__ModelSlot__Group__6__Impl3257 = new BitSet(new long[]{0x0000000010000002L});
+    public static final BitSet FOLLOW_28_in_rule__ModelSlot__Group__6__Impl3273 = new BitSet(new long[]{0x0000000010000002L});
+    public static final BitSet FOLLOW_rule__ModelSlot__Group__7__Impl_in_rule__ModelSlot__Group__73308 = new BitSet(new long[]{0x0000000400000000L});
+    public static final BitSet FOLLOW_rule__ModelSlot__Group__8_in_rule__ModelSlot__Group__73311 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__ModelSlot__UriAssignment_7_in_rule__ModelSlot__Group__7__Impl3338 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__ModelSlot__Group__8__Impl_in_rule__ModelSlot__Group__83368 = new BitSet(new long[]{0x0000000010000000L});
+    public static final BitSet FOLLOW_rule__ModelSlot__Group__9_in_rule__ModelSlot__Group__83371 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_34_in_rule__ModelSlot__Group__8__Impl3402 = new BitSet(new long[]{0x0000000400000002L});
+    public static final BitSet FOLLOW_34_in_rule__ModelSlot__Group__8__Impl3418 = new BitSet(new long[]{0x0000000400000002L});
+    public static final BitSet FOLLOW_rule__ModelSlot__Group__9__Impl_in_rule__ModelSlot__Group__93453 = new BitSet(new long[]{0x0000000000000040L});
+    public static final BitSet FOLLOW_rule__ModelSlot__Group__10_in_rule__ModelSlot__Group__93456 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_28_in_rule__ModelSlot__Group__9__Impl3487 = new BitSet(new long[]{0x0000000010000002L});
+    public static final BitSet FOLLOW_28_in_rule__ModelSlot__Group__9__Impl3503 = new BitSet(new long[]{0x0000000010000002L});
+    public static final BitSet FOLLOW_rule__ModelSlot__Group__10__Impl_in_rule__ModelSlot__Group__103538 = new BitSet(new long[]{0x0000000800000000L});
+    public static final BitSet FOLLOW_rule__ModelSlot__Group__11_in_rule__ModelSlot__Group__103541 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__ModelSlot__RequiredAssignment_10_in_rule__ModelSlot__Group__10__Impl3568 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__ModelSlot__Group__11__Impl_in_rule__ModelSlot__Group__113598 = new BitSet(new long[]{0x0000000010000000L});
+    public static final BitSet FOLLOW_rule__ModelSlot__Group__12_in_rule__ModelSlot__Group__113601 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_35_in_rule__ModelSlot__Group__11__Impl3632 = new BitSet(new long[]{0x0000000800000002L});
+    public static final BitSet FOLLOW_35_in_rule__ModelSlot__Group__11__Impl3648 = new BitSet(new long[]{0x0000000800000002L});
+    public static final BitSet FOLLOW_rule__ModelSlot__Group__12__Impl_in_rule__ModelSlot__Group__123683 = new BitSet(new long[]{0x0000000000000040L});
+    public static final BitSet FOLLOW_rule__ModelSlot__Group__13_in_rule__ModelSlot__Group__123686 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_28_in_rule__ModelSlot__Group__12__Impl3717 = new BitSet(new long[]{0x0000000010000002L});
+    public static final BitSet FOLLOW_28_in_rule__ModelSlot__Group__12__Impl3733 = new BitSet(new long[]{0x0000000010000002L});
+    public static final BitSet FOLLOW_rule__ModelSlot__Group__13__Impl_in_rule__ModelSlot__Group__133768 = new BitSet(new long[]{0x0000001000000000L});
+    public static final BitSet FOLLOW_rule__ModelSlot__Group__14_in_rule__ModelSlot__Group__133771 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__ModelSlot__ReadOnlyAssignment_13_in_rule__ModelSlot__Group__13__Impl3798 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__ModelSlot__Group__14__Impl_in_rule__ModelSlot__Group__143828 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_36_in_rule__ModelSlot__Group__14__Impl3856 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__EditionPattern__Group__0__Impl_in_rule__EditionPattern__Group__03917 = new BitSet(new long[]{0x0000000000000010L});
+    public static final BitSet FOLLOW_rule__EditionPattern__Group__1_in_rule__EditionPattern__Group__03920 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_37_in_rule__EditionPattern__Group__0__Impl3948 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__EditionPattern__Group__1__Impl_in_rule__EditionPattern__Group__13979 = new BitSet(new long[]{0x0000004020000000L});
+    public static final BitSet FOLLOW_rule__EditionPattern__Group__2_in_rule__EditionPattern__Group__13982 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__EditionPattern__NameAssignment_1_in_rule__EditionPattern__Group__1__Impl4009 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__EditionPattern__Group__2__Impl_in_rule__EditionPattern__Group__24039 = new BitSet(new long[]{0x0000004020000000L});
+    public static final BitSet FOLLOW_rule__EditionPattern__Group__3_in_rule__EditionPattern__Group__24042 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__EditionPattern__Group_2__0_in_rule__EditionPattern__Group__2__Impl4069 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__EditionPattern__Group__3__Impl_in_rule__EditionPattern__Group__34100 = new BitSet(new long[]{0x0000008040078000L});
+    public static final BitSet FOLLOW_rule__EditionPattern__Group__4_in_rule__EditionPattern__Group__34103 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_29_in_rule__EditionPattern__Group__3__Impl4131 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__EditionPattern__Group__4__Impl_in_rule__EditionPattern__Group__44162 = new BitSet(new long[]{0x0000008040078000L});
+    public static final BitSet FOLLOW_rule__EditionPattern__Group__5_in_rule__EditionPattern__Group__44165 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__EditionPattern__PatternRolesAssignment_4_in_rule__EditionPattern__Group__4__Impl4192 = new BitSet(new long[]{0x0000008000000002L});
+    public static final BitSet FOLLOW_rule__EditionPattern__Group__5__Impl_in_rule__EditionPattern__Group__54223 = new BitSet(new long[]{0x0000008040078000L});
+    public static final BitSet FOLLOW_rule__EditionPattern__Group__6_in_rule__EditionPattern__Group__54226 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__EditionPattern__EditionSchemesAssignment_5_in_rule__EditionPattern__Group__5__Impl4253 = new BitSet(new long[]{0x0000000000078002L});
+    public static final BitSet FOLLOW_rule__EditionPattern__Group__6__Impl_in_rule__EditionPattern__Group__64284 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_30_in_rule__EditionPattern__Group__6__Impl4312 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__EditionPattern__Group_2__0__Impl_in_rule__EditionPattern__Group_2__04357 = new BitSet(new long[]{0x0000000000000010L});
+    public static final BitSet FOLLOW_rule__EditionPattern__Group_2__1_in_rule__EditionPattern__Group_2__04360 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_38_in_rule__EditionPattern__Group_2__0__Impl4388 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__EditionPattern__Group_2__1__Impl_in_rule__EditionPattern__Group_2__14419 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__EditionPattern__SuperEditionPatternAssignment_2_1_in_rule__EditionPattern__Group_2__1__Impl4446 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__PatternRole__Group__0__Impl_in_rule__PatternRole__Group__04480 = new BitSet(new long[]{0x0000000000000010L});
+    public static final BitSet FOLLOW_rule__PatternRole__Group__1_in_rule__PatternRole__Group__04483 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_39_in_rule__PatternRole__Group__0__Impl4511 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__PatternRole__Group__1__Impl_in_rule__PatternRole__Group__14542 = new BitSet(new long[]{0x0000010000000000L});
+    public static final BitSet FOLLOW_rule__PatternRole__Group__2_in_rule__PatternRole__Group__14545 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__PatternRole__NameAssignment_1_in_rule__PatternRole__Group__1__Impl4572 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__PatternRole__Group__2__Impl_in_rule__PatternRole__Group__24602 = new BitSet(new long[]{0x0000000000004000L});
+    public static final BitSet FOLLOW_rule__PatternRole__Group__3_in_rule__PatternRole__Group__24605 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_40_in_rule__PatternRole__Group__2__Impl4633 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__PatternRole__Group__3__Impl_in_rule__PatternRole__Group__34664 = new BitSet(new long[]{0x0000000200000000L});
+    public static final BitSet FOLLOW_rule__PatternRole__Group__4_in_rule__PatternRole__Group__34667 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__PatternRole__TypeAssignment_3_in_rule__PatternRole__Group__3__Impl4694 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__PatternRole__Group__4__Impl_in_rule__PatternRole__Group__44724 = new BitSet(new long[]{0x0000000000000010L});
+    public static final BitSet FOLLOW_rule__PatternRole__Group__5_in_rule__PatternRole__Group__44727 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_33_in_rule__PatternRole__Group__4__Impl4755 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__PatternRole__Group__5__Impl_in_rule__PatternRole__Group__54786 = new BitSet(new long[]{0x0000020000000000L});
+    public static final BitSet FOLLOW_rule__PatternRole__Group__6_in_rule__PatternRole__Group__54789 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__PatternRole__ModelElementAssignment_5_in_rule__PatternRole__Group__5__Impl4816 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__PatternRole__Group__6__Impl_in_rule__PatternRole__Group__64846 = new BitSet(new long[]{0x0000000000000010L});
+    public static final BitSet FOLLOW_rule__PatternRole__Group__7_in_rule__PatternRole__Group__64849 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_41_in_rule__PatternRole__Group__6__Impl4877 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__PatternRole__Group__7__Impl_in_rule__PatternRole__Group__74908 = new BitSet(new long[]{0x0000001000000000L});
+    public static final BitSet FOLLOW_rule__PatternRole__Group__8_in_rule__PatternRole__Group__74911 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__PatternRole__ModelSlotAssignment_7_in_rule__PatternRole__Group__7__Impl4938 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__PatternRole__Group__8__Impl_in_rule__PatternRole__Group__84968 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_36_in_rule__PatternRole__Group__8__Impl4996 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__EditionScheme__Group__0__Impl_in_rule__EditionScheme__Group__05045 = new BitSet(new long[]{0x0000000000000010L});
+    public static final BitSet FOLLOW_rule__EditionScheme__Group__1_in_rule__EditionScheme__Group__05048 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__EditionScheme__EditionSchemeTypeAssignment_0_in_rule__EditionScheme__Group__0__Impl5075 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__EditionScheme__Group__1__Impl_in_rule__EditionScheme__Group__15105 = new BitSet(new long[]{0x0000040000000000L});
+    public static final BitSet FOLLOW_rule__EditionScheme__Group__2_in_rule__EditionScheme__Group__15108 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__EditionScheme__NameAssignment_1_in_rule__EditionScheme__Group__1__Impl5135 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__EditionScheme__Group__2__Impl_in_rule__EditionScheme__Group__25165 = new BitSet(new long[]{0x0000080000004000L});
+    public static final BitSet FOLLOW_rule__EditionScheme__Group__3_in_rule__EditionScheme__Group__25168 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_42_in_rule__EditionScheme__Group__2__Impl5196 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__EditionScheme__Group__3__Impl_in_rule__EditionScheme__Group__35227 = new BitSet(new long[]{0x0000080000004000L});
+    public static final BitSet FOLLOW_rule__EditionScheme__Group__4_in_rule__EditionScheme__Group__35230 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__EditionScheme__Group_3__0_in_rule__EditionScheme__Group__3__Impl5257 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__EditionScheme__Group__4__Impl_in_rule__EditionScheme__Group__45288 = new BitSet(new long[]{0x0000000020000000L});
+    public static final BitSet FOLLOW_rule__EditionScheme__Group__5_in_rule__EditionScheme__Group__45291 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_43_in_rule__EditionScheme__Group__4__Impl5319 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__EditionScheme__Group__5__Impl_in_rule__EditionScheme__Group__55350 = new BitSet(new long[]{0x0003000040000010L});
+    public static final BitSet FOLLOW_rule__EditionScheme__Group__6_in_rule__EditionScheme__Group__55353 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_29_in_rule__EditionScheme__Group__5__Impl5381 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__EditionScheme__Group__6__Impl_in_rule__EditionScheme__Group__65412 = new BitSet(new long[]{0x0003000040000010L});
+    public static final BitSet FOLLOW_rule__EditionScheme__Group__7_in_rule__EditionScheme__Group__65415 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__EditionScheme__EditionActionAssignment_6_in_rule__EditionScheme__Group__6__Impl5442 = new BitSet(new long[]{0x0003000000000012L});
+    public static final BitSet FOLLOW_rule__EditionScheme__Group__7__Impl_in_rule__EditionScheme__Group__75473 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_30_in_rule__EditionScheme__Group__7__Impl5501 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__EditionScheme__Group_3__0__Impl_in_rule__EditionScheme__Group_3__05548 = new BitSet(new long[]{0x0000100000000000L});
+    public static final BitSet FOLLOW_rule__EditionScheme__Group_3__1_in_rule__EditionScheme__Group_3__05551 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__EditionScheme__ParameterAssignment_3_0_in_rule__EditionScheme__Group_3__0__Impl5580 = new BitSet(new long[]{0x0000000000004002L});
+    public static final BitSet FOLLOW_rule__EditionScheme__ParameterAssignment_3_0_in_rule__EditionScheme__Group_3__0__Impl5592 = new BitSet(new long[]{0x0000000000004002L});
+    public static final BitSet FOLLOW_rule__EditionScheme__Group_3__1__Impl_in_rule__EditionScheme__Group_3__15625 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__EditionScheme__Group_3_1__0_in_rule__EditionScheme__Group_3__1__Impl5652 = new BitSet(new long[]{0x0000100000000002L});
+    public static final BitSet FOLLOW_rule__EditionScheme__Group_3_1__0__Impl_in_rule__EditionScheme__Group_3_1__05687 = new BitSet(new long[]{0x0000000000004000L});
+    public static final BitSet FOLLOW_rule__EditionScheme__Group_3_1__1_in_rule__EditionScheme__Group_3_1__05690 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_44_in_rule__EditionScheme__Group_3_1__0__Impl5721 = new BitSet(new long[]{0x0000100000000002L});
+    public static final BitSet FOLLOW_44_in_rule__EditionScheme__Group_3_1__0__Impl5737 = new BitSet(new long[]{0x0000100000000002L});
+    public static final BitSet FOLLOW_rule__EditionScheme__Group_3_1__1__Impl_in_rule__EditionScheme__Group_3_1__15772 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__EditionScheme__ParameterAssignment_3_1_1_in_rule__EditionScheme__Group_3_1__1__Impl5799 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__Parameter__Group__0__Impl_in_rule__Parameter__Group__05833 = new BitSet(new long[]{0x0000200000000000L});
+    public static final BitSet FOLLOW_rule__Parameter__Group__1_in_rule__Parameter__Group__05836 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__Parameter__WidgetAssignment_0_in_rule__Parameter__Group__0__Impl5863 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__Parameter__Group__1__Impl_in_rule__Parameter__Group__15893 = new BitSet(new long[]{0x0000000000000010L});
+    public static final BitSet FOLLOW_rule__Parameter__Group__2_in_rule__Parameter__Group__15896 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_45_in_rule__Parameter__Group__1__Impl5924 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__Parameter__Group__2__Impl_in_rule__Parameter__Group__25955 = new BitSet(new long[]{0x0000000000000010L});
+    public static final BitSet FOLLOW_rule__Parameter__Group__3_in_rule__Parameter__Group__25958 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__Parameter__EditionPatternAssignment_2_in_rule__Parameter__Group__2__Impl5985 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__Parameter__Group__3__Impl_in_rule__Parameter__Group__36015 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__Parameter__NameAssignment_3_in_rule__Parameter__Group__3__Impl6042 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__DeclarePatternRole__Group__0__Impl_in_rule__DeclarePatternRole__Group__06080 = new BitSet(new long[]{0x0000440000000000L});
+    public static final BitSet FOLLOW_rule__DeclarePatternRole__Group__1_in_rule__DeclarePatternRole__Group__06083 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__DeclarePatternRole__Group_0__0_in_rule__DeclarePatternRole__Group__0__Impl6112 = new BitSet(new long[]{0x0000000000000012L});
+    public static final BitSet FOLLOW_rule__DeclarePatternRole__Group_0__0_in_rule__DeclarePatternRole__Group__0__Impl6124 = new BitSet(new long[]{0x0000000000000012L});
+    public static final BitSet FOLLOW_rule__DeclarePatternRole__Group__1__Impl_in_rule__DeclarePatternRole__Group__16157 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__DeclarePatternRole__Alternatives_1_in_rule__DeclarePatternRole__Group__1__Impl6184 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__DeclarePatternRole__Group_0__0__Impl_in_rule__DeclarePatternRole__Group_0__06218 = new BitSet(new long[]{0x0000000010000000L});
+    public static final BitSet FOLLOW_rule__DeclarePatternRole__Group_0__1_in_rule__DeclarePatternRole__Group_0__06221 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__DeclarePatternRole__PatternRoleAssignment_0_0_in_rule__DeclarePatternRole__Group_0__0__Impl6250 = new BitSet(new long[]{0x0000000000000012L});
+    public static final BitSet FOLLOW_rule__DeclarePatternRole__PatternRoleAssignment_0_0_in_rule__DeclarePatternRole__Group_0__0__Impl6262 = new BitSet(new long[]{0x0000000000000012L});
+    public static final BitSet FOLLOW_rule__DeclarePatternRole__Group_0__1__Impl_in_rule__DeclarePatternRole__Group_0__16295 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_28_in_rule__DeclarePatternRole__Group_0__1__Impl6323 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__DeclarePatternRole__Group_1_0__0__Impl_in_rule__DeclarePatternRole__Group_1_0__06358 = new BitSet(new long[]{0x0000800000000000L});
+    public static final BitSet FOLLOW_rule__DeclarePatternRole__Group_1_0__1_in_rule__DeclarePatternRole__Group_1_0__06361 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_46_in_rule__DeclarePatternRole__Group_1_0__0__Impl6389 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__DeclarePatternRole__Group_1_0__1__Impl_in_rule__DeclarePatternRole__Group_1_0__16420 = new BitSet(new long[]{0x0000000000000010L});
+    public static final BitSet FOLLOW_rule__DeclarePatternRole__Group_1_0__2_in_rule__DeclarePatternRole__Group_1_0__16423 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_47_in_rule__DeclarePatternRole__Group_1_0__1__Impl6451 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__DeclarePatternRole__Group_1_0__2__Impl_in_rule__DeclarePatternRole__Group_1_0__26482 = new BitSet(new long[]{0x0000001000000000L});
+    public static final BitSet FOLLOW_rule__DeclarePatternRole__Group_1_0__3_in_rule__DeclarePatternRole__Group_1_0__26485 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__DeclarePatternRole__ParameterAssignment_1_0_2_in_rule__DeclarePatternRole__Group_1_0__2__Impl6512 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__DeclarePatternRole__Group_1_0__3__Impl_in_rule__DeclarePatternRole__Group_1_0__36542 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_36_in_rule__DeclarePatternRole__Group_1_0__3__Impl6570 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__DeclarePatternRole__Group_1_1__0__Impl_in_rule__DeclarePatternRole__Group_1_1__06609 = new BitSet(new long[]{0x0003000000000010L});
+    public static final BitSet FOLLOW_rule__DeclarePatternRole__Group_1_1__1_in_rule__DeclarePatternRole__Group_1_1__06612 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_42_in_rule__DeclarePatternRole__Group_1_1__0__Impl6643 = new BitSet(new long[]{0x0000040000000002L});
+    public static final BitSet FOLLOW_42_in_rule__DeclarePatternRole__Group_1_1__0__Impl6659 = new BitSet(new long[]{0x0000040000000002L});
+    public static final BitSet FOLLOW_rule__DeclarePatternRole__Group_1_1__1__Impl_in_rule__DeclarePatternRole__Group_1_1__16694 = new BitSet(new long[]{0x0000080000000000L});
+    public static final BitSet FOLLOW_rule__DeclarePatternRole__Group_1_1__2_in_rule__DeclarePatternRole__Group_1_1__16697 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__DeclarePatternRole__AddAssignment_1_1_1_in_rule__DeclarePatternRole__Group_1_1__1__Impl6726 = new BitSet(new long[]{0x0003000000000012L});
+    public static final BitSet FOLLOW_rule__DeclarePatternRole__AddAssignment_1_1_1_in_rule__DeclarePatternRole__Group_1_1__1__Impl6738 = new BitSet(new long[]{0x0003000000000012L});
+    public static final BitSet FOLLOW_rule__DeclarePatternRole__Group_1_1__2__Impl_in_rule__DeclarePatternRole__Group_1_1__26771 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_43_in_rule__DeclarePatternRole__Group_1_1__2__Impl6799 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__DeleteAction__Group__0__Impl_in_rule__DeleteAction__Group__06836 = new BitSet(new long[]{0x0000000000000010L});
+    public static final BitSet FOLLOW_rule__DeleteAction__Group__1_in_rule__DeleteAction__Group__06839 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_48_in_rule__DeleteAction__Group__0__Impl6867 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__DeleteAction__Group__1__Impl_in_rule__DeleteAction__Group__16898 = new BitSet(new long[]{0x0000001000000000L});
+    public static final BitSet FOLLOW_rule__DeleteAction__Group__2_in_rule__DeleteAction__Group__16901 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__DeleteAction__PatternRoleAssignment_1_in_rule__DeleteAction__Group__1__Impl6928 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__DeleteAction__Group__2__Impl_in_rule__DeleteAction__Group__26958 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_36_in_rule__DeleteAction__Group__2__Impl6986 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__AddEMFObjectIndividual__Group__0__Impl_in_rule__AddEMFObjectIndividual__Group__07023 = new BitSet(new long[]{0x0000000200000000L});
+    public static final BitSet FOLLOW_rule__AddEMFObjectIndividual__Group__1_in_rule__AddEMFObjectIndividual__Group__07026 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_49_in_rule__AddEMFObjectIndividual__Group__0__Impl7054 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__AddEMFObjectIndividual__Group__1__Impl_in_rule__AddEMFObjectIndividual__Group__17085 = new BitSet(new long[]{0x0000000000000010L});
+    public static final BitSet FOLLOW_rule__AddEMFObjectIndividual__Group__2_in_rule__AddEMFObjectIndividual__Group__17088 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_33_in_rule__AddEMFObjectIndividual__Group__1__Impl7116 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__AddEMFObjectIndividual__Group__2__Impl_in_rule__AddEMFObjectIndividual__Group__27147 = new BitSet(new long[]{0x0000020000000000L});
+    public static final BitSet FOLLOW_rule__AddEMFObjectIndividual__Group__3_in_rule__AddEMFObjectIndividual__Group__27150 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__AddEMFObjectIndividual__EditionPatternAssignment_2_in_rule__AddEMFObjectIndividual__Group__2__Impl7177 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__AddEMFObjectIndividual__Group__3__Impl_in_rule__AddEMFObjectIndividual__Group__37207 = new BitSet(new long[]{0x0000000000000010L});
+    public static final BitSet FOLLOW_rule__AddEMFObjectIndividual__Group__4_in_rule__AddEMFObjectIndividual__Group__37210 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_41_in_rule__AddEMFObjectIndividual__Group__3__Impl7238 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__AddEMFObjectIndividual__Group__4__Impl_in_rule__AddEMFObjectIndividual__Group__47269 = new BitSet(new long[]{0x0000000020000000L});
+    public static final BitSet FOLLOW_rule__AddEMFObjectIndividual__Group__5_in_rule__AddEMFObjectIndividual__Group__47272 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__AddEMFObjectIndividual__ModelSlotAssignment_4_in_rule__AddEMFObjectIndividual__Group__4__Impl7299 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__AddEMFObjectIndividual__Group__5__Impl_in_rule__AddEMFObjectIndividual__Group__57329 = new BitSet(new long[]{0x0000000040000000L});
+    public static final BitSet FOLLOW_rule__AddEMFObjectIndividual__Group__6_in_rule__AddEMFObjectIndividual__Group__57332 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_29_in_rule__AddEMFObjectIndividual__Group__5__Impl7360 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__AddEMFObjectIndividual__Group__6__Impl_in_rule__AddEMFObjectIndividual__Group__67391 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_30_in_rule__AddEMFObjectIndividual__Group__6__Impl7419 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_RULE_ID_in_rule__ViewDef__NameAssignment_17469 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_RULE_URISTRING_in_rule__ViewDef__UriAssignment_47500 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_ruleVirtualModel_in_rule__ViewDef__ElementsAssignment_67531 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_RULE_ID_in_rule__VirtualModel__NameAssignment_17562 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_ruleVMTYPE_in_rule__VirtualModel__TypeAssignment_2_27593 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_RULE_URISTRING_in_rule__VirtualModel__UriAssignment_57624 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_ruleModelSlot_in_rule__VirtualModel__ModelSlotsAssignment_77655 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_ruleEditionPattern_in_rule__VirtualModel__EditionPatternsAssignment_87686 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_RULE_ID_in_rule__ModelSlot__NameAssignment_17717 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_ruleMSTYPE_in_rule__ModelSlot__TypeAssignment_47748 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_RULE_URISTRING_in_rule__ModelSlot__UriAssignment_77779 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_RULE_BOOL_in_rule__ModelSlot__RequiredAssignment_107810 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_RULE_BOOL_in_rule__ModelSlot__ReadOnlyAssignment_137841 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_RULE_ID_in_rule__EditionPattern__NameAssignment_17872 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_RULE_ID_in_rule__EditionPattern__SuperEditionPatternAssignment_2_17907 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rulePatternRole_in_rule__EditionPattern__PatternRolesAssignment_47942 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_ruleEditionScheme_in_rule__EditionPattern__EditionSchemesAssignment_57973 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_RULE_ID_in_rule__PatternRole__NameAssignment_18004 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rulePRTYPE_in_rule__PatternRole__TypeAssignment_38035 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_RULE_ID_in_rule__PatternRole__ModelElementAssignment_58066 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_RULE_ID_in_rule__PatternRole__ModelSlotAssignment_78101 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_ruleEditionSchemeType_in_rule__EditionScheme__EditionSchemeTypeAssignment_08136 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_RULE_ID_in_rule__EditionScheme__NameAssignment_18167 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_ruleParameter_in_rule__EditionScheme__ParameterAssignment_3_08198 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_ruleParameter_in_rule__EditionScheme__ParameterAssignment_3_1_18229 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_ruleEditionAction_in_rule__EditionScheme__EditionActionAssignment_68260 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rulePRTYPE_in_rule__Parameter__WidgetAssignment_08291 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_RULE_ID_in_rule__Parameter__EditionPatternAssignment_28326 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_RULE_ID_in_rule__Parameter__NameAssignment_38361 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_RULE_ID_in_rule__DeclarePatternRole__PatternRoleAssignment_0_08396 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_RULE_ID_in_rule__DeclarePatternRole__ParameterAssignment_1_0_28435 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_ruleAddEMFObjectIndividual_in_rule__DeclarePatternRole__AddAssignment_1_1_18470 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_RULE_ID_in_rule__DeleteAction__PatternRoleAssignment_18505 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_RULE_ID_in_rule__AddEMFObjectIndividual__EditionPatternAssignment_28544 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_RULE_ID_in_rule__AddEMFObjectIndividual__ModelSlotAssignment_48583 = new BitSet(new long[]{0x0000000000000002L});
 
 }

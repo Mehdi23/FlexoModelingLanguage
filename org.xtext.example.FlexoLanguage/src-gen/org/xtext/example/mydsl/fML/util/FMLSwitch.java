@@ -154,6 +154,15 @@ public class FMLSwitch<T> extends Switch<T>
         if (result == null) result = defaultCase(theEObject);
         return result;
       }
+      case FMLPackage.ADD_EMF_OBJECT_INDIVIDUAL:
+      {
+        AddEMFObjectIndividual addEMFObjectIndividual = (AddEMFObjectIndividual)theEObject;
+        T result = caseAddEMFObjectIndividual(addEMFObjectIndividual);
+        if (result == null) result = caseBuiltInAction(addEMFObjectIndividual);
+        if (result == null) result = caseEditionAction(addEMFObjectIndividual);
+        if (result == null) result = defaultCase(theEObject);
+        return result;
+      }
       default: return defaultCase(theEObject);
     }
   }
@@ -330,6 +339,22 @@ public class FMLSwitch<T> extends Switch<T>
    * @generated
    */
   public T caseDeleteAction(DeleteAction object)
+  {
+    return null;
+  }
+
+  /**
+   * Returns the result of interpreting the object as an instance of '<em>Add EMF Object Individual</em>'.
+   * <!-- begin-user-doc -->
+   * This implementation returns null;
+   * returning a non-null result will terminate the switch.
+   * <!-- end-user-doc -->
+   * @param object the target of the switch.
+   * @return the result of interpreting the object as an instance of '<em>Add EMF Object Individual</em>'.
+   * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+   * @generated
+   */
+  public T caseAddEMFObjectIndividual(AddEMFObjectIndividual object)
   {
     return null;
   }

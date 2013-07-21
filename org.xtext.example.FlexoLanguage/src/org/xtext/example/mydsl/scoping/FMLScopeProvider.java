@@ -10,7 +10,6 @@ import org.eclipse.emf.ecore.EObject;
 import org.eclipse.emf.ecore.EReference;
 import org.eclipse.xtext.scoping.IScope;
 import org.eclipse.xtext.scoping.Scopes;
-import org.xtext.example.mydsl.fML.DeleteAction;
 import org.xtext.example.mydsl.fML.EditionPattern;
 import org.xtext.example.mydsl.fML.EditionScheme;
 
@@ -26,10 +25,10 @@ public class FMLScopeProvider extends
 
 	@Override
 	public IScope getScope(EObject context, EReference reference) {
-		if (context instanceof DeleteAction) {
-			DeleteAction deleteAction = (DeleteAction) context;
-			EditionPattern editionPattern = (EditionPattern) ((EditionScheme) deleteAction
-					.eContainer()).eContainer();
+		if (context instanceof EditionScheme) {
+			EditionScheme editionScheme = (EditionScheme) context;
+			EditionPattern editionPattern = (EditionPattern) editionScheme
+					.eContainer();
 			return getFields(editionPattern, new LinkedList<EditionPattern>());
 		}
 

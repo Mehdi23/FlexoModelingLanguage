@@ -3,10 +3,16 @@
  */
 package org.xtext.example.mydsl.ui.contentassist;
 
+import java.util.Arrays;
+import java.util.HashSet;
+import java.util.Iterator;
+import java.util.Set;
+
 import org.eclipse.emf.ecore.EObject;
 import org.eclipse.xtext.Assignment;
 import org.eclipse.xtext.ui.editor.contentassist.ContentAssistContext;
 import org.eclipse.xtext.ui.editor.contentassist.ICompletionProposalAcceptor;
+import org.xtext.example.mydsl.fML.PatternRole;
 import org.xtext.example.mydsl.fML.ViewDef;
 
 /**
@@ -16,6 +22,7 @@ import org.xtext.example.mydsl.fML.ViewDef;
 public class FMLProposalProvider extends
 		org.xtext.example.mydsl.ui.contentassist.AbstractFMLProposalProvider {
 
+	/*
 	@Override
 	public void completeViewDef_Name(EObject model, Assignment assignment,
 			ContentAssistContext context, ICompletionProposalAcceptor acceptor) {
@@ -25,14 +32,37 @@ public class FMLProposalProvider extends
 		ViewDef viewDef = (ViewDef) model;
 		String proposal = viewDef.getName() + "ID";
 		acceptor.accept(createCompletionProposal(proposal, context));
-	}
+	}*/
 
 	@Override
 	public void completePatternRole_ModelElement(EObject model,
 			Assignment assignment, ContentAssistContext context,
 			ICompletionProposalAcceptor acceptor) {
 		
-		super.completePatternRole_ModelElement(model, assignment, context, acceptor);
+		final Set<String> alls = new HashSet<String>(Arrays.asList(
+				"ToTO", "Tata", "Titi"));
+
+		PatternRole patternRole = (PatternRole) model;
+		String proposal =patternRole.getModelElement();
+		
+		String a = contains(alls, proposal);
+		
+		if ( a != "null" )
+			  proposal= a;
+		
+		acceptor.accept(createCompletionProposal(proposal, context));
+	}
+
+	private String contains(Set<String> s, String item) {
+		Iterator<String> iterator = s.iterator();
+		String aString = "null";
+		while(iterator.hasNext()){
+		    aString = iterator.next();
+		    if (aString.contains(item)) break;
+		}
+		
+		return aString;
+		
 	}
 
 }

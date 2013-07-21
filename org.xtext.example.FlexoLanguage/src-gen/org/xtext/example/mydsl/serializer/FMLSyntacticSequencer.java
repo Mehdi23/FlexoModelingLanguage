@@ -17,6 +17,8 @@ import org.xtext.example.mydsl.services.FMLGrammarAccess;
 public class FMLSyntacticSequencer extends AbstractSyntacticSequencer {
 
 	protected FMLGrammarAccess grammarAccess;
+	protected AbstractElementAlias match_DeclarePatternRole_EqualsSignKeyword_0_1_q;
+	protected AbstractElementAlias match_DeclarePatternRole_LeftParenthesisKeyword_1_1_0_p;
 	protected AbstractElementAlias match_EditionScheme_CommaKeyword_3_1_0_p;
 	protected AbstractElementAlias match_ModelSlot_ConformToKeyword_5_p;
 	protected AbstractElementAlias match_ModelSlot_EqualsSignKeyword_12_p;
@@ -36,6 +38,8 @@ public class FMLSyntacticSequencer extends AbstractSyntacticSequencer {
 	@Inject
 	protected void init(IGrammarAccess access) {
 		grammarAccess = (FMLGrammarAccess) access;
+		match_DeclarePatternRole_EqualsSignKeyword_0_1_q = new TokenAlias(false, true, grammarAccess.getDeclarePatternRoleAccess().getEqualsSignKeyword_0_1());
+		match_DeclarePatternRole_LeftParenthesisKeyword_1_1_0_p = new TokenAlias(true, false, grammarAccess.getDeclarePatternRoleAccess().getLeftParenthesisKeyword_1_1_0());
 		match_EditionScheme_CommaKeyword_3_1_0_p = new TokenAlias(true, false, grammarAccess.getEditionSchemeAccess().getCommaKeyword_3_1_0());
 		match_ModelSlot_ConformToKeyword_5_p = new TokenAlias(true, false, grammarAccess.getModelSlotAccess().getConformToKeyword_5());
 		match_ModelSlot_EqualsSignKeyword_12_p = new TokenAlias(true, false, grammarAccess.getModelSlotAccess().getEqualsSignKeyword_12());
@@ -65,7 +69,11 @@ public class FMLSyntacticSequencer extends AbstractSyntacticSequencer {
 		List<INode> transitionNodes = collectNodes(fromNode, toNode);
 		for (AbstractElementAlias syntax : transition.getAmbiguousSyntaxes()) {
 			List<INode> syntaxNodes = getNodesFor(transitionNodes, syntax);
-			if(match_EditionScheme_CommaKeyword_3_1_0_p.equals(syntax))
+			if(match_DeclarePatternRole_EqualsSignKeyword_0_1_q.equals(syntax))
+				emit_DeclarePatternRole_EqualsSignKeyword_0_1_q(semanticObject, getLastNavigableState(), syntaxNodes);
+			else if(match_DeclarePatternRole_LeftParenthesisKeyword_1_1_0_p.equals(syntax))
+				emit_DeclarePatternRole_LeftParenthesisKeyword_1_1_0_p(semanticObject, getLastNavigableState(), syntaxNodes);
+			else if(match_EditionScheme_CommaKeyword_3_1_0_p.equals(syntax))
 				emit_EditionScheme_CommaKeyword_3_1_0_p(semanticObject, getLastNavigableState(), syntaxNodes);
 			else if(match_ModelSlot_ConformToKeyword_5_p.equals(syntax))
 				emit_ModelSlot_ConformToKeyword_5_p(semanticObject, getLastNavigableState(), syntaxNodes);
@@ -99,6 +107,22 @@ public class FMLSyntacticSequencer extends AbstractSyntacticSequencer {
 		}
 	}
 
+	/**
+	 * Syntax:
+	 *     '='?
+	 */
+	protected void emit_DeclarePatternRole_EqualsSignKeyword_0_1_q(EObject semanticObject, ISynNavigable transition, List<INode> nodes) {
+		acceptNodes(transition, nodes);
+	}
+	
+	/**
+	 * Syntax:
+	 *     '('+
+	 */
+	protected void emit_DeclarePatternRole_LeftParenthesisKeyword_1_1_0_p(EObject semanticObject, ISynNavigable transition, List<INode> nodes) {
+		acceptNodes(transition, nodes);
+	}
+	
 	/**
 	 * Syntax:
 	 *     ','+

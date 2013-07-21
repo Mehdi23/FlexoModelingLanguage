@@ -13,6 +13,7 @@ import org.eclipse.xtext.serializer.sequencer.ISemanticNodeProvider.INodesForEOb
 import org.eclipse.xtext.serializer.sequencer.ISemanticSequencer;
 import org.eclipse.xtext.serializer.sequencer.ITransientValueService;
 import org.eclipse.xtext.serializer.sequencer.ITransientValueService.ValueTransient;
+import org.xtext.example.mydsl.fML.AddEMFObjectIndividual;
 import org.xtext.example.mydsl.fML.DeclarePatternRole;
 import org.xtext.example.mydsl.fML.DeleteAction;
 import org.xtext.example.mydsl.fML.EditionPattern;
@@ -33,6 +34,14 @@ public class FMLSemanticSequencer extends AbstractDelegatingSemanticSequencer {
 	
 	public void createSequence(EObject context, EObject semanticObject) {
 		if(semanticObject.eClass().getEPackage() == FMLPackage.eINSTANCE) switch(semanticObject.eClass().getClassifierID()) {
+			case FMLPackage.ADD_EMF_OBJECT_INDIVIDUAL:
+				if(context == grammarAccess.getAddEMFObjectIndividualRule() ||
+				   context == grammarAccess.getBuiltInActionRule() ||
+				   context == grammarAccess.getEditionActionRule()) {
+					sequence_AddEMFObjectIndividual(context, (AddEMFObjectIndividual) semanticObject); 
+					return; 
+				}
+				else break;
 			case FMLPackage.DECLARE_PATTERN_ROLE:
 				if(context == grammarAccess.getBuiltInActionRule() ||
 				   context == grammarAccess.getDeclarePatternRoleRule() ||
@@ -97,20 +106,29 @@ public class FMLSemanticSequencer extends AbstractDelegatingSemanticSequencer {
 	
 	/**
 	 * Constraint:
-	 *     (patternRole=[PatternRole|ID] parameter=[Parameter|ID])
+	 *     (editionPattern=[EditionPattern|ID] modelSlot=[ModelSlot|ID])
 	 */
-	protected void sequence_DeclarePatternRole(EObject context, DeclarePatternRole semanticObject) {
+	protected void sequence_AddEMFObjectIndividual(EObject context, AddEMFObjectIndividual semanticObject) {
 		if(errorAcceptor != null) {
-			if(transientValues.isValueTransient(semanticObject, FMLPackage.Literals.BUILT_IN_ACTION__PATTERN_ROLE) == ValueTransient.YES)
-				errorAcceptor.accept(diagnosticProvider.createFeatureValueMissing(semanticObject, FMLPackage.Literals.BUILT_IN_ACTION__PATTERN_ROLE));
-			if(transientValues.isValueTransient(semanticObject, FMLPackage.Literals.DECLARE_PATTERN_ROLE__PARAMETER) == ValueTransient.YES)
-				errorAcceptor.accept(diagnosticProvider.createFeatureValueMissing(semanticObject, FMLPackage.Literals.DECLARE_PATTERN_ROLE__PARAMETER));
+			if(transientValues.isValueTransient(semanticObject, FMLPackage.Literals.ADD_EMF_OBJECT_INDIVIDUAL__EDITION_PATTERN) == ValueTransient.YES)
+				errorAcceptor.accept(diagnosticProvider.createFeatureValueMissing(semanticObject, FMLPackage.Literals.ADD_EMF_OBJECT_INDIVIDUAL__EDITION_PATTERN));
+			if(transientValues.isValueTransient(semanticObject, FMLPackage.Literals.ADD_EMF_OBJECT_INDIVIDUAL__MODEL_SLOT) == ValueTransient.YES)
+				errorAcceptor.accept(diagnosticProvider.createFeatureValueMissing(semanticObject, FMLPackage.Literals.ADD_EMF_OBJECT_INDIVIDUAL__MODEL_SLOT));
 		}
 		INodesForEObjectProvider nodes = createNodeProvider(semanticObject);
 		SequenceFeeder feeder = createSequencerFeeder(semanticObject, nodes);
-		feeder.accept(grammarAccess.getDeclarePatternRoleAccess().getPatternRolePatternRoleIDTerminalRuleCall_0_0_1(), semanticObject.getPatternRole());
-		feeder.accept(grammarAccess.getDeclarePatternRoleAccess().getParameterParameterIDTerminalRuleCall_4_0_1(), semanticObject.getParameter());
+		feeder.accept(grammarAccess.getAddEMFObjectIndividualAccess().getEditionPatternEditionPatternIDTerminalRuleCall_2_0_1(), semanticObject.getEditionPattern());
+		feeder.accept(grammarAccess.getAddEMFObjectIndividualAccess().getModelSlotModelSlotIDTerminalRuleCall_4_0_1(), semanticObject.getModelSlot());
 		feeder.finish();
+	}
+	
+	
+	/**
+	 * Constraint:
+	 *     (patternRole+=[PatternRole|ID]+ (parameter=[Parameter|ID] | add+=AddEMFObjectIndividual+))
+	 */
+	protected void sequence_DeclarePatternRole(EObject context, DeclarePatternRole semanticObject) {
+		genericSequencer.createSequence(context, semanticObject);
 	}
 	
 	
@@ -120,8 +138,8 @@ public class FMLSemanticSequencer extends AbstractDelegatingSemanticSequencer {
 	 */
 	protected void sequence_DeleteAction(EObject context, DeleteAction semanticObject) {
 		if(errorAcceptor != null) {
-			if(transientValues.isValueTransient(semanticObject, FMLPackage.Literals.BUILT_IN_ACTION__PATTERN_ROLE) == ValueTransient.YES)
-				errorAcceptor.accept(diagnosticProvider.createFeatureValueMissing(semanticObject, FMLPackage.Literals.BUILT_IN_ACTION__PATTERN_ROLE));
+			if(transientValues.isValueTransient(semanticObject, FMLPackage.Literals.DELETE_ACTION__PATTERN_ROLE) == ValueTransient.YES)
+				errorAcceptor.accept(diagnosticProvider.createFeatureValueMissing(semanticObject, FMLPackage.Literals.DELETE_ACTION__PATTERN_ROLE));
 		}
 		INodesForEObjectProvider nodes = createNodeProvider(semanticObject);
 		SequenceFeeder feeder = createSequencerFeeder(semanticObject, nodes);
@@ -200,7 +218,7 @@ public class FMLSemanticSequencer extends AbstractDelegatingSemanticSequencer {
 	
 	/**
 	 * Constraint:
-	 *     (name=ID type=PRTYPE modelElement=STRING modelSlot=[ModelSlot|ID])
+	 *     (name=ID type=PRTYPE modelElement=ID modelSlot=[ModelSlot|ID])
 	 */
 	protected void sequence_PatternRole(EObject context, PatternRole semanticObject) {
 		if(errorAcceptor != null) {
@@ -217,7 +235,7 @@ public class FMLSemanticSequencer extends AbstractDelegatingSemanticSequencer {
 		SequenceFeeder feeder = createSequencerFeeder(semanticObject, nodes);
 		feeder.accept(grammarAccess.getPatternRoleAccess().getNameIDTerminalRuleCall_1_0(), semanticObject.getName());
 		feeder.accept(grammarAccess.getPatternRoleAccess().getTypePRTYPEEnumRuleCall_3_0(), semanticObject.getType());
-		feeder.accept(grammarAccess.getPatternRoleAccess().getModelElementSTRINGTerminalRuleCall_5_0(), semanticObject.getModelElement());
+		feeder.accept(grammarAccess.getPatternRoleAccess().getModelElementIDTerminalRuleCall_5_0(), semanticObject.getModelElement());
 		feeder.accept(grammarAccess.getPatternRoleAccess().getModelSlotModelSlotIDTerminalRuleCall_7_0_1(), semanticObject.getModelSlot());
 		feeder.finish();
 	}

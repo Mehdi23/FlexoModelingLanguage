@@ -10,6 +10,7 @@ import org.eclipse.emf.ecore.EReference;
 
 import org.eclipse.emf.ecore.impl.EPackageImpl;
 
+import org.xtext.example.mydsl.fML.AddEMFObjectIndividual;
 import org.xtext.example.mydsl.fML.BuiltInAction;
 import org.xtext.example.mydsl.fML.DeclarePatternRole;
 import org.xtext.example.mydsl.fML.DeleteAction;
@@ -109,6 +110,13 @@ public class FMLPackageImpl extends EPackageImpl implements FMLPackage
    * @generated
    */
   private EClass deleteActionEClass = null;
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  private EClass addEMFObjectIndividualEClass = null;
 
   /**
    * <!-- begin-user-doc -->
@@ -576,16 +584,6 @@ public class FMLPackageImpl extends EPackageImpl implements FMLPackage
    * <!-- end-user-doc -->
    * @generated
    */
-  public EReference getBuiltInAction_PatternRole()
-  {
-    return (EReference)builtInActionEClass.getEStructuralFeatures().get(0);
-  }
-
-  /**
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
   public EClass getDeclarePatternRole()
   {
     return declarePatternRoleEClass;
@@ -596,9 +594,29 @@ public class FMLPackageImpl extends EPackageImpl implements FMLPackage
    * <!-- end-user-doc -->
    * @generated
    */
-  public EReference getDeclarePatternRole_Parameter()
+  public EReference getDeclarePatternRole_PatternRole()
   {
     return (EReference)declarePatternRoleEClass.getEStructuralFeatures().get(0);
+  }
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  public EReference getDeclarePatternRole_Parameter()
+  {
+    return (EReference)declarePatternRoleEClass.getEStructuralFeatures().get(1);
+  }
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  public EReference getDeclarePatternRole_Add()
+  {
+    return (EReference)declarePatternRoleEClass.getEStructuralFeatures().get(2);
   }
 
   /**
@@ -609,6 +627,46 @@ public class FMLPackageImpl extends EPackageImpl implements FMLPackage
   public EClass getDeleteAction()
   {
     return deleteActionEClass;
+  }
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  public EReference getDeleteAction_PatternRole()
+  {
+    return (EReference)deleteActionEClass.getEStructuralFeatures().get(0);
+  }
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  public EClass getAddEMFObjectIndividual()
+  {
+    return addEMFObjectIndividualEClass;
+  }
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  public EReference getAddEMFObjectIndividual_EditionPattern()
+  {
+    return (EReference)addEMFObjectIndividualEClass.getEStructuralFeatures().get(0);
+  }
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  public EReference getAddEMFObjectIndividual_ModelSlot()
+  {
+    return (EReference)addEMFObjectIndividualEClass.getEStructuralFeatures().get(1);
   }
 
   /**
@@ -726,12 +784,18 @@ public class FMLPackageImpl extends EPackageImpl implements FMLPackage
     editionActionEClass = createEClass(EDITION_ACTION);
 
     builtInActionEClass = createEClass(BUILT_IN_ACTION);
-    createEReference(builtInActionEClass, BUILT_IN_ACTION__PATTERN_ROLE);
 
     declarePatternRoleEClass = createEClass(DECLARE_PATTERN_ROLE);
+    createEReference(declarePatternRoleEClass, DECLARE_PATTERN_ROLE__PATTERN_ROLE);
     createEReference(declarePatternRoleEClass, DECLARE_PATTERN_ROLE__PARAMETER);
+    createEReference(declarePatternRoleEClass, DECLARE_PATTERN_ROLE__ADD);
 
     deleteActionEClass = createEClass(DELETE_ACTION);
+    createEReference(deleteActionEClass, DELETE_ACTION__PATTERN_ROLE);
+
+    addEMFObjectIndividualEClass = createEClass(ADD_EMF_OBJECT_INDIVIDUAL);
+    createEReference(addEMFObjectIndividualEClass, ADD_EMF_OBJECT_INDIVIDUAL__EDITION_PATTERN);
+    createEReference(addEMFObjectIndividualEClass, ADD_EMF_OBJECT_INDIVIDUAL__MODEL_SLOT);
 
     // Create enums
     editionSchemeTypeEEnum = createEEnum(EDITION_SCHEME_TYPE);
@@ -772,6 +836,7 @@ public class FMLPackageImpl extends EPackageImpl implements FMLPackage
     builtInActionEClass.getESuperTypes().add(this.getEditionAction());
     declarePatternRoleEClass.getESuperTypes().add(this.getBuiltInAction());
     deleteActionEClass.getESuperTypes().add(this.getBuiltInAction());
+    addEMFObjectIndividualEClass.getESuperTypes().add(this.getBuiltInAction());
 
     // Initialize classes and features; add operations and parameters
     initEClass(viewDefEClass, ViewDef.class, "ViewDef", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
@@ -819,12 +884,18 @@ public class FMLPackageImpl extends EPackageImpl implements FMLPackage
     initEClass(editionActionEClass, EditionAction.class, "EditionAction", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 
     initEClass(builtInActionEClass, BuiltInAction.class, "BuiltInAction", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
-    initEReference(getBuiltInAction_PatternRole(), this.getPatternRole(), null, "patternRole", null, 0, 1, BuiltInAction.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
     initEClass(declarePatternRoleEClass, DeclarePatternRole.class, "DeclarePatternRole", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+    initEReference(getDeclarePatternRole_PatternRole(), this.getPatternRole(), null, "patternRole", null, 0, -1, DeclarePatternRole.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, !IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
     initEReference(getDeclarePatternRole_Parameter(), this.getParameter(), null, "parameter", null, 0, 1, DeclarePatternRole.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+    initEReference(getDeclarePatternRole_Add(), this.getAddEMFObjectIndividual(), null, "add", null, 0, -1, DeclarePatternRole.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
     initEClass(deleteActionEClass, DeleteAction.class, "DeleteAction", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+    initEReference(getDeleteAction_PatternRole(), this.getPatternRole(), null, "patternRole", null, 0, 1, DeleteAction.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+
+    initEClass(addEMFObjectIndividualEClass, AddEMFObjectIndividual.class, "AddEMFObjectIndividual", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+    initEReference(getAddEMFObjectIndividual_EditionPattern(), this.getEditionPattern(), null, "editionPattern", null, 0, 1, AddEMFObjectIndividual.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+    initEReference(getAddEMFObjectIndividual_ModelSlot(), this.getModelSlot(), null, "modelSlot", null, 0, 1, AddEMFObjectIndividual.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
     // Initialize enums and add enum literals
     initEEnum(editionSchemeTypeEEnum, EditionSchemeType.class, "EditionSchemeType");

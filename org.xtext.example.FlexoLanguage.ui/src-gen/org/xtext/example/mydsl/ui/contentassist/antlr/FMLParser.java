@@ -38,6 +38,7 @@ public class FMLParser extends AbstractContentAssistParser {
 				private static final long serialVersionUID = 1L;
 				{
 					put(grammarAccess.getBuiltInActionAccess().getAlternatives(), "rule__BuiltInAction__Alternatives");
+					put(grammarAccess.getDeclarePatternRoleAccess().getAlternatives_1(), "rule__DeclarePatternRole__Alternatives_1");
 					put(grammarAccess.getEditionSchemeTypeAccess().getAlternatives(), "rule__EditionSchemeType__Alternatives");
 					put(grammarAccess.getMSTYPEAccess().getAlternatives(), "rule__MSTYPE__Alternatives");
 					put(grammarAccess.getVMTYPEAccess().getAlternatives(), "rule__VMTYPE__Alternatives");
@@ -53,7 +54,11 @@ public class FMLParser extends AbstractContentAssistParser {
 					put(grammarAccess.getEditionSchemeAccess().getGroup_3_1(), "rule__EditionScheme__Group_3_1__0");
 					put(grammarAccess.getParameterAccess().getGroup(), "rule__Parameter__Group__0");
 					put(grammarAccess.getDeclarePatternRoleAccess().getGroup(), "rule__DeclarePatternRole__Group__0");
+					put(grammarAccess.getDeclarePatternRoleAccess().getGroup_0(), "rule__DeclarePatternRole__Group_0__0");
+					put(grammarAccess.getDeclarePatternRoleAccess().getGroup_1_0(), "rule__DeclarePatternRole__Group_1_0__0");
+					put(grammarAccess.getDeclarePatternRoleAccess().getGroup_1_1(), "rule__DeclarePatternRole__Group_1_1__0");
 					put(grammarAccess.getDeleteActionAccess().getGroup(), "rule__DeleteAction__Group__0");
+					put(grammarAccess.getAddEMFObjectIndividualAccess().getGroup(), "rule__AddEMFObjectIndividual__Group__0");
 					put(grammarAccess.getViewDefAccess().getNameAssignment_1(), "rule__ViewDef__NameAssignment_1");
 					put(grammarAccess.getViewDefAccess().getUriAssignment_4(), "rule__ViewDef__UriAssignment_4");
 					put(grammarAccess.getViewDefAccess().getElementsAssignment_6(), "rule__ViewDef__ElementsAssignment_6");
@@ -83,9 +88,12 @@ public class FMLParser extends AbstractContentAssistParser {
 					put(grammarAccess.getParameterAccess().getWidgetAssignment_0(), "rule__Parameter__WidgetAssignment_0");
 					put(grammarAccess.getParameterAccess().getEditionPatternAssignment_2(), "rule__Parameter__EditionPatternAssignment_2");
 					put(grammarAccess.getParameterAccess().getNameAssignment_3(), "rule__Parameter__NameAssignment_3");
-					put(grammarAccess.getDeclarePatternRoleAccess().getPatternRoleAssignment_0(), "rule__DeclarePatternRole__PatternRoleAssignment_0");
-					put(grammarAccess.getDeclarePatternRoleAccess().getParameterAssignment_4(), "rule__DeclarePatternRole__ParameterAssignment_4");
+					put(grammarAccess.getDeclarePatternRoleAccess().getPatternRoleAssignment_0_0(), "rule__DeclarePatternRole__PatternRoleAssignment_0_0");
+					put(grammarAccess.getDeclarePatternRoleAccess().getParameterAssignment_1_0_2(), "rule__DeclarePatternRole__ParameterAssignment_1_0_2");
+					put(grammarAccess.getDeclarePatternRoleAccess().getAddAssignment_1_1_1(), "rule__DeclarePatternRole__AddAssignment_1_1_1");
 					put(grammarAccess.getDeleteActionAccess().getPatternRoleAssignment_1(), "rule__DeleteAction__PatternRoleAssignment_1");
+					put(grammarAccess.getAddEMFObjectIndividualAccess().getEditionPatternAssignment_2(), "rule__AddEMFObjectIndividual__EditionPatternAssignment_2");
+					put(grammarAccess.getAddEMFObjectIndividualAccess().getModelSlotAssignment_4(), "rule__AddEMFObjectIndividual__ModelSlotAssignment_4");
 				}
 			};
 		}
